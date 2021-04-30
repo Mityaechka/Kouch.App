@@ -4,12 +4,16 @@
              x:Class="Kouch.App.Views.Pages.LoadingPage">
     <ContentPage.Content>
         <StackLayout VerticalOptions="FillAndExpand"
-                     HorizontalOptions="FillAndExpand" BackgroundColor="AliceBlue">
-            <StackLayout VerticalOptions="Center"
-                         HorizontalOptions="Center">
+                     HorizontalOptions="FillAndExpand"
+                     BackgroundColor="AliceBlue">
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <Image Source="logo.png"
+                       WidthRequest="100"></Image>
                 <ActivityIndicator IsRunning="True"
-                                   Scale="2" />
+                                   Scale="2"
+                                   VerticalOptions="Center" />
             </StackLayout>
+            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

@@ -495,3 +495,4 @@ C:\Users\User\source\repos\Kouch.App\Kouch.App\Kouch.App.Android\obj\Debug\90\an
 C:\Users\User\source\repos\Kouch.App\Kouch.App\Kouch.App.Android\obj\Debug\90\android\assets\Rg.Plugins.Popup.pdb
 C:\Users\User\source\repos\Kouch.App\Kouch.App\Kouch.App.Android\obj\Debug\90\android\src\crc643dd37f507f3d9710\PopupPageRenderer.java
 C:\Users\User\source\repos\Kouch.App\Kouch.App\Kouch.App.Android\obj\Debug\90\android\src\crc64fdbeeba101bd56dc\RgGestureDetectorListener.java
+C:\Users\User\source\repos\Kouch.App\Kouch.App\Kouch.App.Android\obj\Debug\90\res\drawable\logo.png
