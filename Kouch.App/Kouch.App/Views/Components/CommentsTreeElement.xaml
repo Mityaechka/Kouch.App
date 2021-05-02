@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:components="clr-namespace:Kouch.App.Views.Components"
+             xmlns:converters="clr-namespace:Kouch.App.Converters"
+             x:Class="Kouch.App.Views.Components.CommentsTreeElement">
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <converters:ValueConverterGroup x:Key="isNotEmptyList">
+                <converters:IsNullOrEmptyListConverter />
+                <converters:InverseBoolConverter />
+            </converters:ValueConverterGroup>
+        </ResourceDictionary>
+</ContentView.Resources>
+    <ContentView.Content>
+        <StackLayout Orientation="Vertical" BindableLayout.ItemsSource="{Binding .}">
+            <BindableLayout.ItemTemplate>
+                <DataTemplate>
+                    <components:CommentElement />
+                </DataTemplate>
+            </BindableLayout.ItemTemplate>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

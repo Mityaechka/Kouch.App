@@ -2599,6 +2599,1502 @@ namespace Kouch.App.Droid
 			global::Rg.Plugins.Popup.Resource.Styleable.View_paddingEnd = global::Kouch.App.Droid.Resource.Styleable.View_paddingEnd;
 			global::Rg.Plugins.Popup.Resource.Styleable.View_paddingStart = global::Kouch.App.Droid.Resource.Styleable.View_paddingStart;
 			global::Rg.Plugins.Popup.Resource.Styleable.View_theme = global::Kouch.App.Droid.Resource.Styleable.View_theme;
+			global::Plugin.Toasts.Resource.Animation.abc_fade_in = global::Kouch.App.Droid.Resource.Animation.abc_fade_in;
+			global::Plugin.Toasts.Resource.Animation.abc_fade_out = global::Kouch.App.Droid.Resource.Animation.abc_fade_out;
+			global::Plugin.Toasts.Resource.Animation.abc_grow_fade_in_from_bottom = global::Kouch.App.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::Plugin.Toasts.Resource.Animation.abc_popup_enter = global::Kouch.App.Droid.Resource.Animation.abc_popup_enter;
+			global::Plugin.Toasts.Resource.Animation.abc_popup_exit = global::Kouch.App.Droid.Resource.Animation.abc_popup_exit;
+			global::Plugin.Toasts.Resource.Animation.abc_shrink_fade_out_from_bottom = global::Kouch.App.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::Plugin.Toasts.Resource.Animation.abc_slide_in_bottom = global::Kouch.App.Droid.Resource.Animation.abc_slide_in_bottom;
+			global::Plugin.Toasts.Resource.Animation.abc_slide_in_top = global::Kouch.App.Droid.Resource.Animation.abc_slide_in_top;
+			global::Plugin.Toasts.Resource.Animation.abc_slide_out_bottom = global::Kouch.App.Droid.Resource.Animation.abc_slide_out_bottom;
+			global::Plugin.Toasts.Resource.Animation.abc_slide_out_top = global::Kouch.App.Droid.Resource.Animation.abc_slide_out_top;
+			global::Plugin.Toasts.Resource.Animation.design_bottom_sheet_slide_in = global::Kouch.App.Droid.Resource.Animation.design_bottom_sheet_slide_in;
+			global::Plugin.Toasts.Resource.Animation.design_bottom_sheet_slide_out = global::Kouch.App.Droid.Resource.Animation.design_bottom_sheet_slide_out;
+			global::Plugin.Toasts.Resource.Animation.design_snackbar_in = global::Kouch.App.Droid.Resource.Animation.design_snackbar_in;
+			global::Plugin.Toasts.Resource.Animation.design_snackbar_out = global::Kouch.App.Droid.Resource.Animation.design_snackbar_out;
+			global::Plugin.Toasts.Resource.Attribute.actionBarDivider = global::Kouch.App.Droid.Resource.Attribute.actionBarDivider;
+			global::Plugin.Toasts.Resource.Attribute.actionBarItemBackground = global::Kouch.App.Droid.Resource.Attribute.actionBarItemBackground;
+			global::Plugin.Toasts.Resource.Attribute.actionBarPopupTheme = global::Kouch.App.Droid.Resource.Attribute.actionBarPopupTheme;
+			global::Plugin.Toasts.Resource.Attribute.actionBarSize = global::Kouch.App.Droid.Resource.Attribute.actionBarSize;
+			global::Plugin.Toasts.Resource.Attribute.actionBarSplitStyle = global::Kouch.App.Droid.Resource.Attribute.actionBarSplitStyle;
+			global::Plugin.Toasts.Resource.Attribute.actionBarStyle = global::Kouch.App.Droid.Resource.Attribute.actionBarStyle;
+			global::Plugin.Toasts.Resource.Attribute.actionBarTabBarStyle = global::Kouch.App.Droid.Resource.Attribute.actionBarTabBarStyle;
+			global::Plugin.Toasts.Resource.Attribute.actionBarTabStyle = global::Kouch.App.Droid.Resource.Attribute.actionBarTabStyle;
+			global::Plugin.Toasts.Resource.Attribute.actionBarTabTextStyle = global::Kouch.App.Droid.Resource.Attribute.actionBarTabTextStyle;
+			global::Plugin.Toasts.Resource.Attribute.actionBarTheme = global::Kouch.App.Droid.Resource.Attribute.actionBarTheme;
+			global::Plugin.Toasts.Resource.Attribute.actionBarWidgetTheme = global::Kouch.App.Droid.Resource.Attribute.actionBarWidgetTheme;
+			global::Plugin.Toasts.Resource.Attribute.actionButtonStyle = global::Kouch.App.Droid.Resource.Attribute.actionButtonStyle;
+			global::Plugin.Toasts.Resource.Attribute.actionDropDownStyle = global::Kouch.App.Droid.Resource.Attribute.actionDropDownStyle;
+			global::Plugin.Toasts.Resource.Attribute.actionLayout = global::Kouch.App.Droid.Resource.Attribute.actionLayout;
+			global::Plugin.Toasts.Resource.Attribute.actionMenuTextAppearance = global::Kouch.App.Droid.Resource.Attribute.actionMenuTextAppearance;
+			global::Plugin.Toasts.Resource.Attribute.actionMenuTextColor = global::Kouch.App.Droid.Resource.Attribute.actionMenuTextColor;
+			global::Plugin.Toasts.Resource.Attribute.actionModeBackground = global::Kouch.App.Droid.Resource.Attribute.actionModeBackground;
+			global::Plugin.Toasts.Resource.Attribute.actionModeCloseButtonStyle = global::Kouch.App.Droid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::Plugin.Toasts.Resource.Attribute.actionModeCloseDrawable = global::Kouch.App.Droid.Resource.Attribute.actionModeCloseDrawable;
+			global::Plugin.Toasts.Resource.Attribute.actionModeCopyDrawable = global::Kouch.App.Droid.Resource.Attribute.actionModeCopyDrawable;
+			global::Plugin.Toasts.Resource.Attribute.actionModeCutDrawable = global::Kouch.App.Droid.Resource.Attribute.actionModeCutDrawable;
+			global::Plugin.Toasts.Resource.Attribute.actionModeFindDrawable = global::Kouch.App.Droid.Resource.Attribute.actionModeFindDrawable;
+			global::Plugin.Toasts.Resource.Attribute.actionModePasteDrawable = global::Kouch.App.Droid.Resource.Attribute.actionModePasteDrawable;
+			global::Plugin.Toasts.Resource.Attribute.actionModePopupWindowStyle = global::Kouch.App.Droid.Resource.Attribute.actionModePopupWindowStyle;
+			global::Plugin.Toasts.Resource.Attribute.actionModeSelectAllDrawable = global::Kouch.App.Droid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::Plugin.Toasts.Resource.Attribute.actionModeShareDrawable = global::Kouch.App.Droid.Resource.Attribute.actionModeShareDrawable;
+			global::Plugin.Toasts.Resource.Attribute.actionModeSplitBackground = global::Kouch.App.Droid.Resource.Attribute.actionModeSplitBackground;
+			global::Plugin.Toasts.Resource.Attribute.actionModeStyle = global::Kouch.App.Droid.Resource.Attribute.actionModeStyle;
+			global::Plugin.Toasts.Resource.Attribute.actionModeWebSearchDrawable = global::Kouch.App.Droid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::Plugin.Toasts.Resource.Attribute.actionOverflowButtonStyle = global::Kouch.App.Droid.Resource.Attribute.actionOverflowButtonStyle;
+			global::Plugin.Toasts.Resource.Attribute.actionOverflowMenuStyle = global::Kouch.App.Droid.Resource.Attribute.actionOverflowMenuStyle;
+			global::Plugin.Toasts.Resource.Attribute.actionProviderClass = global::Kouch.App.Droid.Resource.Attribute.actionProviderClass;
+			global::Plugin.Toasts.Resource.Attribute.actionViewClass = global::Kouch.App.Droid.Resource.Attribute.actionViewClass;
+			global::Plugin.Toasts.Resource.Attribute.activityChooserViewStyle = global::Kouch.App.Droid.Resource.Attribute.activityChooserViewStyle;
+			global::Plugin.Toasts.Resource.Attribute.alertDialogButtonGroupStyle = global::Kouch.App.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::Plugin.Toasts.Resource.Attribute.alertDialogCenterButtons = global::Kouch.App.Droid.Resource.Attribute.alertDialogCenterButtons;
+			global::Plugin.Toasts.Resource.Attribute.alertDialogStyle = global::Kouch.App.Droid.Resource.Attribute.alertDialogStyle;
+			global::Plugin.Toasts.Resource.Attribute.alertDialogTheme = global::Kouch.App.Droid.Resource.Attribute.alertDialogTheme;
+			global::Plugin.Toasts.Resource.Attribute.allowStacking = global::Kouch.App.Droid.Resource.Attribute.allowStacking;
+			global::Plugin.Toasts.Resource.Attribute.arrowHeadLength = global::Kouch.App.Droid.Resource.Attribute.arrowHeadLength;
+			global::Plugin.Toasts.Resource.Attribute.arrowShaftLength = global::Kouch.App.Droid.Resource.Attribute.arrowShaftLength;
+			global::Plugin.Toasts.Resource.Attribute.autoCompleteTextViewStyle = global::Kouch.App.Droid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::Plugin.Toasts.Resource.Attribute.background = global::Kouch.App.Droid.Resource.Attribute.background;
+			global::Plugin.Toasts.Resource.Attribute.backgroundSplit = global::Kouch.App.Droid.Resource.Attribute.backgroundSplit;
+			global::Plugin.Toasts.Resource.Attribute.backgroundStacked = global::Kouch.App.Droid.Resource.Attribute.backgroundStacked;
+			global::Plugin.Toasts.Resource.Attribute.backgroundTint = global::Kouch.App.Droid.Resource.Attribute.backgroundTint;
+			global::Plugin.Toasts.Resource.Attribute.backgroundTintMode = global::Kouch.App.Droid.Resource.Attribute.backgroundTintMode;
+			global::Plugin.Toasts.Resource.Attribute.barLength = global::Kouch.App.Droid.Resource.Attribute.barLength;
+			global::Plugin.Toasts.Resource.Attribute.behavior_hideable = global::Kouch.App.Droid.Resource.Attribute.behavior_hideable;
+			global::Plugin.Toasts.Resource.Attribute.behavior_overlapTop = global::Kouch.App.Droid.Resource.Attribute.behavior_overlapTop;
+			global::Plugin.Toasts.Resource.Attribute.behavior_peekHeight = global::Kouch.App.Droid.Resource.Attribute.behavior_peekHeight;
+			global::Plugin.Toasts.Resource.Attribute.borderWidth = global::Kouch.App.Droid.Resource.Attribute.borderWidth;
+			global::Plugin.Toasts.Resource.Attribute.borderlessButtonStyle = global::Kouch.App.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::Plugin.Toasts.Resource.Attribute.bottomSheetDialogTheme = global::Kouch.App.Droid.Resource.Attribute.bottomSheetDialogTheme;
+			global::Plugin.Toasts.Resource.Attribute.bottomSheetStyle = global::Kouch.App.Droid.Resource.Attribute.bottomSheetStyle;
+			global::Plugin.Toasts.Resource.Attribute.buttonBarButtonStyle = global::Kouch.App.Droid.Resource.Attribute.buttonBarButtonStyle;
+			global::Plugin.Toasts.Resource.Attribute.buttonBarNegativeButtonStyle = global::Kouch.App.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::Plugin.Toasts.Resource.Attribute.buttonBarNeutralButtonStyle = global::Kouch.App.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::Plugin.Toasts.Resource.Attribute.buttonBarPositiveButtonStyle = global::Kouch.App.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::Plugin.Toasts.Resource.Attribute.buttonBarStyle = global::Kouch.App.Droid.Resource.Attribute.buttonBarStyle;
+			global::Plugin.Toasts.Resource.Attribute.buttonPanelSideLayout = global::Kouch.App.Droid.Resource.Attribute.buttonPanelSideLayout;
+			global::Plugin.Toasts.Resource.Attribute.buttonStyle = global::Kouch.App.Droid.Resource.Attribute.buttonStyle;
+			global::Plugin.Toasts.Resource.Attribute.buttonStyleSmall = global::Kouch.App.Droid.Resource.Attribute.buttonStyleSmall;
+			global::Plugin.Toasts.Resource.Attribute.buttonTint = global::Kouch.App.Droid.Resource.Attribute.buttonTint;
+			global::Plugin.Toasts.Resource.Attribute.buttonTintMode = global::Kouch.App.Droid.Resource.Attribute.buttonTintMode;
+			global::Plugin.Toasts.Resource.Attribute.checkboxStyle = global::Kouch.App.Droid.Resource.Attribute.checkboxStyle;
+			global::Plugin.Toasts.Resource.Attribute.checkedTextViewStyle = global::Kouch.App.Droid.Resource.Attribute.checkedTextViewStyle;
+			global::Plugin.Toasts.Resource.Attribute.closeIcon = global::Kouch.App.Droid.Resource.Attribute.closeIcon;
+			global::Plugin.Toasts.Resource.Attribute.closeItemLayout = global::Kouch.App.Droid.Resource.Attribute.closeItemLayout;
+			global::Plugin.Toasts.Resource.Attribute.collapseContentDescription = global::Kouch.App.Droid.Resource.Attribute.collapseContentDescription;
+			global::Plugin.Toasts.Resource.Attribute.collapseIcon = global::Kouch.App.Droid.Resource.Attribute.collapseIcon;
+			global::Plugin.Toasts.Resource.Attribute.collapsedTitleGravity = global::Kouch.App.Droid.Resource.Attribute.collapsedTitleGravity;
+			global::Plugin.Toasts.Resource.Attribute.collapsedTitleTextAppearance = global::Kouch.App.Droid.Resource.Attribute.collapsedTitleTextAppearance;
+			global::Plugin.Toasts.Resource.Attribute.color = global::Kouch.App.Droid.Resource.Attribute.color;
+			global::Plugin.Toasts.Resource.Attribute.colorAccent = global::Kouch.App.Droid.Resource.Attribute.colorAccent;
+			global::Plugin.Toasts.Resource.Attribute.colorButtonNormal = global::Kouch.App.Droid.Resource.Attribute.colorButtonNormal;
+			global::Plugin.Toasts.Resource.Attribute.colorControlActivated = global::Kouch.App.Droid.Resource.Attribute.colorControlActivated;
+			global::Plugin.Toasts.Resource.Attribute.colorControlHighlight = global::Kouch.App.Droid.Resource.Attribute.colorControlHighlight;
+			global::Plugin.Toasts.Resource.Attribute.colorControlNormal = global::Kouch.App.Droid.Resource.Attribute.colorControlNormal;
+			global::Plugin.Toasts.Resource.Attribute.colorPrimary = global::Kouch.App.Droid.Resource.Attribute.colorPrimary;
+			global::Plugin.Toasts.Resource.Attribute.colorPrimaryDark = global::Kouch.App.Droid.Resource.Attribute.colorPrimaryDark;
+			global::Plugin.Toasts.Resource.Attribute.colorSwitchThumbNormal = global::Kouch.App.Droid.Resource.Attribute.colorSwitchThumbNormal;
+			global::Plugin.Toasts.Resource.Attribute.commitIcon = global::Kouch.App.Droid.Resource.Attribute.commitIcon;
+			global::Plugin.Toasts.Resource.Attribute.contentInsetEnd = global::Kouch.App.Droid.Resource.Attribute.contentInsetEnd;
+			global::Plugin.Toasts.Resource.Attribute.contentInsetLeft = global::Kouch.App.Droid.Resource.Attribute.contentInsetLeft;
+			global::Plugin.Toasts.Resource.Attribute.contentInsetRight = global::Kouch.App.Droid.Resource.Attribute.contentInsetRight;
+			global::Plugin.Toasts.Resource.Attribute.contentInsetStart = global::Kouch.App.Droid.Resource.Attribute.contentInsetStart;
+			global::Plugin.Toasts.Resource.Attribute.contentScrim = global::Kouch.App.Droid.Resource.Attribute.contentScrim;
+			global::Plugin.Toasts.Resource.Attribute.controlBackground = global::Kouch.App.Droid.Resource.Attribute.controlBackground;
+			global::Plugin.Toasts.Resource.Attribute.counterEnabled = global::Kouch.App.Droid.Resource.Attribute.counterEnabled;
+			global::Plugin.Toasts.Resource.Attribute.counterMaxLength = global::Kouch.App.Droid.Resource.Attribute.counterMaxLength;
+			global::Plugin.Toasts.Resource.Attribute.counterOverflowTextAppearance = global::Kouch.App.Droid.Resource.Attribute.counterOverflowTextAppearance;
+			global::Plugin.Toasts.Resource.Attribute.counterTextAppearance = global::Kouch.App.Droid.Resource.Attribute.counterTextAppearance;
+			global::Plugin.Toasts.Resource.Attribute.customNavigationLayout = global::Kouch.App.Droid.Resource.Attribute.customNavigationLayout;
+			global::Plugin.Toasts.Resource.Attribute.defaultQueryHint = global::Kouch.App.Droid.Resource.Attribute.defaultQueryHint;
+			global::Plugin.Toasts.Resource.Attribute.dialogPreferredPadding = global::Kouch.App.Droid.Resource.Attribute.dialogPreferredPadding;
+			global::Plugin.Toasts.Resource.Attribute.dialogTheme = global::Kouch.App.Droid.Resource.Attribute.dialogTheme;
+			global::Plugin.Toasts.Resource.Attribute.displayOptions = global::Kouch.App.Droid.Resource.Attribute.displayOptions;
+			global::Plugin.Toasts.Resource.Attribute.divider = global::Kouch.App.Droid.Resource.Attribute.divider;
+			global::Plugin.Toasts.Resource.Attribute.dividerHorizontal = global::Kouch.App.Droid.Resource.Attribute.dividerHorizontal;
+			global::Plugin.Toasts.Resource.Attribute.dividerPadding = global::Kouch.App.Droid.Resource.Attribute.dividerPadding;
+			global::Plugin.Toasts.Resource.Attribute.dividerVertical = global::Kouch.App.Droid.Resource.Attribute.dividerVertical;
+			global::Plugin.Toasts.Resource.Attribute.drawableSize = global::Kouch.App.Droid.Resource.Attribute.drawableSize;
+			global::Plugin.Toasts.Resource.Attribute.drawerArrowStyle = global::Kouch.App.Droid.Resource.Attribute.drawerArrowStyle;
+			global::Plugin.Toasts.Resource.Attribute.dropDownListViewStyle = global::Kouch.App.Droid.Resource.Attribute.dropDownListViewStyle;
+			global::Plugin.Toasts.Resource.Attribute.dropdownListPreferredItemHeight = global::Kouch.App.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::Plugin.Toasts.Resource.Attribute.editTextBackground = global::Kouch.App.Droid.Resource.Attribute.editTextBackground;
+			global::Plugin.Toasts.Resource.Attribute.editTextColor = global::Kouch.App.Droid.Resource.Attribute.editTextColor;
+			global::Plugin.Toasts.Resource.Attribute.editTextStyle = global::Kouch.App.Droid.Resource.Attribute.editTextStyle;
+			global::Plugin.Toasts.Resource.Attribute.elevation = global::Kouch.App.Droid.Resource.Attribute.elevation;
+			global::Plugin.Toasts.Resource.Attribute.errorEnabled = global::Kouch.App.Droid.Resource.Attribute.errorEnabled;
+			global::Plugin.Toasts.Resource.Attribute.errorTextAppearance = global::Kouch.App.Droid.Resource.Attribute.errorTextAppearance;
+			global::Plugin.Toasts.Resource.Attribute.expandActivityOverflowButtonDrawable = global::Kouch.App.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::Plugin.Toasts.Resource.Attribute.expanded = global::Kouch.App.Droid.Resource.Attribute.expanded;
+			global::Plugin.Toasts.Resource.Attribute.expandedTitleGravity = global::Kouch.App.Droid.Resource.Attribute.expandedTitleGravity;
+			global::Plugin.Toasts.Resource.Attribute.expandedTitleMargin = global::Kouch.App.Droid.Resource.Attribute.expandedTitleMargin;
+			global::Plugin.Toasts.Resource.Attribute.expandedTitleMarginBottom = global::Kouch.App.Droid.Resource.Attribute.expandedTitleMarginBottom;
+			global::Plugin.Toasts.Resource.Attribute.expandedTitleMarginEnd = global::Kouch.App.Droid.Resource.Attribute.expandedTitleMarginEnd;
+			global::Plugin.Toasts.Resource.Attribute.expandedTitleMarginStart = global::Kouch.App.Droid.Resource.Attribute.expandedTitleMarginStart;
+			global::Plugin.Toasts.Resource.Attribute.expandedTitleMarginTop = global::Kouch.App.Droid.Resource.Attribute.expandedTitleMarginTop;
+			global::Plugin.Toasts.Resource.Attribute.expandedTitleTextAppearance = global::Kouch.App.Droid.Resource.Attribute.expandedTitleTextAppearance;
+			global::Plugin.Toasts.Resource.Attribute.fabSize = global::Kouch.App.Droid.Resource.Attribute.fabSize;
+			global::Plugin.Toasts.Resource.Attribute.foregroundInsidePadding = global::Kouch.App.Droid.Resource.Attribute.foregroundInsidePadding;
+			global::Plugin.Toasts.Resource.Attribute.gapBetweenBars = global::Kouch.App.Droid.Resource.Attribute.gapBetweenBars;
+			global::Plugin.Toasts.Resource.Attribute.goIcon = global::Kouch.App.Droid.Resource.Attribute.goIcon;
+			global::Plugin.Toasts.Resource.Attribute.headerLayout = global::Kouch.App.Droid.Resource.Attribute.headerLayout;
+			global::Plugin.Toasts.Resource.Attribute.height = global::Kouch.App.Droid.Resource.Attribute.height;
+			global::Plugin.Toasts.Resource.Attribute.hideOnContentScroll = global::Kouch.App.Droid.Resource.Attribute.hideOnContentScroll;
+			global::Plugin.Toasts.Resource.Attribute.hintAnimationEnabled = global::Kouch.App.Droid.Resource.Attribute.hintAnimationEnabled;
+			global::Plugin.Toasts.Resource.Attribute.hintEnabled = global::Kouch.App.Droid.Resource.Attribute.hintEnabled;
+			global::Plugin.Toasts.Resource.Attribute.hintTextAppearance = global::Kouch.App.Droid.Resource.Attribute.hintTextAppearance;
+			global::Plugin.Toasts.Resource.Attribute.homeAsUpIndicator = global::Kouch.App.Droid.Resource.Attribute.homeAsUpIndicator;
+			global::Plugin.Toasts.Resource.Attribute.homeLayout = global::Kouch.App.Droid.Resource.Attribute.homeLayout;
+			global::Plugin.Toasts.Resource.Attribute.icon = global::Kouch.App.Droid.Resource.Attribute.icon;
+			global::Plugin.Toasts.Resource.Attribute.iconifiedByDefault = global::Kouch.App.Droid.Resource.Attribute.iconifiedByDefault;
+			global::Plugin.Toasts.Resource.Attribute.imageButtonStyle = global::Kouch.App.Droid.Resource.Attribute.imageButtonStyle;
+			global::Plugin.Toasts.Resource.Attribute.indeterminateProgressStyle = global::Kouch.App.Droid.Resource.Attribute.indeterminateProgressStyle;
+			global::Plugin.Toasts.Resource.Attribute.initialActivityCount = global::Kouch.App.Droid.Resource.Attribute.initialActivityCount;
+			global::Plugin.Toasts.Resource.Attribute.insetForeground = global::Kouch.App.Droid.Resource.Attribute.insetForeground;
+			global::Plugin.Toasts.Resource.Attribute.isLightTheme = global::Kouch.App.Droid.Resource.Attribute.isLightTheme;
+			global::Plugin.Toasts.Resource.Attribute.itemBackground = global::Kouch.App.Droid.Resource.Attribute.itemBackground;
+			global::Plugin.Toasts.Resource.Attribute.itemIconTint = global::Kouch.App.Droid.Resource.Attribute.itemIconTint;
+			global::Plugin.Toasts.Resource.Attribute.itemPadding = global::Kouch.App.Droid.Resource.Attribute.itemPadding;
+			global::Plugin.Toasts.Resource.Attribute.itemTextAppearance = global::Kouch.App.Droid.Resource.Attribute.itemTextAppearance;
+			global::Plugin.Toasts.Resource.Attribute.itemTextColor = global::Kouch.App.Droid.Resource.Attribute.itemTextColor;
+			global::Plugin.Toasts.Resource.Attribute.keylines = global::Kouch.App.Droid.Resource.Attribute.keylines;
+			global::Plugin.Toasts.Resource.Attribute.layout = global::Kouch.App.Droid.Resource.Attribute.layout;
+			global::Plugin.Toasts.Resource.Attribute.layoutManager = global::Kouch.App.Droid.Resource.Attribute.layoutManager;
+			global::Plugin.Toasts.Resource.Attribute.layout_anchor = global::Kouch.App.Droid.Resource.Attribute.layout_anchor;
+			global::Plugin.Toasts.Resource.Attribute.layout_anchorGravity = global::Kouch.App.Droid.Resource.Attribute.layout_anchorGravity;
+			global::Plugin.Toasts.Resource.Attribute.layout_behavior = global::Kouch.App.Droid.Resource.Attribute.layout_behavior;
+			global::Plugin.Toasts.Resource.Attribute.layout_collapseMode = global::Kouch.App.Droid.Resource.Attribute.layout_collapseMode;
+			global::Plugin.Toasts.Resource.Attribute.layout_collapseParallaxMultiplier = global::Kouch.App.Droid.Resource.Attribute.layout_collapseParallaxMultiplier;
+			global::Plugin.Toasts.Resource.Attribute.layout_keyline = global::Kouch.App.Droid.Resource.Attribute.layout_keyline;
+			global::Plugin.Toasts.Resource.Attribute.layout_scrollFlags = global::Kouch.App.Droid.Resource.Attribute.layout_scrollFlags;
+			global::Plugin.Toasts.Resource.Attribute.layout_scrollInterpolator = global::Kouch.App.Droid.Resource.Attribute.layout_scrollInterpolator;
+			global::Plugin.Toasts.Resource.Attribute.listChoiceBackgroundIndicator = global::Kouch.App.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::Plugin.Toasts.Resource.Attribute.listDividerAlertDialog = global::Kouch.App.Droid.Resource.Attribute.listDividerAlertDialog;
+			global::Plugin.Toasts.Resource.Attribute.listItemLayout = global::Kouch.App.Droid.Resource.Attribute.listItemLayout;
+			global::Plugin.Toasts.Resource.Attribute.listLayout = global::Kouch.App.Droid.Resource.Attribute.listLayout;
+			global::Plugin.Toasts.Resource.Attribute.listPopupWindowStyle = global::Kouch.App.Droid.Resource.Attribute.listPopupWindowStyle;
+			global::Plugin.Toasts.Resource.Attribute.listPreferredItemHeight = global::Kouch.App.Droid.Resource.Attribute.listPreferredItemHeight;
+			global::Plugin.Toasts.Resource.Attribute.listPreferredItemHeightLarge = global::Kouch.App.Droid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::Plugin.Toasts.Resource.Attribute.listPreferredItemHeightSmall = global::Kouch.App.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::Plugin.Toasts.Resource.Attribute.listPreferredItemPaddingLeft = global::Kouch.App.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::Plugin.Toasts.Resource.Attribute.listPreferredItemPaddingRight = global::Kouch.App.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::Plugin.Toasts.Resource.Attribute.logo = global::Kouch.App.Droid.Resource.Attribute.logo;
+			global::Plugin.Toasts.Resource.Attribute.logoDescription = global::Kouch.App.Droid.Resource.Attribute.logoDescription;
+			global::Plugin.Toasts.Resource.Attribute.maxActionInlineWidth = global::Kouch.App.Droid.Resource.Attribute.maxActionInlineWidth;
+			global::Plugin.Toasts.Resource.Attribute.maxButtonHeight = global::Kouch.App.Droid.Resource.Attribute.maxButtonHeight;
+			global::Plugin.Toasts.Resource.Attribute.measureWithLargestChild = global::Kouch.App.Droid.Resource.Attribute.measureWithLargestChild;
+			global::Plugin.Toasts.Resource.Attribute.menu = global::Kouch.App.Droid.Resource.Attribute.menu;
+			global::Plugin.Toasts.Resource.Attribute.multiChoiceItemLayout = global::Kouch.App.Droid.Resource.Attribute.multiChoiceItemLayout;
+			global::Plugin.Toasts.Resource.Attribute.navigationContentDescription = global::Kouch.App.Droid.Resource.Attribute.navigationContentDescription;
+			global::Plugin.Toasts.Resource.Attribute.navigationIcon = global::Kouch.App.Droid.Resource.Attribute.navigationIcon;
+			global::Plugin.Toasts.Resource.Attribute.navigationMode = global::Kouch.App.Droid.Resource.Attribute.navigationMode;
+			global::Plugin.Toasts.Resource.Attribute.overlapAnchor = global::Kouch.App.Droid.Resource.Attribute.overlapAnchor;
+			global::Plugin.Toasts.Resource.Attribute.paddingEnd = global::Kouch.App.Droid.Resource.Attribute.paddingEnd;
+			global::Plugin.Toasts.Resource.Attribute.paddingStart = global::Kouch.App.Droid.Resource.Attribute.paddingStart;
+			global::Plugin.Toasts.Resource.Attribute.panelBackground = global::Kouch.App.Droid.Resource.Attribute.panelBackground;
+			global::Plugin.Toasts.Resource.Attribute.panelMenuListTheme = global::Kouch.App.Droid.Resource.Attribute.panelMenuListTheme;
+			global::Plugin.Toasts.Resource.Attribute.panelMenuListWidth = global::Kouch.App.Droid.Resource.Attribute.panelMenuListWidth;
+			global::Plugin.Toasts.Resource.Attribute.popupMenuStyle = global::Kouch.App.Droid.Resource.Attribute.popupMenuStyle;
+			global::Plugin.Toasts.Resource.Attribute.popupTheme = global::Kouch.App.Droid.Resource.Attribute.popupTheme;
+			global::Plugin.Toasts.Resource.Attribute.popupWindowStyle = global::Kouch.App.Droid.Resource.Attribute.popupWindowStyle;
+			global::Plugin.Toasts.Resource.Attribute.preserveIconSpacing = global::Kouch.App.Droid.Resource.Attribute.preserveIconSpacing;
+			global::Plugin.Toasts.Resource.Attribute.pressedTranslationZ = global::Kouch.App.Droid.Resource.Attribute.pressedTranslationZ;
+			global::Plugin.Toasts.Resource.Attribute.progressBarPadding = global::Kouch.App.Droid.Resource.Attribute.progressBarPadding;
+			global::Plugin.Toasts.Resource.Attribute.progressBarStyle = global::Kouch.App.Droid.Resource.Attribute.progressBarStyle;
+			global::Plugin.Toasts.Resource.Attribute.queryBackground = global::Kouch.App.Droid.Resource.Attribute.queryBackground;
+			global::Plugin.Toasts.Resource.Attribute.queryHint = global::Kouch.App.Droid.Resource.Attribute.queryHint;
+			global::Plugin.Toasts.Resource.Attribute.radioButtonStyle = global::Kouch.App.Droid.Resource.Attribute.radioButtonStyle;
+			global::Plugin.Toasts.Resource.Attribute.ratingBarStyle = global::Kouch.App.Droid.Resource.Attribute.ratingBarStyle;
+			global::Plugin.Toasts.Resource.Attribute.ratingBarStyleIndicator = global::Kouch.App.Droid.Resource.Attribute.ratingBarStyleIndicator;
+			global::Plugin.Toasts.Resource.Attribute.ratingBarStyleSmall = global::Kouch.App.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::Plugin.Toasts.Resource.Attribute.reverseLayout = global::Kouch.App.Droid.Resource.Attribute.reverseLayout;
+			global::Plugin.Toasts.Resource.Attribute.rippleColor = global::Kouch.App.Droid.Resource.Attribute.rippleColor;
+			global::Plugin.Toasts.Resource.Attribute.searchHintIcon = global::Kouch.App.Droid.Resource.Attribute.searchHintIcon;
+			global::Plugin.Toasts.Resource.Attribute.searchIcon = global::Kouch.App.Droid.Resource.Attribute.searchIcon;
+			global::Plugin.Toasts.Resource.Attribute.searchViewStyle = global::Kouch.App.Droid.Resource.Attribute.searchViewStyle;
+			global::Plugin.Toasts.Resource.Attribute.seekBarStyle = global::Kouch.App.Droid.Resource.Attribute.seekBarStyle;
+			global::Plugin.Toasts.Resource.Attribute.selectableItemBackground = global::Kouch.App.Droid.Resource.Attribute.selectableItemBackground;
+			global::Plugin.Toasts.Resource.Attribute.selectableItemBackgroundBorderless = global::Kouch.App.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::Plugin.Toasts.Resource.Attribute.showAsAction = global::Kouch.App.Droid.Resource.Attribute.showAsAction;
+			global::Plugin.Toasts.Resource.Attribute.showDividers = global::Kouch.App.Droid.Resource.Attribute.showDividers;
+			global::Plugin.Toasts.Resource.Attribute.showText = global::Kouch.App.Droid.Resource.Attribute.showText;
+			global::Plugin.Toasts.Resource.Attribute.singleChoiceItemLayout = global::Kouch.App.Droid.Resource.Attribute.singleChoiceItemLayout;
+			global::Plugin.Toasts.Resource.Attribute.spanCount = global::Kouch.App.Droid.Resource.Attribute.spanCount;
+			global::Plugin.Toasts.Resource.Attribute.spinBars = global::Kouch.App.Droid.Resource.Attribute.spinBars;
+			global::Plugin.Toasts.Resource.Attribute.spinnerDropDownItemStyle = global::Kouch.App.Droid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::Plugin.Toasts.Resource.Attribute.spinnerStyle = global::Kouch.App.Droid.Resource.Attribute.spinnerStyle;
+			global::Plugin.Toasts.Resource.Attribute.splitTrack = global::Kouch.App.Droid.Resource.Attribute.splitTrack;
+			global::Plugin.Toasts.Resource.Attribute.srcCompat = global::Kouch.App.Droid.Resource.Attribute.srcCompat;
+			global::Plugin.Toasts.Resource.Attribute.stackFromEnd = global::Kouch.App.Droid.Resource.Attribute.stackFromEnd;
+			global::Plugin.Toasts.Resource.Attribute.state_above_anchor = global::Kouch.App.Droid.Resource.Attribute.state_above_anchor;
+			global::Plugin.Toasts.Resource.Attribute.statusBarBackground = global::Kouch.App.Droid.Resource.Attribute.statusBarBackground;
+			global::Plugin.Toasts.Resource.Attribute.statusBarScrim = global::Kouch.App.Droid.Resource.Attribute.statusBarScrim;
+			global::Plugin.Toasts.Resource.Attribute.submitBackground = global::Kouch.App.Droid.Resource.Attribute.submitBackground;
+			global::Plugin.Toasts.Resource.Attribute.subtitle = global::Kouch.App.Droid.Resource.Attribute.subtitle;
+			global::Plugin.Toasts.Resource.Attribute.subtitleTextAppearance = global::Kouch.App.Droid.Resource.Attribute.subtitleTextAppearance;
+			global::Plugin.Toasts.Resource.Attribute.subtitleTextColor = global::Kouch.App.Droid.Resource.Attribute.subtitleTextColor;
+			global::Plugin.Toasts.Resource.Attribute.subtitleTextStyle = global::Kouch.App.Droid.Resource.Attribute.subtitleTextStyle;
+			global::Plugin.Toasts.Resource.Attribute.suggestionRowLayout = global::Kouch.App.Droid.Resource.Attribute.suggestionRowLayout;
+			global::Plugin.Toasts.Resource.Attribute.switchMinWidth = global::Kouch.App.Droid.Resource.Attribute.switchMinWidth;
+			global::Plugin.Toasts.Resource.Attribute.switchPadding = global::Kouch.App.Droid.Resource.Attribute.switchPadding;
+			global::Plugin.Toasts.Resource.Attribute.switchStyle = global::Kouch.App.Droid.Resource.Attribute.switchStyle;
+			global::Plugin.Toasts.Resource.Attribute.switchTextAppearance = global::Kouch.App.Droid.Resource.Attribute.switchTextAppearance;
+			global::Plugin.Toasts.Resource.Attribute.tabBackground = global::Kouch.App.Droid.Resource.Attribute.tabBackground;
+			global::Plugin.Toasts.Resource.Attribute.tabContentStart = global::Kouch.App.Droid.Resource.Attribute.tabContentStart;
+			global::Plugin.Toasts.Resource.Attribute.tabGravity = global::Kouch.App.Droid.Resource.Attribute.tabGravity;
+			global::Plugin.Toasts.Resource.Attribute.tabIndicatorColor = global::Kouch.App.Droid.Resource.Attribute.tabIndicatorColor;
+			global::Plugin.Toasts.Resource.Attribute.tabIndicatorHeight = global::Kouch.App.Droid.Resource.Attribute.tabIndicatorHeight;
+			global::Plugin.Toasts.Resource.Attribute.tabMaxWidth = global::Kouch.App.Droid.Resource.Attribute.tabMaxWidth;
+			global::Plugin.Toasts.Resource.Attribute.tabMinWidth = global::Kouch.App.Droid.Resource.Attribute.tabMinWidth;
+			global::Plugin.Toasts.Resource.Attribute.tabMode = global::Kouch.App.Droid.Resource.Attribute.tabMode;
+			global::Plugin.Toasts.Resource.Attribute.tabPadding = global::Kouch.App.Droid.Resource.Attribute.tabPadding;
+			global::Plugin.Toasts.Resource.Attribute.tabPaddingBottom = global::Kouch.App.Droid.Resource.Attribute.tabPaddingBottom;
+			global::Plugin.Toasts.Resource.Attribute.tabPaddingEnd = global::Kouch.App.Droid.Resource.Attribute.tabPaddingEnd;
+			global::Plugin.Toasts.Resource.Attribute.tabPaddingStart = global::Kouch.App.Droid.Resource.Attribute.tabPaddingStart;
+			global::Plugin.Toasts.Resource.Attribute.tabPaddingTop = global::Kouch.App.Droid.Resource.Attribute.tabPaddingTop;
+			global::Plugin.Toasts.Resource.Attribute.tabSelectedTextColor = global::Kouch.App.Droid.Resource.Attribute.tabSelectedTextColor;
+			global::Plugin.Toasts.Resource.Attribute.tabTextAppearance = global::Kouch.App.Droid.Resource.Attribute.tabTextAppearance;
+			global::Plugin.Toasts.Resource.Attribute.tabTextColor = global::Kouch.App.Droid.Resource.Attribute.tabTextColor;
+			global::Plugin.Toasts.Resource.Attribute.textAllCaps = global::Kouch.App.Droid.Resource.Attribute.textAllCaps;
+			global::Plugin.Toasts.Resource.Attribute.textAppearanceLargePopupMenu = global::Kouch.App.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::Plugin.Toasts.Resource.Attribute.textAppearanceListItem = global::Kouch.App.Droid.Resource.Attribute.textAppearanceListItem;
+			global::Plugin.Toasts.Resource.Attribute.textAppearanceListItemSmall = global::Kouch.App.Droid.Resource.Attribute.textAppearanceListItemSmall;
+			global::Plugin.Toasts.Resource.Attribute.textAppearanceSearchResultSubtitle = global::Kouch.App.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::Plugin.Toasts.Resource.Attribute.textAppearanceSearchResultTitle = global::Kouch.App.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::Plugin.Toasts.Resource.Attribute.textAppearanceSmallPopupMenu = global::Kouch.App.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::Plugin.Toasts.Resource.Attribute.textColorAlertDialogListItem = global::Kouch.App.Droid.Resource.Attribute.textColorAlertDialogListItem;
+			global::Plugin.Toasts.Resource.Attribute.textColorSearchUrl = global::Kouch.App.Droid.Resource.Attribute.textColorSearchUrl;
+			global::Plugin.Toasts.Resource.Attribute.theme = global::Kouch.App.Droid.Resource.Attribute.theme;
+			global::Plugin.Toasts.Resource.Attribute.thickness = global::Kouch.App.Droid.Resource.Attribute.thickness;
+			global::Plugin.Toasts.Resource.Attribute.thumbTextPadding = global::Kouch.App.Droid.Resource.Attribute.thumbTextPadding;
+			global::Plugin.Toasts.Resource.Attribute.title = global::Kouch.App.Droid.Resource.Attribute.title;
+			global::Plugin.Toasts.Resource.Attribute.titleEnabled = global::Kouch.App.Droid.Resource.Attribute.titleEnabled;
+			global::Plugin.Toasts.Resource.Attribute.titleMarginBottom = global::Kouch.App.Droid.Resource.Attribute.titleMarginBottom;
+			global::Plugin.Toasts.Resource.Attribute.titleMarginEnd = global::Kouch.App.Droid.Resource.Attribute.titleMarginEnd;
+			global::Plugin.Toasts.Resource.Attribute.titleMarginStart = global::Kouch.App.Droid.Resource.Attribute.titleMarginStart;
+			global::Plugin.Toasts.Resource.Attribute.titleMarginTop = global::Kouch.App.Droid.Resource.Attribute.titleMarginTop;
+			global::Plugin.Toasts.Resource.Attribute.titleMargins = global::Kouch.App.Droid.Resource.Attribute.titleMargins;
+			global::Plugin.Toasts.Resource.Attribute.titleTextAppearance = global::Kouch.App.Droid.Resource.Attribute.titleTextAppearance;
+			global::Plugin.Toasts.Resource.Attribute.titleTextColor = global::Kouch.App.Droid.Resource.Attribute.titleTextColor;
+			global::Plugin.Toasts.Resource.Attribute.titleTextStyle = global::Kouch.App.Droid.Resource.Attribute.titleTextStyle;
+			global::Plugin.Toasts.Resource.Attribute.toolbarId = global::Kouch.App.Droid.Resource.Attribute.toolbarId;
+			global::Plugin.Toasts.Resource.Attribute.toolbarNavigationButtonStyle = global::Kouch.App.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::Plugin.Toasts.Resource.Attribute.toolbarStyle = global::Kouch.App.Droid.Resource.Attribute.toolbarStyle;
+			global::Plugin.Toasts.Resource.Attribute.track = global::Kouch.App.Droid.Resource.Attribute.track;
+			global::Plugin.Toasts.Resource.Attribute.useCompatPadding = global::Kouch.App.Droid.Resource.Attribute.useCompatPadding;
+			global::Plugin.Toasts.Resource.Attribute.voiceIcon = global::Kouch.App.Droid.Resource.Attribute.voiceIcon;
+			global::Plugin.Toasts.Resource.Attribute.windowActionBar = global::Kouch.App.Droid.Resource.Attribute.windowActionBar;
+			global::Plugin.Toasts.Resource.Attribute.windowActionBarOverlay = global::Kouch.App.Droid.Resource.Attribute.windowActionBarOverlay;
+			global::Plugin.Toasts.Resource.Attribute.windowActionModeOverlay = global::Kouch.App.Droid.Resource.Attribute.windowActionModeOverlay;
+			global::Plugin.Toasts.Resource.Attribute.windowFixedHeightMajor = global::Kouch.App.Droid.Resource.Attribute.windowFixedHeightMajor;
+			global::Plugin.Toasts.Resource.Attribute.windowFixedHeightMinor = global::Kouch.App.Droid.Resource.Attribute.windowFixedHeightMinor;
+			global::Plugin.Toasts.Resource.Attribute.windowFixedWidthMajor = global::Kouch.App.Droid.Resource.Attribute.windowFixedWidthMajor;
+			global::Plugin.Toasts.Resource.Attribute.windowFixedWidthMinor = global::Kouch.App.Droid.Resource.Attribute.windowFixedWidthMinor;
+			global::Plugin.Toasts.Resource.Attribute.windowMinWidthMajor = global::Kouch.App.Droid.Resource.Attribute.windowMinWidthMajor;
+			global::Plugin.Toasts.Resource.Attribute.windowMinWidthMinor = global::Kouch.App.Droid.Resource.Attribute.windowMinWidthMinor;
+			global::Plugin.Toasts.Resource.Attribute.windowNoTitle = global::Kouch.App.Droid.Resource.Attribute.windowNoTitle;
+			global::Plugin.Toasts.Resource.Boolean.abc_action_bar_embed_tabs = global::Kouch.App.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::Plugin.Toasts.Resource.Boolean.abc_allow_stacked_button_bar = global::Kouch.App.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::Plugin.Toasts.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::Kouch.App.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::Plugin.Toasts.Resource.Color.abc_background_cache_hint_selector_material_dark = global::Kouch.App.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::Plugin.Toasts.Resource.Color.abc_background_cache_hint_selector_material_light = global::Kouch.App.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::Plugin.Toasts.Resource.Color.abc_color_highlight_material = global::Kouch.App.Droid.Resource.Color.abc_color_highlight_material;
+			global::Plugin.Toasts.Resource.Color.abc_input_method_navigation_guard = global::Kouch.App.Droid.Resource.Color.abc_input_method_navigation_guard;
+			global::Plugin.Toasts.Resource.Color.abc_primary_text_disable_only_material_dark = global::Kouch.App.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::Plugin.Toasts.Resource.Color.abc_primary_text_disable_only_material_light = global::Kouch.App.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::Plugin.Toasts.Resource.Color.abc_primary_text_material_dark = global::Kouch.App.Droid.Resource.Color.abc_primary_text_material_dark;
+			global::Plugin.Toasts.Resource.Color.abc_primary_text_material_light = global::Kouch.App.Droid.Resource.Color.abc_primary_text_material_light;
+			global::Plugin.Toasts.Resource.Color.abc_search_url_text = global::Kouch.App.Droid.Resource.Color.abc_search_url_text;
+			global::Plugin.Toasts.Resource.Color.abc_search_url_text_normal = global::Kouch.App.Droid.Resource.Color.abc_search_url_text_normal;
+			global::Plugin.Toasts.Resource.Color.abc_search_url_text_pressed = global::Kouch.App.Droid.Resource.Color.abc_search_url_text_pressed;
+			global::Plugin.Toasts.Resource.Color.abc_search_url_text_selected = global::Kouch.App.Droid.Resource.Color.abc_search_url_text_selected;
+			global::Plugin.Toasts.Resource.Color.abc_secondary_text_material_dark = global::Kouch.App.Droid.Resource.Color.abc_secondary_text_material_dark;
+			global::Plugin.Toasts.Resource.Color.abc_secondary_text_material_light = global::Kouch.App.Droid.Resource.Color.abc_secondary_text_material_light;
+			global::Plugin.Toasts.Resource.Color.accent_material_dark = global::Kouch.App.Droid.Resource.Color.accent_material_dark;
+			global::Plugin.Toasts.Resource.Color.accent_material_light = global::Kouch.App.Droid.Resource.Color.accent_material_light;
+			global::Plugin.Toasts.Resource.Color.background_floating_material_dark = global::Kouch.App.Droid.Resource.Color.background_floating_material_dark;
+			global::Plugin.Toasts.Resource.Color.background_floating_material_light = global::Kouch.App.Droid.Resource.Color.background_floating_material_light;
+			global::Plugin.Toasts.Resource.Color.background_material_dark = global::Kouch.App.Droid.Resource.Color.background_material_dark;
+			global::Plugin.Toasts.Resource.Color.background_material_light = global::Kouch.App.Droid.Resource.Color.background_material_light;
+			global::Plugin.Toasts.Resource.Color.bright_foreground_disabled_material_dark = global::Kouch.App.Droid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::Plugin.Toasts.Resource.Color.bright_foreground_disabled_material_light = global::Kouch.App.Droid.Resource.Color.bright_foreground_disabled_material_light;
+			global::Plugin.Toasts.Resource.Color.bright_foreground_inverse_material_dark = global::Kouch.App.Droid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::Plugin.Toasts.Resource.Color.bright_foreground_inverse_material_light = global::Kouch.App.Droid.Resource.Color.bright_foreground_inverse_material_light;
+			global::Plugin.Toasts.Resource.Color.bright_foreground_material_dark = global::Kouch.App.Droid.Resource.Color.bright_foreground_material_dark;
+			global::Plugin.Toasts.Resource.Color.bright_foreground_material_light = global::Kouch.App.Droid.Resource.Color.bright_foreground_material_light;
+			global::Plugin.Toasts.Resource.Color.button_material_dark = global::Kouch.App.Droid.Resource.Color.button_material_dark;
+			global::Plugin.Toasts.Resource.Color.button_material_light = global::Kouch.App.Droid.Resource.Color.button_material_light;
+			global::Plugin.Toasts.Resource.Color.design_fab_shadow_end_color = global::Kouch.App.Droid.Resource.Color.design_fab_shadow_end_color;
+			global::Plugin.Toasts.Resource.Color.design_fab_shadow_mid_color = global::Kouch.App.Droid.Resource.Color.design_fab_shadow_mid_color;
+			global::Plugin.Toasts.Resource.Color.design_fab_shadow_start_color = global::Kouch.App.Droid.Resource.Color.design_fab_shadow_start_color;
+			global::Plugin.Toasts.Resource.Color.design_fab_stroke_end_inner_color = global::Kouch.App.Droid.Resource.Color.design_fab_stroke_end_inner_color;
+			global::Plugin.Toasts.Resource.Color.design_fab_stroke_end_outer_color = global::Kouch.App.Droid.Resource.Color.design_fab_stroke_end_outer_color;
+			global::Plugin.Toasts.Resource.Color.design_fab_stroke_top_inner_color = global::Kouch.App.Droid.Resource.Color.design_fab_stroke_top_inner_color;
+			global::Plugin.Toasts.Resource.Color.design_fab_stroke_top_outer_color = global::Kouch.App.Droid.Resource.Color.design_fab_stroke_top_outer_color;
+			global::Plugin.Toasts.Resource.Color.design_snackbar_background_color = global::Kouch.App.Droid.Resource.Color.design_snackbar_background_color;
+			global::Plugin.Toasts.Resource.Color.dim_foreground_disabled_material_dark = global::Kouch.App.Droid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::Plugin.Toasts.Resource.Color.dim_foreground_disabled_material_light = global::Kouch.App.Droid.Resource.Color.dim_foreground_disabled_material_light;
+			global::Plugin.Toasts.Resource.Color.dim_foreground_material_dark = global::Kouch.App.Droid.Resource.Color.dim_foreground_material_dark;
+			global::Plugin.Toasts.Resource.Color.dim_foreground_material_light = global::Kouch.App.Droid.Resource.Color.dim_foreground_material_light;
+			global::Plugin.Toasts.Resource.Color.foreground_material_dark = global::Kouch.App.Droid.Resource.Color.foreground_material_dark;
+			global::Plugin.Toasts.Resource.Color.foreground_material_light = global::Kouch.App.Droid.Resource.Color.foreground_material_light;
+			global::Plugin.Toasts.Resource.Color.highlighted_text_material_dark = global::Kouch.App.Droid.Resource.Color.highlighted_text_material_dark;
+			global::Plugin.Toasts.Resource.Color.highlighted_text_material_light = global::Kouch.App.Droid.Resource.Color.highlighted_text_material_light;
+			global::Plugin.Toasts.Resource.Color.material_blue_grey_800 = global::Kouch.App.Droid.Resource.Color.material_blue_grey_800;
+			global::Plugin.Toasts.Resource.Color.material_blue_grey_900 = global::Kouch.App.Droid.Resource.Color.material_blue_grey_900;
+			global::Plugin.Toasts.Resource.Color.material_blue_grey_950 = global::Kouch.App.Droid.Resource.Color.material_blue_grey_950;
+			global::Plugin.Toasts.Resource.Color.material_deep_teal_200 = global::Kouch.App.Droid.Resource.Color.material_deep_teal_200;
+			global::Plugin.Toasts.Resource.Color.material_deep_teal_500 = global::Kouch.App.Droid.Resource.Color.material_deep_teal_500;
+			global::Plugin.Toasts.Resource.Color.material_grey_100 = global::Kouch.App.Droid.Resource.Color.material_grey_100;
+			global::Plugin.Toasts.Resource.Color.material_grey_300 = global::Kouch.App.Droid.Resource.Color.material_grey_300;
+			global::Plugin.Toasts.Resource.Color.material_grey_50 = global::Kouch.App.Droid.Resource.Color.material_grey_50;
+			global::Plugin.Toasts.Resource.Color.material_grey_600 = global::Kouch.App.Droid.Resource.Color.material_grey_600;
+			global::Plugin.Toasts.Resource.Color.material_grey_800 = global::Kouch.App.Droid.Resource.Color.material_grey_800;
+			global::Plugin.Toasts.Resource.Color.material_grey_850 = global::Kouch.App.Droid.Resource.Color.material_grey_850;
+			global::Plugin.Toasts.Resource.Color.material_grey_900 = global::Kouch.App.Droid.Resource.Color.material_grey_900;
+			global::Plugin.Toasts.Resource.Color.primary_dark_material_dark = global::Kouch.App.Droid.Resource.Color.primary_dark_material_dark;
+			global::Plugin.Toasts.Resource.Color.primary_dark_material_light = global::Kouch.App.Droid.Resource.Color.primary_dark_material_light;
+			global::Plugin.Toasts.Resource.Color.primary_material_dark = global::Kouch.App.Droid.Resource.Color.primary_material_dark;
+			global::Plugin.Toasts.Resource.Color.primary_material_light = global::Kouch.App.Droid.Resource.Color.primary_material_light;
+			global::Plugin.Toasts.Resource.Color.primary_text_default_material_dark = global::Kouch.App.Droid.Resource.Color.primary_text_default_material_dark;
+			global::Plugin.Toasts.Resource.Color.primary_text_default_material_light = global::Kouch.App.Droid.Resource.Color.primary_text_default_material_light;
+			global::Plugin.Toasts.Resource.Color.primary_text_disabled_material_dark = global::Kouch.App.Droid.Resource.Color.primary_text_disabled_material_dark;
+			global::Plugin.Toasts.Resource.Color.primary_text_disabled_material_light = global::Kouch.App.Droid.Resource.Color.primary_text_disabled_material_light;
+			global::Plugin.Toasts.Resource.Color.ripple_material_dark = global::Kouch.App.Droid.Resource.Color.ripple_material_dark;
+			global::Plugin.Toasts.Resource.Color.ripple_material_light = global::Kouch.App.Droid.Resource.Color.ripple_material_light;
+			global::Plugin.Toasts.Resource.Color.secondary_text_default_material_dark = global::Kouch.App.Droid.Resource.Color.secondary_text_default_material_dark;
+			global::Plugin.Toasts.Resource.Color.secondary_text_default_material_light = global::Kouch.App.Droid.Resource.Color.secondary_text_default_material_light;
+			global::Plugin.Toasts.Resource.Color.secondary_text_disabled_material_dark = global::Kouch.App.Droid.Resource.Color.secondary_text_disabled_material_dark;
+			global::Plugin.Toasts.Resource.Color.secondary_text_disabled_material_light = global::Kouch.App.Droid.Resource.Color.secondary_text_disabled_material_light;
+			global::Plugin.Toasts.Resource.Color.switch_thumb_disabled_material_dark = global::Kouch.App.Droid.Resource.Color.switch_thumb_disabled_material_dark;
+			global::Plugin.Toasts.Resource.Color.switch_thumb_disabled_material_light = global::Kouch.App.Droid.Resource.Color.switch_thumb_disabled_material_light;
+			global::Plugin.Toasts.Resource.Color.switch_thumb_material_dark = global::Kouch.App.Droid.Resource.Color.switch_thumb_material_dark;
+			global::Plugin.Toasts.Resource.Color.switch_thumb_material_light = global::Kouch.App.Droid.Resource.Color.switch_thumb_material_light;
+			global::Plugin.Toasts.Resource.Color.switch_thumb_normal_material_dark = global::Kouch.App.Droid.Resource.Color.switch_thumb_normal_material_dark;
+			global::Plugin.Toasts.Resource.Color.switch_thumb_normal_material_light = global::Kouch.App.Droid.Resource.Color.switch_thumb_normal_material_light;
+			global::Plugin.Toasts.Resource.Dimension.abc_action_bar_content_inset_material = global::Kouch.App.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_action_bar_default_height_material = global::Kouch.App.Droid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_action_bar_default_padding_end_material = global::Kouch.App.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_action_bar_default_padding_start_material = global::Kouch.App.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::Kouch.App.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::Kouch.App.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::Kouch.App.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_action_bar_stacked_max_height = global::Kouch.App.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::Plugin.Toasts.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::Kouch.App.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::Plugin.Toasts.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::Kouch.App.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::Kouch.App.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_action_button_min_height_material = global::Kouch.App.Droid.Resource.Dimension.abc_action_button_min_height_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_action_button_min_width_material = global::Kouch.App.Droid.Resource.Dimension.abc_action_button_min_width_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_action_button_min_width_overflow_material = global::Kouch.App.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_alert_dialog_button_bar_height = global::Kouch.App.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::Plugin.Toasts.Resource.Dimension.abc_button_inset_horizontal_material = global::Kouch.App.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_button_inset_vertical_material = global::Kouch.App.Droid.Resource.Dimension.abc_button_inset_vertical_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_button_padding_horizontal_material = global::Kouch.App.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_button_padding_vertical_material = global::Kouch.App.Droid.Resource.Dimension.abc_button_padding_vertical_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_config_prefDialogWidth = global::Kouch.App.Droid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::Plugin.Toasts.Resource.Dimension.abc_control_corner_material = global::Kouch.App.Droid.Resource.Dimension.abc_control_corner_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_control_inset_material = global::Kouch.App.Droid.Resource.Dimension.abc_control_inset_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_control_padding_material = global::Kouch.App.Droid.Resource.Dimension.abc_control_padding_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_dialog_fixed_height_major = global::Kouch.App.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::Plugin.Toasts.Resource.Dimension.abc_dialog_fixed_height_minor = global::Kouch.App.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::Plugin.Toasts.Resource.Dimension.abc_dialog_fixed_width_major = global::Kouch.App.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::Plugin.Toasts.Resource.Dimension.abc_dialog_fixed_width_minor = global::Kouch.App.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::Plugin.Toasts.Resource.Dimension.abc_dialog_min_width_major = global::Kouch.App.Droid.Resource.Dimension.abc_dialog_min_width_major;
+			global::Plugin.Toasts.Resource.Dimension.abc_dialog_min_width_minor = global::Kouch.App.Droid.Resource.Dimension.abc_dialog_min_width_minor;
+			global::Plugin.Toasts.Resource.Dimension.abc_dialog_padding_material = global::Kouch.App.Droid.Resource.Dimension.abc_dialog_padding_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_dialog_padding_top_material = global::Kouch.App.Droid.Resource.Dimension.abc_dialog_padding_top_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_disabled_alpha_material_dark = global::Kouch.App.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::Plugin.Toasts.Resource.Dimension.abc_disabled_alpha_material_light = global::Kouch.App.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::Plugin.Toasts.Resource.Dimension.abc_dropdownitem_icon_width = global::Kouch.App.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::Plugin.Toasts.Resource.Dimension.abc_dropdownitem_text_padding_left = global::Kouch.App.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::Plugin.Toasts.Resource.Dimension.abc_dropdownitem_text_padding_right = global::Kouch.App.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::Plugin.Toasts.Resource.Dimension.abc_edit_text_inset_bottom_material = global::Kouch.App.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::Kouch.App.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_edit_text_inset_top_material = global::Kouch.App.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_floating_window_z = global::Kouch.App.Droid.Resource.Dimension.abc_floating_window_z;
+			global::Plugin.Toasts.Resource.Dimension.abc_list_item_padding_horizontal_material = global::Kouch.App.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_panel_menu_list_width = global::Kouch.App.Droid.Resource.Dimension.abc_panel_menu_list_width;
+			global::Plugin.Toasts.Resource.Dimension.abc_search_view_preferred_width = global::Kouch.App.Droid.Resource.Dimension.abc_search_view_preferred_width;
+			global::Plugin.Toasts.Resource.Dimension.abc_seekbar_track_background_height_material = global::Kouch.App.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_seekbar_track_progress_height_material = global::Kouch.App.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_select_dialog_padding_start_material = global::Kouch.App.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_switch_padding = global::Kouch.App.Droid.Resource.Dimension.abc_switch_padding;
+			global::Plugin.Toasts.Resource.Dimension.abc_text_size_body_1_material = global::Kouch.App.Droid.Resource.Dimension.abc_text_size_body_1_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_text_size_body_2_material = global::Kouch.App.Droid.Resource.Dimension.abc_text_size_body_2_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_text_size_button_material = global::Kouch.App.Droid.Resource.Dimension.abc_text_size_button_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_text_size_caption_material = global::Kouch.App.Droid.Resource.Dimension.abc_text_size_caption_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_text_size_display_1_material = global::Kouch.App.Droid.Resource.Dimension.abc_text_size_display_1_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_text_size_display_2_material = global::Kouch.App.Droid.Resource.Dimension.abc_text_size_display_2_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_text_size_display_3_material = global::Kouch.App.Droid.Resource.Dimension.abc_text_size_display_3_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_text_size_display_4_material = global::Kouch.App.Droid.Resource.Dimension.abc_text_size_display_4_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_text_size_headline_material = global::Kouch.App.Droid.Resource.Dimension.abc_text_size_headline_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_text_size_large_material = global::Kouch.App.Droid.Resource.Dimension.abc_text_size_large_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_text_size_medium_material = global::Kouch.App.Droid.Resource.Dimension.abc_text_size_medium_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_text_size_menu_material = global::Kouch.App.Droid.Resource.Dimension.abc_text_size_menu_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_text_size_small_material = global::Kouch.App.Droid.Resource.Dimension.abc_text_size_small_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_text_size_subhead_material = global::Kouch.App.Droid.Resource.Dimension.abc_text_size_subhead_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::Kouch.App.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::Plugin.Toasts.Resource.Dimension.abc_text_size_title_material = global::Kouch.App.Droid.Resource.Dimension.abc_text_size_title_material;
+			global::Plugin.Toasts.Resource.Dimension.abc_text_size_title_material_toolbar = global::Kouch.App.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::Plugin.Toasts.Resource.Dimension.design_appbar_elevation = global::Kouch.App.Droid.Resource.Dimension.design_appbar_elevation;
+			global::Plugin.Toasts.Resource.Dimension.design_bottom_sheet_modal_elevation = global::Kouch.App.Droid.Resource.Dimension.design_bottom_sheet_modal_elevation;
+			global::Plugin.Toasts.Resource.Dimension.design_fab_border_width = global::Kouch.App.Droid.Resource.Dimension.design_fab_border_width;
+			global::Plugin.Toasts.Resource.Dimension.design_fab_elevation = global::Kouch.App.Droid.Resource.Dimension.design_fab_elevation;
+			global::Plugin.Toasts.Resource.Dimension.design_fab_image_size = global::Kouch.App.Droid.Resource.Dimension.design_fab_image_size;
+			global::Plugin.Toasts.Resource.Dimension.design_fab_size_mini = global::Kouch.App.Droid.Resource.Dimension.design_fab_size_mini;
+			global::Plugin.Toasts.Resource.Dimension.design_fab_size_normal = global::Kouch.App.Droid.Resource.Dimension.design_fab_size_normal;
+			global::Plugin.Toasts.Resource.Dimension.design_fab_translation_z_pressed = global::Kouch.App.Droid.Resource.Dimension.design_fab_translation_z_pressed;
+			global::Plugin.Toasts.Resource.Dimension.design_navigation_elevation = global::Kouch.App.Droid.Resource.Dimension.design_navigation_elevation;
+			global::Plugin.Toasts.Resource.Dimension.design_navigation_icon_padding = global::Kouch.App.Droid.Resource.Dimension.design_navigation_icon_padding;
+			global::Plugin.Toasts.Resource.Dimension.design_navigation_icon_size = global::Kouch.App.Droid.Resource.Dimension.design_navigation_icon_size;
+			global::Plugin.Toasts.Resource.Dimension.design_navigation_max_width = global::Kouch.App.Droid.Resource.Dimension.design_navigation_max_width;
+			global::Plugin.Toasts.Resource.Dimension.design_navigation_padding_bottom = global::Kouch.App.Droid.Resource.Dimension.design_navigation_padding_bottom;
+			global::Plugin.Toasts.Resource.Dimension.design_navigation_separator_vertical_padding = global::Kouch.App.Droid.Resource.Dimension.design_navigation_separator_vertical_padding;
+			global::Plugin.Toasts.Resource.Dimension.design_snackbar_action_inline_max_width = global::Kouch.App.Droid.Resource.Dimension.design_snackbar_action_inline_max_width;
+			global::Plugin.Toasts.Resource.Dimension.design_snackbar_background_corner_radius = global::Kouch.App.Droid.Resource.Dimension.design_snackbar_background_corner_radius;
+			global::Plugin.Toasts.Resource.Dimension.design_snackbar_elevation = global::Kouch.App.Droid.Resource.Dimension.design_snackbar_elevation;
+			global::Plugin.Toasts.Resource.Dimension.design_snackbar_extra_spacing_horizontal = global::Kouch.App.Droid.Resource.Dimension.design_snackbar_extra_spacing_horizontal;
+			global::Plugin.Toasts.Resource.Dimension.design_snackbar_max_width = global::Kouch.App.Droid.Resource.Dimension.design_snackbar_max_width;
+			global::Plugin.Toasts.Resource.Dimension.design_snackbar_min_width = global::Kouch.App.Droid.Resource.Dimension.design_snackbar_min_width;
+			global::Plugin.Toasts.Resource.Dimension.design_snackbar_padding_horizontal = global::Kouch.App.Droid.Resource.Dimension.design_snackbar_padding_horizontal;
+			global::Plugin.Toasts.Resource.Dimension.design_snackbar_padding_vertical = global::Kouch.App.Droid.Resource.Dimension.design_snackbar_padding_vertical;
+			global::Plugin.Toasts.Resource.Dimension.design_snackbar_padding_vertical_2lines = global::Kouch.App.Droid.Resource.Dimension.design_snackbar_padding_vertical_2lines;
+			global::Plugin.Toasts.Resource.Dimension.design_snackbar_text_size = global::Kouch.App.Droid.Resource.Dimension.design_snackbar_text_size;
+			global::Plugin.Toasts.Resource.Dimension.design_tab_max_width = global::Kouch.App.Droid.Resource.Dimension.design_tab_max_width;
+			global::Plugin.Toasts.Resource.Dimension.design_tab_scrollable_min_width = global::Kouch.App.Droid.Resource.Dimension.design_tab_scrollable_min_width;
+			global::Plugin.Toasts.Resource.Dimension.design_tab_text_size = global::Kouch.App.Droid.Resource.Dimension.design_tab_text_size;
+			global::Plugin.Toasts.Resource.Dimension.design_tab_text_size_2line = global::Kouch.App.Droid.Resource.Dimension.design_tab_text_size_2line;
+			global::Plugin.Toasts.Resource.Dimension.disabled_alpha_material_dark = global::Kouch.App.Droid.Resource.Dimension.disabled_alpha_material_dark;
+			global::Plugin.Toasts.Resource.Dimension.disabled_alpha_material_light = global::Kouch.App.Droid.Resource.Dimension.disabled_alpha_material_light;
+			global::Plugin.Toasts.Resource.Dimension.highlight_alpha_material_colored = global::Kouch.App.Droid.Resource.Dimension.highlight_alpha_material_colored;
+			global::Plugin.Toasts.Resource.Dimension.highlight_alpha_material_dark = global::Kouch.App.Droid.Resource.Dimension.highlight_alpha_material_dark;
+			global::Plugin.Toasts.Resource.Dimension.highlight_alpha_material_light = global::Kouch.App.Droid.Resource.Dimension.highlight_alpha_material_light;
+			global::Plugin.Toasts.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::Kouch.App.Droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::Plugin.Toasts.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity = global::Kouch.App.Droid.Resource.Dimension.item_touch_helper_swipe_escape_max_velocity;
+			global::Plugin.Toasts.Resource.Dimension.item_touch_helper_swipe_escape_velocity = global::Kouch.App.Droid.Resource.Dimension.item_touch_helper_swipe_escape_velocity;
+			global::Plugin.Toasts.Resource.Dimension.notification_large_icon_height = global::Kouch.App.Droid.Resource.Dimension.notification_large_icon_height;
+			global::Plugin.Toasts.Resource.Dimension.notification_large_icon_width = global::Kouch.App.Droid.Resource.Dimension.notification_large_icon_width;
+			global::Plugin.Toasts.Resource.Dimension.notification_subtext_size = global::Kouch.App.Droid.Resource.Dimension.notification_subtext_size;
+			global::Plugin.Toasts.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::Kouch.App.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::Plugin.Toasts.Resource.Drawable.abc_action_bar_item_background_material = global::Kouch.App.Droid.Resource.Drawable.abc_action_bar_item_background_material;
+			global::Plugin.Toasts.Resource.Drawable.abc_btn_borderless_material = global::Kouch.App.Droid.Resource.Drawable.abc_btn_borderless_material;
+			global::Plugin.Toasts.Resource.Drawable.abc_btn_check_material = global::Kouch.App.Droid.Resource.Drawable.abc_btn_check_material;
+			global::Plugin.Toasts.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::Kouch.App.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::Plugin.Toasts.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::Kouch.App.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::Plugin.Toasts.Resource.Drawable.abc_btn_colored_material = global::Kouch.App.Droid.Resource.Drawable.abc_btn_colored_material;
+			global::Plugin.Toasts.Resource.Drawable.abc_btn_default_mtrl_shape = global::Kouch.App.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::Plugin.Toasts.Resource.Drawable.abc_btn_radio_material = global::Kouch.App.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::Plugin.Toasts.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::Kouch.App.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::Plugin.Toasts.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::Kouch.App.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::Plugin.Toasts.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::Kouch.App.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::Plugin.Toasts.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::Kouch.App.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::Plugin.Toasts.Resource.Drawable.abc_cab_background_internal_bg = global::Kouch.App.Droid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::Plugin.Toasts.Resource.Drawable.abc_cab_background_top_material = global::Kouch.App.Droid.Resource.Drawable.abc_cab_background_top_material;
+			global::Plugin.Toasts.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::Kouch.App.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::Plugin.Toasts.Resource.Drawable.abc_control_background_material = global::Kouch.App.Droid.Resource.Drawable.abc_control_background_material;
+			global::Plugin.Toasts.Resource.Drawable.abc_edit_text_material = global::Kouch.App.Droid.Resource.Drawable.abc_edit_text_material;
+			global::Plugin.Toasts.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::Kouch.App.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::Plugin.Toasts.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::Kouch.App.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::Plugin.Toasts.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::Kouch.App.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::Plugin.Toasts.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::Kouch.App.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::Plugin.Toasts.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::Kouch.App.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::Plugin.Toasts.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::Kouch.App.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::Plugin.Toasts.Resource.Drawable.abc_ic_star_black_16dp = global::Kouch.App.Droid.Resource.Drawable.abc_ic_star_black_16dp;
+			global::Plugin.Toasts.Resource.Drawable.abc_ic_star_black_36dp = global::Kouch.App.Droid.Resource.Drawable.abc_ic_star_black_36dp;
+			global::Plugin.Toasts.Resource.Drawable.abc_ic_star_half_black_16dp = global::Kouch.App.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::Plugin.Toasts.Resource.Drawable.abc_ic_star_half_black_36dp = global::Kouch.App.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::Plugin.Toasts.Resource.Drawable.abc_item_background_holo_dark = global::Kouch.App.Droid.Resource.Drawable.abc_item_background_holo_dark;
+			global::Plugin.Toasts.Resource.Drawable.abc_item_background_holo_light = global::Kouch.App.Droid.Resource.Drawable.abc_item_background_holo_light;
+			global::Plugin.Toasts.Resource.Drawable.abc_list_divider_mtrl_alpha = global::Kouch.App.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::Plugin.Toasts.Resource.Drawable.abc_list_focused_holo = global::Kouch.App.Droid.Resource.Drawable.abc_list_focused_holo;
+			global::Plugin.Toasts.Resource.Drawable.abc_list_longpressed_holo = global::Kouch.App.Droid.Resource.Drawable.abc_list_longpressed_holo;
+			global::Plugin.Toasts.Resource.Drawable.abc_list_pressed_holo_dark = global::Kouch.App.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::Plugin.Toasts.Resource.Drawable.abc_list_pressed_holo_light = global::Kouch.App.Droid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::Plugin.Toasts.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::Kouch.App.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::Plugin.Toasts.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::Kouch.App.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::Plugin.Toasts.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::Kouch.App.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::Plugin.Toasts.Resource.Drawable.abc_list_selector_disabled_holo_light = global::Kouch.App.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::Plugin.Toasts.Resource.Drawable.abc_list_selector_holo_dark = global::Kouch.App.Droid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::Plugin.Toasts.Resource.Drawable.abc_list_selector_holo_light = global::Kouch.App.Droid.Resource.Drawable.abc_list_selector_holo_light;
+			global::Plugin.Toasts.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::Kouch.App.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::Plugin.Toasts.Resource.Drawable.abc_popup_background_mtrl_mult = global::Kouch.App.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::Plugin.Toasts.Resource.Drawable.abc_ratingbar_indicator_material = global::Kouch.App.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::Plugin.Toasts.Resource.Drawable.abc_ratingbar_small_material = global::Kouch.App.Droid.Resource.Drawable.abc_ratingbar_small_material;
+			global::Plugin.Toasts.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::Kouch.App.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::Plugin.Toasts.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::Kouch.App.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::Plugin.Toasts.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::Kouch.App.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::Plugin.Toasts.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::Kouch.App.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::Plugin.Toasts.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::Kouch.App.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::Plugin.Toasts.Resource.Drawable.abc_seekbar_thumb_material = global::Kouch.App.Droid.Resource.Drawable.abc_seekbar_thumb_material;
+			global::Plugin.Toasts.Resource.Drawable.abc_seekbar_track_material = global::Kouch.App.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::Plugin.Toasts.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::Kouch.App.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::Plugin.Toasts.Resource.Drawable.abc_spinner_textfield_background_material = global::Kouch.App.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::Plugin.Toasts.Resource.Drawable.abc_switch_thumb_material = global::Kouch.App.Droid.Resource.Drawable.abc_switch_thumb_material;
+			global::Plugin.Toasts.Resource.Drawable.abc_switch_track_mtrl_alpha = global::Kouch.App.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::Plugin.Toasts.Resource.Drawable.abc_tab_indicator_material = global::Kouch.App.Droid.Resource.Drawable.abc_tab_indicator_material;
+			global::Plugin.Toasts.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::Kouch.App.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::Plugin.Toasts.Resource.Drawable.abc_text_cursor_material = global::Kouch.App.Droid.Resource.Drawable.abc_text_cursor_material;
+			global::Plugin.Toasts.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::Kouch.App.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::Plugin.Toasts.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::Kouch.App.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::Plugin.Toasts.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::Kouch.App.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::Plugin.Toasts.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::Kouch.App.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::Plugin.Toasts.Resource.Drawable.abc_textfield_search_material = global::Kouch.App.Droid.Resource.Drawable.abc_textfield_search_material;
+			global::Plugin.Toasts.Resource.Drawable.design_fab_background = global::Kouch.App.Droid.Resource.Drawable.design_fab_background;
+			global::Plugin.Toasts.Resource.Drawable.design_snackbar_background = global::Kouch.App.Droid.Resource.Drawable.design_snackbar_background;
+			global::Plugin.Toasts.Resource.Drawable.notification_template_icon_bg = global::Kouch.App.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::Plugin.Toasts.Resource.Id.action0 = global::Kouch.App.Droid.Resource.Id.action0;
+			global::Plugin.Toasts.Resource.Id.action_bar = global::Kouch.App.Droid.Resource.Id.action_bar;
+			global::Plugin.Toasts.Resource.Id.action_bar_activity_content = global::Kouch.App.Droid.Resource.Id.action_bar_activity_content;
+			global::Plugin.Toasts.Resource.Id.action_bar_container = global::Kouch.App.Droid.Resource.Id.action_bar_container;
+			global::Plugin.Toasts.Resource.Id.action_bar_root = global::Kouch.App.Droid.Resource.Id.action_bar_root;
+			global::Plugin.Toasts.Resource.Id.action_bar_spinner = global::Kouch.App.Droid.Resource.Id.action_bar_spinner;
+			global::Plugin.Toasts.Resource.Id.action_bar_subtitle = global::Kouch.App.Droid.Resource.Id.action_bar_subtitle;
+			global::Plugin.Toasts.Resource.Id.action_bar_title = global::Kouch.App.Droid.Resource.Id.action_bar_title;
+			global::Plugin.Toasts.Resource.Id.action_context_bar = global::Kouch.App.Droid.Resource.Id.action_context_bar;
+			global::Plugin.Toasts.Resource.Id.action_divider = global::Kouch.App.Droid.Resource.Id.action_divider;
+			global::Plugin.Toasts.Resource.Id.action_menu_divider = global::Kouch.App.Droid.Resource.Id.action_menu_divider;
+			global::Plugin.Toasts.Resource.Id.action_menu_presenter = global::Kouch.App.Droid.Resource.Id.action_menu_presenter;
+			global::Plugin.Toasts.Resource.Id.action_mode_bar = global::Kouch.App.Droid.Resource.Id.action_mode_bar;
+			global::Plugin.Toasts.Resource.Id.action_mode_bar_stub = global::Kouch.App.Droid.Resource.Id.action_mode_bar_stub;
+			global::Plugin.Toasts.Resource.Id.action_mode_close_button = global::Kouch.App.Droid.Resource.Id.action_mode_close_button;
+			global::Plugin.Toasts.Resource.Id.activity_chooser_view_content = global::Kouch.App.Droid.Resource.Id.activity_chooser_view_content;
+			global::Plugin.Toasts.Resource.Id.alertTitle = global::Kouch.App.Droid.Resource.Id.alertTitle;
+			global::Plugin.Toasts.Resource.Id.always = global::Kouch.App.Droid.Resource.Id.always;
+			global::Plugin.Toasts.Resource.Id.beginning = global::Kouch.App.Droid.Resource.Id.beginning;
+			global::Plugin.Toasts.Resource.Id.bottom = global::Kouch.App.Droid.Resource.Id.bottom;
+			global::Plugin.Toasts.Resource.Id.buttonPanel = global::Kouch.App.Droid.Resource.Id.buttonPanel;
+			global::Plugin.Toasts.Resource.Id.cancel_action = global::Kouch.App.Droid.Resource.Id.cancel_action;
+			global::Plugin.Toasts.Resource.Id.center = global::Kouch.App.Droid.Resource.Id.center;
+			global::Plugin.Toasts.Resource.Id.center_horizontal = global::Kouch.App.Droid.Resource.Id.center_horizontal;
+			global::Plugin.Toasts.Resource.Id.center_vertical = global::Kouch.App.Droid.Resource.Id.center_vertical;
+			global::Plugin.Toasts.Resource.Id.checkbox = global::Kouch.App.Droid.Resource.Id.checkbox;
+			global::Plugin.Toasts.Resource.Id.chronometer = global::Kouch.App.Droid.Resource.Id.chronometer;
+			global::Plugin.Toasts.Resource.Id.clip_horizontal = global::Kouch.App.Droid.Resource.Id.clip_horizontal;
+			global::Plugin.Toasts.Resource.Id.clip_vertical = global::Kouch.App.Droid.Resource.Id.clip_vertical;
+			global::Plugin.Toasts.Resource.Id.collapseActionView = global::Kouch.App.Droid.Resource.Id.collapseActionView;
+			global::Plugin.Toasts.Resource.Id.contentPanel = global::Kouch.App.Droid.Resource.Id.contentPanel;
+			global::Plugin.Toasts.Resource.Id.custom = global::Kouch.App.Droid.Resource.Id.custom;
+			global::Plugin.Toasts.Resource.Id.customPanel = global::Kouch.App.Droid.Resource.Id.customPanel;
+			global::Plugin.Toasts.Resource.Id.decor_content_parent = global::Kouch.App.Droid.Resource.Id.decor_content_parent;
+			global::Plugin.Toasts.Resource.Id.default_activity_button = global::Kouch.App.Droid.Resource.Id.default_activity_button;
+			global::Plugin.Toasts.Resource.Id.design_bottom_sheet = global::Kouch.App.Droid.Resource.Id.design_bottom_sheet;
+			global::Plugin.Toasts.Resource.Id.design_menu_item_action_area = global::Kouch.App.Droid.Resource.Id.design_menu_item_action_area;
+			global::Plugin.Toasts.Resource.Id.design_menu_item_action_area_stub = global::Kouch.App.Droid.Resource.Id.design_menu_item_action_area_stub;
+			global::Plugin.Toasts.Resource.Id.design_menu_item_text = global::Kouch.App.Droid.Resource.Id.design_menu_item_text;
+			global::Plugin.Toasts.Resource.Id.design_navigation_view = global::Kouch.App.Droid.Resource.Id.design_navigation_view;
+			global::Plugin.Toasts.Resource.Id.disableHome = global::Kouch.App.Droid.Resource.Id.disableHome;
+			global::Plugin.Toasts.Resource.Id.edit_query = global::Kouch.App.Droid.Resource.Id.edit_query;
+			global::Plugin.Toasts.Resource.Id.end = global::Kouch.App.Droid.Resource.Id.end;
+			global::Plugin.Toasts.Resource.Id.end_padder = global::Kouch.App.Droid.Resource.Id.end_padder;
+			global::Plugin.Toasts.Resource.Id.enterAlways = global::Kouch.App.Droid.Resource.Id.enterAlways;
+			global::Plugin.Toasts.Resource.Id.enterAlwaysCollapsed = global::Kouch.App.Droid.Resource.Id.enterAlwaysCollapsed;
+			global::Plugin.Toasts.Resource.Id.exitUntilCollapsed = global::Kouch.App.Droid.Resource.Id.exitUntilCollapsed;
+			global::Plugin.Toasts.Resource.Id.expand_activities_button = global::Kouch.App.Droid.Resource.Id.expand_activities_button;
+			global::Plugin.Toasts.Resource.Id.expanded_menu = global::Kouch.App.Droid.Resource.Id.expanded_menu;
+			global::Plugin.Toasts.Resource.Id.fill = global::Kouch.App.Droid.Resource.Id.fill;
+			global::Plugin.Toasts.Resource.Id.fill_horizontal = global::Kouch.App.Droid.Resource.Id.fill_horizontal;
+			global::Plugin.Toasts.Resource.Id.fill_vertical = global::Kouch.App.Droid.Resource.Id.fill_vertical;
+			global::Plugin.Toasts.Resource.Id.@fixed = global::Kouch.App.Droid.Resource.Id.@fixed;
+			global::Plugin.Toasts.Resource.Id.home = global::Kouch.App.Droid.Resource.Id.home;
+			global::Plugin.Toasts.Resource.Id.homeAsUp = global::Kouch.App.Droid.Resource.Id.homeAsUp;
+			global::Plugin.Toasts.Resource.Id.icon = global::Kouch.App.Droid.Resource.Id.icon;
+			global::Plugin.Toasts.Resource.Id.ifRoom = global::Kouch.App.Droid.Resource.Id.ifRoom;
+			global::Plugin.Toasts.Resource.Id.image = global::Kouch.App.Droid.Resource.Id.image;
+			global::Plugin.Toasts.Resource.Id.info = global::Kouch.App.Droid.Resource.Id.info;
+			global::Plugin.Toasts.Resource.Id.item_touch_helper_previous_elevation = global::Kouch.App.Droid.Resource.Id.item_touch_helper_previous_elevation;
+			global::Plugin.Toasts.Resource.Id.left = global::Kouch.App.Droid.Resource.Id.left;
+			global::Plugin.Toasts.Resource.Id.line1 = global::Kouch.App.Droid.Resource.Id.line1;
+			global::Plugin.Toasts.Resource.Id.line3 = global::Kouch.App.Droid.Resource.Id.line3;
+			global::Plugin.Toasts.Resource.Id.listMode = global::Kouch.App.Droid.Resource.Id.listMode;
+			global::Plugin.Toasts.Resource.Id.list_item = global::Kouch.App.Droid.Resource.Id.list_item;
+			global::Plugin.Toasts.Resource.Id.media_actions = global::Kouch.App.Droid.Resource.Id.media_actions;
+			global::Plugin.Toasts.Resource.Id.middle = global::Kouch.App.Droid.Resource.Id.middle;
+			global::Plugin.Toasts.Resource.Id.mini = global::Kouch.App.Droid.Resource.Id.mini;
+			global::Plugin.Toasts.Resource.Id.multiply = global::Kouch.App.Droid.Resource.Id.multiply;
+			global::Plugin.Toasts.Resource.Id.navigation_header_container = global::Kouch.App.Droid.Resource.Id.navigation_header_container;
+			global::Plugin.Toasts.Resource.Id.never = global::Kouch.App.Droid.Resource.Id.never;
+			global::Plugin.Toasts.Resource.Id.none = global::Kouch.App.Droid.Resource.Id.none;
+			global::Plugin.Toasts.Resource.Id.normal = global::Kouch.App.Droid.Resource.Id.normal;
+			global::Plugin.Toasts.Resource.Id.parallax = global::Kouch.App.Droid.Resource.Id.parallax;
+			global::Plugin.Toasts.Resource.Id.parentPanel = global::Kouch.App.Droid.Resource.Id.parentPanel;
+			global::Plugin.Toasts.Resource.Id.pin = global::Kouch.App.Droid.Resource.Id.pin;
+			global::Plugin.Toasts.Resource.Id.progress_circular = global::Kouch.App.Droid.Resource.Id.progress_circular;
+			global::Plugin.Toasts.Resource.Id.progress_horizontal = global::Kouch.App.Droid.Resource.Id.progress_horizontal;
+			global::Plugin.Toasts.Resource.Id.radio = global::Kouch.App.Droid.Resource.Id.radio;
+			global::Plugin.Toasts.Resource.Id.right = global::Kouch.App.Droid.Resource.Id.right;
+			global::Plugin.Toasts.Resource.Id.screen = global::Kouch.App.Droid.Resource.Id.screen;
+			global::Plugin.Toasts.Resource.Id.scroll = global::Kouch.App.Droid.Resource.Id.scroll;
+			global::Plugin.Toasts.Resource.Id.scrollIndicatorDown = global::Kouch.App.Droid.Resource.Id.scrollIndicatorDown;
+			global::Plugin.Toasts.Resource.Id.scrollIndicatorUp = global::Kouch.App.Droid.Resource.Id.scrollIndicatorUp;
+			global::Plugin.Toasts.Resource.Id.scrollView = global::Kouch.App.Droid.Resource.Id.scrollView;
+			global::Plugin.Toasts.Resource.Id.scrollable = global::Kouch.App.Droid.Resource.Id.scrollable;
+			global::Plugin.Toasts.Resource.Id.search_badge = global::Kouch.App.Droid.Resource.Id.search_badge;
+			global::Plugin.Toasts.Resource.Id.search_bar = global::Kouch.App.Droid.Resource.Id.search_bar;
+			global::Plugin.Toasts.Resource.Id.search_button = global::Kouch.App.Droid.Resource.Id.search_button;
+			global::Plugin.Toasts.Resource.Id.search_close_btn = global::Kouch.App.Droid.Resource.Id.search_close_btn;
+			global::Plugin.Toasts.Resource.Id.search_edit_frame = global::Kouch.App.Droid.Resource.Id.search_edit_frame;
+			global::Plugin.Toasts.Resource.Id.search_go_btn = global::Kouch.App.Droid.Resource.Id.search_go_btn;
+			global::Plugin.Toasts.Resource.Id.search_mag_icon = global::Kouch.App.Droid.Resource.Id.search_mag_icon;
+			global::Plugin.Toasts.Resource.Id.search_plate = global::Kouch.App.Droid.Resource.Id.search_plate;
+			global::Plugin.Toasts.Resource.Id.search_src_text = global::Kouch.App.Droid.Resource.Id.search_src_text;
+			global::Plugin.Toasts.Resource.Id.search_voice_btn = global::Kouch.App.Droid.Resource.Id.search_voice_btn;
+			global::Plugin.Toasts.Resource.Id.select_dialog_listview = global::Kouch.App.Droid.Resource.Id.select_dialog_listview;
+			global::Plugin.Toasts.Resource.Id.shortcut = global::Kouch.App.Droid.Resource.Id.shortcut;
+			global::Plugin.Toasts.Resource.Id.showCustom = global::Kouch.App.Droid.Resource.Id.showCustom;
+			global::Plugin.Toasts.Resource.Id.showHome = global::Kouch.App.Droid.Resource.Id.showHome;
+			global::Plugin.Toasts.Resource.Id.showTitle = global::Kouch.App.Droid.Resource.Id.showTitle;
+			global::Plugin.Toasts.Resource.Id.snackbar_action = global::Kouch.App.Droid.Resource.Id.snackbar_action;
+			global::Plugin.Toasts.Resource.Id.snackbar_text = global::Kouch.App.Droid.Resource.Id.snackbar_text;
+			global::Plugin.Toasts.Resource.Id.snap = global::Kouch.App.Droid.Resource.Id.snap;
+			global::Plugin.Toasts.Resource.Id.spacer = global::Kouch.App.Droid.Resource.Id.spacer;
+			global::Plugin.Toasts.Resource.Id.split_action_bar = global::Kouch.App.Droid.Resource.Id.split_action_bar;
+			global::Plugin.Toasts.Resource.Id.src_atop = global::Kouch.App.Droid.Resource.Id.src_atop;
+			global::Plugin.Toasts.Resource.Id.src_in = global::Kouch.App.Droid.Resource.Id.src_in;
+			global::Plugin.Toasts.Resource.Id.src_over = global::Kouch.App.Droid.Resource.Id.src_over;
+			global::Plugin.Toasts.Resource.Id.start = global::Kouch.App.Droid.Resource.Id.start;
+			global::Plugin.Toasts.Resource.Id.status_bar_latest_event_content = global::Kouch.App.Droid.Resource.Id.status_bar_latest_event_content;
+			global::Plugin.Toasts.Resource.Id.submit_area = global::Kouch.App.Droid.Resource.Id.submit_area;
+			global::Plugin.Toasts.Resource.Id.tabMode = global::Kouch.App.Droid.Resource.Id.tabMode;
+			global::Plugin.Toasts.Resource.Id.text = global::Kouch.App.Droid.Resource.Id.text;
+			global::Plugin.Toasts.Resource.Id.text2 = global::Kouch.App.Droid.Resource.Id.text2;
+			global::Plugin.Toasts.Resource.Id.textSpacerNoButtons = global::Kouch.App.Droid.Resource.Id.textSpacerNoButtons;
+			global::Plugin.Toasts.Resource.Id.time = global::Kouch.App.Droid.Resource.Id.time;
+			global::Plugin.Toasts.Resource.Id.title = global::Kouch.App.Droid.Resource.Id.title;
+			global::Plugin.Toasts.Resource.Id.title_template = global::Kouch.App.Droid.Resource.Id.title_template;
+			global::Plugin.Toasts.Resource.Id.top = global::Kouch.App.Droid.Resource.Id.top;
+			global::Plugin.Toasts.Resource.Id.topPanel = global::Kouch.App.Droid.Resource.Id.topPanel;
+			global::Plugin.Toasts.Resource.Id.touch_outside = global::Kouch.App.Droid.Resource.Id.touch_outside;
+			global::Plugin.Toasts.Resource.Id.up = global::Kouch.App.Droid.Resource.Id.up;
+			global::Plugin.Toasts.Resource.Id.useLogo = global::Kouch.App.Droid.Resource.Id.useLogo;
+			global::Plugin.Toasts.Resource.Id.view_offset_helper = global::Kouch.App.Droid.Resource.Id.view_offset_helper;
+			global::Plugin.Toasts.Resource.Id.withText = global::Kouch.App.Droid.Resource.Id.withText;
+			global::Plugin.Toasts.Resource.Id.wrap_content = global::Kouch.App.Droid.Resource.Id.wrap_content;
+			global::Plugin.Toasts.Resource.Integer.abc_config_activityDefaultDur = global::Kouch.App.Droid.Resource.Integer.abc_config_activityDefaultDur;
+			global::Plugin.Toasts.Resource.Integer.abc_config_activityShortDur = global::Kouch.App.Droid.Resource.Integer.abc_config_activityShortDur;
+			global::Plugin.Toasts.Resource.Integer.bottom_sheet_slide_duration = global::Kouch.App.Droid.Resource.Integer.bottom_sheet_slide_duration;
+			global::Plugin.Toasts.Resource.Integer.cancel_button_image_alpha = global::Kouch.App.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::Plugin.Toasts.Resource.Integer.design_snackbar_text_max_lines = global::Kouch.App.Droid.Resource.Integer.design_snackbar_text_max_lines;
+			global::Plugin.Toasts.Resource.Integer.status_bar_notification_info_maxnum = global::Kouch.App.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Plugin.Toasts.Resource.Layout.abc_action_bar_title_item = global::Kouch.App.Droid.Resource.Layout.abc_action_bar_title_item;
+			global::Plugin.Toasts.Resource.Layout.abc_action_bar_up_container = global::Kouch.App.Droid.Resource.Layout.abc_action_bar_up_container;
+			global::Plugin.Toasts.Resource.Layout.abc_action_menu_item_layout = global::Kouch.App.Droid.Resource.Layout.abc_action_menu_item_layout;
+			global::Plugin.Toasts.Resource.Layout.abc_action_menu_layout = global::Kouch.App.Droid.Resource.Layout.abc_action_menu_layout;
+			global::Plugin.Toasts.Resource.Layout.abc_action_mode_bar = global::Kouch.App.Droid.Resource.Layout.abc_action_mode_bar;
+			global::Plugin.Toasts.Resource.Layout.abc_action_mode_close_item_material = global::Kouch.App.Droid.Resource.Layout.abc_action_mode_close_item_material;
+			global::Plugin.Toasts.Resource.Layout.abc_activity_chooser_view = global::Kouch.App.Droid.Resource.Layout.abc_activity_chooser_view;
+			global::Plugin.Toasts.Resource.Layout.abc_activity_chooser_view_list_item = global::Kouch.App.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::Plugin.Toasts.Resource.Layout.abc_alert_dialog_button_bar_material = global::Kouch.App.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::Plugin.Toasts.Resource.Layout.abc_alert_dialog_material = global::Kouch.App.Droid.Resource.Layout.abc_alert_dialog_material;
+			global::Plugin.Toasts.Resource.Layout.abc_dialog_title_material = global::Kouch.App.Droid.Resource.Layout.abc_dialog_title_material;
+			global::Plugin.Toasts.Resource.Layout.abc_expanded_menu_layout = global::Kouch.App.Droid.Resource.Layout.abc_expanded_menu_layout;
+			global::Plugin.Toasts.Resource.Layout.abc_list_menu_item_checkbox = global::Kouch.App.Droid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::Plugin.Toasts.Resource.Layout.abc_list_menu_item_icon = global::Kouch.App.Droid.Resource.Layout.abc_list_menu_item_icon;
+			global::Plugin.Toasts.Resource.Layout.abc_list_menu_item_layout = global::Kouch.App.Droid.Resource.Layout.abc_list_menu_item_layout;
+			global::Plugin.Toasts.Resource.Layout.abc_list_menu_item_radio = global::Kouch.App.Droid.Resource.Layout.abc_list_menu_item_radio;
+			global::Plugin.Toasts.Resource.Layout.abc_popup_menu_item_layout = global::Kouch.App.Droid.Resource.Layout.abc_popup_menu_item_layout;
+			global::Plugin.Toasts.Resource.Layout.abc_screen_content_include = global::Kouch.App.Droid.Resource.Layout.abc_screen_content_include;
+			global::Plugin.Toasts.Resource.Layout.abc_screen_simple = global::Kouch.App.Droid.Resource.Layout.abc_screen_simple;
+			global::Plugin.Toasts.Resource.Layout.abc_screen_simple_overlay_action_mode = global::Kouch.App.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::Plugin.Toasts.Resource.Layout.abc_screen_toolbar = global::Kouch.App.Droid.Resource.Layout.abc_screen_toolbar;
+			global::Plugin.Toasts.Resource.Layout.abc_search_dropdown_item_icons_2line = global::Kouch.App.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::Plugin.Toasts.Resource.Layout.abc_search_view = global::Kouch.App.Droid.Resource.Layout.abc_search_view;
+			global::Plugin.Toasts.Resource.Layout.abc_select_dialog_material = global::Kouch.App.Droid.Resource.Layout.abc_select_dialog_material;
+			global::Plugin.Toasts.Resource.Layout.design_bottom_sheet_dialog = global::Kouch.App.Droid.Resource.Layout.design_bottom_sheet_dialog;
+			global::Plugin.Toasts.Resource.Layout.design_layout_snackbar = global::Kouch.App.Droid.Resource.Layout.design_layout_snackbar;
+			global::Plugin.Toasts.Resource.Layout.design_layout_snackbar_include = global::Kouch.App.Droid.Resource.Layout.design_layout_snackbar_include;
+			global::Plugin.Toasts.Resource.Layout.design_layout_tab_icon = global::Kouch.App.Droid.Resource.Layout.design_layout_tab_icon;
+			global::Plugin.Toasts.Resource.Layout.design_layout_tab_text = global::Kouch.App.Droid.Resource.Layout.design_layout_tab_text;
+			global::Plugin.Toasts.Resource.Layout.design_menu_item_action_area = global::Kouch.App.Droid.Resource.Layout.design_menu_item_action_area;
+			global::Plugin.Toasts.Resource.Layout.design_navigation_item = global::Kouch.App.Droid.Resource.Layout.design_navigation_item;
+			global::Plugin.Toasts.Resource.Layout.design_navigation_item_header = global::Kouch.App.Droid.Resource.Layout.design_navigation_item_header;
+			global::Plugin.Toasts.Resource.Layout.design_navigation_item_separator = global::Kouch.App.Droid.Resource.Layout.design_navigation_item_separator;
+			global::Plugin.Toasts.Resource.Layout.design_navigation_item_subheader = global::Kouch.App.Droid.Resource.Layout.design_navigation_item_subheader;
+			global::Plugin.Toasts.Resource.Layout.design_navigation_menu = global::Kouch.App.Droid.Resource.Layout.design_navigation_menu;
+			global::Plugin.Toasts.Resource.Layout.design_navigation_menu_item = global::Kouch.App.Droid.Resource.Layout.design_navigation_menu_item;
+			global::Plugin.Toasts.Resource.Layout.notification_media_action = global::Kouch.App.Droid.Resource.Layout.notification_media_action;
+			global::Plugin.Toasts.Resource.Layout.notification_media_cancel_action = global::Kouch.App.Droid.Resource.Layout.notification_media_cancel_action;
+			global::Plugin.Toasts.Resource.Layout.notification_template_big_media = global::Kouch.App.Droid.Resource.Layout.notification_template_big_media;
+			global::Plugin.Toasts.Resource.Layout.notification_template_big_media_narrow = global::Kouch.App.Droid.Resource.Layout.notification_template_big_media_narrow;
+			global::Plugin.Toasts.Resource.Layout.notification_template_media = global::Kouch.App.Droid.Resource.Layout.notification_template_media;
+			global::Plugin.Toasts.Resource.Layout.notification_template_part_chronometer = global::Kouch.App.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::Plugin.Toasts.Resource.Layout.notification_template_part_time = global::Kouch.App.Droid.Resource.Layout.notification_template_part_time;
+			global::Plugin.Toasts.Resource.Layout.select_dialog_item_material = global::Kouch.App.Droid.Resource.Layout.select_dialog_item_material;
+			global::Plugin.Toasts.Resource.Layout.select_dialog_multichoice_material = global::Kouch.App.Droid.Resource.Layout.select_dialog_multichoice_material;
+			global::Plugin.Toasts.Resource.Layout.select_dialog_singlechoice_material = global::Kouch.App.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::Plugin.Toasts.Resource.Layout.support_simple_spinner_dropdown_item = global::Kouch.App.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::Plugin.Toasts.Resource.String.ApplicationName = global::Kouch.App.Droid.Resource.String.ApplicationName;
+			global::Plugin.Toasts.Resource.String.Hello = global::Kouch.App.Droid.Resource.String.Hello;
+			global::Plugin.Toasts.Resource.String.abc_action_bar_home_description = global::Kouch.App.Droid.Resource.String.abc_action_bar_home_description;
+			global::Plugin.Toasts.Resource.String.abc_action_bar_up_description = global::Kouch.App.Droid.Resource.String.abc_action_bar_up_description;
+			global::Plugin.Toasts.Resource.String.abc_action_menu_overflow_description = global::Kouch.App.Droid.Resource.String.abc_action_menu_overflow_description;
+			global::Plugin.Toasts.Resource.String.abc_action_mode_done = global::Kouch.App.Droid.Resource.String.abc_action_mode_done;
+			global::Plugin.Toasts.Resource.String.abc_activity_chooser_view_see_all = global::Kouch.App.Droid.Resource.String.abc_activity_chooser_view_see_all;
+			global::Plugin.Toasts.Resource.String.abc_activitychooserview_choose_application = global::Kouch.App.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::Plugin.Toasts.Resource.String.abc_capital_off = global::Kouch.App.Droid.Resource.String.abc_capital_off;
+			global::Plugin.Toasts.Resource.String.abc_capital_on = global::Kouch.App.Droid.Resource.String.abc_capital_on;
+			global::Plugin.Toasts.Resource.String.abc_search_hint = global::Kouch.App.Droid.Resource.String.abc_search_hint;
+			global::Plugin.Toasts.Resource.String.abc_searchview_description_clear = global::Kouch.App.Droid.Resource.String.abc_searchview_description_clear;
+			global::Plugin.Toasts.Resource.String.abc_searchview_description_query = global::Kouch.App.Droid.Resource.String.abc_searchview_description_query;
+			global::Plugin.Toasts.Resource.String.abc_searchview_description_search = global::Kouch.App.Droid.Resource.String.abc_searchview_description_search;
+			global::Plugin.Toasts.Resource.String.abc_searchview_description_submit = global::Kouch.App.Droid.Resource.String.abc_searchview_description_submit;
+			global::Plugin.Toasts.Resource.String.abc_searchview_description_voice = global::Kouch.App.Droid.Resource.String.abc_searchview_description_voice;
+			global::Plugin.Toasts.Resource.String.abc_shareactionprovider_share_with = global::Kouch.App.Droid.Resource.String.abc_shareactionprovider_share_with;
+			global::Plugin.Toasts.Resource.String.abc_shareactionprovider_share_with_application = global::Kouch.App.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::Plugin.Toasts.Resource.String.abc_toolbar_collapse_description = global::Kouch.App.Droid.Resource.String.abc_toolbar_collapse_description;
+			global::Plugin.Toasts.Resource.String.appbar_scrolling_view_behavior = global::Kouch.App.Droid.Resource.String.appbar_scrolling_view_behavior;
+			global::Plugin.Toasts.Resource.String.bottom_sheet_behavior = global::Kouch.App.Droid.Resource.String.bottom_sheet_behavior;
+			global::Plugin.Toasts.Resource.String.character_counter_pattern = global::Kouch.App.Droid.Resource.String.character_counter_pattern;
+			global::Plugin.Toasts.Resource.String.status_bar_notification_info_overflow = global::Kouch.App.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::Plugin.Toasts.Resource.Style.AlertDialog_AppCompat = global::Kouch.App.Droid.Resource.Style.AlertDialog_AppCompat;
+			global::Plugin.Toasts.Resource.Style.AlertDialog_AppCompat_Light = global::Kouch.App.Droid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::Plugin.Toasts.Resource.Style.Animation_AppCompat_Dialog = global::Kouch.App.Droid.Resource.Style.Animation_AppCompat_Dialog;
+			global::Plugin.Toasts.Resource.Style.Animation_AppCompat_DropDownUp = global::Kouch.App.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::Plugin.Toasts.Resource.Style.Animation_Design_BottomSheetDialog = global::Kouch.App.Droid.Resource.Style.Animation_Design_BottomSheetDialog;
+			global::Plugin.Toasts.Resource.Style.Base_AlertDialog_AppCompat = global::Kouch.App.Droid.Resource.Style.Base_AlertDialog_AppCompat;
+			global::Plugin.Toasts.Resource.Style.Base_AlertDialog_AppCompat_Light = global::Kouch.App.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::Plugin.Toasts.Resource.Style.Base_Animation_AppCompat_Dialog = global::Kouch.App.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::Plugin.Toasts.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::Kouch.App.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::Plugin.Toasts.Resource.Style.Base_DialogWindowTitle_AppCompat = global::Kouch.App.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::Plugin.Toasts.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::Kouch.App.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Button = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Large = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Small = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Title = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Plugin.Toasts.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::Kouch.App.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Plugin.Toasts.Resource.Style.Base_Theme_AppCompat = global::Kouch.App.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::Plugin.Toasts.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::Kouch.App.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::Plugin.Toasts.Resource.Style.Base_Theme_AppCompat_Dialog = global::Kouch.App.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::Plugin.Toasts.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::Kouch.App.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::Plugin.Toasts.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::Kouch.App.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::Plugin.Toasts.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::Kouch.App.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::Plugin.Toasts.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::Kouch.App.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::Plugin.Toasts.Resource.Style.Base_Theme_AppCompat_Light = global::Kouch.App.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::Plugin.Toasts.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::Kouch.App.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::Plugin.Toasts.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::Kouch.App.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::Plugin.Toasts.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::Kouch.App.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::Plugin.Toasts.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::Kouch.App.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::Plugin.Toasts.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::Kouch.App.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Plugin.Toasts.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::Kouch.App.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::Plugin.Toasts.Resource.Style.Base_ThemeOverlay_AppCompat = global::Kouch.App.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::Plugin.Toasts.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::Kouch.App.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::Plugin.Toasts.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::Kouch.App.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::Plugin.Toasts.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::Kouch.App.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Plugin.Toasts.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::Kouch.App.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::Plugin.Toasts.Resource.Style.Base_V21_Theme_AppCompat = global::Kouch.App.Droid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::Plugin.Toasts.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::Kouch.App.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::Plugin.Toasts.Resource.Style.Base_V21_Theme_AppCompat_Light = global::Kouch.App.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::Plugin.Toasts.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::Kouch.App.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::Plugin.Toasts.Resource.Style.Base_V22_Theme_AppCompat = global::Kouch.App.Droid.Resource.Style.Base_V22_Theme_AppCompat;
+			global::Plugin.Toasts.Resource.Style.Base_V22_Theme_AppCompat_Light = global::Kouch.App.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::Plugin.Toasts.Resource.Style.Base_V23_Theme_AppCompat = global::Kouch.App.Droid.Resource.Style.Base_V23_Theme_AppCompat;
+			global::Plugin.Toasts.Resource.Style.Base_V23_Theme_AppCompat_Light = global::Kouch.App.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::Plugin.Toasts.Resource.Style.Base_V7_Theme_AppCompat = global::Kouch.App.Droid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::Plugin.Toasts.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::Kouch.App.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::Plugin.Toasts.Resource.Style.Base_V7_Theme_AppCompat_Light = global::Kouch.App.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::Plugin.Toasts.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::Kouch.App.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::Plugin.Toasts.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::Kouch.App.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::Plugin.Toasts.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::Kouch.App.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_ActionBar = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_ActionButton = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_ActionMode = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_Button = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_Button_Small = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_EditText = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_ImageButton = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_ListView = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_RatingBar = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_SearchView = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_SeekBar = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_Spinner = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_Toolbar = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::Kouch.App.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Plugin.Toasts.Resource.Style.Base_Widget_Design_TabLayout = global::Kouch.App.Droid.Resource.Style.Base_Widget_Design_TabLayout;
+			global::Plugin.Toasts.Resource.Style.Platform_AppCompat = global::Kouch.App.Droid.Resource.Style.Platform_AppCompat;
+			global::Plugin.Toasts.Resource.Style.Platform_AppCompat_Light = global::Kouch.App.Droid.Resource.Style.Platform_AppCompat_Light;
+			global::Plugin.Toasts.Resource.Style.Platform_ThemeOverlay_AppCompat = global::Kouch.App.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::Plugin.Toasts.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::Kouch.App.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::Plugin.Toasts.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::Kouch.App.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::Plugin.Toasts.Resource.Style.Platform_Widget_AppCompat_Spinner = global::Kouch.App.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::Plugin.Toasts.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::Kouch.App.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::Plugin.Toasts.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::Kouch.App.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::Plugin.Toasts.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::Kouch.App.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::Plugin.Toasts.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::Kouch.App.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::Plugin.Toasts.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::Kouch.App.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::Plugin.Toasts.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::Kouch.App.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::Plugin.Toasts.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::Kouch.App.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::Plugin.Toasts.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::Kouch.App.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::Plugin.Toasts.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::Kouch.App.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::Plugin.Toasts.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::Kouch.App.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::Plugin.Toasts.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::Kouch.App.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::Plugin.Toasts.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::Kouch.App.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::Plugin.Toasts.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::Kouch.App.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::Plugin.Toasts.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::Kouch.App.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Body1 = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Body2 = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Button = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Caption = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Display1 = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Display2 = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Display3 = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Display4 = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Headline = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Inverse = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Large = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Medium = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Menu = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Small = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Subhead = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Title = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Kouch.App.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded = global::Kouch.App.Droid.Resource.Style.TextAppearance_Design_CollapsingToolbar_Expanded;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_Design_Counter = global::Kouch.App.Droid.Resource.Style.TextAppearance_Design_Counter;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_Design_Counter_Overflow = global::Kouch.App.Droid.Resource.Style.TextAppearance_Design_Counter_Overflow;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_Design_Error = global::Kouch.App.Droid.Resource.Style.TextAppearance_Design_Error;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_Design_Hint = global::Kouch.App.Droid.Resource.Style.TextAppearance_Design_Hint;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_Design_Snackbar_Message = global::Kouch.App.Droid.Resource.Style.TextAppearance_Design_Snackbar_Message;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_Design_Tab = global::Kouch.App.Droid.Resource.Style.TextAppearance_Design_Tab;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Kouch.App.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Kouch.App.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Plugin.Toasts.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::Kouch.App.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Plugin.Toasts.Resource.Style.Theme_AppCompat = global::Kouch.App.Droid.Resource.Style.Theme_AppCompat;
+			global::Plugin.Toasts.Resource.Style.Theme_AppCompat_CompactMenu = global::Kouch.App.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::Plugin.Toasts.Resource.Style.Theme_AppCompat_DayNight = global::Kouch.App.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::Plugin.Toasts.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::Kouch.App.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::Plugin.Toasts.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::Kouch.App.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::Plugin.Toasts.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::Kouch.App.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::Plugin.Toasts.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::Kouch.App.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::Plugin.Toasts.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::Kouch.App.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::Plugin.Toasts.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::Kouch.App.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::Plugin.Toasts.Resource.Style.Theme_AppCompat_Dialog = global::Kouch.App.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::Plugin.Toasts.Resource.Style.Theme_AppCompat_Dialog_Alert = global::Kouch.App.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::Plugin.Toasts.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::Kouch.App.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::Plugin.Toasts.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::Kouch.App.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::Plugin.Toasts.Resource.Style.Theme_AppCompat_Light = global::Kouch.App.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::Plugin.Toasts.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::Kouch.App.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::Plugin.Toasts.Resource.Style.Theme_AppCompat_Light_Dialog = global::Kouch.App.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::Plugin.Toasts.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::Kouch.App.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::Plugin.Toasts.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::Kouch.App.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Plugin.Toasts.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::Kouch.App.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::Plugin.Toasts.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::Kouch.App.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::Plugin.Toasts.Resource.Style.Theme_AppCompat_NoActionBar = global::Kouch.App.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::Plugin.Toasts.Resource.Style.Theme_Design = global::Kouch.App.Droid.Resource.Style.Theme_Design;
+			global::Plugin.Toasts.Resource.Style.Theme_Design_BottomSheetDialog = global::Kouch.App.Droid.Resource.Style.Theme_Design_BottomSheetDialog;
+			global::Plugin.Toasts.Resource.Style.Theme_Design_Light = global::Kouch.App.Droid.Resource.Style.Theme_Design_Light;
+			global::Plugin.Toasts.Resource.Style.Theme_Design_Light_BottomSheetDialog = global::Kouch.App.Droid.Resource.Style.Theme_Design_Light_BottomSheetDialog;
+			global::Plugin.Toasts.Resource.Style.Theme_Design_Light_NoActionBar = global::Kouch.App.Droid.Resource.Style.Theme_Design_Light_NoActionBar;
+			global::Plugin.Toasts.Resource.Style.Theme_Design_NoActionBar = global::Kouch.App.Droid.Resource.Style.Theme_Design_NoActionBar;
+			global::Plugin.Toasts.Resource.Style.ThemeOverlay_AppCompat = global::Kouch.App.Droid.Resource.Style.ThemeOverlay_AppCompat;
+			global::Plugin.Toasts.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::Kouch.App.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::Plugin.Toasts.Resource.Style.ThemeOverlay_AppCompat_Dark = global::Kouch.App.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::Plugin.Toasts.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::Kouch.App.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Plugin.Toasts.Resource.Style.ThemeOverlay_AppCompat_Light = global::Kouch.App.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_ActionBar = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_ActionButton = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_ActionMode = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_ActivityChooserView = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Button = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Button_Borderless = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Button_Colored = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Button_Small = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Button_Small;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_ButtonBar = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_EditText = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_EditText;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_ImageButton = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_ImageButton;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Light_ActionBar = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Light_ActionButton = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Light_SearchView = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_ListPopupWindow = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_ListView = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_ListView;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_ListView_DropDown = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_ListView_Menu = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_PopupMenu = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_PopupWindow = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_ProgressBar = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_RatingBar = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_RatingBar;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_RatingBar_Small = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_SearchView = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_SearchView;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_SeekBar = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_SeekBar;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Spinner = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Spinner;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Toolbar = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::Plugin.Toasts.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::Kouch.App.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Plugin.Toasts.Resource.Style.Widget_Design_AppBarLayout = global::Kouch.App.Droid.Resource.Style.Widget_Design_AppBarLayout;
+			global::Plugin.Toasts.Resource.Style.Widget_Design_BottomSheet_Modal = global::Kouch.App.Droid.Resource.Style.Widget_Design_BottomSheet_Modal;
+			global::Plugin.Toasts.Resource.Style.Widget_Design_CollapsingToolbar = global::Kouch.App.Droid.Resource.Style.Widget_Design_CollapsingToolbar;
+			global::Plugin.Toasts.Resource.Style.Widget_Design_FloatingActionButton = global::Kouch.App.Droid.Resource.Style.Widget_Design_FloatingActionButton;
+			global::Plugin.Toasts.Resource.Style.Widget_Design_NavigationView = global::Kouch.App.Droid.Resource.Style.Widget_Design_NavigationView;
+			global::Plugin.Toasts.Resource.Style.Widget_Design_ScrimInsetsFrameLayout = global::Kouch.App.Droid.Resource.Style.Widget_Design_ScrimInsetsFrameLayout;
+			global::Plugin.Toasts.Resource.Style.Widget_Design_Snackbar = global::Kouch.App.Droid.Resource.Style.Widget_Design_Snackbar;
+			global::Plugin.Toasts.Resource.Style.Widget_Design_TabLayout = global::Kouch.App.Droid.Resource.Style.Widget_Design_TabLayout;
+			global::Plugin.Toasts.Resource.Style.Widget_Design_TextInputLayout = global::Kouch.App.Droid.Resource.Style.Widget_Design_TextInputLayout;
+			global::Plugin.Toasts.Resource.Styleable.ActionBar = global::Kouch.App.Droid.Resource.Styleable.ActionBar;
+			global::Plugin.Toasts.Resource.Styleable.ActionBar_background = global::Kouch.App.Droid.Resource.Styleable.ActionBar_background;
+			global::Plugin.Toasts.Resource.Styleable.ActionBar_backgroundSplit = global::Kouch.App.Droid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::Plugin.Toasts.Resource.Styleable.ActionBar_backgroundStacked = global::Kouch.App.Droid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::Plugin.Toasts.Resource.Styleable.ActionBar_contentInsetEnd = global::Kouch.App.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::Plugin.Toasts.Resource.Styleable.ActionBar_contentInsetLeft = global::Kouch.App.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::Plugin.Toasts.Resource.Styleable.ActionBar_contentInsetRight = global::Kouch.App.Droid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::Plugin.Toasts.Resource.Styleable.ActionBar_contentInsetStart = global::Kouch.App.Droid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::Plugin.Toasts.Resource.Styleable.ActionBar_customNavigationLayout = global::Kouch.App.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::Plugin.Toasts.Resource.Styleable.ActionBar_displayOptions = global::Kouch.App.Droid.Resource.Styleable.ActionBar_displayOptions;
+			global::Plugin.Toasts.Resource.Styleable.ActionBar_divider = global::Kouch.App.Droid.Resource.Styleable.ActionBar_divider;
+			global::Plugin.Toasts.Resource.Styleable.ActionBar_elevation = global::Kouch.App.Droid.Resource.Styleable.ActionBar_elevation;
+			global::Plugin.Toasts.Resource.Styleable.ActionBar_height = global::Kouch.App.Droid.Resource.Styleable.ActionBar_height;
+			global::Plugin.Toasts.Resource.Styleable.ActionBar_hideOnContentScroll = global::Kouch.App.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::Plugin.Toasts.Resource.Styleable.ActionBar_homeAsUpIndicator = global::Kouch.App.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::Plugin.Toasts.Resource.Styleable.ActionBar_homeLayout = global::Kouch.App.Droid.Resource.Styleable.ActionBar_homeLayout;
+			global::Plugin.Toasts.Resource.Styleable.ActionBar_icon = global::Kouch.App.Droid.Resource.Styleable.ActionBar_icon;
+			global::Plugin.Toasts.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::Kouch.App.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::Plugin.Toasts.Resource.Styleable.ActionBar_itemPadding = global::Kouch.App.Droid.Resource.Styleable.ActionBar_itemPadding;
+			global::Plugin.Toasts.Resource.Styleable.ActionBar_logo = global::Kouch.App.Droid.Resource.Styleable.ActionBar_logo;
+			global::Plugin.Toasts.Resource.Styleable.ActionBar_navigationMode = global::Kouch.App.Droid.Resource.Styleable.ActionBar_navigationMode;
+			global::Plugin.Toasts.Resource.Styleable.ActionBar_popupTheme = global::Kouch.App.Droid.Resource.Styleable.ActionBar_popupTheme;
+			global::Plugin.Toasts.Resource.Styleable.ActionBar_progressBarPadding = global::Kouch.App.Droid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::Plugin.Toasts.Resource.Styleable.ActionBar_progressBarStyle = global::Kouch.App.Droid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::Plugin.Toasts.Resource.Styleable.ActionBar_subtitle = global::Kouch.App.Droid.Resource.Styleable.ActionBar_subtitle;
+			global::Plugin.Toasts.Resource.Styleable.ActionBar_subtitleTextStyle = global::Kouch.App.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::Plugin.Toasts.Resource.Styleable.ActionBar_title = global::Kouch.App.Droid.Resource.Styleable.ActionBar_title;
+			global::Plugin.Toasts.Resource.Styleable.ActionBar_titleTextStyle = global::Kouch.App.Droid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::Plugin.Toasts.Resource.Styleable.ActionBarLayout = global::Kouch.App.Droid.Resource.Styleable.ActionBarLayout;
+			global::Plugin.Toasts.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::Kouch.App.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::Plugin.Toasts.Resource.Styleable.ActionMenuItemView = global::Kouch.App.Droid.Resource.Styleable.ActionMenuItemView;
+			global::Plugin.Toasts.Resource.Styleable.ActionMenuItemView_android_minWidth = global::Kouch.App.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::Plugin.Toasts.Resource.Styleable.ActionMenuView = global::Kouch.App.Droid.Resource.Styleable.ActionMenuView;
+			global::Plugin.Toasts.Resource.Styleable.ActionMode = global::Kouch.App.Droid.Resource.Styleable.ActionMode;
+			global::Plugin.Toasts.Resource.Styleable.ActionMode_background = global::Kouch.App.Droid.Resource.Styleable.ActionMode_background;
+			global::Plugin.Toasts.Resource.Styleable.ActionMode_backgroundSplit = global::Kouch.App.Droid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::Plugin.Toasts.Resource.Styleable.ActionMode_closeItemLayout = global::Kouch.App.Droid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::Plugin.Toasts.Resource.Styleable.ActionMode_height = global::Kouch.App.Droid.Resource.Styleable.ActionMode_height;
+			global::Plugin.Toasts.Resource.Styleable.ActionMode_subtitleTextStyle = global::Kouch.App.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::Plugin.Toasts.Resource.Styleable.ActionMode_titleTextStyle = global::Kouch.App.Droid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::Plugin.Toasts.Resource.Styleable.ActivityChooserView = global::Kouch.App.Droid.Resource.Styleable.ActivityChooserView;
+			global::Plugin.Toasts.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::Kouch.App.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::Plugin.Toasts.Resource.Styleable.ActivityChooserView_initialActivityCount = global::Kouch.App.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::Plugin.Toasts.Resource.Styleable.AlertDialog = global::Kouch.App.Droid.Resource.Styleable.AlertDialog;
+			global::Plugin.Toasts.Resource.Styleable.AlertDialog_android_layout = global::Kouch.App.Droid.Resource.Styleable.AlertDialog_android_layout;
+			global::Plugin.Toasts.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::Kouch.App.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::Plugin.Toasts.Resource.Styleable.AlertDialog_listItemLayout = global::Kouch.App.Droid.Resource.Styleable.AlertDialog_listItemLayout;
+			global::Plugin.Toasts.Resource.Styleable.AlertDialog_listLayout = global::Kouch.App.Droid.Resource.Styleable.AlertDialog_listLayout;
+			global::Plugin.Toasts.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::Kouch.App.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::Plugin.Toasts.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::Kouch.App.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::Plugin.Toasts.Resource.Styleable.AppBarLayout = global::Kouch.App.Droid.Resource.Styleable.AppBarLayout;
+			global::Plugin.Toasts.Resource.Styleable.AppBarLayout_android_background = global::Kouch.App.Droid.Resource.Styleable.AppBarLayout_android_background;
+			global::Plugin.Toasts.Resource.Styleable.AppBarLayout_elevation = global::Kouch.App.Droid.Resource.Styleable.AppBarLayout_elevation;
+			global::Plugin.Toasts.Resource.Styleable.AppBarLayout_expanded = global::Kouch.App.Droid.Resource.Styleable.AppBarLayout_expanded;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatImageView = global::Kouch.App.Droid.Resource.Styleable.AppCompatImageView;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatImageView_android_src = global::Kouch.App.Droid.Resource.Styleable.AppCompatImageView_android_src;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatImageView_srcCompat = global::Kouch.App.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTextView = global::Kouch.App.Droid.Resource.Styleable.AppCompatTextView;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTextView_android_textAppearance = global::Kouch.App.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTextView_textAllCaps = global::Kouch.App.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_actionBarDivider = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_actionBarSize = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_actionBarStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_actionBarTheme = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_actionModeBackground = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_actionModeStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_buttonStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_checkboxStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_colorAccent = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_colorControlActivated = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_colorControlNormal = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_colorPrimary = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_controlBackground = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_dialogTheme = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_dividerVertical = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_editTextBackground = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_editTextColor = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_editTextStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_panelBackground = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_searchViewStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_seekBarStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_spinnerStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_switchStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_toolbarStyle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_windowActionBar = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::Plugin.Toasts.Resource.Styleable.AppCompatTheme_windowNoTitle = global::Kouch.App.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::Plugin.Toasts.Resource.Styleable.ButtonBarLayout = global::Kouch.App.Droid.Resource.Styleable.ButtonBarLayout;
+			global::Plugin.Toasts.Resource.Styleable.ButtonBarLayout_allowStacking = global::Kouch.App.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::Plugin.Toasts.Resource.Styleable.CollapsingToolbarLayout = global::Kouch.App.Droid.Resource.Styleable.CollapsingToolbarLayout;
+			global::Plugin.Toasts.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity = global::Kouch.App.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleGravity;
+			global::Plugin.Toasts.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance = global::Kouch.App.Droid.Resource.Styleable.CollapsingToolbarLayout_collapsedTitleTextAppearance;
+			global::Plugin.Toasts.Resource.Styleable.CollapsingToolbarLayout_contentScrim = global::Kouch.App.Droid.Resource.Styleable.CollapsingToolbarLayout_contentScrim;
+			global::Plugin.Toasts.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity = global::Kouch.App.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleGravity;
+			global::Plugin.Toasts.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin = global::Kouch.App.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMargin;
+			global::Plugin.Toasts.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom = global::Kouch.App.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginBottom;
+			global::Plugin.Toasts.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd = global::Kouch.App.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginEnd;
+			global::Plugin.Toasts.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart = global::Kouch.App.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginStart;
+			global::Plugin.Toasts.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop = global::Kouch.App.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleMarginTop;
+			global::Plugin.Toasts.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance = global::Kouch.App.Droid.Resource.Styleable.CollapsingToolbarLayout_expandedTitleTextAppearance;
+			global::Plugin.Toasts.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim = global::Kouch.App.Droid.Resource.Styleable.CollapsingToolbarLayout_statusBarScrim;
+			global::Plugin.Toasts.Resource.Styleable.CollapsingToolbarLayout_title = global::Kouch.App.Droid.Resource.Styleable.CollapsingToolbarLayout_title;
+			global::Plugin.Toasts.Resource.Styleable.CollapsingToolbarLayout_titleEnabled = global::Kouch.App.Droid.Resource.Styleable.CollapsingToolbarLayout_titleEnabled;
+			global::Plugin.Toasts.Resource.Styleable.CollapsingToolbarLayout_toolbarId = global::Kouch.App.Droid.Resource.Styleable.CollapsingToolbarLayout_toolbarId;
+			global::Plugin.Toasts.Resource.Styleable.CompoundButton = global::Kouch.App.Droid.Resource.Styleable.CompoundButton;
+			global::Plugin.Toasts.Resource.Styleable.CompoundButton_android_button = global::Kouch.App.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::Plugin.Toasts.Resource.Styleable.CompoundButton_buttonTint = global::Kouch.App.Droid.Resource.Styleable.CompoundButton_buttonTint;
+			global::Plugin.Toasts.Resource.Styleable.CompoundButton_buttonTintMode = global::Kouch.App.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::Plugin.Toasts.Resource.Styleable.CoordinatorLayout = global::Kouch.App.Droid.Resource.Styleable.CoordinatorLayout;
+			global::Plugin.Toasts.Resource.Styleable.CoordinatorLayout_keylines = global::Kouch.App.Droid.Resource.Styleable.CoordinatorLayout_keylines;
+			global::Plugin.Toasts.Resource.Styleable.CoordinatorLayout_statusBarBackground = global::Kouch.App.Droid.Resource.Styleable.CoordinatorLayout_statusBarBackground;
+			global::Plugin.Toasts.Resource.Styleable.DesignTheme = global::Kouch.App.Droid.Resource.Styleable.DesignTheme;
+			global::Plugin.Toasts.Resource.Styleable.DesignTheme_bottomSheetDialogTheme = global::Kouch.App.Droid.Resource.Styleable.DesignTheme_bottomSheetDialogTheme;
+			global::Plugin.Toasts.Resource.Styleable.DesignTheme_bottomSheetStyle = global::Kouch.App.Droid.Resource.Styleable.DesignTheme_bottomSheetStyle;
+			global::Plugin.Toasts.Resource.Styleable.DrawerArrowToggle = global::Kouch.App.Droid.Resource.Styleable.DrawerArrowToggle;
+			global::Plugin.Toasts.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::Kouch.App.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::Plugin.Toasts.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::Kouch.App.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::Plugin.Toasts.Resource.Styleable.DrawerArrowToggle_barLength = global::Kouch.App.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::Plugin.Toasts.Resource.Styleable.DrawerArrowToggle_color = global::Kouch.App.Droid.Resource.Styleable.DrawerArrowToggle_color;
+			global::Plugin.Toasts.Resource.Styleable.DrawerArrowToggle_drawableSize = global::Kouch.App.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::Plugin.Toasts.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::Kouch.App.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::Plugin.Toasts.Resource.Styleable.DrawerArrowToggle_spinBars = global::Kouch.App.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::Plugin.Toasts.Resource.Styleable.DrawerArrowToggle_thickness = global::Kouch.App.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::Plugin.Toasts.Resource.Styleable.FloatingActionButton = global::Kouch.App.Droid.Resource.Styleable.FloatingActionButton;
+			global::Plugin.Toasts.Resource.Styleable.FloatingActionButton_backgroundTint = global::Kouch.App.Droid.Resource.Styleable.FloatingActionButton_backgroundTint;
+			global::Plugin.Toasts.Resource.Styleable.FloatingActionButton_backgroundTintMode = global::Kouch.App.Droid.Resource.Styleable.FloatingActionButton_backgroundTintMode;
+			global::Plugin.Toasts.Resource.Styleable.FloatingActionButton_borderWidth = global::Kouch.App.Droid.Resource.Styleable.FloatingActionButton_borderWidth;
+			global::Plugin.Toasts.Resource.Styleable.FloatingActionButton_elevation = global::Kouch.App.Droid.Resource.Styleable.FloatingActionButton_elevation;
+			global::Plugin.Toasts.Resource.Styleable.FloatingActionButton_fabSize = global::Kouch.App.Droid.Resource.Styleable.FloatingActionButton_fabSize;
+			global::Plugin.Toasts.Resource.Styleable.FloatingActionButton_pressedTranslationZ = global::Kouch.App.Droid.Resource.Styleable.FloatingActionButton_pressedTranslationZ;
+			global::Plugin.Toasts.Resource.Styleable.FloatingActionButton_rippleColor = global::Kouch.App.Droid.Resource.Styleable.FloatingActionButton_rippleColor;
+			global::Plugin.Toasts.Resource.Styleable.FloatingActionButton_useCompatPadding = global::Kouch.App.Droid.Resource.Styleable.FloatingActionButton_useCompatPadding;
+			global::Plugin.Toasts.Resource.Styleable.ForegroundLinearLayout = global::Kouch.App.Droid.Resource.Styleable.ForegroundLinearLayout;
+			global::Plugin.Toasts.Resource.Styleable.ForegroundLinearLayout_android_foreground = global::Kouch.App.Droid.Resource.Styleable.ForegroundLinearLayout_android_foreground;
+			global::Plugin.Toasts.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity = global::Kouch.App.Droid.Resource.Styleable.ForegroundLinearLayout_android_foregroundGravity;
+			global::Plugin.Toasts.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding = global::Kouch.App.Droid.Resource.Styleable.ForegroundLinearLayout_foregroundInsidePadding;
+			global::Plugin.Toasts.Resource.Styleable.LinearLayoutCompat = global::Kouch.App.Droid.Resource.Styleable.LinearLayoutCompat;
+			global::Plugin.Toasts.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::Kouch.App.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::Plugin.Toasts.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::Kouch.App.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::Plugin.Toasts.Resource.Styleable.LinearLayoutCompat_android_gravity = global::Kouch.App.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::Plugin.Toasts.Resource.Styleable.LinearLayoutCompat_android_orientation = global::Kouch.App.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::Plugin.Toasts.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::Kouch.App.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::Plugin.Toasts.Resource.Styleable.LinearLayoutCompat_divider = global::Kouch.App.Droid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::Plugin.Toasts.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::Kouch.App.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::Plugin.Toasts.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::Kouch.App.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::Plugin.Toasts.Resource.Styleable.LinearLayoutCompat_showDividers = global::Kouch.App.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::Plugin.Toasts.Resource.Styleable.LinearLayoutCompat_Layout = global::Kouch.App.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::Plugin.Toasts.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::Kouch.App.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::Plugin.Toasts.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::Kouch.App.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::Plugin.Toasts.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::Kouch.App.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::Plugin.Toasts.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::Kouch.App.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::Plugin.Toasts.Resource.Styleable.ListPopupWindow = global::Kouch.App.Droid.Resource.Styleable.ListPopupWindow;
+			global::Plugin.Toasts.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::Kouch.App.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::Plugin.Toasts.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::Kouch.App.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::Plugin.Toasts.Resource.Styleable.MenuGroup = global::Kouch.App.Droid.Resource.Styleable.MenuGroup;
+			global::Plugin.Toasts.Resource.Styleable.MenuGroup_android_checkableBehavior = global::Kouch.App.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::Plugin.Toasts.Resource.Styleable.MenuGroup_android_enabled = global::Kouch.App.Droid.Resource.Styleable.MenuGroup_android_enabled;
+			global::Plugin.Toasts.Resource.Styleable.MenuGroup_android_id = global::Kouch.App.Droid.Resource.Styleable.MenuGroup_android_id;
+			global::Plugin.Toasts.Resource.Styleable.MenuGroup_android_menuCategory = global::Kouch.App.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::Plugin.Toasts.Resource.Styleable.MenuGroup_android_orderInCategory = global::Kouch.App.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::Plugin.Toasts.Resource.Styleable.MenuGroup_android_visible = global::Kouch.App.Droid.Resource.Styleable.MenuGroup_android_visible;
+			global::Plugin.Toasts.Resource.Styleable.MenuItem = global::Kouch.App.Droid.Resource.Styleable.MenuItem;
+			global::Plugin.Toasts.Resource.Styleable.MenuItem_actionLayout = global::Kouch.App.Droid.Resource.Styleable.MenuItem_actionLayout;
+			global::Plugin.Toasts.Resource.Styleable.MenuItem_actionProviderClass = global::Kouch.App.Droid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::Plugin.Toasts.Resource.Styleable.MenuItem_actionViewClass = global::Kouch.App.Droid.Resource.Styleable.MenuItem_actionViewClass;
+			global::Plugin.Toasts.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::Kouch.App.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::Plugin.Toasts.Resource.Styleable.MenuItem_android_checkable = global::Kouch.App.Droid.Resource.Styleable.MenuItem_android_checkable;
+			global::Plugin.Toasts.Resource.Styleable.MenuItem_android_checked = global::Kouch.App.Droid.Resource.Styleable.MenuItem_android_checked;
+			global::Plugin.Toasts.Resource.Styleable.MenuItem_android_enabled = global::Kouch.App.Droid.Resource.Styleable.MenuItem_android_enabled;
+			global::Plugin.Toasts.Resource.Styleable.MenuItem_android_icon = global::Kouch.App.Droid.Resource.Styleable.MenuItem_android_icon;
+			global::Plugin.Toasts.Resource.Styleable.MenuItem_android_id = global::Kouch.App.Droid.Resource.Styleable.MenuItem_android_id;
+			global::Plugin.Toasts.Resource.Styleable.MenuItem_android_menuCategory = global::Kouch.App.Droid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::Plugin.Toasts.Resource.Styleable.MenuItem_android_numericShortcut = global::Kouch.App.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::Plugin.Toasts.Resource.Styleable.MenuItem_android_onClick = global::Kouch.App.Droid.Resource.Styleable.MenuItem_android_onClick;
+			global::Plugin.Toasts.Resource.Styleable.MenuItem_android_orderInCategory = global::Kouch.App.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::Plugin.Toasts.Resource.Styleable.MenuItem_android_title = global::Kouch.App.Droid.Resource.Styleable.MenuItem_android_title;
+			global::Plugin.Toasts.Resource.Styleable.MenuItem_android_titleCondensed = global::Kouch.App.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::Plugin.Toasts.Resource.Styleable.MenuItem_android_visible = global::Kouch.App.Droid.Resource.Styleable.MenuItem_android_visible;
+			global::Plugin.Toasts.Resource.Styleable.MenuItem_showAsAction = global::Kouch.App.Droid.Resource.Styleable.MenuItem_showAsAction;
+			global::Plugin.Toasts.Resource.Styleable.MenuView = global::Kouch.App.Droid.Resource.Styleable.MenuView;
+			global::Plugin.Toasts.Resource.Styleable.MenuView_android_headerBackground = global::Kouch.App.Droid.Resource.Styleable.MenuView_android_headerBackground;
+			global::Plugin.Toasts.Resource.Styleable.MenuView_android_horizontalDivider = global::Kouch.App.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::Plugin.Toasts.Resource.Styleable.MenuView_android_itemBackground = global::Kouch.App.Droid.Resource.Styleable.MenuView_android_itemBackground;
+			global::Plugin.Toasts.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::Kouch.App.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::Plugin.Toasts.Resource.Styleable.MenuView_android_itemTextAppearance = global::Kouch.App.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::Plugin.Toasts.Resource.Styleable.MenuView_android_verticalDivider = global::Kouch.App.Droid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::Plugin.Toasts.Resource.Styleable.MenuView_android_windowAnimationStyle = global::Kouch.App.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::Plugin.Toasts.Resource.Styleable.MenuView_preserveIconSpacing = global::Kouch.App.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::Plugin.Toasts.Resource.Styleable.NavigationView = global::Kouch.App.Droid.Resource.Styleable.NavigationView;
+			global::Plugin.Toasts.Resource.Styleable.NavigationView_android_background = global::Kouch.App.Droid.Resource.Styleable.NavigationView_android_background;
+			global::Plugin.Toasts.Resource.Styleable.NavigationView_android_fitsSystemWindows = global::Kouch.App.Droid.Resource.Styleable.NavigationView_android_fitsSystemWindows;
+			global::Plugin.Toasts.Resource.Styleable.NavigationView_android_maxWidth = global::Kouch.App.Droid.Resource.Styleable.NavigationView_android_maxWidth;
+			global::Plugin.Toasts.Resource.Styleable.NavigationView_elevation = global::Kouch.App.Droid.Resource.Styleable.NavigationView_elevation;
+			global::Plugin.Toasts.Resource.Styleable.NavigationView_headerLayout = global::Kouch.App.Droid.Resource.Styleable.NavigationView_headerLayout;
+			global::Plugin.Toasts.Resource.Styleable.NavigationView_itemBackground = global::Kouch.App.Droid.Resource.Styleable.NavigationView_itemBackground;
+			global::Plugin.Toasts.Resource.Styleable.NavigationView_itemIconTint = global::Kouch.App.Droid.Resource.Styleable.NavigationView_itemIconTint;
+			global::Plugin.Toasts.Resource.Styleable.NavigationView_itemTextAppearance = global::Kouch.App.Droid.Resource.Styleable.NavigationView_itemTextAppearance;
+			global::Plugin.Toasts.Resource.Styleable.NavigationView_itemTextColor = global::Kouch.App.Droid.Resource.Styleable.NavigationView_itemTextColor;
+			global::Plugin.Toasts.Resource.Styleable.NavigationView_menu = global::Kouch.App.Droid.Resource.Styleable.NavigationView_menu;
+			global::Plugin.Toasts.Resource.Styleable.PopupWindow = global::Kouch.App.Droid.Resource.Styleable.PopupWindow;
+			global::Plugin.Toasts.Resource.Styleable.PopupWindow_android_popupBackground = global::Kouch.App.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::Plugin.Toasts.Resource.Styleable.PopupWindow_overlapAnchor = global::Kouch.App.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::Plugin.Toasts.Resource.Styleable.PopupWindowBackgroundState = global::Kouch.App.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::Plugin.Toasts.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::Kouch.App.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::Plugin.Toasts.Resource.Styleable.RecyclerView = global::Kouch.App.Droid.Resource.Styleable.RecyclerView;
+			global::Plugin.Toasts.Resource.Styleable.RecyclerView_android_orientation = global::Kouch.App.Droid.Resource.Styleable.RecyclerView_android_orientation;
+			global::Plugin.Toasts.Resource.Styleable.RecyclerView_layoutManager = global::Kouch.App.Droid.Resource.Styleable.RecyclerView_layoutManager;
+			global::Plugin.Toasts.Resource.Styleable.RecyclerView_reverseLayout = global::Kouch.App.Droid.Resource.Styleable.RecyclerView_reverseLayout;
+			global::Plugin.Toasts.Resource.Styleable.RecyclerView_spanCount = global::Kouch.App.Droid.Resource.Styleable.RecyclerView_spanCount;
+			global::Plugin.Toasts.Resource.Styleable.RecyclerView_stackFromEnd = global::Kouch.App.Droid.Resource.Styleable.RecyclerView_stackFromEnd;
+			global::Plugin.Toasts.Resource.Styleable.ScrimInsetsFrameLayout = global::Kouch.App.Droid.Resource.Styleable.ScrimInsetsFrameLayout;
+			global::Plugin.Toasts.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground = global::Kouch.App.Droid.Resource.Styleable.ScrimInsetsFrameLayout_insetForeground;
+			global::Plugin.Toasts.Resource.Styleable.SearchView = global::Kouch.App.Droid.Resource.Styleable.SearchView;
+			global::Plugin.Toasts.Resource.Styleable.SearchView_android_focusable = global::Kouch.App.Droid.Resource.Styleable.SearchView_android_focusable;
+			global::Plugin.Toasts.Resource.Styleable.SearchView_android_imeOptions = global::Kouch.App.Droid.Resource.Styleable.SearchView_android_imeOptions;
+			global::Plugin.Toasts.Resource.Styleable.SearchView_android_inputType = global::Kouch.App.Droid.Resource.Styleable.SearchView_android_inputType;
+			global::Plugin.Toasts.Resource.Styleable.SearchView_android_maxWidth = global::Kouch.App.Droid.Resource.Styleable.SearchView_android_maxWidth;
+			global::Plugin.Toasts.Resource.Styleable.SearchView_closeIcon = global::Kouch.App.Droid.Resource.Styleable.SearchView_closeIcon;
+			global::Plugin.Toasts.Resource.Styleable.SearchView_commitIcon = global::Kouch.App.Droid.Resource.Styleable.SearchView_commitIcon;
+			global::Plugin.Toasts.Resource.Styleable.SearchView_defaultQueryHint = global::Kouch.App.Droid.Resource.Styleable.SearchView_defaultQueryHint;
+			global::Plugin.Toasts.Resource.Styleable.SearchView_goIcon = global::Kouch.App.Droid.Resource.Styleable.SearchView_goIcon;
+			global::Plugin.Toasts.Resource.Styleable.SearchView_iconifiedByDefault = global::Kouch.App.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::Plugin.Toasts.Resource.Styleable.SearchView_layout = global::Kouch.App.Droid.Resource.Styleable.SearchView_layout;
+			global::Plugin.Toasts.Resource.Styleable.SearchView_queryBackground = global::Kouch.App.Droid.Resource.Styleable.SearchView_queryBackground;
+			global::Plugin.Toasts.Resource.Styleable.SearchView_queryHint = global::Kouch.App.Droid.Resource.Styleable.SearchView_queryHint;
+			global::Plugin.Toasts.Resource.Styleable.SearchView_searchHintIcon = global::Kouch.App.Droid.Resource.Styleable.SearchView_searchHintIcon;
+			global::Plugin.Toasts.Resource.Styleable.SearchView_searchIcon = global::Kouch.App.Droid.Resource.Styleable.SearchView_searchIcon;
+			global::Plugin.Toasts.Resource.Styleable.SearchView_submitBackground = global::Kouch.App.Droid.Resource.Styleable.SearchView_submitBackground;
+			global::Plugin.Toasts.Resource.Styleable.SearchView_suggestionRowLayout = global::Kouch.App.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::Plugin.Toasts.Resource.Styleable.SearchView_voiceIcon = global::Kouch.App.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::Plugin.Toasts.Resource.Styleable.SnackbarLayout = global::Kouch.App.Droid.Resource.Styleable.SnackbarLayout;
+			global::Plugin.Toasts.Resource.Styleable.SnackbarLayout_android_maxWidth = global::Kouch.App.Droid.Resource.Styleable.SnackbarLayout_android_maxWidth;
+			global::Plugin.Toasts.Resource.Styleable.SnackbarLayout_elevation = global::Kouch.App.Droid.Resource.Styleable.SnackbarLayout_elevation;
+			global::Plugin.Toasts.Resource.Styleable.SnackbarLayout_maxActionInlineWidth = global::Kouch.App.Droid.Resource.Styleable.SnackbarLayout_maxActionInlineWidth;
+			global::Plugin.Toasts.Resource.Styleable.Spinner = global::Kouch.App.Droid.Resource.Styleable.Spinner;
+			global::Plugin.Toasts.Resource.Styleable.Spinner_android_dropDownWidth = global::Kouch.App.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::Plugin.Toasts.Resource.Styleable.Spinner_android_entries = global::Kouch.App.Droid.Resource.Styleable.Spinner_android_entries;
+			global::Plugin.Toasts.Resource.Styleable.Spinner_android_popupBackground = global::Kouch.App.Droid.Resource.Styleable.Spinner_android_popupBackground;
+			global::Plugin.Toasts.Resource.Styleable.Spinner_android_prompt = global::Kouch.App.Droid.Resource.Styleable.Spinner_android_prompt;
+			global::Plugin.Toasts.Resource.Styleable.Spinner_popupTheme = global::Kouch.App.Droid.Resource.Styleable.Spinner_popupTheme;
+			global::Plugin.Toasts.Resource.Styleable.SwitchCompat = global::Kouch.App.Droid.Resource.Styleable.SwitchCompat;
+			global::Plugin.Toasts.Resource.Styleable.SwitchCompat_android_textOff = global::Kouch.App.Droid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::Plugin.Toasts.Resource.Styleable.SwitchCompat_android_textOn = global::Kouch.App.Droid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::Plugin.Toasts.Resource.Styleable.SwitchCompat_android_thumb = global::Kouch.App.Droid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::Plugin.Toasts.Resource.Styleable.SwitchCompat_showText = global::Kouch.App.Droid.Resource.Styleable.SwitchCompat_showText;
+			global::Plugin.Toasts.Resource.Styleable.SwitchCompat_splitTrack = global::Kouch.App.Droid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::Plugin.Toasts.Resource.Styleable.SwitchCompat_switchMinWidth = global::Kouch.App.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::Plugin.Toasts.Resource.Styleable.SwitchCompat_switchPadding = global::Kouch.App.Droid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::Plugin.Toasts.Resource.Styleable.SwitchCompat_switchTextAppearance = global::Kouch.App.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::Plugin.Toasts.Resource.Styleable.SwitchCompat_thumbTextPadding = global::Kouch.App.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::Plugin.Toasts.Resource.Styleable.SwitchCompat_track = global::Kouch.App.Droid.Resource.Styleable.SwitchCompat_track;
+			global::Plugin.Toasts.Resource.Styleable.TabItem = global::Kouch.App.Droid.Resource.Styleable.TabItem;
+			global::Plugin.Toasts.Resource.Styleable.TabItem_android_icon = global::Kouch.App.Droid.Resource.Styleable.TabItem_android_icon;
+			global::Plugin.Toasts.Resource.Styleable.TabItem_android_layout = global::Kouch.App.Droid.Resource.Styleable.TabItem_android_layout;
+			global::Plugin.Toasts.Resource.Styleable.TabItem_android_text = global::Kouch.App.Droid.Resource.Styleable.TabItem_android_text;
+			global::Plugin.Toasts.Resource.Styleable.TabLayout = global::Kouch.App.Droid.Resource.Styleable.TabLayout;
+			global::Plugin.Toasts.Resource.Styleable.TabLayout_tabBackground = global::Kouch.App.Droid.Resource.Styleable.TabLayout_tabBackground;
+			global::Plugin.Toasts.Resource.Styleable.TabLayout_tabContentStart = global::Kouch.App.Droid.Resource.Styleable.TabLayout_tabContentStart;
+			global::Plugin.Toasts.Resource.Styleable.TabLayout_tabGravity = global::Kouch.App.Droid.Resource.Styleable.TabLayout_tabGravity;
+			global::Plugin.Toasts.Resource.Styleable.TabLayout_tabIndicatorColor = global::Kouch.App.Droid.Resource.Styleable.TabLayout_tabIndicatorColor;
+			global::Plugin.Toasts.Resource.Styleable.TabLayout_tabIndicatorHeight = global::Kouch.App.Droid.Resource.Styleable.TabLayout_tabIndicatorHeight;
+			global::Plugin.Toasts.Resource.Styleable.TabLayout_tabMaxWidth = global::Kouch.App.Droid.Resource.Styleable.TabLayout_tabMaxWidth;
+			global::Plugin.Toasts.Resource.Styleable.TabLayout_tabMinWidth = global::Kouch.App.Droid.Resource.Styleable.TabLayout_tabMinWidth;
+			global::Plugin.Toasts.Resource.Styleable.TabLayout_tabMode = global::Kouch.App.Droid.Resource.Styleable.TabLayout_tabMode;
+			global::Plugin.Toasts.Resource.Styleable.TabLayout_tabPadding = global::Kouch.App.Droid.Resource.Styleable.TabLayout_tabPadding;
+			global::Plugin.Toasts.Resource.Styleable.TabLayout_tabPaddingBottom = global::Kouch.App.Droid.Resource.Styleable.TabLayout_tabPaddingBottom;
+			global::Plugin.Toasts.Resource.Styleable.TabLayout_tabPaddingEnd = global::Kouch.App.Droid.Resource.Styleable.TabLayout_tabPaddingEnd;
+			global::Plugin.Toasts.Resource.Styleable.TabLayout_tabPaddingStart = global::Kouch.App.Droid.Resource.Styleable.TabLayout_tabPaddingStart;
+			global::Plugin.Toasts.Resource.Styleable.TabLayout_tabPaddingTop = global::Kouch.App.Droid.Resource.Styleable.TabLayout_tabPaddingTop;
+			global::Plugin.Toasts.Resource.Styleable.TabLayout_tabSelectedTextColor = global::Kouch.App.Droid.Resource.Styleable.TabLayout_tabSelectedTextColor;
+			global::Plugin.Toasts.Resource.Styleable.TabLayout_tabTextAppearance = global::Kouch.App.Droid.Resource.Styleable.TabLayout_tabTextAppearance;
+			global::Plugin.Toasts.Resource.Styleable.TabLayout_tabTextColor = global::Kouch.App.Droid.Resource.Styleable.TabLayout_tabTextColor;
+			global::Plugin.Toasts.Resource.Styleable.TextAppearance = global::Kouch.App.Droid.Resource.Styleable.TextAppearance;
+			global::Plugin.Toasts.Resource.Styleable.TextAppearance_android_shadowColor = global::Kouch.App.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::Plugin.Toasts.Resource.Styleable.TextAppearance_android_shadowDx = global::Kouch.App.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::Plugin.Toasts.Resource.Styleable.TextAppearance_android_shadowDy = global::Kouch.App.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::Plugin.Toasts.Resource.Styleable.TextAppearance_android_shadowRadius = global::Kouch.App.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::Plugin.Toasts.Resource.Styleable.TextAppearance_android_textColor = global::Kouch.App.Droid.Resource.Styleable.TextAppearance_android_textColor;
+			global::Plugin.Toasts.Resource.Styleable.TextAppearance_android_textSize = global::Kouch.App.Droid.Resource.Styleable.TextAppearance_android_textSize;
+			global::Plugin.Toasts.Resource.Styleable.TextAppearance_android_textStyle = global::Kouch.App.Droid.Resource.Styleable.TextAppearance_android_textStyle;
+			global::Plugin.Toasts.Resource.Styleable.TextAppearance_android_typeface = global::Kouch.App.Droid.Resource.Styleable.TextAppearance_android_typeface;
+			global::Plugin.Toasts.Resource.Styleable.TextAppearance_textAllCaps = global::Kouch.App.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::Plugin.Toasts.Resource.Styleable.TextInputLayout = global::Kouch.App.Droid.Resource.Styleable.TextInputLayout;
+			global::Plugin.Toasts.Resource.Styleable.TextInputLayout_android_hint = global::Kouch.App.Droid.Resource.Styleable.TextInputLayout_android_hint;
+			global::Plugin.Toasts.Resource.Styleable.TextInputLayout_android_textColorHint = global::Kouch.App.Droid.Resource.Styleable.TextInputLayout_android_textColorHint;
+			global::Plugin.Toasts.Resource.Styleable.TextInputLayout_counterEnabled = global::Kouch.App.Droid.Resource.Styleable.TextInputLayout_counterEnabled;
+			global::Plugin.Toasts.Resource.Styleable.TextInputLayout_counterMaxLength = global::Kouch.App.Droid.Resource.Styleable.TextInputLayout_counterMaxLength;
+			global::Plugin.Toasts.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance = global::Kouch.App.Droid.Resource.Styleable.TextInputLayout_counterOverflowTextAppearance;
+			global::Plugin.Toasts.Resource.Styleable.TextInputLayout_counterTextAppearance = global::Kouch.App.Droid.Resource.Styleable.TextInputLayout_counterTextAppearance;
+			global::Plugin.Toasts.Resource.Styleable.TextInputLayout_errorEnabled = global::Kouch.App.Droid.Resource.Styleable.TextInputLayout_errorEnabled;
+			global::Plugin.Toasts.Resource.Styleable.TextInputLayout_errorTextAppearance = global::Kouch.App.Droid.Resource.Styleable.TextInputLayout_errorTextAppearance;
+			global::Plugin.Toasts.Resource.Styleable.TextInputLayout_hintAnimationEnabled = global::Kouch.App.Droid.Resource.Styleable.TextInputLayout_hintAnimationEnabled;
+			global::Plugin.Toasts.Resource.Styleable.TextInputLayout_hintEnabled = global::Kouch.App.Droid.Resource.Styleable.TextInputLayout_hintEnabled;
+			global::Plugin.Toasts.Resource.Styleable.TextInputLayout_hintTextAppearance = global::Kouch.App.Droid.Resource.Styleable.TextInputLayout_hintTextAppearance;
+			global::Plugin.Toasts.Resource.Styleable.Toolbar = global::Kouch.App.Droid.Resource.Styleable.Toolbar;
+			global::Plugin.Toasts.Resource.Styleable.Toolbar_android_gravity = global::Kouch.App.Droid.Resource.Styleable.Toolbar_android_gravity;
+			global::Plugin.Toasts.Resource.Styleable.Toolbar_android_minHeight = global::Kouch.App.Droid.Resource.Styleable.Toolbar_android_minHeight;
+			global::Plugin.Toasts.Resource.Styleable.Toolbar_collapseContentDescription = global::Kouch.App.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::Plugin.Toasts.Resource.Styleable.Toolbar_collapseIcon = global::Kouch.App.Droid.Resource.Styleable.Toolbar_collapseIcon;
+			global::Plugin.Toasts.Resource.Styleable.Toolbar_contentInsetEnd = global::Kouch.App.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::Plugin.Toasts.Resource.Styleable.Toolbar_contentInsetLeft = global::Kouch.App.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::Plugin.Toasts.Resource.Styleable.Toolbar_contentInsetRight = global::Kouch.App.Droid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::Plugin.Toasts.Resource.Styleable.Toolbar_contentInsetStart = global::Kouch.App.Droid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::Plugin.Toasts.Resource.Styleable.Toolbar_logo = global::Kouch.App.Droid.Resource.Styleable.Toolbar_logo;
+			global::Plugin.Toasts.Resource.Styleable.Toolbar_logoDescription = global::Kouch.App.Droid.Resource.Styleable.Toolbar_logoDescription;
+			global::Plugin.Toasts.Resource.Styleable.Toolbar_maxButtonHeight = global::Kouch.App.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::Plugin.Toasts.Resource.Styleable.Toolbar_navigationContentDescription = global::Kouch.App.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::Plugin.Toasts.Resource.Styleable.Toolbar_navigationIcon = global::Kouch.App.Droid.Resource.Styleable.Toolbar_navigationIcon;
+			global::Plugin.Toasts.Resource.Styleable.Toolbar_popupTheme = global::Kouch.App.Droid.Resource.Styleable.Toolbar_popupTheme;
+			global::Plugin.Toasts.Resource.Styleable.Toolbar_subtitle = global::Kouch.App.Droid.Resource.Styleable.Toolbar_subtitle;
+			global::Plugin.Toasts.Resource.Styleable.Toolbar_subtitleTextAppearance = global::Kouch.App.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::Plugin.Toasts.Resource.Styleable.Toolbar_subtitleTextColor = global::Kouch.App.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::Plugin.Toasts.Resource.Styleable.Toolbar_title = global::Kouch.App.Droid.Resource.Styleable.Toolbar_title;
+			global::Plugin.Toasts.Resource.Styleable.Toolbar_titleMarginBottom = global::Kouch.App.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::Plugin.Toasts.Resource.Styleable.Toolbar_titleMarginEnd = global::Kouch.App.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::Plugin.Toasts.Resource.Styleable.Toolbar_titleMarginStart = global::Kouch.App.Droid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::Plugin.Toasts.Resource.Styleable.Toolbar_titleMarginTop = global::Kouch.App.Droid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::Plugin.Toasts.Resource.Styleable.Toolbar_titleMargins = global::Kouch.App.Droid.Resource.Styleable.Toolbar_titleMargins;
+			global::Plugin.Toasts.Resource.Styleable.Toolbar_titleTextAppearance = global::Kouch.App.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::Plugin.Toasts.Resource.Styleable.Toolbar_titleTextColor = global::Kouch.App.Droid.Resource.Styleable.Toolbar_titleTextColor;
+			global::Plugin.Toasts.Resource.Styleable.View = global::Kouch.App.Droid.Resource.Styleable.View;
+			global::Plugin.Toasts.Resource.Styleable.View_android_focusable = global::Kouch.App.Droid.Resource.Styleable.View_android_focusable;
+			global::Plugin.Toasts.Resource.Styleable.View_android_theme = global::Kouch.App.Droid.Resource.Styleable.View_android_theme;
+			global::Plugin.Toasts.Resource.Styleable.View_paddingEnd = global::Kouch.App.Droid.Resource.Styleable.View_paddingEnd;
+			global::Plugin.Toasts.Resource.Styleable.View_paddingStart = global::Kouch.App.Droid.Resource.Styleable.View_paddingStart;
+			global::Plugin.Toasts.Resource.Styleable.View_theme = global::Kouch.App.Droid.Resource.Styleable.View_theme;
+			global::Plugin.Toasts.Resource.Styleable.ViewBackgroundHelper = global::Kouch.App.Droid.Resource.Styleable.ViewBackgroundHelper;
+			global::Plugin.Toasts.Resource.Styleable.ViewBackgroundHelper_android_background = global::Kouch.App.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::Plugin.Toasts.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::Kouch.App.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::Plugin.Toasts.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::Kouch.App.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::Plugin.Toasts.Resource.Styleable.ViewStubCompat = global::Kouch.App.Droid.Resource.Styleable.ViewStubCompat;
+			global::Plugin.Toasts.Resource.Styleable.ViewStubCompat_android_id = global::Kouch.App.Droid.Resource.Styleable.ViewStubCompat_android_id;
+			global::Plugin.Toasts.Resource.Styleable.ViewStubCompat_android_inflatedId = global::Kouch.App.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::Plugin.Toasts.Resource.Styleable.ViewStubCompat_android_layout = global::Kouch.App.Droid.Resource.Styleable.ViewStubCompat_android_layout;
 			global::Xamarin.Essentials.Resource.Attribute.alpha = global::Kouch.App.Droid.Resource.Attribute.alpha;
 			global::Xamarin.Essentials.Resource.Attribute.coordinatorLayoutStyle = global::Kouch.App.Droid.Resource.Attribute.coordinatorLayoutStyle;
 			global::Xamarin.Essentials.Resource.Attribute.font = global::Kouch.App.Droid.Resource.Attribute.font;
@@ -7934,65 +9430,65 @@ namespace Kouch.App.Droid
 		public partial class Animation
 		{
 			
-			// aapt resource value: 0x7F010004
-			public const int abc_fade_in = 2130771972;
-			
-			// aapt resource value: 0x7F010005
-			public const int abc_fade_out = 2130771973;
-			
-			// aapt resource value: 0x7F010006
-			public const int abc_grow_fade_in_from_bottom = 2130771974;
-			
-			// aapt resource value: 0x7F010007
-			public const int abc_popup_enter = 2130771975;
-			
-			// aapt resource value: 0x7F010008
-			public const int abc_popup_exit = 2130771976;
-			
-			// aapt resource value: 0x7F010009
-			public const int abc_shrink_fade_out_from_bottom = 2130771977;
-			
-			// aapt resource value: 0x7F01000A
-			public const int abc_slide_in_bottom = 2130771978;
-			
-			// aapt resource value: 0x7F01000B
-			public const int abc_slide_in_top = 2130771979;
-			
-			// aapt resource value: 0x7F01000C
-			public const int abc_slide_out_bottom = 2130771980;
-			
-			// aapt resource value: 0x7F01000D
-			public const int abc_slide_out_top = 2130771981;
-			
-			// aapt resource value: 0x7F01000E
-			public const int abc_tooltip_enter = 2130771982;
-			
-			// aapt resource value: 0x7F01000F
-			public const int abc_tooltip_exit = 2130771983;
-			
-			// aapt resource value: 0x7F010010
-			public const int design_bottom_sheet_slide_in = 2130771984;
-			
-			// aapt resource value: 0x7F010011
-			public const int design_bottom_sheet_slide_out = 2130771985;
-			
-			// aapt resource value: 0x7F010012
-			public const int design_snackbar_in = 2130771986;
-			
-			// aapt resource value: 0x7F010013
-			public const int design_snackbar_out = 2130771987;
-			
 			// aapt resource value: 0x7F010000
-			public const int EnterFromLeft = 2130771968;
+			public const int abc_fade_in = 2130771968;
 			
 			// aapt resource value: 0x7F010001
-			public const int EnterFromRight = 2130771969;
+			public const int abc_fade_out = 2130771969;
 			
 			// aapt resource value: 0x7F010002
-			public const int ExitToLeft = 2130771970;
+			public const int abc_grow_fade_in_from_bottom = 2130771970;
 			
 			// aapt resource value: 0x7F010003
-			public const int ExitToRight = 2130771971;
+			public const int abc_popup_enter = 2130771971;
+			
+			// aapt resource value: 0x7F010004
+			public const int abc_popup_exit = 2130771972;
+			
+			// aapt resource value: 0x7F010005
+			public const int abc_shrink_fade_out_from_bottom = 2130771973;
+			
+			// aapt resource value: 0x7F010006
+			public const int abc_slide_in_bottom = 2130771974;
+			
+			// aapt resource value: 0x7F010007
+			public const int abc_slide_in_top = 2130771975;
+			
+			// aapt resource value: 0x7F010008
+			public const int abc_slide_out_bottom = 2130771976;
+			
+			// aapt resource value: 0x7F010009
+			public const int abc_slide_out_top = 2130771977;
+			
+			// aapt resource value: 0x7F01000A
+			public const int abc_tooltip_enter = 2130771978;
+			
+			// aapt resource value: 0x7F01000B
+			public const int abc_tooltip_exit = 2130771979;
+			
+			// aapt resource value: 0x7F01000C
+			public const int design_bottom_sheet_slide_in = 2130771980;
+			
+			// aapt resource value: 0x7F01000D
+			public const int design_bottom_sheet_slide_out = 2130771981;
+			
+			// aapt resource value: 0x7F01000E
+			public const int design_snackbar_in = 2130771982;
+			
+			// aapt resource value: 0x7F01000F
+			public const int design_snackbar_out = 2130771983;
+			
+			// aapt resource value: 0x7F010010
+			public const int EnterFromLeft = 2130771984;
+			
+			// aapt resource value: 0x7F010011
+			public const int EnterFromRight = 2130771985;
+			
+			// aapt resource value: 0x7F010012
+			public const int ExitToLeft = 2130771986;
+			
+			// aapt resource value: 0x7F010013
+			public const int ExitToRight = 2130771987;
 			
 			static Animation()
 			{
@@ -10622,344 +12118,344 @@ namespace Kouch.App.Droid
 		public partial class Drawable
 		{
 			
-			// aapt resource value: 0x7F070000
-			public const int abc_ab_share_pack_mtrl_alpha = 2131165184;
-			
-			// aapt resource value: 0x7F070001
-			public const int abc_action_bar_item_background_material = 2131165185;
-			
-			// aapt resource value: 0x7F070002
-			public const int abc_btn_borderless_material = 2131165186;
-			
-			// aapt resource value: 0x7F070003
-			public const int abc_btn_check_material = 2131165187;
-			
-			// aapt resource value: 0x7F070004
-			public const int abc_btn_check_to_on_mtrl_000 = 2131165188;
-			
-			// aapt resource value: 0x7F070005
-			public const int abc_btn_check_to_on_mtrl_015 = 2131165189;
-			
 			// aapt resource value: 0x7F070006
-			public const int abc_btn_colored_material = 2131165190;
+			public const int abc_ab_share_pack_mtrl_alpha = 2131165190;
 			
 			// aapt resource value: 0x7F070007
-			public const int abc_btn_default_mtrl_shape = 2131165191;
+			public const int abc_action_bar_item_background_material = 2131165191;
 			
 			// aapt resource value: 0x7F070008
-			public const int abc_btn_radio_material = 2131165192;
+			public const int abc_btn_borderless_material = 2131165192;
 			
 			// aapt resource value: 0x7F070009
-			public const int abc_btn_radio_to_on_mtrl_000 = 2131165193;
+			public const int abc_btn_check_material = 2131165193;
 			
 			// aapt resource value: 0x7F07000A
-			public const int abc_btn_radio_to_on_mtrl_015 = 2131165194;
+			public const int abc_btn_check_to_on_mtrl_000 = 2131165194;
 			
 			// aapt resource value: 0x7F07000B
-			public const int abc_btn_switch_to_on_mtrl_00001 = 2131165195;
+			public const int abc_btn_check_to_on_mtrl_015 = 2131165195;
 			
 			// aapt resource value: 0x7F07000C
-			public const int abc_btn_switch_to_on_mtrl_00012 = 2131165196;
+			public const int abc_btn_colored_material = 2131165196;
 			
 			// aapt resource value: 0x7F07000D
-			public const int abc_cab_background_internal_bg = 2131165197;
+			public const int abc_btn_default_mtrl_shape = 2131165197;
 			
 			// aapt resource value: 0x7F07000E
-			public const int abc_cab_background_top_material = 2131165198;
+			public const int abc_btn_radio_material = 2131165198;
 			
 			// aapt resource value: 0x7F07000F
-			public const int abc_cab_background_top_mtrl_alpha = 2131165199;
+			public const int abc_btn_radio_to_on_mtrl_000 = 2131165199;
 			
 			// aapt resource value: 0x7F070010
-			public const int abc_control_background_material = 2131165200;
+			public const int abc_btn_radio_to_on_mtrl_015 = 2131165200;
 			
 			// aapt resource value: 0x7F070011
-			public const int abc_dialog_material_background = 2131165201;
+			public const int abc_btn_switch_to_on_mtrl_00001 = 2131165201;
 			
 			// aapt resource value: 0x7F070012
-			public const int abc_edit_text_material = 2131165202;
+			public const int abc_btn_switch_to_on_mtrl_00012 = 2131165202;
 			
 			// aapt resource value: 0x7F070013
-			public const int abc_ic_ab_back_material = 2131165203;
+			public const int abc_cab_background_internal_bg = 2131165203;
 			
 			// aapt resource value: 0x7F070014
-			public const int abc_ic_arrow_drop_right_black_24dp = 2131165204;
+			public const int abc_cab_background_top_material = 2131165204;
 			
 			// aapt resource value: 0x7F070015
-			public const int abc_ic_clear_material = 2131165205;
+			public const int abc_cab_background_top_mtrl_alpha = 2131165205;
 			
 			// aapt resource value: 0x7F070016
-			public const int abc_ic_commit_search_api_mtrl_alpha = 2131165206;
+			public const int abc_control_background_material = 2131165206;
 			
 			// aapt resource value: 0x7F070017
-			public const int abc_ic_go_search_api_material = 2131165207;
+			public const int abc_dialog_material_background = 2131165207;
 			
 			// aapt resource value: 0x7F070018
-			public const int abc_ic_menu_copy_mtrl_am_alpha = 2131165208;
+			public const int abc_edit_text_material = 2131165208;
 			
 			// aapt resource value: 0x7F070019
-			public const int abc_ic_menu_cut_mtrl_alpha = 2131165209;
+			public const int abc_ic_ab_back_material = 2131165209;
 			
 			// aapt resource value: 0x7F07001A
-			public const int abc_ic_menu_overflow_material = 2131165210;
+			public const int abc_ic_arrow_drop_right_black_24dp = 2131165210;
 			
 			// aapt resource value: 0x7F07001B
-			public const int abc_ic_menu_paste_mtrl_am_alpha = 2131165211;
+			public const int abc_ic_clear_material = 2131165211;
 			
 			// aapt resource value: 0x7F07001C
-			public const int abc_ic_menu_selectall_mtrl_alpha = 2131165212;
+			public const int abc_ic_commit_search_api_mtrl_alpha = 2131165212;
 			
 			// aapt resource value: 0x7F07001D
-			public const int abc_ic_menu_share_mtrl_alpha = 2131165213;
+			public const int abc_ic_go_search_api_material = 2131165213;
 			
 			// aapt resource value: 0x7F07001E
-			public const int abc_ic_search_api_material = 2131165214;
+			public const int abc_ic_menu_copy_mtrl_am_alpha = 2131165214;
 			
 			// aapt resource value: 0x7F07001F
-			public const int abc_ic_star_black_16dp = 2131165215;
+			public const int abc_ic_menu_cut_mtrl_alpha = 2131165215;
 			
 			// aapt resource value: 0x7F070020
-			public const int abc_ic_star_black_36dp = 2131165216;
+			public const int abc_ic_menu_overflow_material = 2131165216;
 			
 			// aapt resource value: 0x7F070021
-			public const int abc_ic_star_black_48dp = 2131165217;
+			public const int abc_ic_menu_paste_mtrl_am_alpha = 2131165217;
 			
 			// aapt resource value: 0x7F070022
-			public const int abc_ic_star_half_black_16dp = 2131165218;
+			public const int abc_ic_menu_selectall_mtrl_alpha = 2131165218;
 			
 			// aapt resource value: 0x7F070023
-			public const int abc_ic_star_half_black_36dp = 2131165219;
+			public const int abc_ic_menu_share_mtrl_alpha = 2131165219;
 			
 			// aapt resource value: 0x7F070024
-			public const int abc_ic_star_half_black_48dp = 2131165220;
+			public const int abc_ic_search_api_material = 2131165220;
 			
 			// aapt resource value: 0x7F070025
-			public const int abc_ic_voice_search_api_material = 2131165221;
+			public const int abc_ic_star_black_16dp = 2131165221;
 			
 			// aapt resource value: 0x7F070026
-			public const int abc_item_background_holo_dark = 2131165222;
+			public const int abc_ic_star_black_36dp = 2131165222;
 			
 			// aapt resource value: 0x7F070027
-			public const int abc_item_background_holo_light = 2131165223;
+			public const int abc_ic_star_black_48dp = 2131165223;
 			
 			// aapt resource value: 0x7F070028
-			public const int abc_list_divider_material = 2131165224;
+			public const int abc_ic_star_half_black_16dp = 2131165224;
 			
 			// aapt resource value: 0x7F070029
-			public const int abc_list_divider_mtrl_alpha = 2131165225;
+			public const int abc_ic_star_half_black_36dp = 2131165225;
 			
 			// aapt resource value: 0x7F07002A
-			public const int abc_list_focused_holo = 2131165226;
+			public const int abc_ic_star_half_black_48dp = 2131165226;
 			
 			// aapt resource value: 0x7F07002B
-			public const int abc_list_longpressed_holo = 2131165227;
+			public const int abc_ic_voice_search_api_material = 2131165227;
 			
 			// aapt resource value: 0x7F07002C
-			public const int abc_list_pressed_holo_dark = 2131165228;
+			public const int abc_item_background_holo_dark = 2131165228;
 			
 			// aapt resource value: 0x7F07002D
-			public const int abc_list_pressed_holo_light = 2131165229;
+			public const int abc_item_background_holo_light = 2131165229;
 			
 			// aapt resource value: 0x7F07002E
-			public const int abc_list_selector_background_transition_holo_dark = 2131165230;
+			public const int abc_list_divider_material = 2131165230;
 			
 			// aapt resource value: 0x7F07002F
-			public const int abc_list_selector_background_transition_holo_light = 2131165231;
+			public const int abc_list_divider_mtrl_alpha = 2131165231;
 			
 			// aapt resource value: 0x7F070030
-			public const int abc_list_selector_disabled_holo_dark = 2131165232;
+			public const int abc_list_focused_holo = 2131165232;
 			
 			// aapt resource value: 0x7F070031
-			public const int abc_list_selector_disabled_holo_light = 2131165233;
+			public const int abc_list_longpressed_holo = 2131165233;
 			
 			// aapt resource value: 0x7F070032
-			public const int abc_list_selector_holo_dark = 2131165234;
+			public const int abc_list_pressed_holo_dark = 2131165234;
 			
 			// aapt resource value: 0x7F070033
-			public const int abc_list_selector_holo_light = 2131165235;
+			public const int abc_list_pressed_holo_light = 2131165235;
 			
 			// aapt resource value: 0x7F070034
-			public const int abc_menu_hardkey_panel_mtrl_mult = 2131165236;
+			public const int abc_list_selector_background_transition_holo_dark = 2131165236;
 			
 			// aapt resource value: 0x7F070035
-			public const int abc_popup_background_mtrl_mult = 2131165237;
+			public const int abc_list_selector_background_transition_holo_light = 2131165237;
 			
 			// aapt resource value: 0x7F070036
-			public const int abc_ratingbar_indicator_material = 2131165238;
+			public const int abc_list_selector_disabled_holo_dark = 2131165238;
 			
 			// aapt resource value: 0x7F070037
-			public const int abc_ratingbar_material = 2131165239;
+			public const int abc_list_selector_disabled_holo_light = 2131165239;
 			
 			// aapt resource value: 0x7F070038
-			public const int abc_ratingbar_small_material = 2131165240;
+			public const int abc_list_selector_holo_dark = 2131165240;
 			
 			// aapt resource value: 0x7F070039
-			public const int abc_scrubber_control_off_mtrl_alpha = 2131165241;
+			public const int abc_list_selector_holo_light = 2131165241;
 			
 			// aapt resource value: 0x7F07003A
-			public const int abc_scrubber_control_to_pressed_mtrl_000 = 2131165242;
+			public const int abc_menu_hardkey_panel_mtrl_mult = 2131165242;
 			
 			// aapt resource value: 0x7F07003B
-			public const int abc_scrubber_control_to_pressed_mtrl_005 = 2131165243;
+			public const int abc_popup_background_mtrl_mult = 2131165243;
 			
 			// aapt resource value: 0x7F07003C
-			public const int abc_scrubber_primary_mtrl_alpha = 2131165244;
+			public const int abc_ratingbar_indicator_material = 2131165244;
 			
 			// aapt resource value: 0x7F07003D
-			public const int abc_scrubber_track_mtrl_alpha = 2131165245;
+			public const int abc_ratingbar_material = 2131165245;
 			
 			// aapt resource value: 0x7F07003E
-			public const int abc_seekbar_thumb_material = 2131165246;
+			public const int abc_ratingbar_small_material = 2131165246;
 			
 			// aapt resource value: 0x7F07003F
-			public const int abc_seekbar_tick_mark_material = 2131165247;
+			public const int abc_scrubber_control_off_mtrl_alpha = 2131165247;
 			
 			// aapt resource value: 0x7F070040
-			public const int abc_seekbar_track_material = 2131165248;
+			public const int abc_scrubber_control_to_pressed_mtrl_000 = 2131165248;
 			
 			// aapt resource value: 0x7F070041
-			public const int abc_spinner_mtrl_am_alpha = 2131165249;
+			public const int abc_scrubber_control_to_pressed_mtrl_005 = 2131165249;
 			
 			// aapt resource value: 0x7F070042
-			public const int abc_spinner_textfield_background_material = 2131165250;
+			public const int abc_scrubber_primary_mtrl_alpha = 2131165250;
 			
 			// aapt resource value: 0x7F070043
-			public const int abc_switch_thumb_material = 2131165251;
+			public const int abc_scrubber_track_mtrl_alpha = 2131165251;
 			
 			// aapt resource value: 0x7F070044
-			public const int abc_switch_track_mtrl_alpha = 2131165252;
+			public const int abc_seekbar_thumb_material = 2131165252;
 			
 			// aapt resource value: 0x7F070045
-			public const int abc_tab_indicator_material = 2131165253;
+			public const int abc_seekbar_tick_mark_material = 2131165253;
 			
 			// aapt resource value: 0x7F070046
-			public const int abc_tab_indicator_mtrl_alpha = 2131165254;
-			
-			// aapt resource value: 0x7F07004E
-			public const int abc_textfield_activated_mtrl_alpha = 2131165262;
-			
-			// aapt resource value: 0x7F07004F
-			public const int abc_textfield_default_mtrl_alpha = 2131165263;
-			
-			// aapt resource value: 0x7F070050
-			public const int abc_textfield_search_activated_mtrl_alpha = 2131165264;
-			
-			// aapt resource value: 0x7F070051
-			public const int abc_textfield_search_default_mtrl_alpha = 2131165265;
-			
-			// aapt resource value: 0x7F070052
-			public const int abc_textfield_search_material = 2131165266;
+			public const int abc_seekbar_track_material = 2131165254;
 			
 			// aapt resource value: 0x7F070047
-			public const int abc_text_cursor_material = 2131165255;
+			public const int abc_spinner_mtrl_am_alpha = 2131165255;
 			
 			// aapt resource value: 0x7F070048
-			public const int abc_text_select_handle_left_mtrl_dark = 2131165256;
+			public const int abc_spinner_textfield_background_material = 2131165256;
 			
 			// aapt resource value: 0x7F070049
-			public const int abc_text_select_handle_left_mtrl_light = 2131165257;
+			public const int abc_switch_thumb_material = 2131165257;
 			
 			// aapt resource value: 0x7F07004A
-			public const int abc_text_select_handle_middle_mtrl_dark = 2131165258;
+			public const int abc_switch_track_mtrl_alpha = 2131165258;
 			
 			// aapt resource value: 0x7F07004B
-			public const int abc_text_select_handle_middle_mtrl_light = 2131165259;
+			public const int abc_tab_indicator_material = 2131165259;
 			
 			// aapt resource value: 0x7F07004C
-			public const int abc_text_select_handle_right_mtrl_dark = 2131165260;
-			
-			// aapt resource value: 0x7F07004D
-			public const int abc_text_select_handle_right_mtrl_light = 2131165261;
-			
-			// aapt resource value: 0x7F070053
-			public const int abc_vector_test = 2131165267;
+			public const int abc_tab_indicator_mtrl_alpha = 2131165260;
 			
 			// aapt resource value: 0x7F070054
-			public const int avd_hide_password = 2131165268;
+			public const int abc_textfield_activated_mtrl_alpha = 2131165268;
 			
 			// aapt resource value: 0x7F070055
-			public const int avd_show_password = 2131165269;
+			public const int abc_textfield_default_mtrl_alpha = 2131165269;
 			
 			// aapt resource value: 0x7F070056
-			public const int design_bottom_navigation_item_background = 2131165270;
+			public const int abc_textfield_search_activated_mtrl_alpha = 2131165270;
 			
 			// aapt resource value: 0x7F070057
-			public const int design_fab_background = 2131165271;
+			public const int abc_textfield_search_default_mtrl_alpha = 2131165271;
 			
 			// aapt resource value: 0x7F070058
-			public const int design_ic_visibility = 2131165272;
+			public const int abc_textfield_search_material = 2131165272;
+			
+			// aapt resource value: 0x7F07004D
+			public const int abc_text_cursor_material = 2131165261;
+			
+			// aapt resource value: 0x7F07004E
+			public const int abc_text_select_handle_left_mtrl_dark = 2131165262;
+			
+			// aapt resource value: 0x7F07004F
+			public const int abc_text_select_handle_left_mtrl_light = 2131165263;
+			
+			// aapt resource value: 0x7F070050
+			public const int abc_text_select_handle_middle_mtrl_dark = 2131165264;
+			
+			// aapt resource value: 0x7F070051
+			public const int abc_text_select_handle_middle_mtrl_light = 2131165265;
+			
+			// aapt resource value: 0x7F070052
+			public const int abc_text_select_handle_right_mtrl_dark = 2131165266;
+			
+			// aapt resource value: 0x7F070053
+			public const int abc_text_select_handle_right_mtrl_light = 2131165267;
 			
 			// aapt resource value: 0x7F070059
-			public const int design_ic_visibility_off = 2131165273;
+			public const int abc_vector_test = 2131165273;
 			
 			// aapt resource value: 0x7F07005A
-			public const int design_password_eye = 2131165274;
+			public const int avd_hide_password = 2131165274;
 			
 			// aapt resource value: 0x7F07005B
-			public const int design_snackbar_background = 2131165275;
+			public const int avd_show_password = 2131165275;
 			
 			// aapt resource value: 0x7F07005C
-			public const int ic_mtrl_chip_checked_black = 2131165276;
+			public const int design_bottom_navigation_item_background = 2131165276;
 			
 			// aapt resource value: 0x7F07005D
-			public const int ic_mtrl_chip_checked_circle = 2131165277;
+			public const int design_fab_background = 2131165277;
 			
 			// aapt resource value: 0x7F07005E
-			public const int ic_mtrl_chip_close_circle = 2131165278;
+			public const int design_ic_visibility = 2131165278;
 			
 			// aapt resource value: 0x7F07005F
-			public const int logo2 = 2131165279;
+			public const int design_ic_visibility_off = 2131165279;
 			
 			// aapt resource value: 0x7F070060
-			public const int mtrl_snackbar_background = 2131165280;
+			public const int design_password_eye = 2131165280;
 			
 			// aapt resource value: 0x7F070061
-			public const int mtrl_tabs_default_indicator = 2131165281;
+			public const int design_snackbar_background = 2131165281;
 			
 			// aapt resource value: 0x7F070062
-			public const int navigation_empty_icon = 2131165282;
+			public const int ic_mtrl_chip_checked_black = 2131165282;
 			
 			// aapt resource value: 0x7F070063
-			public const int notification_action_background = 2131165283;
+			public const int ic_mtrl_chip_checked_circle = 2131165283;
 			
 			// aapt resource value: 0x7F070064
-			public const int notification_bg = 2131165284;
+			public const int ic_mtrl_chip_close_circle = 2131165284;
 			
 			// aapt resource value: 0x7F070065
-			public const int notification_bg_low = 2131165285;
+			public const int logo = 2131165285;
 			
 			// aapt resource value: 0x7F070066
-			public const int notification_bg_low_normal = 2131165286;
+			public const int mtrl_snackbar_background = 2131165286;
 			
 			// aapt resource value: 0x7F070067
-			public const int notification_bg_low_pressed = 2131165287;
+			public const int mtrl_tabs_default_indicator = 2131165287;
 			
 			// aapt resource value: 0x7F070068
-			public const int notification_bg_normal = 2131165288;
+			public const int navigation_empty_icon = 2131165288;
 			
 			// aapt resource value: 0x7F070069
-			public const int notification_bg_normal_pressed = 2131165289;
+			public const int notification_action_background = 2131165289;
 			
 			// aapt resource value: 0x7F07006A
-			public const int notification_icon_background = 2131165290;
+			public const int notification_bg = 2131165290;
 			
 			// aapt resource value: 0x7F07006B
-			public const int notification_template_icon_bg = 2131165291;
+			public const int notification_bg_low = 2131165291;
 			
 			// aapt resource value: 0x7F07006C
-			public const int notification_template_icon_low_bg = 2131165292;
+			public const int notification_bg_low_normal = 2131165292;
 			
 			// aapt resource value: 0x7F07006D
-			public const int notification_tile_bg = 2131165293;
+			public const int notification_bg_low_pressed = 2131165293;
 			
 			// aapt resource value: 0x7F07006E
-			public const int notify_panel_notification_icon_bg = 2131165294;
+			public const int notification_bg_normal = 2131165294;
 			
 			// aapt resource value: 0x7F07006F
-			public const int tooltip_frame_dark = 2131165295;
+			public const int notification_bg_normal_pressed = 2131165295;
 			
 			// aapt resource value: 0x7F070070
-			public const int tooltip_frame_light = 2131165296;
+			public const int notification_icon_background = 2131165296;
+			
+			// aapt resource value: 0x7F070071
+			public const int notification_template_icon_bg = 2131165297;
+			
+			// aapt resource value: 0x7F070072
+			public const int notification_template_icon_low_bg = 2131165298;
+			
+			// aapt resource value: 0x7F070073
+			public const int notification_tile_bg = 2131165299;
+			
+			// aapt resource value: 0x7F070074
+			public const int notify_panel_notification_icon_bg = 2131165300;
+			
+			// aapt resource value: 0x7F070075
+			public const int tooltip_frame_dark = 2131165301;
+			
+			// aapt resource value: 0x7F070076
+			public const int tooltip_frame_light = 2131165302;
 			
 			static Drawable()
 			{
@@ -10974,659 +12470,626 @@ namespace Kouch.App.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7F080007
-			public const int action0 = 2131230727;
-			
-			// aapt resource value: 0x7F080019
-			public const int actions = 2131230745;
-			
-			// aapt resource value: 0x7F080008
-			public const int action_bar = 2131230728;
-			
-			// aapt resource value: 0x7F080009
-			public const int action_bar_activity_content = 2131230729;
-			
-			// aapt resource value: 0x7F08000A
-			public const int action_bar_container = 2131230730;
-			
-			// aapt resource value: 0x7F08000B
-			public const int action_bar_root = 2131230731;
-			
-			// aapt resource value: 0x7F08000C
-			public const int action_bar_spinner = 2131230732;
-			
-			// aapt resource value: 0x7F08000D
-			public const int action_bar_subtitle = 2131230733;
-			
-			// aapt resource value: 0x7F08000E
-			public const int action_bar_title = 2131230734;
-			
-			// aapt resource value: 0x7F08000F
-			public const int action_container = 2131230735;
-			
-			// aapt resource value: 0x7F080010
-			public const int action_context_bar = 2131230736;
-			
-			// aapt resource value: 0x7F080011
-			public const int action_divider = 2131230737;
-			
-			// aapt resource value: 0x7F080012
-			public const int action_image = 2131230738;
-			
-			// aapt resource value: 0x7F080013
-			public const int action_menu_divider = 2131230739;
-			
-			// aapt resource value: 0x7F080014
-			public const int action_menu_presenter = 2131230740;
-			
-			// aapt resource value: 0x7F080015
-			public const int action_mode_bar = 2131230741;
-			
-			// aapt resource value: 0x7F080016
-			public const int action_mode_bar_stub = 2131230742;
-			
-			// aapt resource value: 0x7F080017
-			public const int action_mode_close_button = 2131230743;
+			// aapt resource value: 0x7F080006
+			public const int action0 = 2131230726;
 			
 			// aapt resource value: 0x7F080018
-			public const int action_text = 2131230744;
+			public const int actions = 2131230744;
+			
+			// aapt resource value: 0x7F080007
+			public const int action_bar = 2131230727;
+			
+			// aapt resource value: 0x7F080008
+			public const int action_bar_activity_content = 2131230728;
+			
+			// aapt resource value: 0x7F080009
+			public const int action_bar_container = 2131230729;
+			
+			// aapt resource value: 0x7F08000A
+			public const int action_bar_root = 2131230730;
+			
+			// aapt resource value: 0x7F08000B
+			public const int action_bar_spinner = 2131230731;
+			
+			// aapt resource value: 0x7F08000C
+			public const int action_bar_subtitle = 2131230732;
+			
+			// aapt resource value: 0x7F08000D
+			public const int action_bar_title = 2131230733;
+			
+			// aapt resource value: 0x7F08000E
+			public const int action_container = 2131230734;
+			
+			// aapt resource value: 0x7F08000F
+			public const int action_context_bar = 2131230735;
+			
+			// aapt resource value: 0x7F080010
+			public const int action_divider = 2131230736;
+			
+			// aapt resource value: 0x7F080011
+			public const int action_image = 2131230737;
+			
+			// aapt resource value: 0x7F080012
+			public const int action_menu_divider = 2131230738;
+			
+			// aapt resource value: 0x7F080013
+			public const int action_menu_presenter = 2131230739;
+			
+			// aapt resource value: 0x7F080014
+			public const int action_mode_bar = 2131230740;
+			
+			// aapt resource value: 0x7F080015
+			public const int action_mode_bar_stub = 2131230741;
+			
+			// aapt resource value: 0x7F080016
+			public const int action_mode_close_button = 2131230742;
+			
+			// aapt resource value: 0x7F080017
+			public const int action_text = 2131230743;
+			
+			// aapt resource value: 0x7F080019
+			public const int activity_chooser_view_content = 2131230745;
 			
 			// aapt resource value: 0x7F08001A
-			public const int activity_chooser_view_content = 2131230746;
+			public const int add = 2131230746;
 			
 			// aapt resource value: 0x7F08001B
-			public const int add = 2131230747;
+			public const int alertTitle = 2131230747;
 			
 			// aapt resource value: 0x7F08001C
-			public const int alertTitle = 2131230748;
-			
-			// aapt resource value: 0x7F08001D
-			public const int all = 2131230749;
+			public const int all = 2131230748;
 			
 			// aapt resource value: 0x7F080000
 			public const int ALT = 2131230720;
 			
+			// aapt resource value: 0x7F08001D
+			public const int always = 2131230749;
+			
 			// aapt resource value: 0x7F08001E
-			public const int always = 2131230750;
+			public const int async = 2131230750;
 			
 			// aapt resource value: 0x7F08001F
-			public const int application_name = 2131230751;
-			
-			// aapt resource value: 0x7F080001
-			public const int APPLICATION_NAME = 2131230721;
+			public const int auto = 2131230751;
 			
 			// aapt resource value: 0x7F080020
-			public const int async = 2131230752;
+			public const int beginning = 2131230752;
 			
 			// aapt resource value: 0x7F080021
-			public const int auto = 2131230753;
+			public const int blocking = 2131230753;
 			
 			// aapt resource value: 0x7F080022
-			public const int background = 2131230754;
+			public const int bottom = 2131230754;
 			
 			// aapt resource value: 0x7F080023
-			public const int beginning = 2131230755;
+			public const int bottomtab_navarea = 2131230755;
 			
 			// aapt resource value: 0x7F080024
-			public const int blocking = 2131230756;
+			public const int bottomtab_tabbar = 2131230756;
 			
 			// aapt resource value: 0x7F080025
-			public const int bottom = 2131230757;
-			
-			// aapt resource value: 0x7F080026
-			public const int bottomtab_navarea = 2131230758;
-			
-			// aapt resource value: 0x7F080027
-			public const int bottomtab_tabbar = 2131230759;
+			public const int browser_actions_header_text = 2131230757;
 			
 			// aapt resource value: 0x7F080028
-			public const int browser_actions_header_text = 2131230760;
+			public const int browser_actions_menu_items = 2131230760;
 			
-			// aapt resource value: 0x7F08002B
-			public const int browser_actions_menu_items = 2131230763;
+			// aapt resource value: 0x7F080026
+			public const int browser_actions_menu_item_icon = 2131230758;
+			
+			// aapt resource value: 0x7F080027
+			public const int browser_actions_menu_item_text = 2131230759;
 			
 			// aapt resource value: 0x7F080029
-			public const int browser_actions_menu_item_icon = 2131230761;
+			public const int browser_actions_menu_view = 2131230761;
 			
 			// aapt resource value: 0x7F08002A
-			public const int browser_actions_menu_item_text = 2131230762;
+			public const int buttonPanel = 2131230762;
+			
+			// aapt resource value: 0x7F08002B
+			public const int cancel_action = 2131230763;
 			
 			// aapt resource value: 0x7F08002C
-			public const int browser_actions_menu_view = 2131230764;
+			public const int center = 2131230764;
 			
 			// aapt resource value: 0x7F08002D
-			public const int button1 = 2131230765;
+			public const int center_horizontal = 2131230765;
 			
 			// aapt resource value: 0x7F08002E
-			public const int button2 = 2131230766;
+			public const int center_vertical = 2131230766;
 			
 			// aapt resource value: 0x7F08002F
-			public const int button3 = 2131230767;
+			public const int checkbox = 2131230767;
 			
 			// aapt resource value: 0x7F080030
-			public const int buttonPanel = 2131230768;
+			public const int chronometer = 2131230768;
 			
 			// aapt resource value: 0x7F080031
-			public const int cancel_action = 2131230769;
+			public const int clip_horizontal = 2131230769;
 			
 			// aapt resource value: 0x7F080032
-			public const int center = 2131230770;
+			public const int clip_vertical = 2131230770;
 			
 			// aapt resource value: 0x7F080033
-			public const int center_horizontal = 2131230771;
+			public const int collapseActionView = 2131230771;
 			
 			// aapt resource value: 0x7F080034
-			public const int center_vertical = 2131230772;
+			public const int container = 2131230772;
 			
 			// aapt resource value: 0x7F080035
-			public const int checkbox = 2131230773;
+			public const int content = 2131230773;
 			
 			// aapt resource value: 0x7F080036
-			public const int chronometer = 2131230774;
+			public const int contentPanel = 2131230774;
 			
 			// aapt resource value: 0x7F080037
-			public const int clip_horizontal = 2131230775;
+			public const int coordinator = 2131230775;
+			
+			// aapt resource value: 0x7F080001
+			public const int CTRL = 2131230721;
 			
 			// aapt resource value: 0x7F080038
-			public const int clip_vertical = 2131230776;
+			public const int custom = 2131230776;
 			
 			// aapt resource value: 0x7F080039
-			public const int collapseActionView = 2131230777;
+			public const int customPanel = 2131230777;
 			
 			// aapt resource value: 0x7F08003A
-			public const int container = 2131230778;
+			public const int decor_content_parent = 2131230778;
 			
 			// aapt resource value: 0x7F08003B
-			public const int content = 2131230779;
+			public const int default_activity_button = 2131230779;
 			
 			// aapt resource value: 0x7F08003C
-			public const int contentPanel = 2131230780;
+			public const int design_bottom_sheet = 2131230780;
 			
 			// aapt resource value: 0x7F08003D
-			public const int coordinator = 2131230781;
-			
-			// aapt resource value: 0x7F080002
-			public const int CTRL = 2131230722;
+			public const int design_menu_item_action_area = 2131230781;
 			
 			// aapt resource value: 0x7F08003E
-			public const int custom = 2131230782;
+			public const int design_menu_item_action_area_stub = 2131230782;
 			
 			// aapt resource value: 0x7F08003F
-			public const int customPanel = 2131230783;
+			public const int design_menu_item_text = 2131230783;
 			
 			// aapt resource value: 0x7F080040
-			public const int decor_content_parent = 2131230784;
+			public const int design_navigation_view = 2131230784;
 			
 			// aapt resource value: 0x7F080041
-			public const int default_activity_button = 2131230785;
+			public const int disableHome = 2131230785;
 			
 			// aapt resource value: 0x7F080042
-			public const int design_bottom_sheet = 2131230786;
+			public const int edit_query = 2131230786;
 			
 			// aapt resource value: 0x7F080043
-			public const int design_menu_item_action_area = 2131230787;
+			public const int end = 2131230787;
 			
 			// aapt resource value: 0x7F080044
-			public const int design_menu_item_action_area_stub = 2131230788;
+			public const int end_padder = 2131230788;
 			
 			// aapt resource value: 0x7F080045
-			public const int design_menu_item_text = 2131230789;
+			public const int enterAlways = 2131230789;
 			
 			// aapt resource value: 0x7F080046
-			public const int design_navigation_view = 2131230790;
+			public const int enterAlwaysCollapsed = 2131230790;
 			
 			// aapt resource value: 0x7F080047
-			public const int disableHome = 2131230791;
-			
-			// aapt resource value: 0x7F080048
-			public const int edit_query = 2131230792;
+			public const int exitUntilCollapsed = 2131230791;
 			
 			// aapt resource value: 0x7F080049
-			public const int end = 2131230793;
+			public const int expanded_menu = 2131230793;
+			
+			// aapt resource value: 0x7F080048
+			public const int expand_activities_button = 2131230792;
 			
 			// aapt resource value: 0x7F08004A
-			public const int end_padder = 2131230794;
-			
-			// aapt resource value: 0x7F08004B
-			public const int enterAlways = 2131230795;
-			
-			// aapt resource value: 0x7F08004C
-			public const int enterAlwaysCollapsed = 2131230796;
+			public const int fill = 2131230794;
 			
 			// aapt resource value: 0x7F08004D
-			public const int exitUntilCollapsed = 2131230797;
+			public const int filled = 2131230797;
 			
-			// aapt resource value: 0x7F08004F
-			public const int expanded_menu = 2131230799;
+			// aapt resource value: 0x7F08004B
+			public const int fill_horizontal = 2131230795;
+			
+			// aapt resource value: 0x7F08004C
+			public const int fill_vertical = 2131230796;
 			
 			// aapt resource value: 0x7F08004E
-			public const int expand_activities_button = 2131230798;
+			public const int @fixed = 2131230798;
+			
+			// aapt resource value: 0x7F08004F
+			public const int flyoutcontent_appbar = 2131230799;
 			
 			// aapt resource value: 0x7F080050
-			public const int fill = 2131230800;
-			
-			// aapt resource value: 0x7F080053
-			public const int filled = 2131230803;
+			public const int flyoutcontent_recycler = 2131230800;
 			
 			// aapt resource value: 0x7F080051
-			public const int fill_horizontal = 2131230801;
+			public const int forever = 2131230801;
+			
+			// aapt resource value: 0x7F080002
+			public const int FUNCTION = 2131230722;
 			
 			// aapt resource value: 0x7F080052
-			public const int fill_vertical = 2131230802;
+			public const int ghost_view = 2131230802;
+			
+			// aapt resource value: 0x7F080053
+			public const int group_divider = 2131230803;
 			
 			// aapt resource value: 0x7F080054
-			public const int @fixed = 2131230804;
+			public const int home = 2131230804;
 			
 			// aapt resource value: 0x7F080055
-			public const int flyoutcontent_appbar = 2131230805;
+			public const int homeAsUp = 2131230805;
 			
 			// aapt resource value: 0x7F080056
-			public const int flyoutcontent_recycler = 2131230806;
+			public const int icon = 2131230806;
 			
 			// aapt resource value: 0x7F080057
-			public const int forever = 2131230807;
-			
-			// aapt resource value: 0x7F080003
-			public const int FUNCTION = 2131230723;
+			public const int icon_group = 2131230807;
 			
 			// aapt resource value: 0x7F080058
-			public const int ghost_view = 2131230808;
+			public const int ifRoom = 2131230808;
 			
 			// aapt resource value: 0x7F080059
-			public const int group_divider = 2131230809;
+			public const int image = 2131230809;
 			
 			// aapt resource value: 0x7F08005A
-			public const int home = 2131230810;
+			public const int info = 2131230810;
 			
 			// aapt resource value: 0x7F08005B
-			public const int homeAsUp = 2131230811;
+			public const int italic = 2131230811;
 			
 			// aapt resource value: 0x7F08005C
-			public const int icon = 2131230812;
+			public const int item_touch_helper_previous_elevation = 2131230812;
 			
 			// aapt resource value: 0x7F08005D
-			public const int icon1 = 2131230813;
+			public const int labeled = 2131230813;
 			
 			// aapt resource value: 0x7F08005E
-			public const int icon_group = 2131230814;
+			public const int largeLabel = 2131230814;
 			
 			// aapt resource value: 0x7F08005F
-			public const int ifRoom = 2131230815;
+			public const int left = 2131230815;
 			
 			// aapt resource value: 0x7F080060
-			public const int image = 2131230816;
+			public const int line1 = 2131230816;
 			
 			// aapt resource value: 0x7F080061
-			public const int info = 2131230817;
+			public const int line3 = 2131230817;
 			
 			// aapt resource value: 0x7F080062
-			public const int italic = 2131230818;
+			public const int listMode = 2131230818;
 			
 			// aapt resource value: 0x7F080063
-			public const int item_touch_helper_previous_elevation = 2131230819;
+			public const int list_item = 2131230819;
 			
 			// aapt resource value: 0x7F080064
-			public const int labeled = 2131230820;
+			public const int main_appbar = 2131230820;
 			
 			// aapt resource value: 0x7F080065
-			public const int largeLabel = 2131230821;
+			public const int main_tablayout = 2131230821;
 			
 			// aapt resource value: 0x7F080066
-			public const int left = 2131230822;
+			public const int main_toolbar = 2131230822;
 			
 			// aapt resource value: 0x7F080067
-			public const int line1 = 2131230823;
+			public const int main_viewpager = 2131230823;
 			
 			// aapt resource value: 0x7F080068
-			public const int line3 = 2131230824;
+			public const int masked = 2131230824;
 			
 			// aapt resource value: 0x7F080069
-			public const int listMode = 2131230825;
+			public const int media_actions = 2131230825;
 			
 			// aapt resource value: 0x7F08006A
-			public const int list_item = 2131230826;
+			public const int message = 2131230826;
+			
+			// aapt resource value: 0x7F080003
+			public const int META = 2131230723;
 			
 			// aapt resource value: 0x7F08006B
-			public const int main_appbar = 2131230827;
+			public const int middle = 2131230827;
 			
 			// aapt resource value: 0x7F08006C
-			public const int main_tablayout = 2131230828;
+			public const int mini = 2131230828;
 			
 			// aapt resource value: 0x7F08006D
-			public const int main_toolbar = 2131230829;
+			public const int mtrl_child_content_container = 2131230829;
 			
 			// aapt resource value: 0x7F08006E
-			public const int main_viewpager = 2131230830;
+			public const int mtrl_internal_children_alpha_tag = 2131230830;
 			
 			// aapt resource value: 0x7F08006F
-			public const int mask = 2131230831;
+			public const int multiply = 2131230831;
 			
 			// aapt resource value: 0x7F080070
-			public const int masked = 2131230832;
+			public const int navigation_header_container = 2131230832;
 			
 			// aapt resource value: 0x7F080071
-			public const int media_actions = 2131230833;
+			public const int never = 2131230833;
 			
 			// aapt resource value: 0x7F080072
-			public const int message = 2131230834;
-			
-			// aapt resource value: 0x7F080004
-			public const int META = 2131230724;
+			public const int none = 2131230834;
 			
 			// aapt resource value: 0x7F080073
-			public const int middle = 2131230835;
+			public const int normal = 2131230835;
 			
 			// aapt resource value: 0x7F080074
-			public const int mini = 2131230836;
+			public const int notification_background = 2131230836;
 			
 			// aapt resource value: 0x7F080075
-			public const int mtrl_child_content_container = 2131230837;
+			public const int notification_main_column = 2131230837;
 			
 			// aapt resource value: 0x7F080076
-			public const int mtrl_internal_children_alpha_tag = 2131230838;
+			public const int notification_main_column_container = 2131230838;
 			
 			// aapt resource value: 0x7F080077
-			public const int multiply = 2131230839;
+			public const int outline = 2131230839;
 			
 			// aapt resource value: 0x7F080078
-			public const int navigation_header_container = 2131230840;
+			public const int parallax = 2131230840;
 			
 			// aapt resource value: 0x7F080079
-			public const int never = 2131230841;
+			public const int parentPanel = 2131230841;
 			
 			// aapt resource value: 0x7F08007A
-			public const int none = 2131230842;
+			public const int parent_matrix = 2131230842;
 			
 			// aapt resource value: 0x7F08007B
-			public const int normal = 2131230843;
+			public const int pin = 2131230843;
 			
 			// aapt resource value: 0x7F08007C
-			public const int notification_background = 2131230844;
+			public const int progress_circular = 2131230844;
 			
 			// aapt resource value: 0x7F08007D
-			public const int notification_main_column = 2131230845;
+			public const int progress_horizontal = 2131230845;
 			
 			// aapt resource value: 0x7F08007E
-			public const int notification_main_column_container = 2131230846;
+			public const int radio = 2131230846;
 			
 			// aapt resource value: 0x7F08007F
-			public const int outline = 2131230847;
+			public const int right = 2131230847;
 			
 			// aapt resource value: 0x7F080080
-			public const int parallax = 2131230848;
+			public const int right_icon = 2131230848;
 			
 			// aapt resource value: 0x7F080081
-			public const int parentPanel = 2131230849;
+			public const int right_side = 2131230849;
 			
 			// aapt resource value: 0x7F080082
-			public const int parent_matrix = 2131230850;
+			public const int save_image_matrix = 2131230850;
 			
 			// aapt resource value: 0x7F080083
-			public const int pin = 2131230851;
+			public const int save_non_transition_alpha = 2131230851;
 			
 			// aapt resource value: 0x7F080084
-			public const int progress = 2131230852;
+			public const int save_scale_type = 2131230852;
 			
 			// aapt resource value: 0x7F080085
-			public const int progress_circular = 2131230853;
+			public const int screen = 2131230853;
 			
 			// aapt resource value: 0x7F080086
-			public const int progress_horizontal = 2131230854;
-			
-			// aapt resource value: 0x7F080087
-			public const int radio = 2131230855;
-			
-			// aapt resource value: 0x7F080088
-			public const int right = 2131230856;
-			
-			// aapt resource value: 0x7F080089
-			public const int right_icon = 2131230857;
+			public const int scroll = 2131230854;
 			
 			// aapt resource value: 0x7F08008A
-			public const int right_side = 2131230858;
+			public const int scrollable = 2131230858;
+			
+			// aapt resource value: 0x7F080087
+			public const int scrollIndicatorDown = 2131230855;
+			
+			// aapt resource value: 0x7F080088
+			public const int scrollIndicatorUp = 2131230856;
+			
+			// aapt resource value: 0x7F080089
+			public const int scrollView = 2131230857;
 			
 			// aapt resource value: 0x7F08008B
-			public const int save_image_matrix = 2131230859;
+			public const int search_badge = 2131230859;
 			
 			// aapt resource value: 0x7F08008C
-			public const int save_non_transition_alpha = 2131230860;
+			public const int search_bar = 2131230860;
 			
 			// aapt resource value: 0x7F08008D
-			public const int save_scale_type = 2131230861;
+			public const int search_button = 2131230861;
 			
 			// aapt resource value: 0x7F08008E
-			public const int screen = 2131230862;
+			public const int search_close_btn = 2131230862;
 			
 			// aapt resource value: 0x7F08008F
-			public const int scroll = 2131230863;
-			
-			// aapt resource value: 0x7F080093
-			public const int scrollable = 2131230867;
+			public const int search_edit_frame = 2131230863;
 			
 			// aapt resource value: 0x7F080090
-			public const int scrollIndicatorDown = 2131230864;
+			public const int search_go_btn = 2131230864;
 			
 			// aapt resource value: 0x7F080091
-			public const int scrollIndicatorUp = 2131230865;
+			public const int search_mag_icon = 2131230865;
 			
 			// aapt resource value: 0x7F080092
-			public const int scrollView = 2131230866;
+			public const int search_plate = 2131230866;
+			
+			// aapt resource value: 0x7F080093
+			public const int search_src_text = 2131230867;
 			
 			// aapt resource value: 0x7F080094
-			public const int search_badge = 2131230868;
-			
-			// aapt resource value: 0x7F080095
-			public const int search_bar = 2131230869;
+			public const int search_voice_btn = 2131230868;
 			
 			// aapt resource value: 0x7F080096
-			public const int search_button = 2131230870;
+			public const int selected = 2131230870;
+			
+			// aapt resource value: 0x7F080095
+			public const int select_dialog_listview = 2131230869;
 			
 			// aapt resource value: 0x7F080097
-			public const int search_close_btn = 2131230871;
+			public const int shellcontent_appbar = 2131230871;
 			
 			// aapt resource value: 0x7F080098
-			public const int search_edit_frame = 2131230872;
+			public const int shellcontent_toolbar = 2131230872;
+			
+			// aapt resource value: 0x7F080004
+			public const int SHIFT = 2131230724;
 			
 			// aapt resource value: 0x7F080099
-			public const int search_go_btn = 2131230873;
+			public const int shortcut = 2131230873;
 			
 			// aapt resource value: 0x7F08009A
-			public const int search_mag_icon = 2131230874;
+			public const int showCustom = 2131230874;
 			
 			// aapt resource value: 0x7F08009B
-			public const int search_plate = 2131230875;
+			public const int showHome = 2131230875;
 			
 			// aapt resource value: 0x7F08009C
-			public const int search_src_text = 2131230876;
+			public const int showTitle = 2131230876;
 			
 			// aapt resource value: 0x7F08009D
-			public const int search_voice_btn = 2131230877;
+			public const int sliding_tabs = 2131230877;
 			
 			// aapt resource value: 0x7F08009E
-			public const int secondaryProgress = 2131230878;
-			
-			// aapt resource value: 0x7F0800A0
-			public const int selected = 2131230880;
+			public const int smallLabel = 2131230878;
 			
 			// aapt resource value: 0x7F08009F
-			public const int select_dialog_listview = 2131230879;
+			public const int snackbar_action = 2131230879;
+			
+			// aapt resource value: 0x7F0800A0
+			public const int snackbar_text = 2131230880;
 			
 			// aapt resource value: 0x7F0800A1
-			public const int shellcontent_appbar = 2131230881;
+			public const int snap = 2131230881;
 			
 			// aapt resource value: 0x7F0800A2
-			public const int shellcontent_toolbar = 2131230882;
-			
-			// aapt resource value: 0x7F080005
-			public const int SHIFT = 2131230725;
+			public const int snapMargins = 2131230882;
 			
 			// aapt resource value: 0x7F0800A3
-			public const int shortcut = 2131230883;
+			public const int spacer = 2131230883;
 			
 			// aapt resource value: 0x7F0800A4
-			public const int showCustom = 2131230884;
+			public const int split_action_bar = 2131230884;
 			
 			// aapt resource value: 0x7F0800A5
-			public const int showHome = 2131230885;
+			public const int src_atop = 2131230885;
 			
 			// aapt resource value: 0x7F0800A6
-			public const int showTitle = 2131230886;
+			public const int src_in = 2131230886;
 			
 			// aapt resource value: 0x7F0800A7
-			public const int sliding_tabs = 2131230887;
+			public const int src_over = 2131230887;
 			
 			// aapt resource value: 0x7F0800A8
-			public const int smallLabel = 2131230888;
+			public const int start = 2131230888;
 			
 			// aapt resource value: 0x7F0800A9
-			public const int snackbar_action = 2131230889;
+			public const int status_bar_latest_event_content = 2131230889;
 			
 			// aapt resource value: 0x7F0800AA
-			public const int snackbar_text = 2131230890;
+			public const int stretch = 2131230890;
 			
 			// aapt resource value: 0x7F0800AB
-			public const int snap = 2131230891;
+			public const int submenuarrow = 2131230891;
 			
 			// aapt resource value: 0x7F0800AC
-			public const int snapMargins = 2131230892;
+			public const int submit_area = 2131230892;
+			
+			// aapt resource value: 0x7F080005
+			public const int SYM = 2131230725;
 			
 			// aapt resource value: 0x7F0800AD
-			public const int spacer = 2131230893;
+			public const int tabMode = 2131230893;
 			
 			// aapt resource value: 0x7F0800AE
-			public const int split_action_bar = 2131230894;
+			public const int tag_transition_group = 2131230894;
 			
 			// aapt resource value: 0x7F0800AF
-			public const int src_atop = 2131230895;
+			public const int tag_unhandled_key_event_manager = 2131230895;
 			
 			// aapt resource value: 0x7F0800B0
-			public const int src_in = 2131230896;
+			public const int tag_unhandled_key_listeners = 2131230896;
 			
 			// aapt resource value: 0x7F0800B1
-			public const int src_over = 2131230897;
+			public const int text = 2131230897;
 			
 			// aapt resource value: 0x7F0800B2
-			public const int start = 2131230898;
-			
-			// aapt resource value: 0x7F0800B3
-			public const int status_bar_latest_event_content = 2131230899;
-			
-			// aapt resource value: 0x7F0800B4
-			public const int stretch = 2131230900;
-			
-			// aapt resource value: 0x7F0800B5
-			public const int submenuarrow = 2131230901;
-			
-			// aapt resource value: 0x7F0800B6
-			public const int submit_area = 2131230902;
-			
-			// aapt resource value: 0x7F080006
-			public const int SYM = 2131230726;
+			public const int text2 = 2131230898;
 			
 			// aapt resource value: 0x7F0800B7
-			public const int tabMode = 2131230903;
+			public const int textinput_counter = 2131230903;
 			
 			// aapt resource value: 0x7F0800B8
-			public const int tag_transition_group = 2131230904;
+			public const int textinput_error = 2131230904;
 			
 			// aapt resource value: 0x7F0800B9
-			public const int tag_unhandled_key_event_manager = 2131230905;
+			public const int textinput_helper_text = 2131230905;
+			
+			// aapt resource value: 0x7F0800B3
+			public const int textSpacerNoButtons = 2131230899;
+			
+			// aapt resource value: 0x7F0800B4
+			public const int textSpacerNoTitle = 2131230900;
+			
+			// aapt resource value: 0x7F0800B5
+			public const int textStart = 2131230901;
+			
+			// aapt resource value: 0x7F0800B6
+			public const int text_input_password_toggle = 2131230902;
 			
 			// aapt resource value: 0x7F0800BA
-			public const int tag_unhandled_key_listeners = 2131230906;
+			public const int time = 2131230906;
 			
 			// aapt resource value: 0x7F0800BB
-			public const int text = 2131230907;
+			public const int title = 2131230907;
 			
 			// aapt resource value: 0x7F0800BC
-			public const int text1 = 2131230908;
+			public const int titleDividerNoCustom = 2131230908;
 			
 			// aapt resource value: 0x7F0800BD
-			public const int text2 = 2131230909;
-			
-			// aapt resource value: 0x7F0800C2
-			public const int textinput_counter = 2131230914;
-			
-			// aapt resource value: 0x7F0800C3
-			public const int textinput_error = 2131230915;
-			
-			// aapt resource value: 0x7F0800C4
-			public const int textinput_helper_text = 2131230916;
+			public const int title_template = 2131230909;
 			
 			// aapt resource value: 0x7F0800BE
-			public const int textSpacerNoButtons = 2131230910;
+			public const int toolbar = 2131230910;
 			
 			// aapt resource value: 0x7F0800BF
-			public const int textSpacerNoTitle = 2131230911;
+			public const int top = 2131230911;
 			
 			// aapt resource value: 0x7F0800C0
-			public const int textStart = 2131230912;
+			public const int topPanel = 2131230912;
 			
 			// aapt resource value: 0x7F0800C1
-			public const int text_input_password_toggle = 2131230913;
+			public const int touch_outside = 2131230913;
+			
+			// aapt resource value: 0x7F0800C2
+			public const int transition_current_scene = 2131230914;
+			
+			// aapt resource value: 0x7F0800C3
+			public const int transition_layout_save = 2131230915;
+			
+			// aapt resource value: 0x7F0800C4
+			public const int transition_position = 2131230916;
 			
 			// aapt resource value: 0x7F0800C5
-			public const int time = 2131230917;
+			public const int transition_scene_layoutid_cache = 2131230917;
 			
 			// aapt resource value: 0x7F0800C6
-			public const int title = 2131230918;
+			public const int transition_transform = 2131230918;
 			
 			// aapt resource value: 0x7F0800C7
-			public const int titleDividerNoCustom = 2131230919;
+			public const int uniform = 2131230919;
 			
 			// aapt resource value: 0x7F0800C8
-			public const int title_template = 2131230920;
+			public const int unlabeled = 2131230920;
 			
 			// aapt resource value: 0x7F0800C9
-			public const int toolbar = 2131230921;
+			public const int up = 2131230921;
 			
 			// aapt resource value: 0x7F0800CA
-			public const int top = 2131230922;
+			public const int useLogo = 2131230922;
 			
 			// aapt resource value: 0x7F0800CB
-			public const int topPanel = 2131230923;
+			public const int view_offset_helper = 2131230923;
 			
 			// aapt resource value: 0x7F0800CC
-			public const int touch_outside = 2131230924;
+			public const int visible = 2131230924;
 			
 			// aapt resource value: 0x7F0800CD
-			public const int transition_current_scene = 2131230925;
+			public const int withText = 2131230925;
 			
 			// aapt resource value: 0x7F0800CE
-			public const int transition_layout_save = 2131230926;
-			
-			// aapt resource value: 0x7F0800CF
-			public const int transition_position = 2131230927;
-			
-			// aapt resource value: 0x7F0800D0
-			public const int transition_scene_layoutid_cache = 2131230928;
-			
-			// aapt resource value: 0x7F0800D1
-			public const int transition_transform = 2131230929;
-			
-			// aapt resource value: 0x7F0800D2
-			public const int uniform = 2131230930;
-			
-			// aapt resource value: 0x7F0800D3
-			public const int unlabeled = 2131230931;
-			
-			// aapt resource value: 0x7F0800D4
-			public const int up = 2131230932;
-			
-			// aapt resource value: 0x7F0800D5
-			public const int useLogo = 2131230933;
-			
-			// aapt resource value: 0x7F0800D6
-			public const int view_offset_helper = 2131230934;
-			
-			// aapt resource value: 0x7F0800D7
-			public const int visible = 2131230935;
-			
-			// aapt resource value: 0x7F0800D8
-			public const int withText = 2131230936;
-			
-			// aapt resource value: 0x7F0800D9
-			public const int wrap_content = 2131230937;
+			public const int wrap_content = 2131230926;
 			
 			static Id()
 			{
@@ -11724,218 +13187,218 @@ namespace Kouch.App.Droid
 		public partial class Layout
 		{
 			
-			// aapt resource value: 0x7F0B0006
-			public const int abc_action_bar_title_item = 2131427334;
-			
-			// aapt resource value: 0x7F0B0007
-			public const int abc_action_bar_up_container = 2131427335;
-			
-			// aapt resource value: 0x7F0B0008
-			public const int abc_action_menu_item_layout = 2131427336;
-			
-			// aapt resource value: 0x7F0B0009
-			public const int abc_action_menu_layout = 2131427337;
-			
-			// aapt resource value: 0x7F0B000A
-			public const int abc_action_mode_bar = 2131427338;
-			
-			// aapt resource value: 0x7F0B000B
-			public const int abc_action_mode_close_item_material = 2131427339;
-			
-			// aapt resource value: 0x7F0B000C
-			public const int abc_activity_chooser_view = 2131427340;
-			
-			// aapt resource value: 0x7F0B000D
-			public const int abc_activity_chooser_view_list_item = 2131427341;
-			
-			// aapt resource value: 0x7F0B000E
-			public const int abc_alert_dialog_button_bar_material = 2131427342;
-			
-			// aapt resource value: 0x7F0B000F
-			public const int abc_alert_dialog_material = 2131427343;
-			
-			// aapt resource value: 0x7F0B0010
-			public const int abc_alert_dialog_title_material = 2131427344;
-			
-			// aapt resource value: 0x7F0B0011
-			public const int abc_cascading_menu_item_layout = 2131427345;
-			
-			// aapt resource value: 0x7F0B0012
-			public const int abc_dialog_title_material = 2131427346;
-			
-			// aapt resource value: 0x7F0B0013
-			public const int abc_expanded_menu_layout = 2131427347;
-			
-			// aapt resource value: 0x7F0B0014
-			public const int abc_list_menu_item_checkbox = 2131427348;
-			
-			// aapt resource value: 0x7F0B0015
-			public const int abc_list_menu_item_icon = 2131427349;
-			
-			// aapt resource value: 0x7F0B0016
-			public const int abc_list_menu_item_layout = 2131427350;
-			
-			// aapt resource value: 0x7F0B0017
-			public const int abc_list_menu_item_radio = 2131427351;
-			
-			// aapt resource value: 0x7F0B0018
-			public const int abc_popup_menu_header_item_layout = 2131427352;
-			
-			// aapt resource value: 0x7F0B0019
-			public const int abc_popup_menu_item_layout = 2131427353;
-			
-			// aapt resource value: 0x7F0B001A
-			public const int abc_screen_content_include = 2131427354;
-			
-			// aapt resource value: 0x7F0B001B
-			public const int abc_screen_simple = 2131427355;
-			
-			// aapt resource value: 0x7F0B001C
-			public const int abc_screen_simple_overlay_action_mode = 2131427356;
-			
-			// aapt resource value: 0x7F0B001D
-			public const int abc_screen_toolbar = 2131427357;
-			
-			// aapt resource value: 0x7F0B001E
-			public const int abc_search_dropdown_item_icons_2line = 2131427358;
-			
-			// aapt resource value: 0x7F0B001F
-			public const int abc_search_view = 2131427359;
-			
-			// aapt resource value: 0x7F0B0020
-			public const int abc_select_dialog_material = 2131427360;
-			
-			// aapt resource value: 0x7F0B0021
-			public const int abc_tooltip = 2131427361;
-			
 			// aapt resource value: 0x7F0B0000
-			public const int BottomTabLayout = 2131427328;
-			
-			// aapt resource value: 0x7F0B0022
-			public const int browser_actions_context_menu_page = 2131427362;
-			
-			// aapt resource value: 0x7F0B0023
-			public const int browser_actions_context_menu_row = 2131427363;
-			
-			// aapt resource value: 0x7F0B0024
-			public const int design_bottom_navigation_item = 2131427364;
-			
-			// aapt resource value: 0x7F0B0025
-			public const int design_bottom_sheet_dialog = 2131427365;
-			
-			// aapt resource value: 0x7F0B0026
-			public const int design_layout_snackbar = 2131427366;
-			
-			// aapt resource value: 0x7F0B0027
-			public const int design_layout_snackbar_include = 2131427367;
-			
-			// aapt resource value: 0x7F0B0028
-			public const int design_layout_tab_icon = 2131427368;
-			
-			// aapt resource value: 0x7F0B0029
-			public const int design_layout_tab_text = 2131427369;
-			
-			// aapt resource value: 0x7F0B002A
-			public const int design_menu_item_action_area = 2131427370;
-			
-			// aapt resource value: 0x7F0B002B
-			public const int design_navigation_item = 2131427371;
-			
-			// aapt resource value: 0x7F0B002C
-			public const int design_navigation_item_header = 2131427372;
-			
-			// aapt resource value: 0x7F0B002D
-			public const int design_navigation_item_separator = 2131427373;
-			
-			// aapt resource value: 0x7F0B002E
-			public const int design_navigation_item_subheader = 2131427374;
-			
-			// aapt resource value: 0x7F0B002F
-			public const int design_navigation_menu = 2131427375;
-			
-			// aapt resource value: 0x7F0B0030
-			public const int design_navigation_menu_item = 2131427376;
-			
-			// aapt resource value: 0x7F0B0031
-			public const int design_text_input_password_icon = 2131427377;
+			public const int abc_action_bar_title_item = 2131427328;
 			
 			// aapt resource value: 0x7F0B0001
-			public const int FlyoutContent = 2131427329;
-			
-			// aapt resource value: 0x7F0B0032
-			public const int mtrl_layout_snackbar = 2131427378;
-			
-			// aapt resource value: 0x7F0B0033
-			public const int mtrl_layout_snackbar_include = 2131427379;
-			
-			// aapt resource value: 0x7F0B0034
-			public const int notification_action = 2131427380;
-			
-			// aapt resource value: 0x7F0B0035
-			public const int notification_action_tombstone = 2131427381;
-			
-			// aapt resource value: 0x7F0B0036
-			public const int notification_media_action = 2131427382;
-			
-			// aapt resource value: 0x7F0B0037
-			public const int notification_media_cancel_action = 2131427383;
-			
-			// aapt resource value: 0x7F0B0038
-			public const int notification_template_big_media = 2131427384;
-			
-			// aapt resource value: 0x7F0B0039
-			public const int notification_template_big_media_custom = 2131427385;
-			
-			// aapt resource value: 0x7F0B003A
-			public const int notification_template_big_media_narrow = 2131427386;
-			
-			// aapt resource value: 0x7F0B003B
-			public const int notification_template_big_media_narrow_custom = 2131427387;
-			
-			// aapt resource value: 0x7F0B003C
-			public const int notification_template_custom_big = 2131427388;
-			
-			// aapt resource value: 0x7F0B003D
-			public const int notification_template_icon_group = 2131427389;
-			
-			// aapt resource value: 0x7F0B003E
-			public const int notification_template_lines_media = 2131427390;
-			
-			// aapt resource value: 0x7F0B003F
-			public const int notification_template_media = 2131427391;
-			
-			// aapt resource value: 0x7F0B0040
-			public const int notification_template_media_custom = 2131427392;
-			
-			// aapt resource value: 0x7F0B0041
-			public const int notification_template_part_chronometer = 2131427393;
-			
-			// aapt resource value: 0x7F0B0042
-			public const int notification_template_part_time = 2131427394;
+			public const int abc_action_bar_up_container = 2131427329;
 			
 			// aapt resource value: 0x7F0B0002
-			public const int RootLayout = 2131427330;
-			
-			// aapt resource value: 0x7F0B0043
-			public const int select_dialog_item_material = 2131427395;
-			
-			// aapt resource value: 0x7F0B0044
-			public const int select_dialog_multichoice_material = 2131427396;
-			
-			// aapt resource value: 0x7F0B0045
-			public const int select_dialog_singlechoice_material = 2131427397;
+			public const int abc_action_menu_item_layout = 2131427330;
 			
 			// aapt resource value: 0x7F0B0003
-			public const int ShellContent = 2131427331;
-			
-			// aapt resource value: 0x7F0B0046
-			public const int support_simple_spinner_dropdown_item = 2131427398;
+			public const int abc_action_menu_layout = 2131427331;
 			
 			// aapt resource value: 0x7F0B0004
-			public const int Tabbar = 2131427332;
+			public const int abc_action_mode_bar = 2131427332;
 			
 			// aapt resource value: 0x7F0B0005
-			public const int Toolbar = 2131427333;
+			public const int abc_action_mode_close_item_material = 2131427333;
+			
+			// aapt resource value: 0x7F0B0006
+			public const int abc_activity_chooser_view = 2131427334;
+			
+			// aapt resource value: 0x7F0B0007
+			public const int abc_activity_chooser_view_list_item = 2131427335;
+			
+			// aapt resource value: 0x7F0B0008
+			public const int abc_alert_dialog_button_bar_material = 2131427336;
+			
+			// aapt resource value: 0x7F0B0009
+			public const int abc_alert_dialog_material = 2131427337;
+			
+			// aapt resource value: 0x7F0B000A
+			public const int abc_alert_dialog_title_material = 2131427338;
+			
+			// aapt resource value: 0x7F0B000B
+			public const int abc_cascading_menu_item_layout = 2131427339;
+			
+			// aapt resource value: 0x7F0B000C
+			public const int abc_dialog_title_material = 2131427340;
+			
+			// aapt resource value: 0x7F0B000D
+			public const int abc_expanded_menu_layout = 2131427341;
+			
+			// aapt resource value: 0x7F0B000E
+			public const int abc_list_menu_item_checkbox = 2131427342;
+			
+			// aapt resource value: 0x7F0B000F
+			public const int abc_list_menu_item_icon = 2131427343;
+			
+			// aapt resource value: 0x7F0B0010
+			public const int abc_list_menu_item_layout = 2131427344;
+			
+			// aapt resource value: 0x7F0B0011
+			public const int abc_list_menu_item_radio = 2131427345;
+			
+			// aapt resource value: 0x7F0B0012
+			public const int abc_popup_menu_header_item_layout = 2131427346;
+			
+			// aapt resource value: 0x7F0B0013
+			public const int abc_popup_menu_item_layout = 2131427347;
+			
+			// aapt resource value: 0x7F0B0014
+			public const int abc_screen_content_include = 2131427348;
+			
+			// aapt resource value: 0x7F0B0015
+			public const int abc_screen_simple = 2131427349;
+			
+			// aapt resource value: 0x7F0B0016
+			public const int abc_screen_simple_overlay_action_mode = 2131427350;
+			
+			// aapt resource value: 0x7F0B0017
+			public const int abc_screen_toolbar = 2131427351;
+			
+			// aapt resource value: 0x7F0B0018
+			public const int abc_search_dropdown_item_icons_2line = 2131427352;
+			
+			// aapt resource value: 0x7F0B0019
+			public const int abc_search_view = 2131427353;
+			
+			// aapt resource value: 0x7F0B001A
+			public const int abc_select_dialog_material = 2131427354;
+			
+			// aapt resource value: 0x7F0B001B
+			public const int abc_tooltip = 2131427355;
+			
+			// aapt resource value: 0x7F0B001C
+			public const int BottomTabLayout = 2131427356;
+			
+			// aapt resource value: 0x7F0B001D
+			public const int browser_actions_context_menu_page = 2131427357;
+			
+			// aapt resource value: 0x7F0B001E
+			public const int browser_actions_context_menu_row = 2131427358;
+			
+			// aapt resource value: 0x7F0B001F
+			public const int design_bottom_navigation_item = 2131427359;
+			
+			// aapt resource value: 0x7F0B0020
+			public const int design_bottom_sheet_dialog = 2131427360;
+			
+			// aapt resource value: 0x7F0B0021
+			public const int design_layout_snackbar = 2131427361;
+			
+			// aapt resource value: 0x7F0B0022
+			public const int design_layout_snackbar_include = 2131427362;
+			
+			// aapt resource value: 0x7F0B0023
+			public const int design_layout_tab_icon = 2131427363;
+			
+			// aapt resource value: 0x7F0B0024
+			public const int design_layout_tab_text = 2131427364;
+			
+			// aapt resource value: 0x7F0B0025
+			public const int design_menu_item_action_area = 2131427365;
+			
+			// aapt resource value: 0x7F0B0026
+			public const int design_navigation_item = 2131427366;
+			
+			// aapt resource value: 0x7F0B0027
+			public const int design_navigation_item_header = 2131427367;
+			
+			// aapt resource value: 0x7F0B0028
+			public const int design_navigation_item_separator = 2131427368;
+			
+			// aapt resource value: 0x7F0B0029
+			public const int design_navigation_item_subheader = 2131427369;
+			
+			// aapt resource value: 0x7F0B002A
+			public const int design_navigation_menu = 2131427370;
+			
+			// aapt resource value: 0x7F0B002B
+			public const int design_navigation_menu_item = 2131427371;
+			
+			// aapt resource value: 0x7F0B002C
+			public const int design_text_input_password_icon = 2131427372;
+			
+			// aapt resource value: 0x7F0B002D
+			public const int FlyoutContent = 2131427373;
+			
+			// aapt resource value: 0x7F0B002E
+			public const int mtrl_layout_snackbar = 2131427374;
+			
+			// aapt resource value: 0x7F0B002F
+			public const int mtrl_layout_snackbar_include = 2131427375;
+			
+			// aapt resource value: 0x7F0B0030
+			public const int notification_action = 2131427376;
+			
+			// aapt resource value: 0x7F0B0031
+			public const int notification_action_tombstone = 2131427377;
+			
+			// aapt resource value: 0x7F0B0032
+			public const int notification_media_action = 2131427378;
+			
+			// aapt resource value: 0x7F0B0033
+			public const int notification_media_cancel_action = 2131427379;
+			
+			// aapt resource value: 0x7F0B0034
+			public const int notification_template_big_media = 2131427380;
+			
+			// aapt resource value: 0x7F0B0035
+			public const int notification_template_big_media_custom = 2131427381;
+			
+			// aapt resource value: 0x7F0B0036
+			public const int notification_template_big_media_narrow = 2131427382;
+			
+			// aapt resource value: 0x7F0B0037
+			public const int notification_template_big_media_narrow_custom = 2131427383;
+			
+			// aapt resource value: 0x7F0B0038
+			public const int notification_template_custom_big = 2131427384;
+			
+			// aapt resource value: 0x7F0B0039
+			public const int notification_template_icon_group = 2131427385;
+			
+			// aapt resource value: 0x7F0B003A
+			public const int notification_template_lines_media = 2131427386;
+			
+			// aapt resource value: 0x7F0B003B
+			public const int notification_template_media = 2131427387;
+			
+			// aapt resource value: 0x7F0B003C
+			public const int notification_template_media_custom = 2131427388;
+			
+			// aapt resource value: 0x7F0B003D
+			public const int notification_template_part_chronometer = 2131427389;
+			
+			// aapt resource value: 0x7F0B003E
+			public const int notification_template_part_time = 2131427390;
+			
+			// aapt resource value: 0x7F0B003F
+			public const int RootLayout = 2131427391;
+			
+			// aapt resource value: 0x7F0B0040
+			public const int select_dialog_item_material = 2131427392;
+			
+			// aapt resource value: 0x7F0B0041
+			public const int select_dialog_multichoice_material = 2131427393;
+			
+			// aapt resource value: 0x7F0B0042
+			public const int select_dialog_singlechoice_material = 2131427394;
+			
+			// aapt resource value: 0x7F0B0043
+			public const int ShellContent = 2131427395;
+			
+			// aapt resource value: 0x7F0B0044
+			public const int support_simple_spinner_dropdown_item = 2131427396;
+			
+			// aapt resource value: 0x7F0B0045
+			public const int Tabbar = 2131427397;
+			
+			// aapt resource value: 0x7F0B0046
+			public const int Toolbar = 2131427398;
 			
 			static Layout()
 			{
@@ -11972,170 +13435,176 @@ namespace Kouch.App.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7F0D0000
-			public const int abc_action_bar_home_description = 2131558400;
-			
-			// aapt resource value: 0x7F0D0001
-			public const int abc_action_bar_up_description = 2131558401;
-			
 			// aapt resource value: 0x7F0D0002
-			public const int abc_action_menu_overflow_description = 2131558402;
+			public const int abc_action_bar_home_description = 2131558402;
 			
 			// aapt resource value: 0x7F0D0003
-			public const int abc_action_mode_done = 2131558403;
-			
-			// aapt resource value: 0x7F0D0005
-			public const int abc_activitychooserview_choose_application = 2131558405;
+			public const int abc_action_bar_up_description = 2131558403;
 			
 			// aapt resource value: 0x7F0D0004
-			public const int abc_activity_chooser_view_see_all = 2131558404;
+			public const int abc_action_menu_overflow_description = 2131558404;
 			
-			// aapt resource value: 0x7F0D0006
-			public const int abc_capital_off = 2131558406;
+			// aapt resource value: 0x7F0D0005
+			public const int abc_action_mode_done = 2131558405;
 			
 			// aapt resource value: 0x7F0D0007
-			public const int abc_capital_on = 2131558407;
+			public const int abc_activitychooserview_choose_application = 2131558407;
+			
+			// aapt resource value: 0x7F0D0006
+			public const int abc_activity_chooser_view_see_all = 2131558406;
 			
 			// aapt resource value: 0x7F0D0008
-			public const int abc_font_family_body_1_material = 2131558408;
+			public const int abc_capital_off = 2131558408;
 			
 			// aapt resource value: 0x7F0D0009
-			public const int abc_font_family_body_2_material = 2131558409;
+			public const int abc_capital_on = 2131558409;
 			
 			// aapt resource value: 0x7F0D000A
-			public const int abc_font_family_button_material = 2131558410;
+			public const int abc_font_family_body_1_material = 2131558410;
 			
 			// aapt resource value: 0x7F0D000B
-			public const int abc_font_family_caption_material = 2131558411;
+			public const int abc_font_family_body_2_material = 2131558411;
 			
 			// aapt resource value: 0x7F0D000C
-			public const int abc_font_family_display_1_material = 2131558412;
+			public const int abc_font_family_button_material = 2131558412;
 			
 			// aapt resource value: 0x7F0D000D
-			public const int abc_font_family_display_2_material = 2131558413;
+			public const int abc_font_family_caption_material = 2131558413;
 			
 			// aapt resource value: 0x7F0D000E
-			public const int abc_font_family_display_3_material = 2131558414;
+			public const int abc_font_family_display_1_material = 2131558414;
 			
 			// aapt resource value: 0x7F0D000F
-			public const int abc_font_family_display_4_material = 2131558415;
+			public const int abc_font_family_display_2_material = 2131558415;
 			
 			// aapt resource value: 0x7F0D0010
-			public const int abc_font_family_headline_material = 2131558416;
+			public const int abc_font_family_display_3_material = 2131558416;
 			
 			// aapt resource value: 0x7F0D0011
-			public const int abc_font_family_menu_material = 2131558417;
+			public const int abc_font_family_display_4_material = 2131558417;
 			
 			// aapt resource value: 0x7F0D0012
-			public const int abc_font_family_subhead_material = 2131558418;
+			public const int abc_font_family_headline_material = 2131558418;
 			
 			// aapt resource value: 0x7F0D0013
-			public const int abc_font_family_title_material = 2131558419;
+			public const int abc_font_family_menu_material = 2131558419;
 			
 			// aapt resource value: 0x7F0D0014
-			public const int abc_menu_alt_shortcut_label = 2131558420;
+			public const int abc_font_family_subhead_material = 2131558420;
 			
 			// aapt resource value: 0x7F0D0015
-			public const int abc_menu_ctrl_shortcut_label = 2131558421;
+			public const int abc_font_family_title_material = 2131558421;
 			
 			// aapt resource value: 0x7F0D0016
-			public const int abc_menu_delete_shortcut_label = 2131558422;
+			public const int abc_menu_alt_shortcut_label = 2131558422;
 			
 			// aapt resource value: 0x7F0D0017
-			public const int abc_menu_enter_shortcut_label = 2131558423;
+			public const int abc_menu_ctrl_shortcut_label = 2131558423;
 			
 			// aapt resource value: 0x7F0D0018
-			public const int abc_menu_function_shortcut_label = 2131558424;
+			public const int abc_menu_delete_shortcut_label = 2131558424;
 			
 			// aapt resource value: 0x7F0D0019
-			public const int abc_menu_meta_shortcut_label = 2131558425;
+			public const int abc_menu_enter_shortcut_label = 2131558425;
 			
 			// aapt resource value: 0x7F0D001A
-			public const int abc_menu_shift_shortcut_label = 2131558426;
+			public const int abc_menu_function_shortcut_label = 2131558426;
 			
 			// aapt resource value: 0x7F0D001B
-			public const int abc_menu_space_shortcut_label = 2131558427;
+			public const int abc_menu_meta_shortcut_label = 2131558427;
 			
 			// aapt resource value: 0x7F0D001C
-			public const int abc_menu_sym_shortcut_label = 2131558428;
+			public const int abc_menu_shift_shortcut_label = 2131558428;
 			
 			// aapt resource value: 0x7F0D001D
-			public const int abc_prepend_shortcut_label = 2131558429;
-			
-			// aapt resource value: 0x7F0D001F
-			public const int abc_searchview_description_clear = 2131558431;
-			
-			// aapt resource value: 0x7F0D0020
-			public const int abc_searchview_description_query = 2131558432;
-			
-			// aapt resource value: 0x7F0D0021
-			public const int abc_searchview_description_search = 2131558433;
-			
-			// aapt resource value: 0x7F0D0022
-			public const int abc_searchview_description_submit = 2131558434;
-			
-			// aapt resource value: 0x7F0D0023
-			public const int abc_searchview_description_voice = 2131558435;
+			public const int abc_menu_space_shortcut_label = 2131558429;
 			
 			// aapt resource value: 0x7F0D001E
-			public const int abc_search_hint = 2131558430;
+			public const int abc_menu_sym_shortcut_label = 2131558430;
+			
+			// aapt resource value: 0x7F0D001F
+			public const int abc_prepend_shortcut_label = 2131558431;
+			
+			// aapt resource value: 0x7F0D0021
+			public const int abc_searchview_description_clear = 2131558433;
+			
+			// aapt resource value: 0x7F0D0022
+			public const int abc_searchview_description_query = 2131558434;
+			
+			// aapt resource value: 0x7F0D0023
+			public const int abc_searchview_description_search = 2131558435;
 			
 			// aapt resource value: 0x7F0D0024
-			public const int abc_shareactionprovider_share_with = 2131558436;
+			public const int abc_searchview_description_submit = 2131558436;
 			
 			// aapt resource value: 0x7F0D0025
-			public const int abc_shareactionprovider_share_with_application = 2131558437;
+			public const int abc_searchview_description_voice = 2131558437;
+			
+			// aapt resource value: 0x7F0D0020
+			public const int abc_search_hint = 2131558432;
 			
 			// aapt resource value: 0x7F0D0026
-			public const int abc_toolbar_collapse_description = 2131558438;
+			public const int abc_shareactionprovider_share_with = 2131558438;
 			
 			// aapt resource value: 0x7F0D0027
-			public const int appbar_scrolling_view_behavior = 2131558439;
+			public const int abc_shareactionprovider_share_with_application = 2131558439;
 			
 			// aapt resource value: 0x7F0D0028
-			public const int bottom_sheet_behavior = 2131558440;
+			public const int abc_toolbar_collapse_description = 2131558440;
 			
 			// aapt resource value: 0x7F0D0029
-			public const int character_counter_content_description = 2131558441;
+			public const int appbar_scrolling_view_behavior = 2131558441;
+			
+			// aapt resource value: 0x7F0D0000
+			public const int ApplicationName = 2131558400;
 			
 			// aapt resource value: 0x7F0D002A
-			public const int character_counter_pattern = 2131558442;
+			public const int bottom_sheet_behavior = 2131558442;
 			
 			// aapt resource value: 0x7F0D002B
-			public const int fab_transformation_scrim_behavior = 2131558443;
+			public const int character_counter_content_description = 2131558443;
 			
 			// aapt resource value: 0x7F0D002C
-			public const int fab_transformation_sheet_behavior = 2131558444;
+			public const int character_counter_pattern = 2131558444;
 			
 			// aapt resource value: 0x7F0D002D
-			public const int hide_bottom_view_on_scroll_behavior = 2131558445;
+			public const int fab_transformation_scrim_behavior = 2131558445;
 			
 			// aapt resource value: 0x7F0D002E
-			public const int mtrl_chip_close_icon_content_description = 2131558446;
+			public const int fab_transformation_sheet_behavior = 2131558446;
+			
+			// aapt resource value: 0x7F0D0001
+			public const int Hello = 2131558401;
 			
 			// aapt resource value: 0x7F0D002F
-			public const int overflow_tab_title = 2131558447;
+			public const int hide_bottom_view_on_scroll_behavior = 2131558447;
 			
 			// aapt resource value: 0x7F0D0030
-			public const int password_toggle_content_description = 2131558448;
+			public const int mtrl_chip_close_icon_content_description = 2131558448;
 			
 			// aapt resource value: 0x7F0D0031
-			public const int path_password_eye = 2131558449;
+			public const int overflow_tab_title = 2131558449;
 			
 			// aapt resource value: 0x7F0D0032
-			public const int path_password_eye_mask_strike_through = 2131558450;
+			public const int password_toggle_content_description = 2131558450;
 			
 			// aapt resource value: 0x7F0D0033
-			public const int path_password_eye_mask_visible = 2131558451;
+			public const int path_password_eye = 2131558451;
 			
 			// aapt resource value: 0x7F0D0034
-			public const int path_password_strike_through = 2131558452;
+			public const int path_password_eye_mask_strike_through = 2131558452;
 			
 			// aapt resource value: 0x7F0D0035
-			public const int search_menu_title = 2131558453;
+			public const int path_password_eye_mask_visible = 2131558453;
 			
 			// aapt resource value: 0x7F0D0036
-			public const int status_bar_notification_info_overflow = 2131558454;
+			public const int path_password_strike_through = 2131558454;
+			
+			// aapt resource value: 0x7F0D0037
+			public const int search_menu_title = 2131558455;
+			
+			// aapt resource value: 0x7F0D0038
+			public const int status_bar_notification_info_overflow = 2131558456;
 			
 			static String()
 			{
@@ -12189,11 +13658,11 @@ namespace Kouch.App.Droid
 			// aapt resource value: 0x7F0E000C
 			public const int Base_CardView = 2131623948;
 			
-			// aapt resource value: 0x7F0E000D
-			public const int Base_DialogWindowTitleBackground_AppCompat = 2131623949;
-			
 			// aapt resource value: 0x7F0E000E
-			public const int Base_DialogWindowTitle_AppCompat = 2131623950;
+			public const int Base_DialogWindowTitleBackground_AppCompat = 2131623950;
+			
+			// aapt resource value: 0x7F0E000D
+			public const int Base_DialogWindowTitle_AppCompat = 2131623949;
 			
 			// aapt resource value: 0x7F0E000F
 			public const int Base_TextAppearance_AppCompat = 2131623951;
@@ -12339,167 +13808,167 @@ namespace Kouch.App.Droid
 			// aapt resource value: 0x7F0E003E
 			public const int Base_TextAppearance_Widget_AppCompat_Toolbar_Title = 2131623998;
 			
-			// aapt resource value: 0x7F0E003F
-			public const int Base_ThemeOverlay_AppCompat = 2131623999;
-			
-			// aapt resource value: 0x7F0E0040
-			public const int Base_ThemeOverlay_AppCompat_ActionBar = 2131624000;
-			
-			// aapt resource value: 0x7F0E0041
-			public const int Base_ThemeOverlay_AppCompat_Dark = 2131624001;
-			
-			// aapt resource value: 0x7F0E0042
-			public const int Base_ThemeOverlay_AppCompat_Dark_ActionBar = 2131624002;
-			
-			// aapt resource value: 0x7F0E0043
-			public const int Base_ThemeOverlay_AppCompat_Dialog = 2131624003;
-			
-			// aapt resource value: 0x7F0E0044
-			public const int Base_ThemeOverlay_AppCompat_Dialog_Alert = 2131624004;
-			
-			// aapt resource value: 0x7F0E0045
-			public const int Base_ThemeOverlay_AppCompat_Light = 2131624005;
-			
-			// aapt resource value: 0x7F0E0046
-			public const int Base_ThemeOverlay_MaterialComponents_Dialog = 2131624006;
-			
-			// aapt resource value: 0x7F0E0047
-			public const int Base_ThemeOverlay_MaterialComponents_Dialog_Alert = 2131624007;
-			
-			// aapt resource value: 0x7F0E0048
-			public const int Base_Theme_AppCompat = 2131624008;
-			
-			// aapt resource value: 0x7F0E0049
-			public const int Base_Theme_AppCompat_CompactMenu = 2131624009;
-			
-			// aapt resource value: 0x7F0E004A
-			public const int Base_Theme_AppCompat_Dialog = 2131624010;
-			
-			// aapt resource value: 0x7F0E004B
-			public const int Base_Theme_AppCompat_DialogWhenLarge = 2131624011;
-			
-			// aapt resource value: 0x7F0E004C
-			public const int Base_Theme_AppCompat_Dialog_Alert = 2131624012;
-			
-			// aapt resource value: 0x7F0E004D
-			public const int Base_Theme_AppCompat_Dialog_FixedSize = 2131624013;
-			
-			// aapt resource value: 0x7F0E004E
-			public const int Base_Theme_AppCompat_Dialog_MinWidth = 2131624014;
-			
-			// aapt resource value: 0x7F0E004F
-			public const int Base_Theme_AppCompat_Light = 2131624015;
-			
-			// aapt resource value: 0x7F0E0050
-			public const int Base_Theme_AppCompat_Light_DarkActionBar = 2131624016;
-			
-			// aapt resource value: 0x7F0E0051
-			public const int Base_Theme_AppCompat_Light_Dialog = 2131624017;
-			
-			// aapt resource value: 0x7F0E0052
-			public const int Base_Theme_AppCompat_Light_DialogWhenLarge = 2131624018;
-			
-			// aapt resource value: 0x7F0E0053
-			public const int Base_Theme_AppCompat_Light_Dialog_Alert = 2131624019;
-			
-			// aapt resource value: 0x7F0E0054
-			public const int Base_Theme_AppCompat_Light_Dialog_FixedSize = 2131624020;
-			
-			// aapt resource value: 0x7F0E0055
-			public const int Base_Theme_AppCompat_Light_Dialog_MinWidth = 2131624021;
-			
-			// aapt resource value: 0x7F0E0056
-			public const int Base_Theme_MaterialComponents = 2131624022;
-			
-			// aapt resource value: 0x7F0E0057
-			public const int Base_Theme_MaterialComponents_Bridge = 2131624023;
-			
-			// aapt resource value: 0x7F0E0058
-			public const int Base_Theme_MaterialComponents_CompactMenu = 2131624024;
-			
-			// aapt resource value: 0x7F0E0059
-			public const int Base_Theme_MaterialComponents_Dialog = 2131624025;
-			
-			// aapt resource value: 0x7F0E005A
-			public const int Base_Theme_MaterialComponents_DialogWhenLarge = 2131624026;
-			
-			// aapt resource value: 0x7F0E005B
-			public const int Base_Theme_MaterialComponents_Dialog_Alert = 2131624027;
-			
-			// aapt resource value: 0x7F0E005C
-			public const int Base_Theme_MaterialComponents_Dialog_FixedSize = 2131624028;
-			
-			// aapt resource value: 0x7F0E005D
-			public const int Base_Theme_MaterialComponents_Dialog_MinWidth = 2131624029;
-			
 			// aapt resource value: 0x7F0E005E
-			public const int Base_Theme_MaterialComponents_Light = 2131624030;
+			public const int Base_ThemeOverlay_AppCompat = 2131624030;
 			
 			// aapt resource value: 0x7F0E005F
-			public const int Base_Theme_MaterialComponents_Light_Bridge = 2131624031;
+			public const int Base_ThemeOverlay_AppCompat_ActionBar = 2131624031;
 			
 			// aapt resource value: 0x7F0E0060
-			public const int Base_Theme_MaterialComponents_Light_DarkActionBar = 2131624032;
+			public const int Base_ThemeOverlay_AppCompat_Dark = 2131624032;
 			
 			// aapt resource value: 0x7F0E0061
-			public const int Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge = 2131624033;
+			public const int Base_ThemeOverlay_AppCompat_Dark_ActionBar = 2131624033;
 			
 			// aapt resource value: 0x7F0E0062
-			public const int Base_Theme_MaterialComponents_Light_Dialog = 2131624034;
+			public const int Base_ThemeOverlay_AppCompat_Dialog = 2131624034;
 			
 			// aapt resource value: 0x7F0E0063
-			public const int Base_Theme_MaterialComponents_Light_DialogWhenLarge = 2131624035;
+			public const int Base_ThemeOverlay_AppCompat_Dialog_Alert = 2131624035;
 			
 			// aapt resource value: 0x7F0E0064
-			public const int Base_Theme_MaterialComponents_Light_Dialog_Alert = 2131624036;
+			public const int Base_ThemeOverlay_AppCompat_Light = 2131624036;
 			
 			// aapt resource value: 0x7F0E0065
-			public const int Base_Theme_MaterialComponents_Light_Dialog_FixedSize = 2131624037;
+			public const int Base_ThemeOverlay_MaterialComponents_Dialog = 2131624037;
 			
 			// aapt resource value: 0x7F0E0066
-			public const int Base_Theme_MaterialComponents_Light_Dialog_MinWidth = 2131624038;
+			public const int Base_ThemeOverlay_MaterialComponents_Dialog_Alert = 2131624038;
 			
-			// aapt resource value: 0x7F0E0067
-			public const int Base_V14_ThemeOverlay_MaterialComponents_Dialog = 2131624039;
+			// aapt resource value: 0x7F0E003F
+			public const int Base_Theme_AppCompat = 2131623999;
 			
-			// aapt resource value: 0x7F0E0068
-			public const int Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert = 2131624040;
+			// aapt resource value: 0x7F0E0040
+			public const int Base_Theme_AppCompat_CompactMenu = 2131624000;
 			
-			// aapt resource value: 0x7F0E0069
-			public const int Base_V14_Theme_MaterialComponents = 2131624041;
+			// aapt resource value: 0x7F0E0041
+			public const int Base_Theme_AppCompat_Dialog = 2131624001;
 			
-			// aapt resource value: 0x7F0E006A
-			public const int Base_V14_Theme_MaterialComponents_Bridge = 2131624042;
+			// aapt resource value: 0x7F0E0045
+			public const int Base_Theme_AppCompat_DialogWhenLarge = 2131624005;
 			
-			// aapt resource value: 0x7F0E006B
-			public const int Base_V14_Theme_MaterialComponents_Dialog = 2131624043;
+			// aapt resource value: 0x7F0E0042
+			public const int Base_Theme_AppCompat_Dialog_Alert = 2131624002;
 			
-			// aapt resource value: 0x7F0E006C
-			public const int Base_V14_Theme_MaterialComponents_Light = 2131624044;
+			// aapt resource value: 0x7F0E0043
+			public const int Base_Theme_AppCompat_Dialog_FixedSize = 2131624003;
 			
-			// aapt resource value: 0x7F0E006D
-			public const int Base_V14_Theme_MaterialComponents_Light_Bridge = 2131624045;
+			// aapt resource value: 0x7F0E0044
+			public const int Base_Theme_AppCompat_Dialog_MinWidth = 2131624004;
+			
+			// aapt resource value: 0x7F0E0046
+			public const int Base_Theme_AppCompat_Light = 2131624006;
+			
+			// aapt resource value: 0x7F0E0047
+			public const int Base_Theme_AppCompat_Light_DarkActionBar = 2131624007;
+			
+			// aapt resource value: 0x7F0E0048
+			public const int Base_Theme_AppCompat_Light_Dialog = 2131624008;
+			
+			// aapt resource value: 0x7F0E004C
+			public const int Base_Theme_AppCompat_Light_DialogWhenLarge = 2131624012;
+			
+			// aapt resource value: 0x7F0E0049
+			public const int Base_Theme_AppCompat_Light_Dialog_Alert = 2131624009;
+			
+			// aapt resource value: 0x7F0E004A
+			public const int Base_Theme_AppCompat_Light_Dialog_FixedSize = 2131624010;
+			
+			// aapt resource value: 0x7F0E004B
+			public const int Base_Theme_AppCompat_Light_Dialog_MinWidth = 2131624011;
+			
+			// aapt resource value: 0x7F0E004D
+			public const int Base_Theme_MaterialComponents = 2131624013;
+			
+			// aapt resource value: 0x7F0E004E
+			public const int Base_Theme_MaterialComponents_Bridge = 2131624014;
+			
+			// aapt resource value: 0x7F0E004F
+			public const int Base_Theme_MaterialComponents_CompactMenu = 2131624015;
+			
+			// aapt resource value: 0x7F0E0050
+			public const int Base_Theme_MaterialComponents_Dialog = 2131624016;
+			
+			// aapt resource value: 0x7F0E0054
+			public const int Base_Theme_MaterialComponents_DialogWhenLarge = 2131624020;
+			
+			// aapt resource value: 0x7F0E0051
+			public const int Base_Theme_MaterialComponents_Dialog_Alert = 2131624017;
+			
+			// aapt resource value: 0x7F0E0052
+			public const int Base_Theme_MaterialComponents_Dialog_FixedSize = 2131624018;
+			
+			// aapt resource value: 0x7F0E0053
+			public const int Base_Theme_MaterialComponents_Dialog_MinWidth = 2131624019;
+			
+			// aapt resource value: 0x7F0E0055
+			public const int Base_Theme_MaterialComponents_Light = 2131624021;
+			
+			// aapt resource value: 0x7F0E0056
+			public const int Base_Theme_MaterialComponents_Light_Bridge = 2131624022;
+			
+			// aapt resource value: 0x7F0E0057
+			public const int Base_Theme_MaterialComponents_Light_DarkActionBar = 2131624023;
+			
+			// aapt resource value: 0x7F0E0058
+			public const int Base_Theme_MaterialComponents_Light_DarkActionBar_Bridge = 2131624024;
+			
+			// aapt resource value: 0x7F0E0059
+			public const int Base_Theme_MaterialComponents_Light_Dialog = 2131624025;
+			
+			// aapt resource value: 0x7F0E005D
+			public const int Base_Theme_MaterialComponents_Light_DialogWhenLarge = 2131624029;
+			
+			// aapt resource value: 0x7F0E005A
+			public const int Base_Theme_MaterialComponents_Light_Dialog_Alert = 2131624026;
+			
+			// aapt resource value: 0x7F0E005B
+			public const int Base_Theme_MaterialComponents_Light_Dialog_FixedSize = 2131624027;
+			
+			// aapt resource value: 0x7F0E005C
+			public const int Base_Theme_MaterialComponents_Light_Dialog_MinWidth = 2131624028;
 			
 			// aapt resource value: 0x7F0E006E
-			public const int Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge = 2131624046;
+			public const int Base_V14_ThemeOverlay_MaterialComponents_Dialog = 2131624046;
 			
 			// aapt resource value: 0x7F0E006F
-			public const int Base_V14_Theme_MaterialComponents_Light_Dialog = 2131624047;
+			public const int Base_V14_ThemeOverlay_MaterialComponents_Dialog_Alert = 2131624047;
 			
-			// aapt resource value: 0x7F0E0070
-			public const int Base_V21_ThemeOverlay_AppCompat_Dialog = 2131624048;
+			// aapt resource value: 0x7F0E0067
+			public const int Base_V14_Theme_MaterialComponents = 2131624039;
 			
-			// aapt resource value: 0x7F0E0071
-			public const int Base_V21_Theme_AppCompat = 2131624049;
+			// aapt resource value: 0x7F0E0068
+			public const int Base_V14_Theme_MaterialComponents_Bridge = 2131624040;
 			
-			// aapt resource value: 0x7F0E0072
-			public const int Base_V21_Theme_AppCompat_Dialog = 2131624050;
+			// aapt resource value: 0x7F0E0069
+			public const int Base_V14_Theme_MaterialComponents_Dialog = 2131624041;
 			
-			// aapt resource value: 0x7F0E0073
-			public const int Base_V21_Theme_AppCompat_Light = 2131624051;
+			// aapt resource value: 0x7F0E006A
+			public const int Base_V14_Theme_MaterialComponents_Light = 2131624042;
+			
+			// aapt resource value: 0x7F0E006B
+			public const int Base_V14_Theme_MaterialComponents_Light_Bridge = 2131624043;
+			
+			// aapt resource value: 0x7F0E006C
+			public const int Base_V14_Theme_MaterialComponents_Light_DarkActionBar_Bridge = 2131624044;
+			
+			// aapt resource value: 0x7F0E006D
+			public const int Base_V14_Theme_MaterialComponents_Light_Dialog = 2131624045;
 			
 			// aapt resource value: 0x7F0E0074
-			public const int Base_V21_Theme_AppCompat_Light_Dialog = 2131624052;
+			public const int Base_V21_ThemeOverlay_AppCompat_Dialog = 2131624052;
+			
+			// aapt resource value: 0x7F0E0070
+			public const int Base_V21_Theme_AppCompat = 2131624048;
+			
+			// aapt resource value: 0x7F0E0071
+			public const int Base_V21_Theme_AppCompat_Dialog = 2131624049;
+			
+			// aapt resource value: 0x7F0E0072
+			public const int Base_V21_Theme_AppCompat_Light = 2131624050;
+			
+			// aapt resource value: 0x7F0E0073
+			public const int Base_V21_Theme_AppCompat_Light_Dialog = 2131624051;
 			
 			// aapt resource value: 0x7F0E0075
 			public const int Base_V22_Theme_AppCompat = 2131624053;
@@ -12528,20 +13997,20 @@ namespace Kouch.App.Droid
 			// aapt resource value: 0x7F0E007D
 			public const int Base_V28_Theme_AppCompat_Light = 2131624061;
 			
+			// aapt resource value: 0x7F0E0082
+			public const int Base_V7_ThemeOverlay_AppCompat_Dialog = 2131624066;
+			
 			// aapt resource value: 0x7F0E007E
-			public const int Base_V7_ThemeOverlay_AppCompat_Dialog = 2131624062;
+			public const int Base_V7_Theme_AppCompat = 2131624062;
 			
 			// aapt resource value: 0x7F0E007F
-			public const int Base_V7_Theme_AppCompat = 2131624063;
+			public const int Base_V7_Theme_AppCompat_Dialog = 2131624063;
 			
 			// aapt resource value: 0x7F0E0080
-			public const int Base_V7_Theme_AppCompat_Dialog = 2131624064;
+			public const int Base_V7_Theme_AppCompat_Light = 2131624064;
 			
 			// aapt resource value: 0x7F0E0081
-			public const int Base_V7_Theme_AppCompat_Light = 2131624065;
-			
-			// aapt resource value: 0x7F0E0082
-			public const int Base_V7_Theme_AppCompat_Light_Dialog = 2131624066;
+			public const int Base_V7_Theme_AppCompat_Light_Dialog = 2131624065;
 			
 			// aapt resource value: 0x7F0E0083
 			public const int Base_V7_Widget_AppCompat_AutoCompleteTextView = 2131624067;
@@ -12588,26 +14057,26 @@ namespace Kouch.App.Droid
 			// aapt resource value: 0x7F0E0091
 			public const int Base_Widget_AppCompat_Button = 2131624081;
 			
-			// aapt resource value: 0x7F0E0092
-			public const int Base_Widget_AppCompat_ButtonBar = 2131624082;
-			
-			// aapt resource value: 0x7F0E0093
-			public const int Base_Widget_AppCompat_ButtonBar_AlertDialog = 2131624083;
-			
-			// aapt resource value: 0x7F0E0094
-			public const int Base_Widget_AppCompat_Button_Borderless = 2131624084;
-			
-			// aapt resource value: 0x7F0E0095
-			public const int Base_Widget_AppCompat_Button_Borderless_Colored = 2131624085;
-			
-			// aapt resource value: 0x7F0E0096
-			public const int Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = 2131624086;
-			
 			// aapt resource value: 0x7F0E0097
-			public const int Base_Widget_AppCompat_Button_Colored = 2131624087;
+			public const int Base_Widget_AppCompat_ButtonBar = 2131624087;
 			
 			// aapt resource value: 0x7F0E0098
-			public const int Base_Widget_AppCompat_Button_Small = 2131624088;
+			public const int Base_Widget_AppCompat_ButtonBar_AlertDialog = 2131624088;
+			
+			// aapt resource value: 0x7F0E0092
+			public const int Base_Widget_AppCompat_Button_Borderless = 2131624082;
+			
+			// aapt resource value: 0x7F0E0093
+			public const int Base_Widget_AppCompat_Button_Borderless_Colored = 2131624083;
+			
+			// aapt resource value: 0x7F0E0094
+			public const int Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = 2131624084;
+			
+			// aapt resource value: 0x7F0E0095
+			public const int Base_Widget_AppCompat_Button_Colored = 2131624085;
+			
+			// aapt resource value: 0x7F0E0096
+			public const int Base_Widget_AppCompat_Button_Small = 2131624086;
 			
 			// aapt resource value: 0x7F0E0099
 			public const int Base_Widget_AppCompat_CompoundButton_CheckBox = 2131624089;
@@ -12822,23 +14291,23 @@ namespace Kouch.App.Droid
 			// aapt resource value: 0x7F0E00DE
 			public const int RtlOverlay_Widget_AppCompat_PopupMenuItem_Title = 2131624158;
 			
+			// aapt resource value: 0x7F0E00E4
+			public const int RtlOverlay_Widget_AppCompat_SearchView_MagIcon = 2131624164;
+			
 			// aapt resource value: 0x7F0E00DF
-			public const int RtlOverlay_Widget_AppCompat_SearchView_MagIcon = 2131624159;
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown = 2131624159;
 			
 			// aapt resource value: 0x7F0E00E0
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown = 2131624160;
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = 2131624160;
 			
 			// aapt resource value: 0x7F0E00E1
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = 2131624161;
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = 2131624161;
 			
 			// aapt resource value: 0x7F0E00E2
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = 2131624162;
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Query = 2131624162;
 			
 			// aapt resource value: 0x7F0E00E3
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Query = 2131624163;
-			
-			// aapt resource value: 0x7F0E00E4
-			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Text = 2131624164;
+			public const int RtlOverlay_Widget_AppCompat_Search_DropDown_Text = 2131624163;
 			
 			// aapt resource value: 0x7F0E00E5
 			public const int RtlUnderlay_Widget_AppCompat_ActionButton = 2131624165;
@@ -13104,206 +14573,206 @@ namespace Kouch.App.Droid
 			// aapt resource value: 0x7F0E013A
 			public const int TextAppearance_Widget_AppCompat_Toolbar_Title = 2131624250;
 			
-			// aapt resource value: 0x7F0E013B
-			public const int ThemeOverlay_AppCompat = 2131624251;
-			
-			// aapt resource value: 0x7F0E013C
-			public const int ThemeOverlay_AppCompat_ActionBar = 2131624252;
-			
-			// aapt resource value: 0x7F0E013D
-			public const int ThemeOverlay_AppCompat_Dark = 2131624253;
-			
-			// aapt resource value: 0x7F0E013E
-			public const int ThemeOverlay_AppCompat_Dark_ActionBar = 2131624254;
-			
-			// aapt resource value: 0x7F0E013F
-			public const int ThemeOverlay_AppCompat_Dialog = 2131624255;
-			
-			// aapt resource value: 0x7F0E0140
-			public const int ThemeOverlay_AppCompat_Dialog_Alert = 2131624256;
-			
-			// aapt resource value: 0x7F0E0141
-			public const int ThemeOverlay_AppCompat_Light = 2131624257;
-			
-			// aapt resource value: 0x7F0E0142
-			public const int ThemeOverlay_MaterialComponents = 2131624258;
-			
-			// aapt resource value: 0x7F0E0143
-			public const int ThemeOverlay_MaterialComponents_ActionBar = 2131624259;
-			
-			// aapt resource value: 0x7F0E0144
-			public const int ThemeOverlay_MaterialComponents_Dark = 2131624260;
-			
-			// aapt resource value: 0x7F0E0145
-			public const int ThemeOverlay_MaterialComponents_Dark_ActionBar = 2131624261;
-			
-			// aapt resource value: 0x7F0E0146
-			public const int ThemeOverlay_MaterialComponents_Dialog = 2131624262;
-			
-			// aapt resource value: 0x7F0E0147
-			public const int ThemeOverlay_MaterialComponents_Dialog_Alert = 2131624263;
-			
-			// aapt resource value: 0x7F0E0148
-			public const int ThemeOverlay_MaterialComponents_Light = 2131624264;
-			
-			// aapt resource value: 0x7F0E0149
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText = 2131624265;
-			
-			// aapt resource value: 0x7F0E014A
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox = 2131624266;
-			
-			// aapt resource value: 0x7F0E014B
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense = 2131624267;
-			
-			// aapt resource value: 0x7F0E014C
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox = 2131624268;
-			
-			// aapt resource value: 0x7F0E014D
-			public const int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense = 2131624269;
-			
-			// aapt resource value: 0x7F0E014E
-			public const int Theme_AppCompat = 2131624270;
-			
-			// aapt resource value: 0x7F0E014F
-			public const int Theme_AppCompat_CompactMenu = 2131624271;
-			
-			// aapt resource value: 0x7F0E0150
-			public const int Theme_AppCompat_DayNight = 2131624272;
-			
-			// aapt resource value: 0x7F0E0151
-			public const int Theme_AppCompat_DayNight_DarkActionBar = 2131624273;
-			
-			// aapt resource value: 0x7F0E0152
-			public const int Theme_AppCompat_DayNight_Dialog = 2131624274;
-			
-			// aapt resource value: 0x7F0E0153
-			public const int Theme_AppCompat_DayNight_DialogWhenLarge = 2131624275;
-			
-			// aapt resource value: 0x7F0E0154
-			public const int Theme_AppCompat_DayNight_Dialog_Alert = 2131624276;
-			
-			// aapt resource value: 0x7F0E0155
-			public const int Theme_AppCompat_DayNight_Dialog_MinWidth = 2131624277;
-			
-			// aapt resource value: 0x7F0E0156
-			public const int Theme_AppCompat_DayNight_NoActionBar = 2131624278;
-			
-			// aapt resource value: 0x7F0E0157
-			public const int Theme_AppCompat_Dialog = 2131624279;
-			
-			// aapt resource value: 0x7F0E0158
-			public const int Theme_AppCompat_DialogWhenLarge = 2131624280;
-			
-			// aapt resource value: 0x7F0E0159
-			public const int Theme_AppCompat_Dialog_Alert = 2131624281;
-			
-			// aapt resource value: 0x7F0E015A
-			public const int Theme_AppCompat_Dialog_MinWidth = 2131624282;
-			
-			// aapt resource value: 0x7F0E015B
-			public const int Theme_AppCompat_Light = 2131624283;
-			
-			// aapt resource value: 0x7F0E015C
-			public const int Theme_AppCompat_Light_DarkActionBar = 2131624284;
-			
-			// aapt resource value: 0x7F0E015D
-			public const int Theme_AppCompat_Light_Dialog = 2131624285;
-			
-			// aapt resource value: 0x7F0E015E
-			public const int Theme_AppCompat_Light_DialogWhenLarge = 2131624286;
-			
-			// aapt resource value: 0x7F0E015F
-			public const int Theme_AppCompat_Light_Dialog_Alert = 2131624287;
-			
-			// aapt resource value: 0x7F0E0160
-			public const int Theme_AppCompat_Light_Dialog_MinWidth = 2131624288;
-			
-			// aapt resource value: 0x7F0E0161
-			public const int Theme_AppCompat_Light_NoActionBar = 2131624289;
-			
-			// aapt resource value: 0x7F0E0162
-			public const int Theme_AppCompat_NoActionBar = 2131624290;
-			
-			// aapt resource value: 0x7F0E0163
-			public const int Theme_Design = 2131624291;
-			
-			// aapt resource value: 0x7F0E0164
-			public const int Theme_Design_BottomSheetDialog = 2131624292;
-			
-			// aapt resource value: 0x7F0E0165
-			public const int Theme_Design_Light = 2131624293;
-			
-			// aapt resource value: 0x7F0E0166
-			public const int Theme_Design_Light_BottomSheetDialog = 2131624294;
-			
-			// aapt resource value: 0x7F0E0167
-			public const int Theme_Design_Light_NoActionBar = 2131624295;
-			
-			// aapt resource value: 0x7F0E0168
-			public const int Theme_Design_NoActionBar = 2131624296;
-			
-			// aapt resource value: 0x7F0E0169
-			public const int Theme_MaterialComponents = 2131624297;
-			
-			// aapt resource value: 0x7F0E016A
-			public const int Theme_MaterialComponents_BottomSheetDialog = 2131624298;
-			
 			// aapt resource value: 0x7F0E016B
-			public const int Theme_MaterialComponents_Bridge = 2131624299;
+			public const int ThemeOverlay_AppCompat = 2131624299;
 			
 			// aapt resource value: 0x7F0E016C
-			public const int Theme_MaterialComponents_CompactMenu = 2131624300;
+			public const int ThemeOverlay_AppCompat_ActionBar = 2131624300;
 			
 			// aapt resource value: 0x7F0E016D
-			public const int Theme_MaterialComponents_Dialog = 2131624301;
+			public const int ThemeOverlay_AppCompat_Dark = 2131624301;
 			
 			// aapt resource value: 0x7F0E016E
-			public const int Theme_MaterialComponents_DialogWhenLarge = 2131624302;
+			public const int ThemeOverlay_AppCompat_Dark_ActionBar = 2131624302;
 			
 			// aapt resource value: 0x7F0E016F
-			public const int Theme_MaterialComponents_Dialog_Alert = 2131624303;
+			public const int ThemeOverlay_AppCompat_Dialog = 2131624303;
 			
 			// aapt resource value: 0x7F0E0170
-			public const int Theme_MaterialComponents_Dialog_MinWidth = 2131624304;
+			public const int ThemeOverlay_AppCompat_Dialog_Alert = 2131624304;
 			
 			// aapt resource value: 0x7F0E0171
-			public const int Theme_MaterialComponents_Light = 2131624305;
+			public const int ThemeOverlay_AppCompat_Light = 2131624305;
 			
 			// aapt resource value: 0x7F0E0172
-			public const int Theme_MaterialComponents_Light_BottomSheetDialog = 2131624306;
+			public const int ThemeOverlay_MaterialComponents = 2131624306;
 			
 			// aapt resource value: 0x7F0E0173
-			public const int Theme_MaterialComponents_Light_Bridge = 2131624307;
+			public const int ThemeOverlay_MaterialComponents_ActionBar = 2131624307;
 			
 			// aapt resource value: 0x7F0E0174
-			public const int Theme_MaterialComponents_Light_DarkActionBar = 2131624308;
+			public const int ThemeOverlay_MaterialComponents_Dark = 2131624308;
 			
 			// aapt resource value: 0x7F0E0175
-			public const int Theme_MaterialComponents_Light_DarkActionBar_Bridge = 2131624309;
+			public const int ThemeOverlay_MaterialComponents_Dark_ActionBar = 2131624309;
 			
 			// aapt resource value: 0x7F0E0176
-			public const int Theme_MaterialComponents_Light_Dialog = 2131624310;
+			public const int ThemeOverlay_MaterialComponents_Dialog = 2131624310;
 			
 			// aapt resource value: 0x7F0E0177
-			public const int Theme_MaterialComponents_Light_DialogWhenLarge = 2131624311;
+			public const int ThemeOverlay_MaterialComponents_Dialog_Alert = 2131624311;
 			
 			// aapt resource value: 0x7F0E0178
-			public const int Theme_MaterialComponents_Light_Dialog_Alert = 2131624312;
+			public const int ThemeOverlay_MaterialComponents_Light = 2131624312;
 			
 			// aapt resource value: 0x7F0E0179
-			public const int Theme_MaterialComponents_Light_Dialog_MinWidth = 2131624313;
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText = 2131624313;
 			
 			// aapt resource value: 0x7F0E017A
-			public const int Theme_MaterialComponents_Light_NoActionBar = 2131624314;
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox = 2131624314;
 			
 			// aapt resource value: 0x7F0E017B
-			public const int Theme_MaterialComponents_Light_NoActionBar_Bridge = 2131624315;
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText_FilledBox_Dense = 2131624315;
 			
 			// aapt resource value: 0x7F0E017C
-			public const int Theme_MaterialComponents_NoActionBar = 2131624316;
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox = 2131624316;
 			
 			// aapt resource value: 0x7F0E017D
-			public const int Theme_MaterialComponents_NoActionBar_Bridge = 2131624317;
+			public const int ThemeOverlay_MaterialComponents_TextInputEditText_OutlinedBox_Dense = 2131624317;
+			
+			// aapt resource value: 0x7F0E013B
+			public const int Theme_AppCompat = 2131624251;
+			
+			// aapt resource value: 0x7F0E013C
+			public const int Theme_AppCompat_CompactMenu = 2131624252;
+			
+			// aapt resource value: 0x7F0E013D
+			public const int Theme_AppCompat_DayNight = 2131624253;
+			
+			// aapt resource value: 0x7F0E013E
+			public const int Theme_AppCompat_DayNight_DarkActionBar = 2131624254;
+			
+			// aapt resource value: 0x7F0E013F
+			public const int Theme_AppCompat_DayNight_Dialog = 2131624255;
+			
+			// aapt resource value: 0x7F0E0142
+			public const int Theme_AppCompat_DayNight_DialogWhenLarge = 2131624258;
+			
+			// aapt resource value: 0x7F0E0140
+			public const int Theme_AppCompat_DayNight_Dialog_Alert = 2131624256;
+			
+			// aapt resource value: 0x7F0E0141
+			public const int Theme_AppCompat_DayNight_Dialog_MinWidth = 2131624257;
+			
+			// aapt resource value: 0x7F0E0143
+			public const int Theme_AppCompat_DayNight_NoActionBar = 2131624259;
+			
+			// aapt resource value: 0x7F0E0144
+			public const int Theme_AppCompat_Dialog = 2131624260;
+			
+			// aapt resource value: 0x7F0E0147
+			public const int Theme_AppCompat_DialogWhenLarge = 2131624263;
+			
+			// aapt resource value: 0x7F0E0145
+			public const int Theme_AppCompat_Dialog_Alert = 2131624261;
+			
+			// aapt resource value: 0x7F0E0146
+			public const int Theme_AppCompat_Dialog_MinWidth = 2131624262;
+			
+			// aapt resource value: 0x7F0E0148
+			public const int Theme_AppCompat_Light = 2131624264;
+			
+			// aapt resource value: 0x7F0E0149
+			public const int Theme_AppCompat_Light_DarkActionBar = 2131624265;
+			
+			// aapt resource value: 0x7F0E014A
+			public const int Theme_AppCompat_Light_Dialog = 2131624266;
+			
+			// aapt resource value: 0x7F0E014D
+			public const int Theme_AppCompat_Light_DialogWhenLarge = 2131624269;
+			
+			// aapt resource value: 0x7F0E014B
+			public const int Theme_AppCompat_Light_Dialog_Alert = 2131624267;
+			
+			// aapt resource value: 0x7F0E014C
+			public const int Theme_AppCompat_Light_Dialog_MinWidth = 2131624268;
+			
+			// aapt resource value: 0x7F0E014E
+			public const int Theme_AppCompat_Light_NoActionBar = 2131624270;
+			
+			// aapt resource value: 0x7F0E014F
+			public const int Theme_AppCompat_NoActionBar = 2131624271;
+			
+			// aapt resource value: 0x7F0E0150
+			public const int Theme_Design = 2131624272;
+			
+			// aapt resource value: 0x7F0E0151
+			public const int Theme_Design_BottomSheetDialog = 2131624273;
+			
+			// aapt resource value: 0x7F0E0152
+			public const int Theme_Design_Light = 2131624274;
+			
+			// aapt resource value: 0x7F0E0153
+			public const int Theme_Design_Light_BottomSheetDialog = 2131624275;
+			
+			// aapt resource value: 0x7F0E0154
+			public const int Theme_Design_Light_NoActionBar = 2131624276;
+			
+			// aapt resource value: 0x7F0E0155
+			public const int Theme_Design_NoActionBar = 2131624277;
+			
+			// aapt resource value: 0x7F0E0156
+			public const int Theme_MaterialComponents = 2131624278;
+			
+			// aapt resource value: 0x7F0E0157
+			public const int Theme_MaterialComponents_BottomSheetDialog = 2131624279;
+			
+			// aapt resource value: 0x7F0E0158
+			public const int Theme_MaterialComponents_Bridge = 2131624280;
+			
+			// aapt resource value: 0x7F0E0159
+			public const int Theme_MaterialComponents_CompactMenu = 2131624281;
+			
+			// aapt resource value: 0x7F0E015A
+			public const int Theme_MaterialComponents_Dialog = 2131624282;
+			
+			// aapt resource value: 0x7F0E015D
+			public const int Theme_MaterialComponents_DialogWhenLarge = 2131624285;
+			
+			// aapt resource value: 0x7F0E015B
+			public const int Theme_MaterialComponents_Dialog_Alert = 2131624283;
+			
+			// aapt resource value: 0x7F0E015C
+			public const int Theme_MaterialComponents_Dialog_MinWidth = 2131624284;
+			
+			// aapt resource value: 0x7F0E015E
+			public const int Theme_MaterialComponents_Light = 2131624286;
+			
+			// aapt resource value: 0x7F0E015F
+			public const int Theme_MaterialComponents_Light_BottomSheetDialog = 2131624287;
+			
+			// aapt resource value: 0x7F0E0160
+			public const int Theme_MaterialComponents_Light_Bridge = 2131624288;
+			
+			// aapt resource value: 0x7F0E0161
+			public const int Theme_MaterialComponents_Light_DarkActionBar = 2131624289;
+			
+			// aapt resource value: 0x7F0E0162
+			public const int Theme_MaterialComponents_Light_DarkActionBar_Bridge = 2131624290;
+			
+			// aapt resource value: 0x7F0E0163
+			public const int Theme_MaterialComponents_Light_Dialog = 2131624291;
+			
+			// aapt resource value: 0x7F0E0166
+			public const int Theme_MaterialComponents_Light_DialogWhenLarge = 2131624294;
+			
+			// aapt resource value: 0x7F0E0164
+			public const int Theme_MaterialComponents_Light_Dialog_Alert = 2131624292;
+			
+			// aapt resource value: 0x7F0E0165
+			public const int Theme_MaterialComponents_Light_Dialog_MinWidth = 2131624293;
+			
+			// aapt resource value: 0x7F0E0167
+			public const int Theme_MaterialComponents_Light_NoActionBar = 2131624295;
+			
+			// aapt resource value: 0x7F0E0168
+			public const int Theme_MaterialComponents_Light_NoActionBar_Bridge = 2131624296;
+			
+			// aapt resource value: 0x7F0E0169
+			public const int Theme_MaterialComponents_NoActionBar = 2131624297;
+			
+			// aapt resource value: 0x7F0E016A
+			public const int Theme_MaterialComponents_NoActionBar_Bridge = 2131624298;
 			
 			// aapt resource value: 0x7F0E017E
 			public const int Widget_AppCompat_ActionBar = 2131624318;
@@ -13341,26 +14810,26 @@ namespace Kouch.App.Droid
 			// aapt resource value: 0x7F0E0189
 			public const int Widget_AppCompat_Button = 2131624329;
 			
-			// aapt resource value: 0x7F0E018A
-			public const int Widget_AppCompat_ButtonBar = 2131624330;
-			
-			// aapt resource value: 0x7F0E018B
-			public const int Widget_AppCompat_ButtonBar_AlertDialog = 2131624331;
-			
-			// aapt resource value: 0x7F0E018C
-			public const int Widget_AppCompat_Button_Borderless = 2131624332;
-			
-			// aapt resource value: 0x7F0E018D
-			public const int Widget_AppCompat_Button_Borderless_Colored = 2131624333;
-			
-			// aapt resource value: 0x7F0E018E
-			public const int Widget_AppCompat_Button_ButtonBar_AlertDialog = 2131624334;
-			
 			// aapt resource value: 0x7F0E018F
-			public const int Widget_AppCompat_Button_Colored = 2131624335;
+			public const int Widget_AppCompat_ButtonBar = 2131624335;
 			
 			// aapt resource value: 0x7F0E0190
-			public const int Widget_AppCompat_Button_Small = 2131624336;
+			public const int Widget_AppCompat_ButtonBar_AlertDialog = 2131624336;
+			
+			// aapt resource value: 0x7F0E018A
+			public const int Widget_AppCompat_Button_Borderless = 2131624330;
+			
+			// aapt resource value: 0x7F0E018B
+			public const int Widget_AppCompat_Button_Borderless_Colored = 2131624331;
+			
+			// aapt resource value: 0x7F0E018C
+			public const int Widget_AppCompat_Button_ButtonBar_AlertDialog = 2131624332;
+			
+			// aapt resource value: 0x7F0E018D
+			public const int Widget_AppCompat_Button_Colored = 2131624333;
+			
+			// aapt resource value: 0x7F0E018E
+			public const int Widget_AppCompat_Button_Small = 2131624334;
 			
 			// aapt resource value: 0x7F0E0191
 			public const int Widget_AppCompat_CompoundButton_CheckBox = 2131624337;
@@ -13605,20 +15074,20 @@ namespace Kouch.App.Droid
 			// aapt resource value: 0x7F0E01E1
 			public const int Widget_MaterialComponents_CardView = 2131624417;
 			
+			// aapt resource value: 0x7F0E01E6
+			public const int Widget_MaterialComponents_ChipGroup = 2131624422;
+			
 			// aapt resource value: 0x7F0E01E2
-			public const int Widget_MaterialComponents_ChipGroup = 2131624418;
+			public const int Widget_MaterialComponents_Chip_Action = 2131624418;
 			
 			// aapt resource value: 0x7F0E01E3
-			public const int Widget_MaterialComponents_Chip_Action = 2131624419;
+			public const int Widget_MaterialComponents_Chip_Choice = 2131624419;
 			
 			// aapt resource value: 0x7F0E01E4
-			public const int Widget_MaterialComponents_Chip_Choice = 2131624420;
+			public const int Widget_MaterialComponents_Chip_Entry = 2131624420;
 			
 			// aapt resource value: 0x7F0E01E5
-			public const int Widget_MaterialComponents_Chip_Entry = 2131624421;
-			
-			// aapt resource value: 0x7F0E01E6
-			public const int Widget_MaterialComponents_Chip_Filter = 2131624422;
+			public const int Widget_MaterialComponents_Chip_Filter = 2131624421;
 			
 			// aapt resource value: 0x7F0E01E7
 			public const int Widget_MaterialComponents_FloatingActionButton = 2131624423;
@@ -13814,8 +15283,9 @@ namespace Kouch.App.Droid
 			// aapt resource value: 0
 			public const int ActionMenuItemView_android_minWidth = 0;
 			
-			// aapt resource value: {  }
-			public static int[] ActionMenuView = new int[0];
+			// aapt resource value: { 0xFFFFFFFF }
+			public static int[] ActionMenuView = new int[] {
+					-1};
 			
 			// aapt resource value: { 0x7F030031,0x7F030032,0x7F03007E,0x7F0300E0,0x7F030178,0x7F0301C7 }
 			public static int[] ActionMode = new int[] {

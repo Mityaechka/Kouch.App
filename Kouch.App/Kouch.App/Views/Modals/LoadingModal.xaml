@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<rg:PopupPage  xmlns="http://xamarin.com/schemas/2014/forms"
+               xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:rg="http://rotorgames.com"
+               x:Class="Kouch.App.Views.Modals.LoadingModal">
+    <StackLayout VerticalOptions="Center"
+                 HorizontalOptions="Center"
+                 Padding="20, 20, 20, 20"
+                 HeightRequest="150"
+                 WidthRequest="150">
+        <Frame HeightRequest="150"
+               WidthRequest="150"
+               CornerRadius="10">
+            <StackLayout>
+                <ActivityIndicator IsVisible="True"
+                                   IsRunning="True" />
+                <Label  TextColor="Black"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        VerticalTextAlignment="Center"
+                        Text="Загрузка..."
+                        FontSize="16"
+                        Margin="0,30,0,2" />
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</rg:PopupPage>

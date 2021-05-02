@@ -3,6 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Kouch.App.App">
     <Application.Resources>
-
+        <StyleSheet Source="/style.css" />
+        <!--<Style TargetType="ListView">
+            <Setter Property="CachingStrategy"
+                    Value="RecycleElement" />
+        </Style>-->
+        <Style TargetType="Label">
+            <Setter Property="TextColor"
+                    Value="Black"></Setter>
+        </Style>
+        <Style x:Key="Link" TargetType="Label">
+            <Setter Property="TextDecorations"
+                    Value="Underline" />
+            <Setter Property="TextColor"
+                    Value="Blue" />
+            <Setter Property="FontSize"
+                    Value="15" />
+        </Style>
     </Application.Resources>
 </Application>

@@ -4,10 +4,13 @@ using System.Text;
 
 namespace Kouch.App.Models
 {
-    public class ApiResnonse<T>
+    public class ApiResnonse
     {
         public string Error { get; set; }
-        public T Data { get; set; }
         public bool IsSuccsess { get; set; }
+    }
+    public class ApiResnonse<T>:ApiResnonse
+    {
+        public T Result { get; set; }
     }
 }

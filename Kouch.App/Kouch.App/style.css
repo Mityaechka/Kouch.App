@@ -1,0 +1,14 @@
+﻿.photo {
+    flex-basis: 33.33%;
+    height: 150;
+}
+
+.half {
+    flex-basis: 50%;
+    height: 150;
+}
+
+.full {
+    flex-basis: 100%;
+    height: 200;
+}

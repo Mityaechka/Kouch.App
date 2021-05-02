@@ -2,6 +2,12 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "LiveXAML/2.1.73": {
+        "type": "package",
+        "build": {
+          "build/netstandard2.0/LiveXAML.targets": {}
+        }
+      },
       "Microsoft.NETCore.Platforms/1.1.0": {
         "type": "package",
         "compile": {
@@ -35,6 +41,20 @@
           "lib/netstandard2.0/Newtonsoft.Json.dll": {}
         }
       },
+      "Plugin.Toast/2.2.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "2.0.0"
+        },
+        "compile": {
+          "lib/netstandard/Plugin.Toast.Abstractions.dll": {},
+          "lib/netstandard/Plugin.Toast.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard/Plugin.Toast.Abstractions.dll": {},
+          "lib/netstandard/Plugin.Toast.dll": {}
+        }
+      },
       "Rg.Plugins.Popup/2.0.0.11": {
         "type": "package",
         "dependencies": {
@@ -47,6 +67,15 @@
           "lib/netstandard2.0/Rg.Plugins.Popup.dll": {}
         }
       },
+      "System.ComponentModel.Annotations/5.0.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/System.ComponentModel.Annotations.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.ComponentModel.Annotations.dll": {}
+        }
+      },
       "System.Numerics.Vectors/4.5.0": {
         "type": "package",
         "compile": {
@@ -54,6 +83,15 @@
         },
         "runtime": {
           "lib/netstandard2.0/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "Toasts.Forms.Plugin/3.3.2": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.1/Toasts.Forms.Plugin.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.1/Toasts.Forms.Plugin.Abstractions.dll": {}
         }
       },
       "Xamarin.Essentials/1.5.3.2": {
@@ -88,6 +126,27 @@
     }
   },
   "libraries": {
+    "LiveXAML/2.1.73": {
+      "sha512": "WuyZAgaVvGIN4MoOR5VK3X8PFiCv3swffxzMd6Nf7cJIf32zCjbTgrkasY5K8NSNZ2U4y2nFgLAZ4oeqUvueEA==",
+      "type": "package",
+      "path": "livexaml/2.1.73",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "build/netstandard2.0/LiveXAML.targets",
+        "build/netstandard2.0/XamarinLive.Build.dll",
+        "build/netstandard2.0/XamarinLive.Common.dll",
+        "build/netstandard2.0/minified.cs",
+        "build/netstandard2.0/minified.tpl.cs",
+        "build/portable-win+net45+wp80+win81+wpa81/LiveXAML.targets",
+        "build/portable-win+net45+wp80+win81+wpa81/XamarinLive.Build.dll",
+        "build/portable-win+net45+wp80+win81+wpa81/XamarinLive.Common.dll",
+        "build/portable-win+net45+wp80+win81+wpa81/minified.cs",
+        "build/portable-win+net45+wp80+win81+wpa81/minified.tpl.cs",
+        "livexaml.2.1.73.nupkg.sha512",
+        "livexaml.nuspec"
+      ]
+    },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "sha512": "kz0PEW2lhqygehI/d6XsPCQzD7ff7gUJaVGPVETX611eadGsA3A877GdSlU0LRVMCTH/+P3o2iDTak+S08V2+A==",
       "type": "package",
@@ -259,6 +318,40 @@
         "packageIcon.png"
       ]
     },
+    "Plugin.Toast/2.2.0": {
+      "sha512": "PDq+r0P/WRu4YZimpwwfeLaTpHCVWlcw3MjJRC1be6Cg4ORfXL8YDz3HchnrRssRueUgP9ouwzLaQ4tLCD3Q4w==",
+      "type": "package",
+      "path": "plugin.toast/2.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "lib/MonoAndroid10/Plugin.Toast.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.Toast.Abstractions.pdb",
+        "lib/MonoAndroid10/Plugin.Toast.dll",
+        "lib/MonoAndroid10/Plugin.Toast.dll.mdb",
+        "lib/MonoAndroid10/Plugin.Toast.pdb",
+        "lib/MonoAndroid10/Plugin.Toast.xml",
+        "lib/UAP10/Plugin.Toast.Abstractions.dll",
+        "lib/UAP10/Plugin.Toast.Abstractions.pdb",
+        "lib/UAP10/Plugin.Toast.dll",
+        "lib/UAP10/Plugin.Toast.pdb",
+        "lib/UAP10/Plugin.Toast.pri",
+        "lib/Xamarin.iOS10/Plugin.Toast.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.Toast.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Plugin.Toast.dll",
+        "lib/Xamarin.iOS10/Plugin.Toast.dll.mdb",
+        "lib/Xamarin.iOS10/Plugin.Toast.pdb",
+        "lib/Xamarin.iOS10/Plugin.Toast.xml",
+        "lib/netstandard/Plugin.Toast.Abstractions.dll",
+        "lib/netstandard/Plugin.Toast.Abstractions.pdb",
+        "lib/netstandard/Plugin.Toast.deps.json",
+        "lib/netstandard/Plugin.Toast.dll",
+        "lib/netstandard/Plugin.Toast.pdb",
+        "plugin.toast.2.2.0.nupkg.sha512",
+        "plugin.toast.nuspec"
+      ]
+    },
     "Rg.Plugins.Popup/2.0.0.11": {
       "sha512": "Fa225jLSyum7oFwmC2tZeJqf0b/m2ZpvVSEVIhqmxcme4nEW6rl1Ncnj6zGIOjKlZ05m8L3mxdFdiI/TxI5InQ==",
       "type": "package",
@@ -307,6 +400,96 @@
         "rg.plugins.popup.nuspec"
       ]
     },
+    "System.ComponentModel.Annotations/5.0.0": {
+      "sha512": "dMkqfy2el8A8/I76n2Hi1oBFEbG1SfxD2l5nhwXV3XjlnOmwxJlQbYpJH4W51odnU9sARCSAgv7S3CyAFMkpYg==",
+      "type": "package",
+      "path": "system.componentmodel.annotations/5.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net45/_._",
+        "lib/net461/System.ComponentModel.Annotations.dll",
+        "lib/netcore50/System.ComponentModel.Annotations.dll",
+        "lib/netstandard1.4/System.ComponentModel.Annotations.dll",
+        "lib/netstandard2.0/System.ComponentModel.Annotations.dll",
+        "lib/netstandard2.1/System.ComponentModel.Annotations.dll",
+        "lib/netstandard2.1/System.ComponentModel.Annotations.xml",
+        "lib/portable-net45+win8/_._",
+        "lib/win8/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net45/_._",
+        "ref/net461/System.ComponentModel.Annotations.dll",
+        "ref/net461/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/System.ComponentModel.Annotations.dll",
+        "ref/netcore50/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/de/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/es/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/fr/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/it/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/ja/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/ko/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/ru/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/zh-hans/System.ComponentModel.Annotations.xml",
+        "ref/netcore50/zh-hant/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/System.ComponentModel.Annotations.dll",
+        "ref/netstandard1.1/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/de/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/es/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/fr/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/it/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/ja/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/ko/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/ru/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/zh-hans/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.1/zh-hant/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/System.ComponentModel.Annotations.dll",
+        "ref/netstandard1.3/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/de/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/es/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/fr/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/it/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/ja/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/ko/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/ru/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/zh-hans/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.3/zh-hant/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/System.ComponentModel.Annotations.dll",
+        "ref/netstandard1.4/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/de/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/es/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/fr/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/it/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/ja/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/ko/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/ru/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/zh-hans/System.ComponentModel.Annotations.xml",
+        "ref/netstandard1.4/zh-hant/System.ComponentModel.Annotations.xml",
+        "ref/netstandard2.0/System.ComponentModel.Annotations.dll",
+        "ref/netstandard2.0/System.ComponentModel.Annotations.xml",
+        "ref/netstandard2.1/System.ComponentModel.Annotations.dll",
+        "ref/netstandard2.1/System.ComponentModel.Annotations.xml",
+        "ref/portable-net45+win8/_._",
+        "ref/win8/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.componentmodel.annotations.5.0.0.nupkg.sha512",
+        "system.componentmodel.annotations.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
     "System.Numerics.Vectors/4.5.0": {
       "sha512": "QQTlPTl06J/iiDbJCiepZ4H//BVraReU4O4EoRw1U02H5TLUIT7xn3GnDp9AXPSlJUDyFs4uWjWafNX6WrAojQ==",
       "type": "package",
@@ -352,6 +535,30 @@
         "system.numerics.vectors.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
+      ]
+    },
+    "Toasts.Forms.Plugin/3.3.2": {
+      "sha512": "Cg+uc+GPV2rfGLYl/gyW7oo5YPPZ0/jG1Bj6KRihecoOy0Ju4HfKith9pd8CIXerS9DH7x8vqV5jrPaKXEGenA==",
+      "type": "package",
+      "path": "toasts.forms.plugin/3.3.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/Toasts.Forms.Plugin.Abstractions.dll",
+        "lib/MonoAndroid10/Toasts.Forms.Plugin.Abstractions.pdb",
+        "lib/MonoAndroid10/Toasts.Forms.Plugin.Droid.dll",
+        "lib/MonoAndroid10/Toasts.Forms.Plugin.Droid.pdb",
+        "lib/Xamarin.iOS10/Toasts.Forms.Plugin.Abstractions.dll",
+        "lib/Xamarin.iOS10/Toasts.Forms.Plugin.Abstractions.pdb",
+        "lib/Xamarin.iOS10/Toasts.Forms.Plugin.iOS.dll",
+        "lib/netstandard1.1/Toasts.Forms.Plugin.Abstractions.dll",
+        "lib/netstandard1.1/Toasts.Forms.Plugin.Abstractions.pdb",
+        "lib/uap10.0/Toasts.Forms.Plugin.Abstractions.dll",
+        "lib/uap10.0/Toasts.Forms.Plugin.Abstractions.pdb",
+        "lib/uap10.0/Toasts.Forms.Plugin.UWP.dll",
+        "lib/uap10.0/Toasts.Forms.Plugin.UWP.pdb",
+        "toasts.forms.plugin.3.3.2.nupkg.sha512",
+        "toasts.forms.plugin.nuspec"
       ]
     },
     "Xamarin.Essentials/1.5.3.2": {
@@ -721,31 +928,35 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "LiveXAML >= 2.1.73",
       "NETStandard.Library >= 2.0.3",
       "Newtonsoft.Json >= 13.0.1",
+      "Plugin.Toast >= 2.2.0",
       "Rg.Plugins.Popup >= 2.0.0.11",
+      "System.ComponentModel.Annotations >= 5.0.0",
+      "Toasts.Forms.Plugin >= 3.3.2",
       "Xamarin.Essentials >= 1.5.3.2",
       "Xamarin.Forms >= 4.8.0.1451"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Mitya\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App\\Kouch.App.csproj",
+      "projectUniqueName": "C:\\Users\\Mitya\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App\\Kouch.App.csproj",
       "projectName": "Kouch.App",
-      "projectPath": "C:\\Users\\User\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App\\Kouch.App.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App\\obj\\",
+      "projectPath": "C:\\Users\\Mitya\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App\\Kouch.App.csproj",
+      "packagesPath": "C:\\Users\\Mitya\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mitya\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Mitya\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -772,6 +983,10 @@
       "netstandard2.0": {
         "targetAlias": "netstandard2.0",
         "dependencies": {
+          "LiveXAML": {
+            "target": "Package",
+            "version": "[2.1.73, )"
+          },
           "NETStandard.Library": {
             "suppressParent": "All",
             "target": "Package",
@@ -782,9 +997,21 @@
             "target": "Package",
             "version": "[13.0.1, )"
           },
+          "Plugin.Toast": {
+            "target": "Package",
+            "version": "[2.2.0, )"
+          },
           "Rg.Plugins.Popup": {
             "target": "Package",
             "version": "[2.0.0.11, )"
+          },
+          "System.ComponentModel.Annotations": {
+            "target": "Package",
+            "version": "[5.0.0, )"
+          },
+          "Toasts.Forms.Plugin": {
+            "target": "Package",
+            "version": "[3.3.2, )"
           },
           "Xamarin.Essentials": {
             "target": "Package",
@@ -805,7 +1032,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

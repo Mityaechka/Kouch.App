@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:converters="clr-namespace:Kouch.App.Converters"
+             x:Class="Kouch.App.Views.Components.CommentElement">
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary>
+                <converters:ValueConverterGroup x:Key="isNotEmptyList">
+                    <converters:IsNullOrEmptyListConverter />
+                    <converters:InverseBoolConverter />
+                </converters:ValueConverterGroup>
+            </ResourceDictionary>
+        </ResourceDictionary>
+</ContentView.Resources>
+
+  <ContentView.Content>
+        <Frame CornerRadius="10" HasShadow="True" Margin="10">
+            <StackLayout Orientation="Vertical"
+                         VerticalOptions="FillAndExpand">
+                <StackLayout Orientation="Vertical">
+                    <Label Text="{Binding Name}"
+                           FontSize="20"
+                           FontAttributes="Bold" />
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="{Binding Content}"
+                               FontSize="15" />
+                        <Label Text="Ответить"
+                               Style="{StaticResource Link}">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding AddCommentCommand}"
+                                                      CommandParameter="5}" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </StackLayout>
+                </StackLayout>
+                <StackLayout x:Name="TreeLayout"
+                             Orientation="Vertical"></StackLayout>
+                
+            </StackLayout>
+        </Frame>
+    </ContentView.Content>
+</ContentView>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ViewCell xmlns="http://xamarin.com/schemas/2014/forms"
+          xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+          xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+          xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+          xmlns:converters="clr-namespace:Kouch.App.Converters"
+          mc:Ignorable="d"
+          x:Class="Kouch.App.Views.ViewCells.PostViewCell">
+    <ViewCell.View>
+        <Frame CornerRadius="0"
+               HasShadow="True"
+               Margin="5,10,5,10">
+            <!--<Frame.Resources>
+                <ResourceDictionary>
+                    <converters:SubstringConverter x:Key="substringConverter" />
+                </ResourceDictionary>
+            </Frame.Resources>-->
+            <StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <Image Source="logo.png"
+                           WidthRequest="50" />
+                    <Label Padding="5"
+                           Text="{Binding Id}"
+                           FontAttributes="Bold" />
+                </StackLayout>
+                <StackLayout Orientation="Vertical">
+                    <Label Text="{Binding Title}"
+                           FontSize="30" />
+                    <Label FontSize="15">
+                        <!--<Label.Text>
+                            <Binding>
+                                <Binding.Source Path="Title" Length="1"/>
+                                <Binding.Converter>
+                                    <converters:SubstringConverter />
+                                </Binding.Converter>
+                            </Binding>
+                        </Label.Text>-->
+                    </Label>
+                    <Grid HorizontalOptions="FillAndExpand"
+                          VerticalOptions="FillAndExpand"
+                          IsVisible="{Binding HasPreview}">
+                        <Image Source="{Binding Preview}"
+                               HeightRequest="200" />
+                    </Grid>
+                </StackLayout>
+            </StackLayout>
+        </Frame>
+    </ViewCell.View>
+</ViewCell>
