@@ -18,7 +18,6 @@ Title="Посты">
                 <x:String>Xiaomi Mi6</x:String>
             </x:Array>
         </ResourceDictionary>
-        <converters:PostListToViewModelListConverter x:Key="postListToViewModelListConverter" />
         <converters:BoolToValueConverter x:Key="boolToValueConverter" />
     </ContentPage.Resources>
     <StackLayout VerticalOptions="CenterAndExpand">
@@ -33,20 +32,17 @@ Title="Посты">
                 </DataTemplate>
             </ListView.ItemTemplate>
             <ListView.Footer>
-                <StackLayout Orientation="Horizontal" IsVisible="False">
-                    <StackLayout.HeightRequest>
+                <StackLayout Orientation="Horizontal"
+                             HorizontalOptions="CenterAndExpand">
+                    <!--<StackLayout.HeightRequest>
                         <Binding Path="IsLoading">
                             <Binding.Converter>
-                                <converters:BoolToValueConverter TrueValue="-1"
+                                <converters:BoolToValueConverter TrueValue="100"
                                                                  FalseValue="0" />
                             </Binding.Converter>
                         </Binding>
-                        </StackLayout.HeightRequest>
-                    <Label Text="Результаты на март 2017 г."
-                           FontSize="Large"
-                           TextColor="Gray"
-                           BackgroundColor="#c5cae9"
-                           HorizontalOptions="FillAndExpand" />
+                        </StackLayout.HeightRequest>-->
+                    <ActivityIndicator IsRunning="{Binding IsLoading}" />
                 </StackLayout>
             </ListView.Footer>
         </components:InfiniteListView>

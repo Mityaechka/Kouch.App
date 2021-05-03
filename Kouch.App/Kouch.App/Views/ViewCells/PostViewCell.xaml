@@ -20,7 +20,7 @@
                     <Image Source="logo.png"
                            WidthRequest="50" />
                     <Label Padding="5"
-                           Text="{Binding Id}"
+                           Text="{Binding Preview}"
                            FontAttributes="Bold" />
                 </StackLayout>
                 <StackLayout Orientation="Vertical">
@@ -39,7 +39,7 @@
                     <Grid HorizontalOptions="FillAndExpand"
                           VerticalOptions="FillAndExpand"
                           IsVisible="{Binding HasPreview}">
-                        <Image Source="{Binding Preview}"
+                        <Image Source="{Binding Preview.Path}"
                                HeightRequest="200" />
                     </Grid>
                 </StackLayout>

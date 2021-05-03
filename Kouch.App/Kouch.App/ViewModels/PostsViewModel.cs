@@ -2,6 +2,7 @@
 using Kouch.App.Models;
 using Kouch.App.Services;
 using Kouch.App.Views.Modals;
+using Kouch.App.Views.Pages;
 using Rg.Plugins.Popup.Extensions;
 using System;
 using System.Collections.Generic;
@@ -41,8 +42,9 @@ namespace Kouch.App.ViewModels
             get => selectedPost;
             set
             {
-                Post tempFriend = value;
+                Post tempPost = value;
                 selectedPost = null;
+                OpenPost(tempPost);
                 OnPropertyChanged("SelectedPost");
             }
         }
@@ -80,6 +82,13 @@ namespace Kouch.App.ViewModels
                 IsError = true;
                 Error = posts.Error;
             }
+        }
+        private async void OpenPost(Post post)
+        {
+            await Navigation.PushPopupAsync(new LoadingModal());
+            var postResponse = await apiPostsService.GetPost(post.Id);
+            await Navigation.PopPopupAsync();
+            await Navigation.PushAsync(new PostPage(postResponse.Result));
         }
     }
 }

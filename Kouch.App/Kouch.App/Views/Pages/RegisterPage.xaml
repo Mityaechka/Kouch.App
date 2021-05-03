@@ -1,12 +1,65 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:templates="clr-namespace:Kouch.App.DataTemplateSelectors"
+             xmlns:viewmodels="clr-namespace:Kouch.App.ViewModels"
+             xmlns:converters="clr-namespace:Kouch.App.Converters"
              x:Class="Kouch.App.Views.Pages.RegisterPage">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <converters:InverseBoolConverter x:Key="inverseBool" />
+            <DataTemplate x:Key="emailInput">
+                <ContentView>
+                    <StackLayout VerticalOptions="CenterAndExpand">
+                        <StackLayout Orientation="Vertical" Margin="20,0,20,0">
+                            <Entry Placeholder="Почта" Keyboard="Email" Text="{Binding Model.Email,Mode=TwoWay}"/>
+                            <Entry Placeholder="Пароль"
+                                   IsPassword="True"
+                                   Text="{Binding Model.Password,Mode=TwoWay}" />
+                            <Entry Placeholder="Повторите пароль"
+                                   IsPassword="True"
+                                   Text="{Binding Model.RepeatPassword,Mode=TwoWay}" />
+                        </StackLayout>
+                        <Label Text="{Binding Path=Model.EmailError}"
+                               IsVisible="{Binding Path=Model.IsEmailError}" />
+                        <Button Text="Получить СМС-код"
+                                IsEnabled="{Binding Model.IsEmailError,Converter={StaticResource inverseBool}}"
+                                Command="{Binding Model.SendSmsCodeCommand}"/>
+                    </StackLayout>
+                    
+                </ContentView>
+            </DataTemplate>
+            <DataTemplate x:Key="codeInput">
+                <ContentView>
+                    <StackLayout VerticalOptions="CenterAndExpand">
+                        <StackLayout Orientation="Vertical"
+                                     Margin="20,0,20,0">
+                            <Entry Placeholder="Код подтверждения"
+                                   IsPassword="True" />
+                        </StackLayout>
+                        <Button Text="Назад"
+                                Command="{Binding Model.ReturnEmailInputCommand}" />
+                    </StackLayout>
+                </ContentView>
+            </DataTemplate>
+            <templates:RegistrationPageDataTemplateSelector x:Key="personDataTemplateSelector"
+                                                            EmailAndPasswordDataTemplate="{StaticResource emailInput}"
+                                                            CodeInputDataTemplate="{StaticResource codeInput}" />
+        </ResourceDictionary>
+    </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Margin="0,0,0,10">
+
+            <CarouselView  IsSwipeEnabled="False"
+                           IndicatorView="indicatorView"
+                           ItemsSource="{Binding States}"
+                            ItemTemplate="{StaticResource personDataTemplateSelector}"
+                           CurrentItem="{Binding CurrentState}" />
+            <IndicatorView x:Name="indicatorView"
+                           IndicatorColor="LightGray"
+                           SelectedIndicatorColor="DarkGray"
+                           HorizontalOptions="Center" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

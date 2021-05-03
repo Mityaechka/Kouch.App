@@ -10,7 +10,11 @@ namespace Kouch.App.Converters
         public bool AddDots { get; set; } = true;
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            return $"{value.ToString().Substring(Length)}{(AddDots ? "..." : "")}";
+            if (value.ToString().Length < Length)
+            {
+                return value;
+            }
+            return $"{value.ToString().Substring(0,Length)}{(AddDots ? "..." : "")}";
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

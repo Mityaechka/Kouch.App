@@ -29,4 +29,11 @@ C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\obj\Debug\netstandard2
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\obj\Debug\netstandard2.0\Kouch.App.dll
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\obj\Debug\netstandard2.0\ref\Kouch.App.dll
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\obj\Debug\netstandard2.0\Kouch.App.pdb
+C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\bin\Debug\netstandard2.0\Kouch.App.deps.json
+C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\bin\Debug\netstandard2.0\Kouch.App.dll
+C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\bin\Debug\netstandard2.0\ref\Kouch.App.dll
+C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\bin\Debug\netstandard2.0\Kouch.App.pdb
+C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\obj\Debug\netstandard2.0\Kouch.App.csprojAssemblyReference.cache
+C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\obj\Debug\netstandard2.0\Views\DataTemplates\CodeInputDataTemplate.xaml.g.cs
+C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\obj\Debug\netstandard2.0\Views\DataTemplates\PhoneAndPasswordDataTemplate.xaml.g.cs

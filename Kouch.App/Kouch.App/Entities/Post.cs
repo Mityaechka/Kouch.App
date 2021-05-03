@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Text;
 using System.ComponentModel.DataAnnotations.Schema;
+using Newtonsoft.Json;
+
 namespace Kouch.App.Entities
 {
     public class Post
@@ -9,8 +11,10 @@ namespace Kouch.App.Entities
         public int Id { get; set; }
         public string Title { get; set; }
         public string Body { get; set; }
-        public string Preview { get; set; }
+        [JsonProperty("preview_image")]
+        public File Preview { get; set; }
         public List<File> Files { get; set; }
+        public bool IsBookmark { get; set; } = true;
         [NotMapped]
         public bool HasPreview => Preview != null;
 
@@ -21,10 +25,7 @@ namespace Kouch.App.Entities
                 List<File> files = new List<File>();
                 if (Preview != null)
                 {
-                    files.Add(new File
-                    {
-                        Path = Preview
-                    });
+                    files.Add(Preview);
                 }
                 if (Files != null)
                 {
@@ -33,18 +34,5 @@ namespace Kouch.App.Entities
                 return files;
             }
         }
-    }
-    public class File
-    {
-        public string Path { get; set; }
-    }
-    public class Comment
-    {
-        public int Id { get; set; }
-        public string Content { get; set; }
-        public string Name { get; set; }
-        public List<Comment> Children { get; set; }
-        [NotMapped]
-        public bool HaveChildren => Children!=null&&Children.Count!=0;
     }
 }

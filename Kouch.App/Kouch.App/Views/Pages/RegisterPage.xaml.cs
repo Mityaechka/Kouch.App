@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Kouch.App.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,7 @@ namespace Kouch.App.Views.Pages
         public RegisterPage()
         {
             InitializeComponent();
+            BindingContext = new RegisterViewModel(Navigation);
         }
     }
 }

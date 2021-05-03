@@ -10,7 +10,8 @@ namespace Kouch.App
         public App()
         {
             InitializeComponent();
-            var page = new NavigationPage(new PostsPage());
+            //var page = new NavigationPage(new PostsPage());
+            var page = new RegisterPage();
             MainPage = page;
         }
 

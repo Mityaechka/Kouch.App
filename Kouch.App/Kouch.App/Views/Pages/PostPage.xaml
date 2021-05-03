@@ -4,10 +4,19 @@
              xmlns:viewmodels="clr-namespace:Kouch.App.ViewModels"
              xmlns:converters="clr-namespace:Kouch.App.Converters"
              xmlns:components="clr-namespace:Kouch.App.Views.Components"
-             x:Class="Kouch.App.Views.Pages.PostPage">
+             x:Class="Kouch.App.Views.Pages.PostPage" x:Name="this">
+    <ContentPage.Title>
+        <Binding Path="Post.Title">
+            <Binding.Converter>
+                <converters:SubstringConverter Length="15"
+                                               AddDots="True" />
+            </Binding.Converter>
+        </Binding>
+</ContentPage.Title>
     <ContentPage.Resources>
         <ResourceDictionary>
             <converters:InverseBoolConverter x:Key="inverseBoolConverter" />
+            <converters:SubstringConverter x:Key="substringConverter" />
         </ResourceDictionary>
         <!--<Style x:Key="gridCell"
                TargetType="Label">
@@ -57,32 +66,51 @@
                     Value="Coral" />
         </Style>-->
     </ContentPage.Resources>
+    <ContentPage.ToolbarItems>
+        <components:VisibleToolbarItem Text="Добавить в избранное"
+                                       IconImageSource="not_bookmark.png"
+                                       Order="Primary"
+                                       Priority="0"
+                                       Command="{Binding AddBookmarkCommand}"
+                                       IsVisible="{Binding IsNotBookmark}" />
+        <components:VisibleToolbarItem  Text="Удалить из избранного"
+                                        IconImageSource="bookmark.png"
+                                        Order="Primary"
+                                        Priority="0"
+                                        Command="{Binding RemoveBookmarkCommand}"
+                                        IsVisible="{Binding IsBookmark}" />
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
-        <StackLayout Padding="15,0,15,0" VerticalOptions="FillAndExpand">
-            <Label FontSize="30" Text="{Binding Post.Title}"/>
+        <StackLayout Padding="15,0,15,0"
+                     VerticalOptions="FillAndExpand">
+            <Label FontSize="30"
+                   Text="{Binding Post.Title}" />
             <ScrollView>
                 <StackLayout>
-                <Label FontSize="15"
-                       Text="{Binding Post.Body}" />
-                    <FlexLayout Direction="Row" Wrap="Wrap"   BindableLayout.ItemsSource="{Binding Post.AllFiles}">
+                    <Label FontSize="15"
+                           Text="{Binding Post.Body}" />
+                    <FlexLayout Direction="Row"
+                                Wrap="Wrap"
+                                BindableLayout.ItemsSource="{Binding Post.AllFiles}">
                         <BindableLayout.ItemTemplate>
                             <DataTemplate>
-                                <Image Source="{Binding Path}"/>
+                                <Image Source="{Binding Path}" />
                             </DataTemplate>
                         </BindableLayout.ItemTemplate>
                     </FlexLayout>
-                    <Button Text="Загрузить комментарии"
-                            HorizontalOptions="FillAndExpand"
-                            IsVisible="{Binding IsCommentsLoading,Converter={StaticResource inverseBoolConverter}}"
-                            Command="{Binding LoadCommentsCommand}"/>
+                    <StackLayout IsVisible="{Binding IsCommentsLoadingError}">
+                        <Label Text="Ошибка при загрузке комментариев"
+                               IsVisible="{Binding IsCommentsLoadingError}" />
+                        <Button Text="Загрузить комментарии"
+                                HorizontalOptions="FillAndExpand"
+                                IsVisible="{Binding IsCommentsLoading,Converter={StaticResource inverseBoolConverter}}"
+                                Command="{Binding LoadCommentsCommand}" />
+                    </StackLayout>
                     <ActivityIndicator IsVisible="{Binding IsCommentsLoading}"
                                        IsRunning="True" />
-                    <Label Text="Ошибка при загрузке комментариев"
-                           IsVisible="{Binding IsCommentsLoadingError}"/>
                     <components:CommentsTreeElement BindingContext="{Binding Comments}" />
                 </StackLayout>
             </ScrollView>
-            
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

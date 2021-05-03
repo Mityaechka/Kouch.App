@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Kouch.App.App">
+             x:Class="Kouch.App.App"
+             xmlns:values="clr-constants:Kouch.App.Constants">
     <Application.Resources>
         <StyleSheet Source="/style.css" />
         <!--<Style TargetType="ListView">
@@ -20,5 +21,10 @@
             <Setter Property="FontSize"
                     Value="15" />
         </Style>
+        <x:Array x:Key="registrationTemplates"
+                 Type="{x:Type x:String}">
+            <x:String>phone</x:String>
+            <x:String>code</x:String>
+        </x:Array>
     </Application.Resources>
 </Application>
