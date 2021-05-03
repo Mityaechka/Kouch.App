@@ -37,25 +37,8 @@
       <Properties />
     </XamlFileMeta>
     <XamlFileMeta>
-      <FilePath>C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\Pages\PostPage.xaml</FilePath>
-      <Hash>52-B7-1B-82-F6-3E-C9-8C-A8-D5-43-CC-48-59-3C-54</Hash>
-      <Properties />
-    </XamlFileMeta>
-    <XamlFileMeta>
-      <FilePath>C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\Pages\PostsPage.xaml</FilePath>
-      <Hash>C6-2C-F2-53-95-D3-0D-00-E7-F6-AB-F2-D1-B2-B9-7E</Hash>
-      <Properties>
-        <string>Title</string>
-      </Properties>
-    </XamlFileMeta>
-    <XamlFileMeta>
       <FilePath>C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\Pages\RegisterPage.xaml</FilePath>
       <Hash>F5-39-B7-FD-6A-18-1D-E3-87-23-9F-CD-F7-68-14-7E</Hash>
-      <Properties />
-    </XamlFileMeta>
-    <XamlFileMeta>
-      <FilePath>C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\ViewCells\PostViewCell.xaml</FilePath>
-      <Hash>E2-62-34-C2-00-94-2E-BE-C5-5A-D0-32-73-E9-E7-A7</Hash>
       <Properties />
     </XamlFileMeta>
   </Files>
