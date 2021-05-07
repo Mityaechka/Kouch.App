@@ -4,6 +4,7 @@ using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,7 +12,7 @@ namespace Kouch.App.Services
 {
     public class HttpBaseService
     {
-        private HttpClient http = new HttpClient();
+        private static HttpClient http = new HttpClient();
         public HttpBaseService()
         {
 
@@ -37,7 +38,8 @@ namespace Kouch.App.Services
             StringContent content = null;
             if (data != null)
             {
-                content = new StringContent(JsonConvert.SerializeObject(data));
+                var d = JsonConvert.SerializeObject(data);
+                content = new StringContent(JsonConvert.SerializeObject(data),Encoding.UTF8,"application/json");
             }
             return await SendRequest(new HttpRequestMessage
             {
@@ -51,7 +53,7 @@ namespace Kouch.App.Services
             StringContent content = null;
             if (data != null)
             {
-                content = new StringContent(JsonConvert.SerializeObject(data));
+                content = new StringContent(JsonConvert.SerializeObject(data), Encoding.UTF8, "application/json");
             }
             return await SendRequest<U>(new HttpRequestMessage
             {
@@ -90,6 +92,7 @@ namespace Kouch.App.Services
         }
         private async Task<ApiResnonse> SendRequest(HttpRequestMessage requestMessage)
         {
+            
             try
             {
                 var response = await http.SendAsync(requestMessage);
@@ -116,6 +119,10 @@ namespace Kouch.App.Services
             {
                 return new ApiResnonse { Error = "Ошибка сервера", IsSuccsess = false };
             }
+        }
+        public void SetToken(string jwt)
+        {
+            http.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", Convert.ToBase64String(Encoding.UTF8.GetBytes(jwt)));
         }
     }
 }

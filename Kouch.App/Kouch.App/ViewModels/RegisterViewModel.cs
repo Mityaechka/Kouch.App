@@ -1,5 +1,9 @@
 ﻿using Kouch.App.Constants;
 using Kouch.App.Entities;
+using Kouch.App.Services;
+using Kouch.App.Views.Modals;
+using Plugin.Toast;
+using Rg.Plugins.Popup.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -12,7 +16,10 @@ namespace Kouch.App.ViewModels
 {
     public class RegisterViewModel : AsyncBaseViewModel
     {
+        private ApiAuthService apiAuthServicev = new ApiAuthService();
         private RegisterEmailModel RegisterEmailModel { get; set; } = new RegisterEmailModel();
+        private RegisterCodeModel RegisterCodeModel { get; set; } = new RegisterCodeModel();
+
         private string emailError;
 
         public string EmailError
@@ -78,9 +85,22 @@ namespace Kouch.App.ViewModels
                 }
             }
         }
-
+        public string code
+        {
+            get => RegisterCodeModel.Code;
+            set
+            {
+                if (RegisterCodeModel.Code != value)
+                {
+                    RegisterCodeModel.Code = value;
+                    OnPropertyChanged();
+                    ValidateEmailModel();
+                }
+            }
+        }
         public ICommand SendSmsCodeCommand{ get; set; }
         public ICommand ReturnEmailInputCommand{ get; set; }
+        public ICommand VerifyAccountCommand{ get; set; }
 
         private RegisterState currentState;
         public ObservableCollection<RegisterState> States{ get; set; }
@@ -120,13 +140,40 @@ namespace Kouch.App.ViewModels
             CurrentState = States[0];
             SendSmsCodeCommand = new Command(async () => await SendSmsCode());
             ReturnEmailInputCommand = new Command(async () => await ReturnEmailInput());
+            VerifyAccountCommand = new Command(async () => await VerifyAccount());
         }
         private async Task SendSmsCode()
         {
-            Password = "";
-            RepeatPassword = "";
+            await Navigation.PushPopupAsync(new LoadingModal());
+            var registerResponse = await apiAuthServicev.Register(RegisterEmailModel);
+            await Navigation.PopPopupAsync();
 
-            CurrentState = States[1];
+            if (registerResponse.IsSuccsess)
+            {
+                Password = "";
+                RepeatPassword = "";
+                RegisterCodeModel.Email = RegisterEmailModel.Email;
+                CurrentState = States[1];
+            }
+            else
+            {
+                CrossToastPopUp.Current.ShowToastMessage(registerResponse.Error);
+            }
+        }
+        private async Task VerifyAccount()
+        {
+            await Navigation.PushPopupAsync(new LoadingModal());
+            var verifyResponse = await apiAuthServicev.VerifyAccount(RegisterCodeModel);
+            await Navigation.PopPopupAsync();
+
+            if (verifyResponse.IsSuccsess)
+            {
+                CrossToastPopUp.Current.ShowToastMessage("Все внатуре четко");
+            }
+            else
+            {
+                CrossToastPopUp.Current.ShowToastMessage(verifyResponse.Error);
+            }
         }
         private async Task ReturnEmailInput()
         {

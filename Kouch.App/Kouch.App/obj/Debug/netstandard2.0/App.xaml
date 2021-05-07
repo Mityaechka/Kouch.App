@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Kouch.App.App" xmlns:values="clr-constants:Kouch.App.Constants" xmlns:__xl="clr-namespace:__livexaml" __xl:Runtime.Register="C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\App.xaml">
+<Application xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Kouch.App.App" xmlns:values="clr-constants:Kouch.App.Constants" xmlns:__xl="clr-namespace:__livexaml" __xl:Runtime.Register="C:\Users\User\source\repos\Kouch.App\Kouch.App\Kouch.App\App.xaml">
   <Application.Resources>
     <StyleSheet Source="/style.css" />
     <!--<Style TargetType="ListView">

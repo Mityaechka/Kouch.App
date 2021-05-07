@@ -6,6 +6,8 @@ public class MonoPackageManager_Resources {
 		"FormsViewGroup.dll",
 		"Kouch.App.dll",
 		"Newtonsoft.Json.dll",
+		"Plugin.Settings.Abstractions.dll",
+		"Plugin.Settings.dll",
 		"Plugin.Toast.Abstractions.dll",
 		"Plugin.Toast.dll",
 		"Rg.Plugins.Popup.dll",
@@ -56,4 +58,5 @@ public class MonoPackageManager_Resources {
 	};
 	public static String[] Dependencies = new String[]{
 	};
+	public static String ApiPackageName = "Mono.Android.Platform.ApiLevel_28";
 }

@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Mitya\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App.iOS\\Kouch.App.iOS.csproj": {}
+    "C:\\Users\\User\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App.iOS\\Kouch.App.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Mitya\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App.iOS\\Kouch.App.iOS.csproj": {
+    "C:\\Users\\User\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App.iOS\\Kouch.App.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mitya\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App.iOS\\Kouch.App.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App.iOS\\Kouch.App.iOS.csproj",
         "projectName": "Kouch.App.iOS",
-        "projectPath": "C:\\Users\\Mitya\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App.iOS\\Kouch.App.iOS.csproj",
-        "packagesPath": "C:\\Users\\Mitya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mitya\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App.iOS\\obj\\",
+        "projectPath": "C:\\Users\\User\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App.iOS\\Kouch.App.iOS.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Mitya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\Mitya\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App\\Kouch.App.csproj": {
-                "projectPath": "C:\\Users\\Mitya\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App\\Kouch.App.csproj"
+              "C:\\Users\\User\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App\\Kouch.App.csproj": {
+                "projectPath": "C:\\Users\\User\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App\\Kouch.App.csproj"
               }
             }
           }
@@ -73,20 +73,20 @@
         }
       }
     },
-    "C:\\Users\\Mitya\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App\\Kouch.App.csproj": {
+    "C:\\Users\\User\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App\\Kouch.App.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Mitya\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App\\Kouch.App.csproj",
+        "projectUniqueName": "C:\\Users\\User\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App\\Kouch.App.csproj",
         "projectName": "Kouch.App",
-        "projectPath": "C:\\Users\\Mitya\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App\\Kouch.App.csproj",
-        "packagesPath": "C:\\Users\\Mitya\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Mitya\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App\\obj\\",
+        "projectPath": "C:\\Users\\User\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App\\Kouch.App.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\Mitya\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -143,6 +143,10 @@
               "target": "Package",
               "version": "[3.3.2, )"
             },
+            "Xam.Plugins.Settings": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
             "Xamarin.Essentials": {
               "target": "Package",
               "version": "[1.5.3.2, )"
@@ -162,7 +166,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

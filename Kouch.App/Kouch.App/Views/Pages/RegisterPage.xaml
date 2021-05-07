@@ -36,7 +36,7 @@
                         <StackLayout Orientation="Vertical"
                                      Margin="20,0,20,0">
                             <Entry Placeholder="Код подтверждения"
-                                   IsPassword="True" />
+                                   Text="{Binding Model.Code,Mode=TwoWay}" />
                         </StackLayout>
                         <Button Text="Назад"
                                 Command="{Binding Model.ReturnEmailInputCommand}" />

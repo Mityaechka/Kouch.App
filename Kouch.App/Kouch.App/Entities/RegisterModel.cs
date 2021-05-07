@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -8,6 +9,7 @@ namespace Kouch.App.Entities
     {
         public string Email { get; set; }
         public string Password { get; set; }
+        [JsonProperty("password_confirmation")]
         public string RepeatPassword { get; set; }
     }
     public class RegisterCodeModel

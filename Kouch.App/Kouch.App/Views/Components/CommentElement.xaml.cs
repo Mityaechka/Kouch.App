@@ -20,14 +20,14 @@ namespace Kouch.App.Views.Components
 
         protected override void OnBindingContextChanged()
         {
-            Comment comment = (Comment)BindingContext;
-            if (comment.Children!=null&&comment.Children.Count != 0)
-            {
-                TreeLayout.Children.Add(new CommentsTreeElement
-                {
-                    BindingContext = comment.Children
-                });
-            }
+            //Comment comment = (Comment)BindingContext;
+            //if (comment.Children!=null&&comment.Children.Count != 0)
+            //{
+            //    TreeLayout.Children.Add(new CommentsTreeElement
+            //    {
+            //        BindingContext = comment.Children
+            //    });
+            //}
             base.OnBindingContextChanged();
         }
     }
