@@ -2,43 +2,43 @@
 <XamlProjectMeta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <Files>
     <XamlFileMeta>
-      <FilePath>C:\Users\User\source\repos\Kouch.App\Kouch.App\Kouch.App\App.xaml</FilePath>
-      <Hash>81-9D-5E-0A-35-1E-AE-D8-7A-33-E4-28-56-35-29-81</Hash>
+      <FilePath>C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\App.xaml</FilePath>
+      <Hash>AF-7E-07-62-AA-D7-A4-B8-C1-82-A8-1E-97-13-33-A9</Hash>
       <Properties />
     </XamlFileMeta>
     <XamlFileMeta>
-      <FilePath>C:\Users\User\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\Components\CommentElement.xaml</FilePath>
+      <FilePath>C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\Components\CommentElement.xaml</FilePath>
       <Hash>31-55-09-15-C6-70-04-19-B2-F9-47-10-9C-2B-93-7A</Hash>
       <Properties />
     </XamlFileMeta>
     <XamlFileMeta>
-      <FilePath>C:\Users\User\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\Components\CommentsTreeElement.xaml</FilePath>
+      <FilePath>C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\Components\CommentsTreeElement.xaml</FilePath>
       <Hash>72-80-EA-5A-33-3A-3F-58-9F-FE-E8-E5-02-BC-55-44</Hash>
       <Properties />
     </XamlFileMeta>
     <XamlFileMeta>
-      <FilePath>C:\Users\User\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\DataTemplates\CodeInputDataTemplate.xaml</FilePath>
+      <FilePath>C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\DataTemplates\CodeInputDataTemplate.xaml</FilePath>
       <Hash>56-BB-47-A5-FF-9D-1C-06-A6-F1-CB-EF-23-AC-7D-62</Hash>
       <Properties />
     </XamlFileMeta>
     <XamlFileMeta>
-      <FilePath>C:\Users\User\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\DataTemplates\PhoneAndPasswordDataTemplate.xaml</FilePath>
+      <FilePath>C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\DataTemplates\PhoneAndPasswordDataTemplate.xaml</FilePath>
       <Hash>DD-CA-9A-B2-9F-D7-53-01-22-9A-2B-BB-04-05-6F-52</Hash>
       <Properties />
     </XamlFileMeta>
     <XamlFileMeta>
-      <FilePath>C:\Users\User\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\Modals\LoadingModal.xaml</FilePath>
+      <FilePath>C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\Modals\LoadingModal.xaml</FilePath>
       <Hash>D0-38-E8-C5-87-39-0D-58-D2-27-8D-B7-0E-26-2E-A6</Hash>
       <Properties />
     </XamlFileMeta>
     <XamlFileMeta>
-      <FilePath>C:\Users\User\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\Pages\LoadingPage.xaml</FilePath>
+      <FilePath>C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\Pages\LoadingPage.xaml</FilePath>
       <Hash>18-3A-C1-B3-4C-5B-88-D5-BB-63-0D-F0-2E-0F-57-BA</Hash>
       <Properties />
     </XamlFileMeta>
     <XamlFileMeta>
-      <FilePath>C:\Users\User\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\Pages\RegisterPage.xaml</FilePath>
-      <Hash>48-81-71-15-88-EE-3B-58-A3-03-19-72-44-76-38-A5</Hash>
+      <FilePath>C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\Pages\RegisterPage.xaml</FilePath>
+      <Hash>68-91-FD-87-60-B2-11-77-0E-EA-9D-B3-99-0D-36-01</Hash>
       <Properties />
     </XamlFileMeta>
   </Files>

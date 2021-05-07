@@ -4,6 +4,7 @@
              xmlns:templates="clr-namespace:Kouch.App.DataTemplateSelectors"
              xmlns:viewmodels="clr-namespace:Kouch.App.ViewModels"
              xmlns:converters="clr-namespace:Kouch.App.Converters"
+             xmlns:behaviors="clr-namespace:Kouch.App.Behaviors"
              x:Class="Kouch.App.Views.Pages.RegisterPage">
 
     <ContentPage.Resources>
@@ -12,17 +13,30 @@
             <DataTemplate x:Key="emailInput">
                 <ContentView>
                     <StackLayout VerticalOptions="CenterAndExpand">
-                        <StackLayout Orientation="Vertical" Margin="20,0,20,0">
-                            <Entry Placeholder="Почта" Keyboard="Email" Text="{Binding Model.Email,Mode=TwoWay}"/>
+                        <StackLayout Orientation="Vertical"
+                                     Margin="20,0,20,0">
+                            <Entry Placeholder="Почта"
+                                   Keyboard="Email"
+                                   Text="{Binding Model.Email.Value,Mode=TwoWay}">
+                                <Entry.Triggers>
+                                    <DataTrigger
+                                            TargetType="Entry"
+                                                 Binding="{Binding Model.Email.IsValid}"
+                                                 Value="False">
+                                        <Setter Property="behaviors:LineColorBehavior.LineColor"
+                                                Value="{StaticResource ErrorColor}" />
+                                    </DataTrigger>
+                                </Entry.Triggers>
+                            </Entry>
                             <Entry Placeholder="Пароль"
                                    IsPassword="True"
-                                   Text="{Binding Model.Password,Mode=TwoWay}" />
+                                   Text="{Binding Model.Password.Value,Mode=TwoWay}" />
                             <Entry Placeholder="Повторите пароль"
                                    IsPassword="True"
-                                   Text="{Binding Model.RepeatPassword,Mode=TwoWay}" />
+                                   Text="{Binding Model.RepeatPassword.Value,Mode=TwoWay}" />
                         </StackLayout>
-                        <Label Text="{Binding Path=Model.EmailError}"
-                               IsVisible="{Binding Path=Model.IsEmailError}" />
+                        <Label Text="{Binding Path=Model.FirstError}"
+                               IsVisible="{Binding Path=Model.HasErrors}" />
                         <Button Text="Получить СМС-код"
                                 IsEnabled="{Binding Model.IsEmailError,Converter={StaticResource inverseBool}}"
                                 Command="{Binding Model.SendSmsCodeCommand}"/>

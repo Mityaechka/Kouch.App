@@ -1611,24 +1611,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\User\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "C:\\Users\\Mitya\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App.iOS\\Kouch.App.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\Mitya\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App.iOS\\Kouch.App.iOS.csproj",
       "projectName": "Kouch.App.iOS",
-      "projectPath": "C:\\Users\\User\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App.iOS\\Kouch.App.iOS.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App.iOS\\obj\\",
+      "projectPath": "C:\\Users\\Mitya\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App.iOS\\Kouch.App.iOS.csproj",
+      "packagesPath": "C:\\Users\\Mitya\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Mitya\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Mitya\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1642,8 +1642,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "C:\\Users\\User\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App\\Kouch.App.csproj": {
-              "projectPath": "C:\\Users\\User\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App\\Kouch.App.csproj"
+            "C:\\Users\\Mitya\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App\\Kouch.App.csproj": {
+              "projectPath": "C:\\Users\\Mitya\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App\\Kouch.App.csproj"
             }
           }
         }

@@ -2,13 +2,13 @@
 <Application xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Kouch.App.App"
-             xmlns:values="clr-constants:Kouch.App.Constants">
+             xmlns:values="clr-constants:Kouch.App.Constants"
+             xmlns:behaviors="clr-constants:Kouch.App.Behaviors">
     <Application.Resources>
-        <StyleSheet Source="/style.css" />
-        <!--<Style TargetType="ListView">
-            <Setter Property="CachingStrategy"
-                    Value="RecycleElement" />
-        </Style>-->
+        <Color x:Key="BlackColor">#000000</Color>
+        <Color x:Key="ErrorColor">#ff5252</Color>
+
+
         <Style TargetType="Label">
             <Setter Property="TextColor"
                     Value="Black"></Setter>
@@ -21,6 +21,15 @@
             <Setter Property="FontSize"
                     Value="15" />
         </Style>
+        <Style x:Key="EntryStyle"
+               TargetType="{x:Type Entry}">
+            <Setter Property="behaviors:LineColorBehavior.ApplyLineColor"
+                    Value="True" />
+            <Setter Property="behaviors:LineColorBehavior.LineColor"
+                    Value="{StaticResource BlackColor}" /> 
+        </Style>
+
+
         <x:Array x:Key="registrationTemplates"
                  Type="{x:Type x:String}">
             <x:String>phone</x:String>
