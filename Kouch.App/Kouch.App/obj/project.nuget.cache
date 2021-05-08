@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Q69GrPAO/5Cg3iuorSI/Zmc8EJbMDmqUHO/hpaVpUG4Ejmd5ibH+eZA9i3kdrL1BeY0NAF2e+ig1bulFdVTccA==",
+  "dgSpecHash": "mvDkgglJhy7k72LCqn42Azg8M7BrLx7jEAKaRGFftRVC6+W5RrSPJpePNsyMwLSodPmo4m8B95j08KDGIDc4mw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Mitya\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App\\Kouch.App.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Mitya\\.nuget\\packages\\i18nportable\\1.0.1\\i18nportable.1.0.1.nupkg.sha512",
+    "C:\\Users\\Mitya\\.nuget\\packages\\i18nportable.jsonreader\\1.0.1\\i18nportable.jsonreader.1.0.1.nupkg.sha512",
     "C:\\Users\\Mitya\\.nuget\\packages\\livexaml\\2.1.73\\livexaml.2.1.73.nupkg.sha512",
     "C:\\Users\\Mitya\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Mitya\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

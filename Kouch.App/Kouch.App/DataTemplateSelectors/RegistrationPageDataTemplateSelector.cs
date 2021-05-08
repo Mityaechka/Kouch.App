@@ -17,7 +17,7 @@ namespace Kouch.App.DataTemplateSelectors
 
         protected override DataTemplate OnSelectTemplate(object item, BindableObject container)
         {
-            switch (((RegisterViewModel.RegisterState)item).State)
+            switch (((RegisterStateViewModel)item).State)
             {
                 case RegistrationPageConstants.EMAIL:
                     return EmailAndPasswordDataTemplate;

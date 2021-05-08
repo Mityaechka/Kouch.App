@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView  xmlns="http://xamarin.com/schemas/2014/forms"
+           xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+           xmlns:viewmodels="clr-namespace:Kouch.App.ViewModels"
+           xmlns:c="clr-namespace:Kouch.App.Converters"
+           x:Class="Kouch.App.Views.DataTemplates.RegisterPageCodeTemplate"
+           x:DataType="viewmodels:RegisterStateViewModel">
+
+    <StackLayout VerticalOptions="CenterAndExpand">
+        <StackLayout.Resources>
+            <ResourceDictionary>
+                <c:IsEqualConverter Value="0"
+                                    x:Key="equalZero" />
+                <c:ValueConverterGroup x:Key="notEqualZero">
+                    <c:IsEqualConverter Value="0" />
+                    <c:InverseBoolConverter />
+                </c:ValueConverterGroup>
+                <c:InverseBoolConverter x:Key="inverseBool" />
+                <c:IsEqualConverter x:Key="isEqual" />
+            </ResourceDictionary>
+        </StackLayout.Resources>
+        <StackLayout Orientation="Vertical"
+                     Margin="20,0,20,0">
+            <Entry Placeholder="Код подтверждения"
+                   Text="{Binding Model.Code.Value,Mode=TwoWay}" />
+        </StackLayout>
+        <Label Text="{Binding Model.SendCodeSeconds,StringFormat='Запросить повторный код можно через {0} сек.'}"
+               IsVisible="{Binding Model.SendCodeSeconds,Converter={StaticResource notEqualZero}}"></Label>
+        <Label Text="{Binding Path=Model.CodeValidationCollection.FirstError}"
+               IsVisible="{Binding Path=Model.CodeValidationCollection.HasErrors}" />
+        <Button Text="Проверить код"
+                IsEnabled="{Binding Path=Model.CodeValidationCollection.HasErrors,Converter={StaticResource inverseBool}}"
+                Command="{Binding Model.VerifyAccountCommand}" />
+        <Button Text="Отправить код повтороно"
+                IsEnabled="{Binding Model.SendCodeSeconds,Converter={StaticResource equalZero}}"
+                Command="{Binding Model.ResendVerificationCodeCommand}" />
+        <Button Text="Назад"
+                Command="{Binding Model.ReturnEmailInputCommand}" />
+    </StackLayout>
+</ContentView>

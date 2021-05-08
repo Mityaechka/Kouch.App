@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView  xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:Kouch.App.ViewModels"
+           xmlns:c="clr-namespace:Kouch.App.Converters"
+           x:DataType="viewmodels:RegisterStateViewModel"
+             x:Class="Kouch.App.Views.DataTemplates.RegisterPageEmailTemplate">
+    <StackLayout VerticalOptions="CenterAndExpand">
+        <StackLayout.Resources>
+            <ResourceDictionary>
+                <c:IsEqualConverter Value="0"
+                                    x:Key="equalZero" />
+                <c:ValueConverterGroup x:Key="notEqualZero">
+                    <c:IsEqualConverter Value="0" />
+                    <c:InverseBoolConverter />
+                </c:ValueConverterGroup>
+                <c:InverseBoolConverter x:Key="inverseBool" />
+                <c:IsEqualConverter x:Key="isEqual" />
+            </ResourceDictionary>
+        </StackLayout.Resources>
+
+        <StackLayout Orientation="Vertical"
+                     Margin="20,0,20,0">
+            <Entry Placeholder="Почта"
+                   Keyboard="Email"
+                   Text="{Binding Model.Email.Value,Mode=TwoWay}">
+                <!--<Entry.Triggers>
+                                    <DataTrigger
+                                            TargetType="Entry"
+                                                 Binding="{Binding Model.Email.IsValid}"
+                                                 Value="False">
+                                        <Setter Property="behaviors:LineColorBehavior.LineColor"
+                                                Value="{StaticResource ErrorColor}" />
+                                    </DataTrigger>
+                                </Entry.Triggers>-->
+            </Entry>
+            <Entry Placeholder="Пароль"
+                   IsPassword="True"
+                   Text="{Binding Model.Password.Value,Mode=TwoWay}" />
+            <Entry Placeholder="Повторите пароль"
+                   IsPassword="True"
+                   Text="{Binding Model.RepeatPassword.Value,Mode=TwoWay}" />
+        </StackLayout>
+        <Label Text="{Binding Path=Model.EmailValidationCollection.FirstError}"
+               IsVisible="{Binding Path=Model.EmailValidationCollection.HasErrors}" />
+        <Button Text="Получить СМС-код"
+                Command="{Binding Model.SendSmsCodeCommand}"
+                IsEnabled="{Binding Model.EmailValidationCollection.HasErrors,Converter={StaticResource inverseBool}}">
+            <!--<Button.IsEnabled Path="Model.EmailValidationCollection.HasErrors">
+                                <Binding>
+                                    <Binding.Converter>
+                                        <c:InverseBoolConverter />
+                                    </Binding.Converter>
+                                </Binding>
+                            </Button.IsEnabled>-->
+        </Button>
+    </StackLayout>
+</ContentView>

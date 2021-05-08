@@ -13,13 +13,18 @@
 
   <ItemGroup>
     <None Remove="Configuration\appsettings.json" />
+    <None Remove="Localization\localization-ru.json" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="appsettings.json" />
+    <EmbeddedResource Include="localization.json" />
+    <EmbeddedResource Include="Localization\localization-ru.json" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="I18NPortable" Version="1.0.1" />
+    <PackageReference Include="I18NPortable.JsonReader" Version="1.0.1" />
     <PackageReference Include="LiveXAML" Version="2.1.73" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="Plugin.Toast" Version="2.2.0" />
@@ -42,16 +47,22 @@
     <EmbeddedResource Update="Views\Components\CommentsTreeElement.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\DataTemplates\CodeInputDataTemplate.xaml">
+    <EmbeddedResource Update="Views\DataTemplates\RegisterPageCodeTemplate.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="Views\DataTemplates\PhoneAndPasswordDataTemplate.xaml">
+    <EmbeddedResource Update="Views\DataTemplates\RegisterPageEmailTemplate.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Modals\LoadingModal.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\Pages\AuthPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\Pages\LoadingPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Pages\MainPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Pages\RegisterPage.xaml">
@@ -60,7 +71,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Validations\" />
     <Folder Include="Views\ViewCells\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\DataTemplates\RegisterPageEmailTemplate.xaml.cs">
+      <DependentUpon>RegisterPageEmailTemplate.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
 </Project>

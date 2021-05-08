@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Kouch.App.App"
              xmlns:values="clr-constants:Kouch.App.Constants"
-             xmlns:behaviors="clr-constants:Kouch.App.Behaviors">
+             xmlns:behaviors="clr-constants:Kouch.App.Behaviors"
+             xmlns:c="clr-namespace:Kouch.App.Converters">
     <Application.Resources>
         <Color x:Key="BlackColor">#000000</Color>
         <Color x:Key="ErrorColor">#ff5252</Color>
@@ -23,17 +24,9 @@
         </Style>
         <Style x:Key="EntryStyle"
                TargetType="{x:Type Entry}">
-            <Setter Property="behaviors:LineColorBehavior.ApplyLineColor"
-                    Value="True" />
-            <Setter Property="behaviors:LineColorBehavior.LineColor"
-                    Value="{StaticResource BlackColor}" /> 
+
         </Style>
-
-
-        <x:Array x:Key="registrationTemplates"
-                 Type="{x:Type x:String}">
-            <x:String>phone</x:String>
-            <x:String>code</x:String>
-        </x:Array>
+        <c:InverseBoolConverter x:Key="inverseBool" />
+        <c:LocaliztionConverter x:Key="localization" />
     </Application.Resources>
 </Application>

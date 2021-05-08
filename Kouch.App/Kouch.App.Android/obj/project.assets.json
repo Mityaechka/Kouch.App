@@ -2,6 +2,28 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v9.0": {
+      "I18NPortable/1.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/I18NPortable.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/I18NPortable.dll": {}
+        }
+      },
+      "I18NPortable.JsonReader/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "I18NPortable": "1.0.1",
+          "Newtonsoft.Json": "12.0.3"
+        },
+        "compile": {
+          "lib/netstandard2.0/I18NPortable.JsonReader.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/I18NPortable.JsonReader.dll": {}
+        }
+      },
       "LiveXAML/2.1.73": {
         "type": "package",
         "build": {
@@ -863,6 +885,8 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "I18NPortable": "1.0.1",
+          "I18NPortable.JsonReader": "1.0.1",
           "LiveXAML": "2.1.73",
           "Newtonsoft.Json": "13.0.1",
           "Plugin.Toast": "2.2.0",
@@ -883,6 +907,30 @@
     }
   },
   "libraries": {
+    "I18NPortable/1.0.1": {
+      "sha512": "8bJjONR0aldjQ5aU/Z2ruvOw2CGbZWjGLE5TSAtVfF+6F2kcQ9dwhUj02sSEez0GZKWLvcGfTrD8AGcMfjChsg==",
+      "type": "package",
+      "path": "i18nportable/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "i18nportable.1.0.1.nupkg.sha512",
+        "i18nportable.nuspec",
+        "lib/netstandard2.0/I18NPortable.dll"
+      ]
+    },
+    "I18NPortable.JsonReader/1.0.1": {
+      "sha512": "HLV8XxK6fUWCO1mRpjpvVKbDd+ecebZF3kZkQf9l+8lnin8hS5gZg9McBhil1jcgmX/Qxnd7Cro0JgC53Cghbg==",
+      "type": "package",
+      "path": "i18nportable.jsonreader/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "i18nportable.jsonreader.1.0.1.nupkg.sha512",
+        "i18nportable.jsonreader.nuspec",
+        "lib/netstandard2.0/I18NPortable.JsonReader.dll"
+      ]
+    },
     "LiveXAML/2.1.73": {
       "sha512": "WuyZAgaVvGIN4MoOR5VK3X8PFiCv3swffxzMd6Nf7cJIf32zCjbTgrkasY5K8NSNZ2U4y2nFgLAZ4oeqUvueEA==",
       "type": "package",

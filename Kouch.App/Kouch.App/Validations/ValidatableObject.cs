@@ -7,15 +7,15 @@ using System.Text;
 
 namespace Kouch.App.Validations
 {
-    public class ValidatableObject<T> : BaseViewModel, IValidity, IEnumerable<IValidationRule<T>>
+    public class ValidatableObject<T> : BaseViewModel, IValidity, IEnumerable<ValidationRule>
     {
-        private readonly List<IValidationRule<T>> _validations;
+        private readonly List<ValidationRule> _validations;
         private readonly BaseViewModel parent;
         private List<string> _errors;
         private T _value;
         private bool _isValid;
-
-        public List<IValidationRule<T>> Validations => _validations;
+        public ValidationCollection ValidationCollection { get; set; }
+        public List<ValidationRule> Validations => _validations;
 
         public List<string> Errors
         {
@@ -40,7 +40,14 @@ namespace Kouch.App.Validations
             {
                 _value = value;
                 OnPropertyChanged();
-                Validate();
+                if (ValidationCollection == null)
+                {
+                    Validate();
+                }
+                else
+                {
+                    ValidationCollection.UpdateAll();
+                }
             }
         }
 
@@ -60,7 +67,7 @@ namespace Kouch.App.Validations
         {
             _isValid = true;
             _errors = new List<string>();
-            _validations = new List<IValidationRule<T>>();
+            _validations = new List<ValidationRule>();
             this.parent = parent;
         }
 
@@ -74,15 +81,14 @@ namespace Kouch.App.Validations
 
             Errors = errors.ToList();
             IsValid = !Errors.Any();
-            parent.OnPropertyChanged("HasErrors");
-            if (Errors.Count != 0)
-            {
-                parent.OnPropertyChanged("FirstError");
-            }
+
+
+            ValidationCollection?.Notify();
+
             return this.IsValid;
         }
 
-        public IEnumerator<IValidationRule<T>> GetEnumerator()
+        public IEnumerator<ValidationRule> GetEnumerator()
         {
             return Validations.GetEnumerator();
         }
@@ -91,41 +97,51 @@ namespace Kouch.App.Validations
         {
             return Validations.GetEnumerator();
         }
-        public void Add(IValidationRule<T> validationRule)
+        public void Add(ValidationRule validationRule)
         {
             Validations.Add(validationRule);
         }
     }
-    public interface IValidity
+    public class ValidationCollection:IEnumerable<IValidity>
     {
-        bool IsValid { get; set; }
-        public List<string> Errors { get; set; }
-    }
-    public interface IValidationRule<T>
-    {
-        string ValidationMessage { get; set; }
-
-        bool Check(T value);
-    }
-    public class IsNotNullOrEmptyRule<T> : IValidationRule<T>
-    {
-        public IsNotNullOrEmptyRule(string validationMessage)
+        public ValidationCollection(string name,BaseViewModel parent)
         {
-            ValidationMessage = validationMessage;
+            Name = name;
+            Parent = parent;
+        }
+        protected readonly List<IValidity> validatableObjects = new List<IValidity>();
+
+
+
+        public bool HasErrors => validatableObjects.Any(x => !x.IsValid);
+        public string FirstError => validatableObjects.SelectMany(x => x.Errors).FirstOrDefault();
+
+        public string Name { get; }
+        public BaseViewModel Parent { get; }
+
+        public void Notify()
+        {
+            Parent?.OnPropertyChanged($"{Name}");
+            Parent?.OnPropertyChanged($"{Name}r");
+        }
+        public void UpdateAll()
+        {
+            validatableObjects.ForEach(x => x?.Validate());
+        }
+        public void Add(IValidity validity)
+        {
+            validity.ValidationCollection = this;
+            validatableObjects.Add(validity);
+        }
+        public IEnumerator<IValidity> GetEnumerator()
+        {
+            return validatableObjects.GetEnumerator();
         }
 
-        public string ValidationMessage { get; set; }
-
-        public bool Check(T value)
+        IEnumerator IEnumerable.GetEnumerator()
         {
-            if (value == null)
-            {
-                return false;
-            }
+            return validatableObjects.GetEnumerator();
 
-            var str = value as string;
-
-            return !string.IsNullOrWhiteSpace(str);
         }
     }
 }

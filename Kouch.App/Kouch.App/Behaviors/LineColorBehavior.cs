@@ -4,7 +4,7 @@ using Xamarin.Forms;
 
 namespace Kouch.App.Behaviors
 {
-    public static class LineColorBehavior
+    public class LineColorBehavior
 	{
 		public static readonly BindableProperty ApplyLineColorProperty =
 			BindableProperty.CreateAttached("ApplyLineColor", typeof(bool), typeof(LineColorBehavior), false,

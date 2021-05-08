@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "PYEQ5o83dQa2UEtNKT414X07df+KkKHzd+N2gztaGCNxa0qqnizbI9xKM4mYUbbAGaf83lJLloGLHt5lqkRing==",
+  "dgSpecHash": "F4V11oc2XErF+9Slm9G4Kfk53fljxj+eEO/1WZ5+YGgHlKS+u6VVF8OMOypV2MZLGaI2shFund+kirvyE93Q+A==",
   "success": true,
   "projectFilePath": "C:\\Users\\Mitya\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App.Android\\Kouch.App.Android.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Mitya\\.nuget\\packages\\i18nportable\\1.0.1\\i18nportable.1.0.1.nupkg.sha512",
+    "C:\\Users\\Mitya\\.nuget\\packages\\i18nportable.jsonreader\\1.0.1\\i18nportable.jsonreader.1.0.1.nupkg.sha512",
     "C:\\Users\\Mitya\\.nuget\\packages\\livexaml\\2.1.73\\livexaml.2.1.73.nupkg.sha512",
     "C:\\Users\\Mitya\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Mitya\\.nuget\\packages\\plugin.toast\\2.2.0\\plugin.toast.2.2.0.nupkg.sha512",

@@ -1,0 +1,79 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Net.Http;
+using System.Text;
+using System.Threading.Tasks;
+using Kouch.App.Entities;
+using Kouch.App.Models;
+
+namespace Kouch.App.Services
+{
+    public class ApiAuthService
+    {
+        private static ApiAuthService _instance;
+        public static ApiAuthService Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = new ApiAuthService();
+                }
+
+                return _instance;
+            }
+        }
+        private ApiAuthService()
+        {
+
+        }
+        public async Task<ApiResnonse> Register(RegisterEmailModel model)
+        {
+            return await HttpBaseService.Instance.Send(HttpMethod.Post, "auth/register/", model, false);
+        }
+        public async Task<ApiResnonse> ResendVerificationCode(string email)
+        {
+            return await HttpBaseService.Instance.Send(HttpMethod.Post, "auth/resend-verification-code/", new { email }, false);
+        }
+        public async Task<ApiResnonse> VerifyAccount(RegisterCodeModel model)
+        {
+            return await HttpBaseService.Instance.Send(HttpMethod.Post, "auth/verify-account/", model,false);
+        }
+        public async Task<ApiResnonse<LoginResponseModel>> Login(LoginRequestModel model)
+        {
+            return await HttpBaseService.Instance.Send<LoginRequestModel,LoginResponseModel>(HttpMethod.Post, "auth/login/", model, false);
+        }
+        public async Task<ApiResnonse<TokenModel>> RefreshToken(string refresh)
+        {
+            return await HttpBaseService.Instance.Send<object, TokenModel>(HttpMethod.Post, "auth/login/refresh/", new { refresh},false);
+        }
+        public async Task<ApiResnonse> CheckConnection()
+        {
+            return await HttpBaseService.Instance.Get("test/",false);
+        }
+    }
+    public class ApiUserService
+    {
+        private static ApiUserService _instance;
+        public static ApiUserService Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = new ApiUserService();
+                }
+
+                return _instance;
+            }
+        }
+        private ApiUserService()
+        {
+                
+        }
+        public async Task<ApiResnonse> GetMe()
+        {
+            return await HttpBaseService.Instance.Get("users/me/");
+        }
+    }
+}

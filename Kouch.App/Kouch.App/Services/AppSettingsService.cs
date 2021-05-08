@@ -34,7 +34,7 @@ namespace Kouch.App.Models
             }
         }
 
-        public static AppSettingsService Settings
+        public static AppSettingsService Instance
         {
             get
             {
@@ -72,23 +72,23 @@ namespace Kouch.App.Models
         }
         public T GetValue<T>(string name)
         {
-                try
-                {
-                    var path = name.Split(':');
+            try
+            {
+                var path = name.Split(':');
 
-                    JToken node = _secrets[path[0]];
-                    for (int index = 1; index < path.Length; index++)
-                    {
-                        node = node[path[index]];
-                    }
-
-                    return  (T)Convert.ChangeType(node.ToString(),typeof(T));
-                }
-                catch (Exception)
+                JToken node = _secrets[path[0]];
+                for (int index = 1; index < path.Length; index++)
                 {
-                    Debug.WriteLine($"Unable to retrieve secret '{name}'");
-                    return default;
+                    node = node[path[index]];
                 }
+
+                return (T)Convert.ChangeType(node.ToString(), typeof(T));
             }
+            catch (Exception)
+            {
+                Debug.WriteLine($"Unable to retrieve secret '{name}'");
+                return default;
+            }
+        }
     }
 }

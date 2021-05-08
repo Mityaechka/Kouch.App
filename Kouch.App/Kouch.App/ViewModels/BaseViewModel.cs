@@ -1,4 +1,6 @@
-﻿using Kouch.App.Validations;
+﻿using I18NPortable;
+using Kouch.App.Services;
+using Kouch.App.Validations;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -12,7 +14,7 @@ namespace Kouch.App.ViewModels
 {
     public class BaseViewModel : INotifyPropertyChanged
     {
-        protected readonly List<IValidity> validatableObjects = new List<IValidity>();
+        
 
         public INavigation Navigation { get; set; }
         public BaseViewModel(INavigation navigation)
@@ -25,8 +27,14 @@ namespace Kouch.App.ViewModels
         }
         public event PropertyChangedEventHandler PropertyChanged;
 
-        public bool HasErrors => validatableObjects.Any(x => !x.IsValid);
-        public string FirstError => validatableObjects.SelectMany(x => x.Errors).FirstOrDefault();
+        public string this[string path]
+        {
+            get
+            {
+                return LocalizationService.Instance[path];
+            }
+        }
+
     }
 
 

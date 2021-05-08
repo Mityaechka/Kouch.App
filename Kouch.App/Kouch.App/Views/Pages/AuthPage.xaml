@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:Kouch.App.ViewModels"
+             xmlns:l="clr-namespace:Kouch.App.Services"
+             x:DataType="viewmodels:AuthViewModel"
+             x:Class="Kouch.App.Views.Pages.AuthPage">
+    <ContentPage.Resources>
+        <ResourceDictionary></ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="CenterAndExpand">
+            <Entry Placeholder="Почта"
+                   Text="{Binding Email.Value}" />
+            <Entry Placeholder="Пароль"
+                   Text="{Binding Password.Value}" />
+            <Label Text="{Binding AuthCollection.FirstError}"
+                   IsVisible="{Binding Path=AuthCollection.HasErrors}" />
+            <Button Text="{Binding [AuthPage_Login]}"
+                    IsEnabled="{Binding AuthCollection.HasErrors,Converter={StaticResource inverseBool}}"
+                    Command="{Binding AuthCommand}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

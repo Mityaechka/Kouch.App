@@ -3,7 +3,7 @@
   <Files>
     <XamlFileMeta>
       <FilePath>C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\App.xaml</FilePath>
-      <Hash>AF-7E-07-62-AA-D7-A4-B8-C1-82-A8-1E-97-13-33-A9</Hash>
+      <Hash>13-94-38-20-E3-EF-96-B9-42-6F-A0-C1-72-6B-79-11</Hash>
       <Properties />
     </XamlFileMeta>
     <XamlFileMeta>
@@ -17,13 +17,13 @@
       <Properties />
     </XamlFileMeta>
     <XamlFileMeta>
-      <FilePath>C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\DataTemplates\CodeInputDataTemplate.xaml</FilePath>
-      <Hash>56-BB-47-A5-FF-9D-1C-06-A6-F1-CB-EF-23-AC-7D-62</Hash>
+      <FilePath>C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\DataTemplates\RegisterPageCodeTemplate.xaml</FilePath>
+      <Hash>8D-AD-8B-D5-64-87-5E-F1-76-D2-DC-EE-36-67-19-2C</Hash>
       <Properties />
     </XamlFileMeta>
     <XamlFileMeta>
-      <FilePath>C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\DataTemplates\PhoneAndPasswordDataTemplate.xaml</FilePath>
-      <Hash>DD-CA-9A-B2-9F-D7-53-01-22-9A-2B-BB-04-05-6F-52</Hash>
+      <FilePath>C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\DataTemplates\RegisterPageEmailTemplate.xaml</FilePath>
+      <Hash>7E-EE-30-87-76-D5-D6-9E-D1-B1-2E-BA-06-A8-1A-A1</Hash>
       <Properties />
     </XamlFileMeta>
     <XamlFileMeta>
@@ -32,13 +32,23 @@
       <Properties />
     </XamlFileMeta>
     <XamlFileMeta>
+      <FilePath>C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\Pages\AuthPage.xaml</FilePath>
+      <Hash>5D-C7-5D-2F-B1-75-64-2F-6B-11-29-50-21-E3-F3-B7</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
       <FilePath>C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\Pages\LoadingPage.xaml</FilePath>
       <Hash>18-3A-C1-B3-4C-5B-88-D5-BB-63-0D-F0-2E-0F-57-BA</Hash>
       <Properties />
     </XamlFileMeta>
     <XamlFileMeta>
+      <FilePath>C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\Pages\MainPage.xaml</FilePath>
+      <Hash>4A-7B-96-1A-41-47-A3-BC-0E-89-34-F7-13-58-6D-7F</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
       <FilePath>C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\Pages\RegisterPage.xaml</FilePath>
-      <Hash>68-91-FD-87-60-B2-11-77-0E-EA-9D-B3-99-0D-36-01</Hash>
+      <Hash>37-69-9D-5B-5E-6C-62-95-A0-98-F2-2D-88-69-14-57</Hash>
       <Properties />
     </XamlFileMeta>
   </Files>

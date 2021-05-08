@@ -1,74 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:templates="clr-namespace:Kouch.App.DataTemplateSelectors"
              xmlns:viewmodels="clr-namespace:Kouch.App.ViewModels"
-             xmlns:converters="clr-namespace:Kouch.App.Converters"
              xmlns:behaviors="clr-namespace:Kouch.App.Behaviors"
+             xmlns:c="clr-namespace:Kouch.App.Converters"
+             xmlns:templates="clr-namespace:Kouch.App.Views.DataTemplates"
+             xmlns:templateSelectors="clr-namespace:Kouch.App.DataTemplateSelectors"
+             x:DataType="viewmodels:RegisterViewModel"
              x:Class="Kouch.App.Views.Pages.RegisterPage">
-
     <ContentPage.Resources>
         <ResourceDictionary>
-            <converters:InverseBoolConverter x:Key="inverseBool" />
+
+            <c:IsEqualConverter Value="0"
+                                x:Key="equalZero" />
+            <c:ValueConverterGroup x:Key="notEqualZero">
+                <c:IsEqualConverter Value="0"/>
+                <c:InverseBoolConverter />
+            </c:ValueConverterGroup>
+            <c:InverseBoolConverter x:Key="inverseBool" />
+            <c:IsEqualConverter x:Key="isEqual" />
+
             <DataTemplate x:Key="emailInput">
-                <ContentView>
-                    <StackLayout VerticalOptions="CenterAndExpand">
-                        <StackLayout Orientation="Vertical"
-                                     Margin="20,0,20,0">
-                            <Entry Placeholder="Почта"
-                                   Keyboard="Email"
-                                   Text="{Binding Model.Email.Value,Mode=TwoWay}">
-                                <Entry.Triggers>
-                                    <DataTrigger
-                                            TargetType="Entry"
-                                                 Binding="{Binding Model.Email.IsValid}"
-                                                 Value="False">
-                                        <Setter Property="behaviors:LineColorBehavior.LineColor"
-                                                Value="{StaticResource ErrorColor}" />
-                                    </DataTrigger>
-                                </Entry.Triggers>
-                            </Entry>
-                            <Entry Placeholder="Пароль"
-                                   IsPassword="True"
-                                   Text="{Binding Model.Password.Value,Mode=TwoWay}" />
-                            <Entry Placeholder="Повторите пароль"
-                                   IsPassword="True"
-                                   Text="{Binding Model.RepeatPassword.Value,Mode=TwoWay}" />
-                        </StackLayout>
-                        <Label Text="{Binding Path=Model.FirstError}"
-                               IsVisible="{Binding Path=Model.HasErrors}" />
-                        <Button Text="Получить СМС-код"
-                                IsEnabled="{Binding Model.IsEmailError,Converter={StaticResource inverseBool}}"
-                                Command="{Binding Model.SendSmsCodeCommand}"/>
-                    </StackLayout>
-                    
-                </ContentView>
+                <templates:RegisterPageEmailTemplate />
             </DataTemplate>
             <DataTemplate x:Key="codeInput">
-                <ContentView>
-                    <StackLayout VerticalOptions="CenterAndExpand">
-                        <StackLayout Orientation="Vertical"
-                                     Margin="20,0,20,0">
-                            <Entry Placeholder="Код подтверждения"
-                                   Text="{Binding Model.Code,Mode=TwoWay}" />
-                        </StackLayout>
-                        <Button Text="Назад"
-                                Command="{Binding Model.ReturnEmailInputCommand}" />
-                    </StackLayout>
-                </ContentView>
+                <templates:RegisterPageCodeTemplate />
             </DataTemplate>
-            <templates:RegistrationPageDataTemplateSelector x:Key="personDataTemplateSelector"
+
+            <templateSelectors:RegistrationPageDataTemplateSelector x:Key="personDataTemplateSelector"
                                                             EmailAndPasswordDataTemplate="{StaticResource emailInput}"
                                                             CodeInputDataTemplate="{StaticResource codeInput}" />
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
         <StackLayout Margin="0,0,0,10">
-
             <CarouselView  IsSwipeEnabled="False"
                            IndicatorView="indicatorView"
                            ItemsSource="{Binding States}"
-                            ItemTemplate="{StaticResource personDataTemplateSelector}"
+                           ItemTemplate="{StaticResource personDataTemplateSelector}"
                            CurrentItem="{Binding CurrentState}" />
             <IndicatorView x:Name="indicatorView"
                            IndicatorColor="LightGray"

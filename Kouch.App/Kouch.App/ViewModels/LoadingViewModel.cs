@@ -1,4 +1,6 @@
-﻿using Kouch.App.Services;
+﻿using Kouch.App.Entities;
+using Kouch.App.Models;
+using Kouch.App.Services;
 using Kouch.App.Views.Pages;
 using Plugin.Toast;
 using Plugin.Toast.Abstractions;
@@ -10,34 +12,67 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Xamarin.Essentials;
 using Xamarin.Forms;
 
 namespace Kouch.App.ViewModels
 {
     public class LoadingViewModel : AsyncBaseViewModel
     {
-       
+        private bool firstConnect = true;
+        private bool firstCheck = true;
+        private bool isInternetAvailable = false;
         public LoadingViewModel(INavigation navigation) : base(navigation)
         {
+            Connectivity.ConnectivityChanged += OnConnectionChanged;
             Init();
         }
         public async void Init()
         {
-            while (!await CheckConnection())
+            NetworkAccess current = Connectivity.NetworkAccess;
+            if (current != NetworkAccess.Internet)
             {
-                 CrossToastPopUp.Current.ShowToastMessage("Ошибка сервера. Повторная попытка через 5 секунд", ToastLength.Long);
-                await Task.Delay(5000);
+                if (firstConnect)
+                {
+                    ToastsService.Instance.ShowToast("Отсуствует подключение к интернету");
+                    firstConnect = false;
+                }
+                return;
             }
-            OpenRegisterPage();
+            isInternetAvailable = true;
+
+            while(!await CheckServerAvailable())
+            {
+                if (firstCheck)
+                {
+                    ToastsService.Instance.ShowToast("Не удалось подключиться к серверу. Повторная попытка через 10 секунд",ToastLength.Long);
+                    firstCheck = false;
+                }
+                await Task.Delay(1000);
+            }
+            TokenStorageService.Instance.ClearToken();
+            TokenModel token = await TokenStorageService.Instance.GetToken();
+            if (token == null)
+            {
+                App.Current.MainPage = new AuthPage();
+            }
+            else
+            {
+                App.Current.MainPage = new MainPage();
+            }
         }
-        public async Task<bool> CheckConnection()
+        private void OnConnectionChanged(object sender, ConnectivityChangedEventArgs e)
         {
-            var result = await new HttpBaseService().Get("");
-            return result.IsSuccsess;
+            if (isInternetAvailable)
+            {
+                return;
+            }
+            Init();
         }
-        public void OpenRegisterPage()
+        private async Task<bool> CheckServerAvailable()
         {
-            Application.Current.MainPage = new RegisterPage();
+            var resonse = await ApiAuthService.Instance.CheckConnection();
+            return resonse.IsSuccsess;
         }
     }
 }
