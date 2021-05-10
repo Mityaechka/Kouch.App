@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:Kouch.App.ViewModels"
+             x:DataType="viewmodels:CategorySelectorViewModel"
+             x:Class="Kouch.App.Views.Components.CategorySelectorComponent">
+    <ContentView.Resources>
+        <ResourceDictionary>
+            <DataTemplate x:Key="category"
+                          x:DataType="viewmodels:CategoryViewModel">
+                <Frame CornerRadius="10"
+                       HasShadow="True">
+                    <Frame.GestureRecognizers>
+                        <TapGestureRecognizer Command="{Binding BindingContext.SelectCategoryCommand, Source={x:Reference root}}"
+                                              CommandParameter="{Binding Id}" />
+                    </Frame.GestureRecognizers>
+                    <Label Text="{Binding Name}" />
+                </Frame>
+            </DataTemplate>
+        </ResourceDictionary>
+    </ContentView.Resources>
+    <ContentView.Content>
+        <StackLayout x:Name="root">
+            <StackLayout IsVisible="{Binding IsLoading,Converter={StaticResource inverseBool}}">
+                <ScrollView Orientation="Horizontal">
+                    <StackLayout Orientation="Horizontal"
+                                 HorizontalOptions="Start"
+                                 Padding="5"
+                                 BindableLayout.ItemsSource="{Binding PreviousCategories}"
+                                 BindableLayout.ItemTemplate="{StaticResource category}" />
+                </ScrollView>
+                <Frame CornerRadius="10"
+                       HorizontalOptions="Start"
+                       Margin="5,5,0,5"
+                       BackgroundColor="#00C300"
+                       IsVisible="{Binding SelectedCategory,Converter={StaticResource isNotNull}}">
+                    <StackLayout >
+                        <Label Text="{Binding SelectedCategory.Name}" />
+                    </StackLayout>
+                </Frame>
+                <ScrollView Orientation="Vertical">
+                    <StackLayout Orientation="Vertical"
+                                 Padding="5"
+                                 BindableLayout.ItemsSource="{Binding AvailableCategories}"
+                                 BindableLayout.ItemTemplate="{StaticResource category}" />
+                </ScrollView>
+            </StackLayout>
+            <StackLayout IsVisible="{Binding IsLoading}"
+                         VerticalOptions="CenterAndExpand">
+                <ActivityIndicator IsRunning="True" />
+            </StackLayout>
+        </StackLayout>
+    </ContentView.Content>
+</ContentView>

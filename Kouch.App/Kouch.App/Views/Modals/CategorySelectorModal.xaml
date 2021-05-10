@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<rg:PopupPage  xmlns="http://xamarin.com/schemas/2014/forms"
+               xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+               xmlns:rg="http://rotorgames.com"
+               xmlns:components="clr-namespace:Kouch.App.Views.Components"
+               xmlns:viewmodels="clr-namespace:Kouch.App.ViewModels"
+               x:DataType="viewmodels:CategorySelectorModalViewModel"
+               x:Class="Kouch.App.Views.Modals.CategorySelectorModal">
+    <StackLayout VerticalOptions="CenterAndExpand"
+                 HorizontalOptions="CenterAndExpand"
+                 HeightRequest="500"
+                 WidthRequest="300"
+                 Padding="20, 20, 20, 20"
+                 x:Name="this">
+        <Frame CornerRadius="10"
+               HeightRequest="500"
+               WidthRequest="300">
+            <StackLayout>
+                <StackLayout VerticalOptions="StartAndExpand">
+                    <components:CategorySelectorComponent SelectedCategory="{Binding Path=BindingContext.Category, Mode=TwoWay, Source={x:Reference this}}" Margin="5"/>
+                </StackLayout>
+                <StackLayout VerticalOptions="End">
+                    <Button Text="Выбрать"
+                            Command="{Binding SelectCategoryCommand}" />
+                </StackLayout>
+               
+            </StackLayout>
+        </Frame>
+    </StackLayout>
+</rg:PopupPage>

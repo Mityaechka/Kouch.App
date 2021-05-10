@@ -1,5 +1,7 @@
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.iOS\bin\iPhone\Debug\Kouch.App.iOS.exe
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.iOS\bin\iPhone\Debug\Kouch.App.iOS.pdb
+C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.iOS\bin\iPhone\Debug\I18NPortable.dll
+C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.iOS\bin\iPhone\Debug\I18NPortable.JsonReader.dll
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.iOS\bin\iPhone\Debug\Newtonsoft.Json.dll
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.iOS\bin\iPhone\Debug\Plugin.Toast.Abstractions.dll
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.iOS\bin\iPhone\Debug\Plugin.Toast.Abstractions.pdb
@@ -58,7 +60,6 @@ C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.iOS\bin\iPhone\Debug\K
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.dll
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.iOS\bin\iPhone\Debug\Kouch.App.pdb
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.iOS\bin\iPhone\Debug\Xamarin.Forms.Platform.iOS.pdb
-C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.iOS\bin\iPhone\Debug\ru\Kouch.App.resources.dll
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.iOS\obj\iPhone\Debug\actool\_PartialAppManifest.items
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.iOS\obj\iPhone\Debug\actool\_BundleResourceWithLogicalName.items
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.iOS\obj\iPhone\Debug\ibtool\_BundleResourceWithLogicalName.items

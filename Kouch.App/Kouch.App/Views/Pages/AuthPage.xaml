@@ -19,6 +19,8 @@
             <Button Text="{Binding [AuthPage_Login]}"
                     IsEnabled="{Binding AuthCollection.HasErrors,Converter={StaticResource inverseBool}}"
                     Command="{Binding AuthCommand}" />
+            <Button Text="Регистрация"
+                    Command="{Binding OpenRegisterPageCommand}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

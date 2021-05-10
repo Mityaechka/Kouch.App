@@ -30,6 +30,10 @@ namespace Kouch.App.Models
             TokenReceiveTime = new DateTime();
             CrossSettings.Current.AddOrUpdateValue("HttpTokens", "");
         }
+        public void ClearAuthData()
+        {
+            CrossSettings.Current.AddOrUpdateValue("AuthData", "");
+        }
         public async Task<TokenModel> GetToken()
         {
             string rawToken = CrossSettings.Current.GetValueOrDefault("HttpTokens", "");
@@ -86,6 +90,10 @@ namespace Kouch.App.Models
         {
             TokenReceiveTime = DateTime.Now;
             CrossSettings.Current.AddOrUpdateValue("HttpTokens", JsonConvert.SerializeObject(tokenModel));
+        }
+        public void SaveAuthData(LoginRequestModel model)
+        {
+            CrossSettings.Current.AddOrUpdateValue("AuthData", JsonConvert.SerializeObject(model));
         }
     }
 }

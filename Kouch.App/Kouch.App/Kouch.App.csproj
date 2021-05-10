@@ -41,6 +41,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Views\Components\CategorySelectorComponent.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\Components\CommentElement.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -75,8 +78,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="Views\Components\CategorySelectorComponent.xaml.cs">
+      <DependentUpon>CategorySelectorComponent.xaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\DataTemplates\RegisterPageEmailTemplate.xaml.cs">
       <DependentUpon>RegisterPageEmailTemplate.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\Modals\CategorySelectorModal.xaml.cs">
+      <DependentUpon>CategorySelectorModal.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 </Project>

@@ -578,6 +578,8 @@ C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.Android\obj\Debug\90\u
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.Android\obj\Debug\90\resolvedassemblies.hash
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.Android\obj\Debug\90\android\assets\FormsViewGroup.dll
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.Android\obj\Debug\90\android\assets\FormsViewGroup.pdb
+C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.Android\obj\Debug\90\android\assets\I18NPortable.dll
+C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.Android\obj\Debug\90\android\assets\I18NPortable.JsonReader.dll
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.Android\obj\Debug\90\android\assets\Java.Interop.dll
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.Android\obj\Debug\90\android\assets\Kouch.App.Android.dll
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.Android\obj\Debug\90\android\assets\Kouch.App.Android.pdb
@@ -1039,5 +1041,3 @@ C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.Android\obj\Debug\90\s
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.Android\obj\Debug\90\stamp\_GenerateJavaStubs.stamp
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.Android\obj\Debug\90\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.Android\obj\Debug\90\stamp\_ResolveLibraryProjectImports.stamp
-C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.Android\obj\Debug\90\android\assets\I18NPortable.dll
-C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.Android\obj\Debug\90\android\assets\I18NPortable.JsonReader.dll

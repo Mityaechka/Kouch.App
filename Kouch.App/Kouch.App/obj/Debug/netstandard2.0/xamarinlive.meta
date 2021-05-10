@@ -3,7 +3,12 @@
   <Files>
     <XamlFileMeta>
       <FilePath>C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\App.xaml</FilePath>
-      <Hash>13-94-38-20-E3-EF-96-B9-42-6F-A0-C1-72-6B-79-11</Hash>
+      <Hash>E0-14-05-6B-A6-94-AA-7E-3D-A5-D8-C2-FA-30-09-AF</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\Components\CategorySelectorComponent.xaml</FilePath>
+      <Hash>68-B3-A9-93-5E-84-7A-7D-37-C0-AE-B7-1E-08-92-3B</Hash>
       <Properties />
     </XamlFileMeta>
     <XamlFileMeta>
@@ -23,7 +28,12 @@
     </XamlFileMeta>
     <XamlFileMeta>
       <FilePath>C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\DataTemplates\RegisterPageEmailTemplate.xaml</FilePath>
-      <Hash>7E-EE-30-87-76-D5-D6-9E-D1-B1-2E-BA-06-A8-1A-A1</Hash>
+      <Hash>BE-D4-C4-44-5F-8F-07-81-D9-BC-19-1D-55-93-84-E5</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\Modals\CategorySelectorModal.xaml</FilePath>
+      <Hash>25-31-08-D2-F3-2F-DB-EF-31-33-31-16-BE-F0-2F-9E</Hash>
       <Properties />
     </XamlFileMeta>
     <XamlFileMeta>
@@ -33,7 +43,7 @@
     </XamlFileMeta>
     <XamlFileMeta>
       <FilePath>C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\Pages\AuthPage.xaml</FilePath>
-      <Hash>5D-C7-5D-2F-B1-75-64-2F-6B-11-29-50-21-E3-F3-B7</Hash>
+      <Hash>F1-04-97-C1-01-1E-F6-C9-0A-84-C8-84-B3-FC-51-05</Hash>
       <Properties />
     </XamlFileMeta>
     <XamlFileMeta>
@@ -43,7 +53,7 @@
     </XamlFileMeta>
     <XamlFileMeta>
       <FilePath>C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\Pages\MainPage.xaml</FilePath>
-      <Hash>4A-7B-96-1A-41-47-A3-BC-0E-89-34-F7-13-58-6D-7F</Hash>
+      <Hash>96-0B-B4-70-45-32-8E-98-10-1A-4B-6C-91-29-26-CC</Hash>
       <Properties />
     </XamlFileMeta>
     <XamlFileMeta>

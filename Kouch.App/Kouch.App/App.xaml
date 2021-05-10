@@ -8,13 +8,12 @@
     <Application.Resources>
         <Color x:Key="BlackColor">#000000</Color>
         <Color x:Key="ErrorColor">#ff5252</Color>
-
-
         <Style TargetType="Label">
             <Setter Property="TextColor"
                     Value="Black"></Setter>
         </Style>
-        <Style x:Key="Link" TargetType="Label">
+        <Style x:Key="Link"
+               TargetType="Label">
             <Setter Property="TextDecorations"
                     Value="Underline" />
             <Setter Property="TextColor"
@@ -23,10 +22,24 @@
                     Value="15" />
         </Style>
         <Style x:Key="EntryStyle"
-               TargetType="{x:Type Entry}">
+               TargetType="{x:Type Entry}"></Style>
 
-        </Style>
+
+        <!--#region Converters-->
         <c:InverseBoolConverter x:Key="inverseBool" />
+        <c:IsNullConverter x:Key="isNull" />
+        <c:ValueConverterGroup x:Key="isNotNull">
+            <c:IsNullConverter />
+            <c:InverseBoolConverter />
+        </c:ValueConverterGroup>
         <c:LocaliztionConverter x:Key="localization" />
+        <c:ValueConverterGroup x:Key="isNotEmptyList">
+            <c:IsNullOrEmptyListConverter />
+            <c:InverseBoolConverter />
+        </c:ValueConverterGroup>
+
+        <!--#endregion-->
+
+
     </Application.Resources>
 </Application>

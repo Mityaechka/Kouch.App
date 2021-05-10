@@ -20,7 +20,7 @@ namespace Kouch.App.ViewModels
 {
     public partial class RegisterViewModel : AsyncBaseViewModel
     {
-        private ApiAuthService apiAuthServicev =  ApiAuthService.Instance;
+        private ApiAuthService apiAuthServicev = ApiAuthService.Instance;
         private Timer timer;
         private int sendCodeSeconds;
 
@@ -245,6 +245,11 @@ namespace Kouch.App.ViewModels
                 {
                     CrossToastPopUp.Current.ShowToastMessage("Все внатуре четко");
                     TokenStorageService.Instance.SaveToken(loginResponse.Result.Tokens);
+                    TokenStorageService.Instance.SaveAuthData(new LoginRequestModel
+                    {
+                        Email = Email.Value,
+                        Password = Password.Value
+                    });
 
                     App.Current.MainPage = new MainPage();
                 }
@@ -277,7 +282,8 @@ namespace Kouch.App.ViewModels
             {
                 Interval = 1000
             };
-            timer.Elapsed += (sender, e) => {
+            timer.Elapsed += (sender, e) =>
+            {
                 SendCodeSeconds--;
                 if (SendCodeSeconds <= 0)
                 {

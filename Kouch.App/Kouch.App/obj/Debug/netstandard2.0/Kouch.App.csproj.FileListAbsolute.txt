@@ -23,8 +23,8 @@ C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\bin\Debug\netstandard2
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\bin\Debug\netstandard2.0\Kouch.App.dll
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\bin\Debug\netstandard2.0\ref\Kouch.App.dll
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\bin\Debug\netstandard2.0\Kouch.App.pdb
-C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\obj\Debug\netstandard2.0\Kouch.App.csprojAssemblyReference.cache
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\obj\Debug\netstandard2.0\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\obj\Debug\netstandard2.0\Views\Components\CategorySelectorComponent.xaml.g.cs
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\obj\Debug\netstandard2.0\Views\Components\CommentElement.xaml.g.cs
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\obj\Debug\netstandard2.0\Views\Components\CommentsTreeElement.xaml.g.cs
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\obj\Debug\netstandard2.0\Views\DataTemplates\RegisterPageCodeTemplate.xaml.g.cs
@@ -42,3 +42,5 @@ C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\obj\Debug\netstandard2
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\obj\Debug\netstandard2.0\Kouch.App.dll
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\obj\Debug\netstandard2.0\ref\Kouch.App.dll
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\obj\Debug\netstandard2.0\Kouch.App.pdb
+C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\obj\Debug\netstandard2.0\Kouch.App.csprojAssemblyReference.cache
+C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\obj\Debug\netstandard2.0\Views\Modals\CategorySelectorModal.xaml.g.cs

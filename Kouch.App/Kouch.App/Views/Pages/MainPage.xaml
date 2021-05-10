@@ -1,12 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:Kouch.App.ViewModels"
+             xmlns:components="clr-namespace:Kouch.App.Views.Components"
+             x:DataType="viewmodels:MainPageViewModel"
              x:Class="Kouch.App.Views.Pages.MainPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout x:Name="this">
+            <Button Text="Выбрать"
+                    Command="{Binding SelectCategoryCommand}" />
+            <Button Text="Выйти"
+                    Command="{Binding LogoutCommand}" />
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

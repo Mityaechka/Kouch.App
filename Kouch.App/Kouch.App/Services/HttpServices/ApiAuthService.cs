@@ -49,31 +49,11 @@ namespace Kouch.App.Services
         }
         public async Task<ApiResnonse> CheckConnection()
         {
-            return await HttpBaseService.Instance.Get("test/",false);
+            return await HttpBaseService.Instance.Get("health-check/", false);
         }
-    }
-    public class ApiUserService
-    {
-        private static ApiUserService _instance;
-        public static ApiUserService Instance
+        public async Task<ApiResnonse> Logout(string refresh)
         {
-            get
-            {
-                if (_instance == null)
-                {
-                    _instance = new ApiUserService();
-                }
-
-                return _instance;
-            }
-        }
-        private ApiUserService()
-        {
-                
-        }
-        public async Task<ApiResnonse> GetMe()
-        {
-            return await HttpBaseService.Instance.Get("users/me/");
+            return await HttpBaseService.Instance.Send(HttpMethod.Post, "auth/logout/", new { refresh } ,false);
         }
     }
 }

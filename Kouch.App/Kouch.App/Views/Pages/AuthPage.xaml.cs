@@ -13,10 +13,19 @@ namespace Kouch.App.Views.Pages
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class AuthPage : ContentPage
     {
+        AuthViewModel viewModel;
         public AuthPage()
         {
             InitializeComponent();
-            BindingContext = new AuthViewModel(Navigation);
+            BindingContext = viewModel = new AuthViewModel(Navigation);
+        }
+        protected override bool OnBackButtonPressed()
+        {
+            if (viewModel.OpenRegisterPageCommand.CanExecute(null))
+            {
+                viewModel.OpenRegisterPageCommand.Execute(null);
+            }
+            return false;
         }
     }
 }

@@ -1,4 +1,5 @@
 ﻿using Kouch.App.Entities;
+using Kouch.App.Models;
 using Kouch.App.Services;
 using Kouch.App.Validations;
 using Kouch.App.Views.Modals;
@@ -21,6 +22,7 @@ namespace Kouch.App.ViewModels
         private ValidationCollection authCollection;
 
         public ICommand AuthCommand { get; set; }
+        public ICommand OpenRegisterPageCommand { get; set; }
         public ValidatableObject<string> Email
         {
             get => email;
@@ -64,6 +66,7 @@ namespace Kouch.App.ViewModels
             };
 
             AuthCommand = new Command(async () => await Auth());
+            OpenRegisterPageCommand = new Command(() => OpenRegisterPage());
 
             AuthCollection.UpdateAll();
         }
@@ -78,12 +81,22 @@ namespace Kouch.App.ViewModels
             await Navigation.PopPopupAsync();
             if (authResponse.IsSuccsess)
             {
+                TokenStorageService.Instance.SaveToken(authResponse.Result.Tokens);
+                TokenStorageService.Instance.SaveAuthData(new LoginRequestModel
+                {
+                    Email = Email.Value,
+                    Password = Password.Value
+                });
                 App.Current.MainPage = new MainPage();
             }
             else
             {
                 ToastsService.Instance.ShowToast(authResponse.Error);
             }
+        }
+        private void OpenRegisterPage()
+        {
+            App.Current.MainPage = new RegisterPage();
         }
     }
 }
