@@ -44,3 +44,4 @@ C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\obj\Debug\netstandard2
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\obj\Debug\netstandard2.0\Kouch.App.pdb
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\obj\Debug\netstandard2.0\Kouch.App.csprojAssemblyReference.cache
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\obj\Debug\netstandard2.0\Views\Modals\CategorySelectorModal.xaml.g.cs
+C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\obj\Debug\netstandard2.0\Views\Pages\ServiceEditPage.xaml.g.cs

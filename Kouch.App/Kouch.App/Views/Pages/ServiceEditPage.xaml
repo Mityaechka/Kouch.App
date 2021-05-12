@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:Kouch.App.ViewModels"
+             xmlns:constants="clr-namespace:Kouch.App.Constants"
+             xmlns:etities="clr-namespace:Kouch.App.Entities"
+             x:DataType="viewmodels:ServiceEditViewModel"
+             x:Class="Kouch.App.Views.Pages.ServiceEditPage">
+    <ContentPage.Content>
+        <StackLayout x:Name="this">
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Онлайн"
+                       VerticalTextAlignment="Center" />
+                <Switch IsToggled="{Binding IsOnline}" />
+            </StackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Label Text="Тип"
+                       VerticalTextAlignment="Center" />
+                <Picker SelectedItem="{Binding ServiceType,Mode=TwoWay}"
+                        ItemsSource="{Binding Source={x:Static constants:ServiceTypeDictionary.Data}}">
+                    <Picker.ItemDisplayBinding>
+                        <Binding>
+                            <Binding.Path>Name</Binding.Path>
+                        </Binding>
+                    </Picker.ItemDisplayBinding>
+                </Picker>
+            </StackLayout>
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="StartAndExpand">
+                <Label Text="{Binding SelectedCategory.Name}" />
+                <Button Text="Выбрать"
+                        Command="{Binding SelectCategoryCommand}" />
+            </StackLayout>
+            <ScrollView>
+                <StackLayout BindableLayout.ItemsSource="{Binding ServiceDescriptions}">
+                    <BindableLayout.ItemTemplate>
+                        <DataTemplate x:DataType="etities:ServiceDescription">
+                            <StackLayout Orientation="Vertical">
+                                <Entry Text="{Binding Name}" />
+                                <Editor Text="{Binding Description}" />
+                                <Picker ItemsSource="{Binding BindingContext.AvailableLanguages, Source={x:Reference this}}"
+                                        SelectedItem="{Binding Language}" Title="dsf">
+                                    <Picker.ItemDisplayBinding>
+                                        <Binding>
+                                            <Binding.Path>Name</Binding.Path>
+                                        </Binding>
+                                    </Picker.ItemDisplayBinding>
+                                </Picker>
+                            </StackLayout>
+                        </DataTemplate>
+                    </BindableLayout.ItemTemplate>
+                </StackLayout>
+            </ScrollView>
+            <Button Text="{Binding ServiceType.Name}"
+                    Command="{Binding AddDescriptionCommand}" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

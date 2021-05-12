@@ -8,7 +8,7 @@
     </XamlFileMeta>
     <XamlFileMeta>
       <FilePath>C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\Components\CategorySelectorComponent.xaml</FilePath>
-      <Hash>68-B3-A9-93-5E-84-7A-7D-37-C0-AE-B7-1E-08-92-3B</Hash>
+      <Hash>1A-8F-5F-4F-01-05-3F-C8-7A-4E-72-0D-85-2C-8C-E6</Hash>
       <Properties />
     </XamlFileMeta>
     <XamlFileMeta>
@@ -59,6 +59,11 @@
     <XamlFileMeta>
       <FilePath>C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\Pages\RegisterPage.xaml</FilePath>
       <Hash>37-69-9D-5B-5E-6C-62-95-A0-98-F2-2D-88-69-14-57</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\Views\Pages\ServiceEditPage.xaml</FilePath>
+      <Hash>B3-83-DA-E1-64-06-32-01-02-76-A1-9E-02-70-C6-BD</Hash>
       <Properties />
     </XamlFileMeta>
   </Files>

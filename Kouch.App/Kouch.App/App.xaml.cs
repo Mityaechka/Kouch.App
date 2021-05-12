@@ -28,7 +28,7 @@ namespace Kouch.App
 
 
             //var page = new NavigationPage(new PostsPage());
-            var page = new MainPage();
+            var page = new ServiceEditPage();
             MainPage = page;
             Connectivity.ConnectivityChanged += ConnectivityChanged;
             Init();

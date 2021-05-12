@@ -2,6 +2,7 @@
 <ContentView xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewmodels="clr-namespace:Kouch.App.ViewModels"
+             xmlns:components="clr-namespace:Kouch.App.Views.Components"
              x:DataType="viewmodels:CategorySelectorViewModel"
              x:Class="Kouch.App.Views.Components.CategorySelectorComponent">
     <ContentView.Resources>
@@ -22,13 +23,13 @@
     <ContentView.Content>
         <StackLayout x:Name="root">
             <StackLayout IsVisible="{Binding IsLoading,Converter={StaticResource inverseBool}}">
-                <ScrollView Orientation="Horizontal">
+                <components:AutoScrollView Orientation="Horizontal">
                     <StackLayout Orientation="Horizontal"
                                  HorizontalOptions="Start"
                                  Padding="5"
                                  BindableLayout.ItemsSource="{Binding PreviousCategories}"
                                  BindableLayout.ItemTemplate="{StaticResource category}" />
-                </ScrollView>
+                </components:AutoScrollView>
                 <Frame CornerRadius="10"
                        HorizontalOptions="Start"
                        Margin="5,5,0,5"
