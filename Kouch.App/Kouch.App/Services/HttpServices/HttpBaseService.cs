@@ -82,6 +82,15 @@ namespace Kouch.App.Services
                 Content = content
             }, needToken);
         }
+        public async Task<ApiResnonse> SendContent(HttpMethod method, string url, HttpContent content, bool needToken = true) 
+        {
+            return await SendRequest(new HttpRequestMessage
+            {
+                Method = method,
+                RequestUri = new Uri($"{AppSettingsService.Instance["ApiUrl"]}/{url}"),
+                Content = content
+            }, needToken);
+        }
         private async Task<ApiResnonse<U>> SendRequest<U>(HttpRequestMessage requestMessage, bool needToken = true)
         {
             try
@@ -123,7 +132,7 @@ namespace Kouch.App.Services
                 return new ApiResnonse<U> { Error = "Ошибка сервера", IsSuccsess = false };
             }
         }
-        private async Task<ApiResnonse> SendRequest(HttpRequestMessage requestMessage, bool needToken = true)
+        public async Task<ApiResnonse> SendRequest(HttpRequestMessage requestMessage, bool needToken = true)
         {
 
             try

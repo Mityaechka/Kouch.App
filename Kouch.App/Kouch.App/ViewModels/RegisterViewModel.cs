@@ -154,6 +154,7 @@ namespace Kouch.App.ViewModels
             };
             Code = new ValidatableObject<string>(this)
             {
+                new IsNotNullOrEmptyRule("Введите код"),
                 new LengthRule(4,"Длинна пароля должна быть 4")
             };
             EmailValidationCollection = new ValidationCollection(nameof(EmailValidationCollection), this)
@@ -178,12 +179,13 @@ namespace Kouch.App.ViewModels
                 }
             };
             CurrentState = States[0];
-            SendSmsCodeCommand = new Command(async () => await SendSmsCode());
+            SendSmsCodeCommand = new Command(async () => await SendSmsCode(), () => EmailValidationCollection.IsValid);
             ReturnEmailInputCommand = new Command(async () => await ReturnEmailInput());
-            VerifyAccountCommand = new Command(async () => await VerifyAccount());
+            VerifyAccountCommand = new Command(async () => await VerifyAccount(),()=>CodeValidationCollection.IsValid);
             ResendVerificationCodeCommand = new Command(async () => await ResendSmsCode());
 
             EmailValidationCollection.UpdateAll();
+            CodeValidationCollection.UpdateAll();
         }
         private async Task SendSmsCode()
         {
@@ -206,7 +208,7 @@ namespace Kouch.App.ViewModels
             }
             else
             {
-                CrossToastPopUp.Current.ShowToastMessage(registerResponse.Error);
+                ToastsService.Instance.ShowToast(registerResponse.Error);
             }
         }
         private async Task ResendSmsCode()
@@ -240,21 +242,26 @@ namespace Kouch.App.ViewModels
                     Email = Email.Value,
                     Password = Password.Value
                 });
-                await Navigation.PopPopupAsync();
+                
                 if (loginResponse.IsSuccsess)
                 {
-                    CrossToastPopUp.Current.ShowToastMessage("Все внатуре четко");
                     TokenStorageService.Instance.SaveToken(loginResponse.Result.Tokens);
                     TokenStorageService.Instance.SaveAuthData(new LoginRequestModel
                     {
                         Email = Email.Value,
                         Password = Password.Value
                     });
-
-                    App.Current.MainPage = new MainPage();
+                    var userResponse = await ApiUserService.Instance.GetMe();
+                    if (userResponse.IsSuccsess)
+                    {
+                        UserStorageService.Instance.User = userResponse.Result;
+                    }
+                    await Navigation.PopPopupAsync();
+                    App.Current.MainPage =new MainPage();
                 }
                 else
                 {
+                    await Navigation.PopPopupAsync();
                     CrossToastPopUp.Current.ShowToastMessage(loginResponse.Error);
                 }
             }

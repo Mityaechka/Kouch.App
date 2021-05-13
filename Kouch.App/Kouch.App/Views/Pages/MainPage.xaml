@@ -1,16 +1,82 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:viewmodels="clr-namespace:Kouch.App.ViewModels"
-             xmlns:components="clr-namespace:Kouch.App.Views.Components"
-             x:DataType="viewmodels:MainPageViewModel"
-             x:Class="Kouch.App.Views.Pages.MainPage">
-    <ContentPage.Content>
-        <StackLayout x:Name="this">
-            <Button Text="Выбрать"
-                    Command="{Binding SelectCategoryCommand}" />
-            <Button Text="Выйти"
-                    Command="{Binding LogoutCommand}" />
+<MasterDetailPage    xmlns="http://xamarin.com/schemas/2014/forms"
+         xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+         xmlns:viewmodels="clr-namespace:Kouch.App.ViewModels"
+         xmlns:components="clr-namespace:Kouch.App.Views.Components"
+         xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material"
+         xmlns:pages="clr-namespace:Kouch.App.Views.Pages"
+         xmlns:c="clr-namespace:Kouch.App.Converters"
+         x:DataType="viewmodels:MainPageViewModel"
+         x:Class="Kouch.App.Views.Pages.MainPage">
+    <MasterDetailPage.Master>
+        <ContentPage BackgroundColor="White"
+                     Title="Master">
+            <StackLayout>
+                <StackLayout HorizontalOptions="FillAndExpand"
+                             Padding="10">
+                    <StackLayout HorizontalOptions="CenterAndExpand"
+                                 Orientation="Horizontal">
+                        <Image HeightRequest="100"
+                               Source="{Binding User.Avatar,Converter={StaticResource emptyAvatar}}" />
+                    </StackLayout>
+                    <Label Text="{Binding User.FirstName,StringFormat='Привет, {0}!',Converter={StaticResource newUserFirstName}}" />
+                </StackLayout>
+                <StackLayout VerticalOptions="StartAndExpand">
+                    <BoxView HeightRequest="1"
+                             BackgroundColor="Black" />
+                    <Button Text="Мой профиль"
+                                             Style="{StaticResource PrimaryButton}"
+                                             Command="{Binding OpenMyProfileCommand}" />
+                </StackLayout>
+                <StackLayout VerticalOptions="End">
+                    <Button Text="Выход" Style="{StaticResource PrimaryButton}"
+                                             Command="{Binding LogoutCommand}" />
+                </StackLayout>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    <MasterDetailPage.Detail>
+        <ContentPage Padding="10">
+            <ContentPage.Content>
+                <StackLayout Margin="5,30,5,5">
+                    <Label Text="Detail Page"></Label>
+                </StackLayout>
+            </ContentPage.Content>
+        </ContentPage>
+    </MasterDetailPage.Detail>
+    <!--<Shell.FlyoutHeader>
+        <StackLayout HorizontalOptions="Start"
+                     Padding="10">
+
+            <Image HeightRequest="100"
+                   Source="{Binding User.Avatar,Converter={StaticResource emptyAvatar}}" />
+            <Label Text="{Binding User.FirstName,StringFormat='Привет, {0}!',Converter={StaticResource newUserFirstName}}" />
         </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+    </Shell.FlyoutHeader>
+    <Shell.FlyoutFooter>
+        <StackLayout HorizontalOptions="Center">
+            <material:MaterialButton Text="Выход"
+                                     Command="{Binding LogoutCommand}" />
+        </StackLayout>
+    </Shell.FlyoutFooter>
+    <FlyoutItem Title="Мой профиль">
+        <ShellContent>
+            <ShellContent.ContentTemplate>
+                <DataTemplate>
+                    <ContentPage>
+                        <Label Text="sdsd" />
+                    </ContentPage>
+                </DataTemplate>
+            </ShellContent.ContentTemplate>
+        </ShellContent>
+    </FlyoutItem>
+    <FlyoutItem Title="Мой профиль 2 ">
+        <ShellContent>
+            <ShellContent.ContentTemplate>
+                <DataTemplate>
+                    <pages:ProfileViewPage />
+                </DataTemplate>
+            </ShellContent.ContentTemplate>
+        </ShellContent>
+    </FlyoutItem>-->
+</MasterDetailPage>

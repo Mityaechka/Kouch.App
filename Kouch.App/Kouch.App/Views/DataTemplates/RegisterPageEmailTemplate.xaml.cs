@@ -19,8 +19,8 @@ namespace Kouch.App.Views.DataTemplates
         }
         protected override void OnBindingContextChanged()
         {
-            RegisterStateViewModel registerStateViewModel = (RegisterStateViewModel)BindingContext;
-            registerStateViewModel.Model?.EmailValidationCollection?.UpdateAll();
+            //RegisterStateViewModel registerStateViewModel = (RegisterStateViewModel)BindingContext;
+            //registerStateViewModel.Model?.EmailValidationCollection?.UpdateAll();
             base.OnBindingContextChanged();
         }
     }

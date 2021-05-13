@@ -18,5 +18,11 @@ namespace Kouch.App.Views.Pages
             InitializeComponent();
             BindingContext = new RegisterViewModel(Navigation);
         }
+
+        protected override bool OnBackButtonPressed()
+        {
+            App.Current.MainPage = new AuthPage();
+            return true;
+        }
     }
 }

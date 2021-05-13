@@ -9,6 +9,7 @@ namespace Kouch.App.Validations
 {
     public class ValidatableObject<T> : BaseViewModel, IValidity, IEnumerable<ValidationRule>
     {
+        public Action onChangeValue;
         private readonly List<ValidationRule> _validations;
         private readonly BaseViewModel parent;
         private List<string> _errors;
@@ -27,9 +28,10 @@ namespace Kouch.App.Validations
             {
                 _errors = value;
                 OnPropertyChanged();
+                OnPropertyChanged(nameof(FirstError));
             }
         }
-
+        public string FirstError => Errors?.FirstOrDefault();
         public T Value
         {
             get
@@ -38,7 +40,15 @@ namespace Kouch.App.Validations
             }
             set
             {
+                if (!IsTouch&&value!=null)
+                {
+                    IsTouch = true;
+                }
                 _value = value;
+                if (onChangeValue != null)
+                {
+                    onChangeValue();
+                }
                 OnPropertyChanged();
                 if (ValidationCollection == null)
                 {
@@ -61,8 +71,23 @@ namespace Kouch.App.Validations
             {
                 _isValid = value;
                 OnPropertyChanged();
+                OnPropertyChanged(nameof(ShowError));
             }
         }
+        private bool isTouch;
+        public bool IsTouch
+        {
+            get => isTouch; set
+            {
+                if (isTouch != value)
+                {
+                    isTouch = value;
+                    OnPropertyChanged();
+                    OnPropertyChanged(nameof(ShowError));
+                }
+            }
+        }
+        public bool ShowError => IsTouch && !IsValid;
         public ValidatableObject(BaseViewModel parent) : base(null)
         {
             _isValid = true;
@@ -102,9 +127,9 @@ namespace Kouch.App.Validations
             Validations.Add(validationRule);
         }
     }
-    public class ValidationCollection:IEnumerable<IValidity>
+    public class ValidationCollection : IEnumerable<IValidity>
     {
-        public ValidationCollection(string name,BaseViewModel parent)
+        public ValidationCollection(string name, BaseViewModel parent)
         {
             Name = name;
             Parent = parent;
@@ -114,6 +139,7 @@ namespace Kouch.App.Validations
 
 
         public bool HasErrors => validatableObjects.Any(x => !x.IsValid);
+        public bool IsValid => !validatableObjects.Any(x => !x.IsValid);
         public string FirstError => validatableObjects.SelectMany(x => x.Errors).FirstOrDefault();
 
         public string Name { get; }
@@ -122,11 +148,11 @@ namespace Kouch.App.Validations
         public void Notify()
         {
             Parent?.OnPropertyChanged($"{Name}");
-            Parent?.OnPropertyChanged($"{Name}r");
         }
         public void UpdateAll()
         {
             validatableObjects.ForEach(x => x?.Validate());
+            
         }
         public void Add(IValidity validity)
         {

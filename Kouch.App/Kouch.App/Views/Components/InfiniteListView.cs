@@ -2,7 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -43,22 +42,6 @@ namespace Kouch.App.Views.Components
             {
                 ScrollTo(e.Item, ScrollToPosition.MakeVisible, false);
             }
-        }
-    }
-    public class AutoScrollView : ScrollView
-    {
-        public AutoScrollView()
-        {
-            
-        }
-
-        protected override async void OnPropertyChanged([CallerMemberName] string propertyName = null)
-        {
-            if (propertyName == "ContentSize")
-            {
-                    await ScrollToAsync(10000,0,false);
-            }
-            base.OnPropertyChanged(propertyName);
         }
     }
 

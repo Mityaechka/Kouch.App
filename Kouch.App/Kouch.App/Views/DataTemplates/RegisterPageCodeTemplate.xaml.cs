@@ -20,8 +20,8 @@ namespace Kouch.App.Views.DataTemplates
 
         protected override void OnBindingContextChanged()
         {
-            RegisterStateViewModel registerStateViewModel = (RegisterStateViewModel)BindingContext;
-            registerStateViewModel.Model?.CodeValidationCollection?.UpdateAll();
+            //RegisterStateViewModel registerStateViewModel = (RegisterStateViewModel)BindingContext;
+            //registerStateViewModel.Model?.CodeValidationCollection?.UpdateAll();
             base.OnBindingContextChanged();
         }
     }

@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:Kouch.App.ViewModels"
+             x:DataType="viewmodels:ProfileEditViewModel"
+             x:Class="Kouch.App.Views.Pages.ProfileEditPage"
+             xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material"
+             xmlns:components="clr-namespace:Kouch.App.Views.Components"
+             Visual="Material"
+             Title="Редактирование профиля">
+    <ContentPage.Content>
+        <StackLayout IsVisible="{Binding .,Converter={StaticResource isNotNull}}">
+            <ScrollView >
+                <StackLayout VerticalOptions="FillAndExpand">
+                    <components:InputComponent HelpText="Введите Ваше имя"
+                                               Error="{Binding FirstName.FirstError}"
+                                               IsError="{Binding FirstName.ShowError}">
+                        <components:InputComponent.Body>
+                            <Entry Placeholder="Имя"
+                                   Text="{Binding FirstName.Value}"
+                                   HorizontalOptions="FillAndExpand" />
+                        </components:InputComponent.Body>
+                    </components:InputComponent>
+                    <components:InputComponent HelpText="Введите Вашу фамилию"
+                                               Error="{Binding SecondName.FirstError}"
+                                               IsError="{Binding SecondName.ShowError}">
+                        <components:InputComponent.Body>
+                            <Entry Placeholder="Фамилия"
+                                   Text="{Binding SecondName.Value}"
+                                   HorizontalOptions="FillAndExpand" />
+                        </components:InputComponent.Body>
+                    </components:InputComponent>
+                    <components:InputComponent
+                            HelpText="Выберете Вашу страну"
+                                               IsError="{Binding SelectedCountry.ShowError}"
+                                               Error="{Binding SelectedCountry.FirstError}"
+                                               IsLoading="{Binding IsCountriesLoading}">
+                        <components:InputComponent.Body>
+                            <Picker HorizontalOptions="FillAndExpand"
+                                    ItemsSource="{Binding Countries}"
+                                    SelectedItem="{Binding SelectedCountry.Value}"
+                                    Title="Страна"
+                                    Visual="Material">
+                                <Picker.ItemDisplayBinding>
+                                    <Binding>
+                                        <Binding.Path>Name</Binding.Path>
+                                    </Binding>
+                                </Picker.ItemDisplayBinding>
+                            </Picker>
+                        </components:InputComponent.Body>
+                    </components:InputComponent>
+                    <components:InputComponent HelpText="Выберете Ваш город"
+                                               IsError="{Binding SelectedCity.ShowError}"
+                                               Error="{Binding SelectedCity.FirstError}" IsLoading="{Binding IsCitiesLoading}">
+                        <components:InputComponent.Body>
+                            <Picker HorizontalOptions="FillAndExpand"
+                                    Title="Город"
+                                    ItemsSource="{Binding Cities}"
+                                    SelectedItem="{Binding SelectedCity.Value}"
+                                    IsEnabled="{Binding SelectedCountry.Value,Converter={StaticResource isNotNull}}">
+                                <Picker.ItemDisplayBinding>
+                                    <Binding>
+                                        <Binding.Path>Name</Binding.Path>
+                                    </Binding>
+                                </Picker.ItemDisplayBinding>
+                            </Picker>
+                        </components:InputComponent.Body>
+                    </components:InputComponent>
+                    <components:InputComponent HelpText="Ссылка на Ваш Vk"
+                                               IsError="{Binding Vk.ShowError}"
+                                               Error="{Binding Vk.FirstError}">
+                        <components:InputComponent.Body>
+                            <Entry Placeholder="Vk"
+                                   Text="{Binding Vk.Value}"
+                                   Keyboard="Url"
+                                   HorizontalOptions="FillAndExpand" />
+                        </components:InputComponent.Body>
+                    </components:InputComponent>
+                    <components:InputComponent HelpText="Ссылка на Ваш Instagram"
+                                               IsError="{Binding Instagram.ShowError}"
+                                               Error="{Binding Instagram.FirstError}">
+                        <components:InputComponent.Body>
+                            <Entry Placeholder="Instagram"
+                                   Text="{Binding Instagram.Value}"
+                                   Keyboard="Url"
+                                   HorizontalOptions="FillAndExpand" />
+                        </components:InputComponent.Body>
+                    </components:InputComponent>
+                    <components:InputComponent HelpText="Ссылка на Ваш Facebook"
+                                               IsError="{Binding Facebook.ShowError}"
+                                               Error="{Binding Facebook.FirstError}">
+                        <components:InputComponent.Body>
+                            <Entry Placeholder="Facebook"
+                                   Text="{Binding Facebook.Value}"
+                                   Keyboard="Url"
+                                   HorizontalOptions="FillAndExpand" />
+                        </components:InputComponent.Body>
+                    </components:InputComponent>
+                </StackLayout>
+            </ScrollView>
+            <StackLayout VerticalOptions="End">
+                <Button Text="Сохранить"
+                        Style="{StaticResource PrimaryButton}"
+                        Command="{Binding EditProfileCommand}"
+                        IsEnabled="{Binding Validities.HasErrors,Converter={StaticResource inverseBool}}" />
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

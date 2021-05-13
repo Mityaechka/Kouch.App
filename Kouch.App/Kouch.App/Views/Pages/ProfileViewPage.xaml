@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:Kouch.App.ViewModels"
+             xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material"
+             xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             x:DataType="viewmodels:ProfileViewViewModel"
+             x:Class="Kouch.App.Views.Pages.ProfileViewPage"
+             Title="Мой профиль">
+    <RefreshView IsRefreshing="{Binding IsLoading}"
+                 Command="{Binding RefreshCommand}"
+                 VerticalOptions="FillAndExpand"
+                 BackgroundColor="White">
+        <ScrollView>
+            <StackLayout>
+                <StackLayout VerticalOptions="StartAndExpand">
+                    <StackLayout Padding="10">
+                        <Frame CornerRadius="100"
+                               HorizontalOptions="Center">
+                            <Image HeightRequest="100"
+                                   WidthRequest="100"
+                                   Source="{Binding User.Avatar,Converter={StaticResource emptyAvatar}}">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer
+                                            Command="{Binding ChangeAvatarImageCommand}"
+                                                          NumberOfTapsRequired="1" />
+                                </Image.GestureRecognizers>
+                            </Image>
+                        </Frame>
+                        <Label Text="{Binding User.FirstName,Converter={StaticResource newUserFirstName}}"
+                               HorizontalTextAlignment="Center" />
+                    </StackLayout>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Button Text="Отдаю"
+                                Style="{StaticResource PrimaryButton}"
+                                Grid.Column="0"
+                                Grid.Row="0" />
+                        <Button Text="Хочу забрать"
+                                Style="{StaticResource PrimaryButton}"
+                                Grid.Column="1"
+                                Grid.Row="0" />
+                    </Grid>
+                    <Label Text="Персональные данные"
+                           HorizontalTextAlignment="Center"
+                           FontSize="Title" />
+                    <Label  Text="{Binding User.Email,StringFormat='Почта: {0}'}"
+                            FontSize="Body" />
+                    <Label FontSize="Body"
+                           Text="{Binding User.FullName,StringFormat='Имя: {0}'}" />
+                    <Label Text="{Binding User.FullAddress,StringFormat='Адрес: {0}'}"
+                           FontSize="Body" />
+                    <Label Text="Соц. сети"
+                           HorizontalTextAlignment="Center"
+                           FontSize="Title" />
+                    <Label Text="{Binding User.Vk,StringFormat='VK: {0}'}"
+                           IsVisible="{Binding User.Vk,Converter={StaticResource isNotNullOrEmpty}}" />
+                    <Label Text="{Binding User.Instagram,StringFormat='Instagram: {0}'}"
+                           IsVisible="{Binding User.Instagram,Converter={StaticResource isNotNullOrEmpty}}" />
+                    <Label Text="{Binding User.Facebook,StringFormat='Facebook: {0}'}"
+                           IsVisible="{Binding User.Facebook,Converter={StaticResource isNotNullOrEmpty}}" />
+                </StackLayout>
+                
+
+                <Button Text="Редактировать"
+                        Style="{StaticResource PrimaryButton}"
+                        Command="{Binding EditProfileCommand}" />
+            </StackLayout>
+        </ScrollView>
+    </RefreshView>
+</ContentPage>

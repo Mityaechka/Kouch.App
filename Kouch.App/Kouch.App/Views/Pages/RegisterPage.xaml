@@ -7,7 +7,7 @@
              xmlns:templates="clr-namespace:Kouch.App.Views.DataTemplates"
              xmlns:templateSelectors="clr-namespace:Kouch.App.DataTemplateSelectors"
              x:DataType="viewmodels:RegisterViewModel"
-             x:Class="Kouch.App.Views.Pages.RegisterPage">
+             x:Class="Kouch.App.Views.Pages.RegisterPage" Visual="Material">
     <ContentPage.Resources>
         <ResourceDictionary>
 
@@ -33,15 +33,15 @@
         </ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout Margin="0,0,0,10">
+        <StackLayout Margin="0,0,0,10"
+                     VerticalOptions="StartAndExpand">
             <CarouselView  IsSwipeEnabled="False"
+                           VerticalOptions="StartAndExpand"
                            IndicatorView="indicatorView"
                            ItemsSource="{Binding States}"
                            ItemTemplate="{StaticResource personDataTemplateSelector}"
                            CurrentItem="{Binding CurrentState}" />
             <IndicatorView x:Name="indicatorView"
-                           IndicatorColor="LightGray"
-                           SelectedIndicatorColor="DarkGray"
                            HorizontalOptions="Center" />
         </StackLayout>
     </ContentPage.Content>

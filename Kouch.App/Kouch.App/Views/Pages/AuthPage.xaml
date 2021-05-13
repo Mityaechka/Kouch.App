@@ -3,24 +3,55 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:viewmodels="clr-namespace:Kouch.App.ViewModels"
              xmlns:l="clr-namespace:Kouch.App.Services"
+             xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material"
+             xmlns:components="clr-namespace:Kouch.App.Views.Components"
              x:DataType="viewmodels:AuthViewModel"
-             x:Class="Kouch.App.Views.Pages.AuthPage">
+             x:Class="Kouch.App.Views.Pages.AuthPage"
+             Visual="Material">
     <ContentPage.Resources>
         <ResourceDictionary></ResourceDictionary>
     </ContentPage.Resources>
     <ContentPage.Content>
-        <StackLayout VerticalOptions="CenterAndExpand">
-            <Entry Placeholder="Почта"
-                   Text="{Binding Email.Value}" />
-            <Entry Placeholder="Пароль"
-                   Text="{Binding Password.Value}" />
-            <Label Text="{Binding AuthCollection.FirstError}"
-                   IsVisible="{Binding Path=AuthCollection.HasErrors}" />
-            <Button Text="{Binding [AuthPage_Login]}"
-                    IsEnabled="{Binding AuthCollection.HasErrors,Converter={StaticResource inverseBool}}"
-                    Command="{Binding AuthCommand}" />
-            <Button Text="Регистрация"
-                    Command="{Binding OpenRegisterPageCommand}" />
+        <StackLayout BackgroundColor="White">
+            <StackLayout Orientation="Vertical"
+                         VerticalOptions="Start"
+                         Margin="10">
+                <Label  Text="Авторизация"
+                        FontSize="30" />
+                <Label  Text="Чтобы продолжить авторизируйтесь"
+                        FontSize="20"
+                        Margin="0,10,0,0" />
+            </StackLayout>
+            <StackLayout VerticalOptions="CenterAndExpand">
+                <components:InputComponent                                            HelpText="Почта для входа"
+                                           Error="{Binding Email.FirstError}"
+                                           IsError="{Binding Email.ShowError}">
+                    <components:InputComponent.Body>
+                        <Entry Placeholder="Почта"
+                               Keyboard="Email"
+                               Text="{Binding Email.Value}" />
+                    </components:InputComponent.Body>
+                </components:InputComponent>
+                <components:InputComponent HelpText="Пароль для входа"
+                                           Error="{Binding Password.FirstError}"
+                                           IsError="{Binding Password.ShowError}">
+                    <components:InputComponent.Body>
+                        <Entry Placeholder="Пароль"
+                               Keyboard="Text"
+                               IsPassword="True"
+                               Text="{Binding Password.Value}" />
+                    </components:InputComponent.Body>
+                </components:InputComponent>
+                <Button Text="{Binding [AuthPage_Login]}"
+                        Style="{StaticResource PrimaryButton}"
+                        IsEnabled="{Binding AuthCollection.IsValid}"
+                        Command="{Binding AuthCommand}" />
+            </StackLayout>
+            <StackLayout VerticalOptions="End">
+                <Button Text="Регистрация"
+                        Style="{StaticResource PrimaryButton}"
+                        Command="{Binding OpenRegisterPageCommand}" />
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

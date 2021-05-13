@@ -2,7 +2,6 @@
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
-using I18NPortable;
 using System.Reflection;
 using System.Diagnostics;
 using System.IO;
@@ -12,6 +11,8 @@ using System.Linq;
 using Xamarin.Essentials;
 using System.Threading;
 using System.Threading.Tasks;
+using Kouch.App.Models;
+using Kouch.App.Entities;
 
 namespace Kouch.App
 {
@@ -23,14 +24,12 @@ namespace Kouch.App
         public App()
         {
             InitializeComponent();
-            
+            XF.Material.Forms.Material.Init(this);
 
-
-
-            //var page = new NavigationPage(new PostsPage());
-            var page = new ServiceEditPage();
-            MainPage = page;
             Connectivity.ConnectivityChanged += ConnectivityChanged;
+
+            MainPage = new LoadingPage();
+            
             Init();
         }
         private async void Init()

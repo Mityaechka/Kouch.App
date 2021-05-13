@@ -65,7 +65,7 @@ namespace Kouch.App.ViewModels
                 Email,Password
             };
 
-            AuthCommand = new Command(async () => await Auth());
+            AuthCommand = new Command(async () => await Auth(),()=>AuthCollection.IsValid);
             OpenRegisterPageCommand = new Command(() => OpenRegisterPage());
 
             AuthCollection.UpdateAll();
@@ -78,7 +78,7 @@ namespace Kouch.App.ViewModels
                 Email = Email.Value,
                 Password = Password.Value
             });
-            await Navigation.PopPopupAsync();
+            
             if (authResponse.IsSuccsess)
             {
                 TokenStorageService.Instance.SaveToken(authResponse.Result.Tokens);
@@ -87,10 +87,17 @@ namespace Kouch.App.ViewModels
                     Email = Email.Value,
                     Password = Password.Value
                 });
+                var userResponse = await ApiUserService.Instance.GetMe();
+                await Navigation.PopPopupAsync();
+                if (userResponse.IsSuccsess)
+                {
+                    UserStorageService.Instance.User = userResponse.Result;
+                }
                 App.Current.MainPage = new MainPage();
             }
             else
             {
+                await Navigation.PopPopupAsync();
                 ToastsService.Instance.ShowToast(authResponse.Error);
             }
         }

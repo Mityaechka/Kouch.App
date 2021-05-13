@@ -53,7 +53,7 @@ namespace Kouch.App.Services
         }
         public async Task<ApiResnonse> Logout(string refresh)
         {
-            return await HttpBaseService.Instance.Send(HttpMethod.Post, "auth/logout/", new { refresh } ,false);
+            return await HttpBaseService.Instance.Send(HttpMethod.Post, "auth/logout/", new { refresh } ,true);
         }
     }
 }

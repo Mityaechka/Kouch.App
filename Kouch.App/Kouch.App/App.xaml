@@ -4,14 +4,44 @@
              x:Class="Kouch.App.App"
              xmlns:values="clr-constants:Kouch.App.Constants"
              xmlns:behaviors="clr-constants:Kouch.App.Behaviors"
-             xmlns:c="clr-namespace:Kouch.App.Converters">
+             xmlns:c="clr-namespace:Kouch.App.Converters" >
     <Application.Resources>
-        <Color x:Key="BlackColor">#000000</Color>
-        <Color x:Key="ErrorColor">#ff5252</Color>
+
+        <!--#region Colors-->
+        <Color x:Key="errorColor">#b00020</Color>
+        <Color x:Key="grayColor">#757575</Color>
+
+        <Color x:Key="white">#ffffff</Color>
+        <Color x:Key="black">#000000</Color>
+
+        <Color x:Key="primary">#1976d2</Color>
+        <Color x:Key="primaryLigth">#63a4ff</Color>
+        <Color x:Key="primaryDark">#004ba0</Color>
+
+        <Color x:Key="secondary">#b39ddb</Color>
+        <Color x:Key="secondaryLigth">#e6ceff</Color>
+        <Color x:Key="secondaryDark">#836fa9</Color>
+        <!--#endregion-->
+        <!--#region Styles-->
+        <Style TargetType="{x:Type NavigationPage}">
+            <Setter Property="BarBackgroundColor" Value="{StaticResource primary}"/>
+            <Setter Property="BarTextColor"
+                    Value="{StaticResource white}" />
+        </Style>
+
+        <Style TargetType="{x:Type Button}" x:Key="PrimaryButton">
+            <Setter Property="BackgroundColor"
+                    Value="{StaticResource primary}" />
+            <Setter Property="TextColor"
+                    Value="{StaticResource white}" />
+            <Setter Property="Margin"
+                    Value="0" />
+        </Style>
         <Style TargetType="Label">
             <Setter Property="TextColor"
                     Value="Black"></Setter>
         </Style>
+
         <Style x:Key="Link"
                TargetType="Label">
             <Setter Property="TextDecorations"
@@ -21,9 +51,33 @@
             <Setter Property="FontSize"
                     Value="15" />
         </Style>
-        <Style x:Key="EntryStyle"
-               TargetType="{x:Type Entry}"></Style>
 
+        
+        <Style TargetType="Label"
+               x:Key="HelpLabel">
+            <Setter Property="TextColor"
+                    Value="{StaticResource grayColor}" />
+            <Setter Property="FontSize"
+                    Value="15" />
+        </Style>
+        <Style TargetType="Label"
+               x:Key="ErrorLabel">
+            <Setter Property="TextColor"
+                    Value="{StaticResource errorColor}" />
+            <Setter Property="FontSize"
+                    Value="15" />
+        </Style>
+        <Style TargetType="{x:Type IndicatorView}">
+            <Setter Property="SelectedIndicatorColor"
+                    Value="Black" />
+            <Setter Property="IndicatorColor"
+                    Value="DarkGray" />
+        </Style>
+        <Style TargetType="{x:Type Entry}">
+            <Setter Property="BackgroundColor"
+                    Value="#f5f5f5" />
+        </Style>
+        <!--#endregion-->
 
         <!--#region Converters-->
         <c:InverseBoolConverter x:Key="inverseBool" />
@@ -37,9 +91,16 @@
             <c:IsNullOrEmptyListConverter />
             <c:InverseBoolConverter />
         </c:ValueConverterGroup>
-
+        <c:ToUppper x:Key="toUpper" />
+        <c:IsNullOrEmptyConverter x:Key="isNullOrEmpty" />
+        <c:ValueConverterGroup x:Key="isNotNullOrEmpty">
+            <c:IsNullOrEmptyConverter />
+            <c:InverseBoolConverter />
+        </c:ValueConverterGroup>
+        <c:ValueIfNullConverter Value="avatar_empty.png"
+                                x:Key="emptyAvatar" />
+        <c:ValueIfNullOrEmtyStrinConverter Value="Новый Пользователь"
+                                           x:Key="newUserFirstName" />
         <!--#endregion-->
-
-
     </Application.Resources>
 </Application>

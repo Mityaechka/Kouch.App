@@ -1,9 +1,9 @@
 bundleassemblies=false
-aotassemblies=false
+aotassemblies=true
 androidaddkeepalives=
-androidaotmode=none
+androidaotmode=normal
 androidembedprofilers=
-androidenableprofiledaot=false
+androidenableprofiledaot=true
 androiddextool=d8
 androidlinktool=
 androidpackageformat=apk
@@ -24,7 +24,7 @@ androidgeneratejnimarshalmethods=false
 os=windows_nt
 androidincludedebugsymbols=true
 androidpackagenamingpolicy=lowercasecrc64
-_nugetassetstimestamp=637561060181521958
+_nugetassetstimestamp=637565368913786207
 typemapkind=strings-asm
 androidsupportedabis=arm64-v8a
 armeabi-v7a

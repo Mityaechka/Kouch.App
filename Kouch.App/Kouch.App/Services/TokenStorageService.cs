@@ -26,7 +26,8 @@ namespace Kouch.App.Models
         private TokenStorageService()
         {
         }
-        public void ClearToken() {
+        public void ClearToken()
+        {
             TokenReceiveTime = new DateTime();
             CrossSettings.Current.AddOrUpdateValue("HttpTokens", "");
         }

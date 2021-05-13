@@ -4,7 +4,7 @@ using Kouch.App.Services;
 using Kouch.App.Views.Pages;
 using Plugin.Toast;
 using Plugin.Toast.Abstractions;
-using Plugin.Toasts;
+
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -34,7 +34,7 @@ namespace Kouch.App.ViewModels
             {
                 if (firstConnect)
                 {
-                    ToastsService.Instance.ShowToast("Отсуствует подключение к интернету");
+                    //ToastsService.Instance.ShowToast("Отсуствует подключение к интернету");
                     firstConnect = false;
                 }
                 return;
@@ -45,7 +45,7 @@ namespace Kouch.App.ViewModels
             {
                 if (firstCheck)
                 {
-                    ToastsService.Instance.ShowToast("Не удалось подключиться к серверу. Повторная попытка через 10 секунд",ToastLength.Long);
+                    //ToastsService.Instance.ShowToast("Не удалось подключиться к серверу. Повторная попытка через 10 секунд",ToastLength.Long);
                     firstCheck = false;
                 }
                 await Task.Delay(1000);
@@ -58,6 +58,11 @@ namespace Kouch.App.ViewModels
             }
             else
             {
+                var userResponse = await ApiUserService.Instance.GetMe();
+                if (userResponse.IsSuccsess)
+                {
+                    UserStorageService.Instance.User = userResponse.Result;
+                }
                 App.Current.MainPage = new MainPage();
             }
         }

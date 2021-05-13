@@ -8,6 +8,11 @@ namespace Kouch.App.Services
 {
     public class ToastsService
     {
+        public enum Length
+        {
+            Short = 0,
+            Long = 1
+        }
         private static ToastsService _instance;
         public static ToastsService Instance
         {
@@ -25,9 +30,9 @@ namespace Kouch.App.Services
         {
 
         }
-        public void ShowToast(string message, ToastLength toastLength = ToastLength.Short)
+        public void ShowToast(string message, Length toastLength = Length.Short)
         {
-            CrossToastPopUp.Current.ShowToastMessage(message,toastLength);
+            CrossToastPopUp.Current.ShowToastMessage(message, (ToastLength)toastLength);
         }
     }
 }
