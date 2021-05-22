@@ -1,7 +1,5 @@
 ﻿using Kouch.App.Entities;
-using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Kouch.App.Constants
 {

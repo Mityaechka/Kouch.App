@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -20,14 +18,14 @@ namespace Kouch.App.Extensions
 
         public static Task WhenCanceled(this CancellationToken cancellationToken)
         {
-            var tcs = new TaskCompletionSource<bool>();
+            TaskCompletionSource<bool> tcs = new TaskCompletionSource<bool>();
             cancellationToken.Register(s => ((TaskCompletionSource<bool>)s).SetResult(true), tcs);
             return tcs.Task;
         }
     }
     public static class ListExtensions
     {
-        public static void AddRang<T>(this ObservableCollection<T> @this,IEnumerable<T> range)
+        public static void AddRang<T>(this ObservableCollection<T> @this, IEnumerable<T> range)
         {
             foreach (T item in range)
             {

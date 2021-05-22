@@ -1,8 +1,5 @@
 ﻿using Plugin.Toast;
 using Plugin.Toast.Abstractions;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Kouch.App.Services
 {

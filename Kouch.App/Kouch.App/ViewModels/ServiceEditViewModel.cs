@@ -2,11 +2,9 @@
 using Kouch.App.Entities;
 using Kouch.App.Views.Modals;
 using Rg.Plugins.Popup.Extensions;
-using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -16,10 +14,10 @@ namespace Kouch.App.ViewModels
     public class ServiceEditViewModel : BaseViewModel
     {
 
-        private Service service;
+        private readonly Service service;
         private CategoryViewModel selectedCategory;
 
-        
+
 
         #region Properties
         public int CategoryId
@@ -73,39 +71,24 @@ namespace Kouch.App.ViewModels
         #endregion
 
         #region Commands
-        public ICommand SelectCategoryCommand
-        {
-            get
-            {
-                return new Command(async () =>
-                {
-                    await Navigation.PushPopupAsync(new CategorySelectorModal(category =>
-                    {
-                        SelectedCategory = category;
-                    }, SelectedCategory));
-                });
-            }
-        }
-        public ICommand AddDescriptionCommand
-        {
-            get
-            {
-                return new Command(() =>
-                {
-                    ServiceDescriptions.Add(new ServiceDescription());
-                });
-            }
-        }
+        public ICommand SelectCategoryCommand => new Command(async () =>
+                                                               {
+                                                                   await Navigation.PushPopupAsync(new CategorySelectorModal(category =>
+                                                                   {
+                                                                       SelectedCategory = category;
+                                                                   }, SelectedCategory));
+                                                               });
+        public ICommand AddDescriptionCommand => new Command(() =>
+                                                               {
+                                                                   ServiceDescriptions.Add(new ServiceDescription());
+                                                               });
         #endregion
-        public ObservableCollection<Language> Languages { get; 
-            set; }
-        public List<Language> AvailableLanguages
+        public ObservableCollection<Language> Languages
         {
-            get
-            {
-                return Languages.Where(x => !ServiceDescriptions.Any(u => u.Language?.Id == x.Id)).ToList();
-            }
+            get;
+            set;
         }
+        public List<Language> AvailableLanguages => Languages.Where(x => !ServiceDescriptions.Any(u => u.Language?.Id == x.Id)).ToList();
         public ObservableCollection<ServiceDescription> ServiceDescriptions { get; set; }
 
         public ServiceEditViewModel(INavigation navigation) : base(navigation)
@@ -153,7 +136,7 @@ namespace Kouch.App.ViewModels
                 Id = 2,
                 Name = "Kz"
             });
-            
+
         }
     }
 }

@@ -1,10 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
-using Kouch.App.Entities;
+﻿using Kouch.App.Entities;
 using Kouch.App.Models;
+using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace Kouch.App.Services
 {
@@ -37,15 +34,15 @@ namespace Kouch.App.Services
         }
         public async Task<ApiResnonse> VerifyAccount(RegisterCodeModel model)
         {
-            return await HttpBaseService.Instance.Send(HttpMethod.Post, "auth/verify-account/", model,false);
+            return await HttpBaseService.Instance.Send(HttpMethod.Post, "auth/verify-account/", model, false);
         }
         public async Task<ApiResnonse<LoginResponseModel>> Login(LoginRequestModel model)
         {
-            return await HttpBaseService.Instance.Send<LoginRequestModel,LoginResponseModel>(HttpMethod.Post, "auth/login/", model, false);
+            return await HttpBaseService.Instance.Send<LoginRequestModel, LoginResponseModel>(HttpMethod.Post, "auth/login/", model, false);
         }
         public async Task<ApiResnonse<TokenModel>> RefreshToken(string refresh)
         {
-            return await HttpBaseService.Instance.Send<object, TokenModel>(HttpMethod.Post, "auth/login/refresh/", new { refresh},false);
+            return await HttpBaseService.Instance.Send<object, TokenModel>(HttpMethod.Post, "auth/login/refresh/", new { refresh }, false);
         }
         public async Task<ApiResnonse> CheckConnection()
         {
@@ -53,7 +50,7 @@ namespace Kouch.App.Services
         }
         public async Task<ApiResnonse> Logout(string refresh)
         {
-            return await HttpBaseService.Instance.Send(HttpMethod.Post, "auth/logout/", new { refresh } ,true);
+            return await HttpBaseService.Instance.Send(HttpMethod.Post, "auth/logout/", new { refresh }, true);
         }
     }
 }

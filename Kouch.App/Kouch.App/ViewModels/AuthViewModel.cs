@@ -5,9 +5,6 @@ using Kouch.App.Validations;
 using Kouch.App.Views.Modals;
 using Kouch.App.Views.Pages;
 using Rg.Plugins.Popup.Extensions;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -60,12 +57,12 @@ namespace Kouch.App.ViewModels
             {
                 new IsNotNullOrEmptyRule("Введите пароль")
             };
-            AuthCollection = new ValidationCollection(nameof(AuthCollection),this)
+            AuthCollection = new ValidationCollection(nameof(AuthCollection), this)
             {
                 Email,Password
             };
 
-            AuthCommand = new Command(async () => await Auth(),()=>AuthCollection.IsValid);
+            AuthCommand = new Command(async () => await Auth(), () => AuthCollection.IsValid);
             OpenRegisterPageCommand = new Command(() => OpenRegisterPage());
 
             AuthCollection.UpdateAll();
@@ -73,12 +70,12 @@ namespace Kouch.App.ViewModels
         private async Task Auth()
         {
             await Navigation.PushPopupAsync(new LoadingModal());
-            var authResponse = await ApiAuthService.Instance.Login(new LoginRequestModel
+            ApiResnonse<LoginResponseModel> authResponse = await ApiAuthService.Instance.Login(new LoginRequestModel
             {
                 Email = Email.Value,
                 Password = Password.Value
             });
-            
+
             if (authResponse.IsSuccsess)
             {
                 TokenStorageService.Instance.SaveToken(authResponse.Result.Tokens);
@@ -87,7 +84,7 @@ namespace Kouch.App.ViewModels
                     Email = Email.Value,
                     Password = Password.Value
                 });
-                var userResponse = await ApiUserService.Instance.GetMe();
+                ApiResnonse<User> userResponse = await ApiUserService.Instance.GetMe();
                 await Navigation.PopPopupAsync();
                 if (userResponse.IsSuccsess)
                 {

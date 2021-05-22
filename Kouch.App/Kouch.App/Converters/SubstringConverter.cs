@@ -14,7 +14,7 @@ namespace Kouch.App.Converters
             {
                 return value;
             }
-            return $"{value.ToString().Substring(0,Length)}{(AddDots ? "..." : "")}";
+            return $"{value.ToString().Substring(0, Length)}{(AddDots ? "..." : "")}";
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

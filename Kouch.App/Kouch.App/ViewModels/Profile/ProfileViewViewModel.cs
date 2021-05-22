@@ -1,16 +1,13 @@
 ﻿using Kouch.App.Entities;
-using Kouch.App.ImageCropper;
 using Kouch.App.Models;
 using Kouch.App.Services;
 using Kouch.App.Views.Modals;
 using Kouch.App.Views.Pages;
 using Rg.Plugins.Popup.Extensions;
-using SkiaSharp;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Essentials;
@@ -64,7 +61,7 @@ namespace Kouch.App.ViewModels
         public async Task Refresh()
         {
             IsLoading = true;
-            var userResponse = await ApiUserService.Instance.GetMe();
+            ApiResnonse<User> userResponse = await ApiUserService.Instance.GetMe();
             IsLoading = false;
             if (userResponse.IsSuccsess)
             {
@@ -96,20 +93,20 @@ namespace Kouch.App.ViewModels
                     Stream stream = await result.OpenReadAsync();
                     MemoryStream ms = new MemoryStream();
                     stream.CopyTo(ms);
-                    var array = ms.ToArray();
+                    byte[] array = ms.ToArray();
                     await Navigation.PushPopupAsync(new ImageCropperModal(array, async (s) => await OnAvaterSelect(s)));
 
                 }
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
             }
         }
         private async Task OnAvaterSelect(byte[] array)
         {
             await Navigation.PushPopupAsync(new LoadingModal());
-            var response = await ApiUserService.Instance.EditAvatar(array);
+            ApiResnonse response = await ApiUserService.Instance.EditAvatar(array);
             await Navigation.PopPopupAsync();
 
             if (response.IsSuccsess)
@@ -124,14 +121,14 @@ namespace Kouch.App.ViewModels
         private async Task EditProfile()
         {
             //await Navigation.PushPopupAsync(new FullLoadingModal());
-            var p = new ProfileEditPage(UserStorageService.Instance.User);
+            ProfileEditPage p = new ProfileEditPage(UserStorageService.Instance.User);
             await Navigation.PushAsync(p);
         }
     }
     public class UserViewModel : BaseViewModel
     {
         public string FullName => new[] { FirstName, LastName }.All(x => string.IsNullOrEmpty(x)) ? "отсуствует" : $"{FirstName} {LastName}";
-        public string FullAddress => new[] { Country, City}.All(x => string.IsNullOrEmpty(x)) ? "отсуствует" : $"{Country} {City}";
+        public string FullAddress => new[] { Country, City }.All(x => string.IsNullOrEmpty(x)) ? "отсуствует" : $"{Country} {City}";
 
         private int id;
         private string email;
@@ -176,6 +173,7 @@ namespace Kouch.App.ViewModels
                 {
                     firstName = value;
                     OnPropertyChanged();
+                    OnPropertyChanged(nameof(FullName));
                 }
             }
         }
@@ -187,6 +185,7 @@ namespace Kouch.App.ViewModels
                 {
                     lastName = value;
                     OnPropertyChanged();
+                    OnPropertyChanged(nameof(FullName));
                 }
             }
         }
@@ -209,6 +208,7 @@ namespace Kouch.App.ViewModels
                 {
                     country = value;
                     OnPropertyChanged();
+                    OnPropertyChanged(nameof(FullAddress));
                 }
             }
         }
@@ -220,6 +220,7 @@ namespace Kouch.App.ViewModels
                 {
                     city = value;
                     OnPropertyChanged();
+                    OnPropertyChanged(nameof(FullAddress));
                 }
             }
         }

@@ -5,7 +5,6 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Serialization;
 using System;
-using System.Collections.Generic;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
@@ -15,7 +14,7 @@ namespace Kouch.App.Services
 {
     public class HttpBaseService
     {
-        private static HttpClient http = new HttpClient();
+        private static readonly HttpClient http = new HttpClient();
         private readonly JsonSerializerSettings serializerSettings;
 
         private static HttpBaseService _instance;
@@ -34,8 +33,10 @@ namespace Kouch.App.Services
 
         private HttpBaseService()
         {
-            serializerSettings = new JsonSerializerSettings();
-            serializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+            serializerSettings = new JsonSerializerSettings
+            {
+                ContractResolver = new CamelCasePropertyNamesContractResolver()
+            };
         }
         public async Task<ApiResnonse<T>> Get<T>(string url, bool needToken = true)
         {
@@ -58,7 +59,7 @@ namespace Kouch.App.Services
             StringContent content = null;
             if (data != null)
             {
-                var d = JsonConvert.SerializeObject(data);
+                string d = JsonConvert.SerializeObject(data);
                 content = new StringContent(JsonConvert.SerializeObject(data, serializerSettings), Encoding.UTF8, "application/json");
             }
             return await SendRequest(new HttpRequestMessage
@@ -82,7 +83,7 @@ namespace Kouch.App.Services
                 Content = content
             }, needToken);
         }
-        public async Task<ApiResnonse> SendContent(HttpMethod method, string url, HttpContent content, bool needToken = true) 
+        public async Task<ApiResnonse> SendContent(HttpMethod method, string url, HttpContent content, bool needToken = true)
         {
             return await SendRequest(new HttpRequestMessage
             {
@@ -107,7 +108,7 @@ namespace Kouch.App.Services
                         requestMessage.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token.Access);
                     }
                 }
-                var response = await http.SendAsync(requestMessage).WaitOrCancel(App.CancelToken);
+                HttpResponseMessage response = await http.SendAsync(requestMessage).WaitOrCancel(App.CancelToken);
                 string content = await response.Content.ReadAsStringAsync();
                 System.Net.HttpStatusCode status = response.StatusCode;
                 switch ((int)status)
@@ -115,8 +116,8 @@ namespace Kouch.App.Services
                     case 200:
                         return new ApiResnonse<U> { Result = JsonConvert.DeserializeObject<U>(content), IsSuccsess = true };
                     case 400:
-                        var jObject = JObject.Parse(content);
-                        var error = "Ошибка сервера";
+                        JObject jObject = JObject.Parse(content);
+                        string error = "Ошибка сервера";
 
                         if (jObject.ContainsKey("details"))
                         {
@@ -127,7 +128,7 @@ namespace Kouch.App.Services
                         return new ApiResnonse<U> { Error = "Ошибка сервера", IsSuccsess = false };
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return new ApiResnonse<U> { Error = "Ошибка сервера", IsSuccsess = false };
             }
@@ -150,7 +151,7 @@ namespace Kouch.App.Services
                     }
                 }
 
-                var response = await http.SendAsync(requestMessage).WaitOrCancel(App.CancelToken);
+                HttpResponseMessage response = await http.SendAsync(requestMessage).WaitOrCancel(App.CancelToken);
                 string content = await response.Content.ReadAsStringAsync();
                 System.Net.HttpStatusCode status = response.StatusCode;
                 switch ((int)status)
@@ -158,8 +159,8 @@ namespace Kouch.App.Services
                     case 200:
                         return new ApiResnonse { IsSuccsess = true };
                     case 400:
-                        var jObject = JObject.Parse(content);
-                        var error = "Ошибка сервера";
+                        JObject jObject = JObject.Parse(content);
+                        string error = "Ошибка сервера";
 
                         if (jObject.ContainsKey("error"))
                         {
@@ -170,7 +171,7 @@ namespace Kouch.App.Services
                         return new ApiResnonse { Error = "Ошибка сервера", IsSuccsess = false };
                 }
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return new ApiResnonse { Error = "Ошибка сервера", IsSuccsess = false };
             }

@@ -10,8 +10,11 @@ namespace Kouch.App.Converters
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             if (value == null)
+            {
                 return Value;
-            return string.IsNullOrWhiteSpace(value.ToString())? Value:value;
+            }
+
+            return string.IsNullOrWhiteSpace(value.ToString()) ? Value : value;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)
@@ -24,8 +27,11 @@ namespace Kouch.App.Converters
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
             if (value == null)
+            {
                 return true;
-            return string.IsNullOrWhiteSpace(value.ToString()) ;
+            }
+
+            return string.IsNullOrWhiteSpace(value.ToString());
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

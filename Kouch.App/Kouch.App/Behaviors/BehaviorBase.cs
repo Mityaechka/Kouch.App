@@ -1,47 +1,45 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using Xamarin.Forms;
 
 namespace Kouch.App.Behaviors
 {
     public class BehaviorBase<T> : Behavior<T> where T : BindableObject
-	{
-		public T AssociatedObject { get; private set; }
+    {
+        public T AssociatedObject { get; private set; }
 
-		protected override void OnAttachedTo(T bindable)
-		{
-			base.OnAttachedTo(bindable);
+        protected override void OnAttachedTo(T bindable)
+        {
+            base.OnAttachedTo(bindable);
 
-			AssociatedObject = bindable;
+            AssociatedObject = bindable;
 
-			if (bindable.BindingContext != null)
-			{
-				BindingContext = bindable.BindingContext;
-			}
+            if (bindable.BindingContext != null)
+            {
+                BindingContext = bindable.BindingContext;
+            }
 
-			bindable.BindingContextChanged += OnBindingContextChanged;
-		}
+            bindable.BindingContextChanged += OnBindingContextChanged;
+        }
 
-		protected override void OnDetachingFrom(T bindable)
-		{
-			base.OnDetachingFrom(bindable);
+        protected override void OnDetachingFrom(T bindable)
+        {
+            base.OnDetachingFrom(bindable);
 
-			bindable.BindingContextChanged -= OnBindingContextChanged;
+            bindable.BindingContextChanged -= OnBindingContextChanged;
 
-			AssociatedObject = null;
-		}
+            AssociatedObject = null;
+        }
 
-		void OnBindingContextChanged(object sender, EventArgs e)
-		{
-			OnBindingContextChanged();
-		}
+        private void OnBindingContextChanged(object sender, EventArgs e)
+        {
+            OnBindingContextChanged();
+        }
 
-		protected override void OnBindingContextChanged()
-		{
-			base.OnBindingContextChanged();
+        protected override void OnBindingContextChanged()
+        {
+            base.OnBindingContextChanged();
 
-			BindingContext = AssociatedObject.BindingContext;
-		}
-	}
+            BindingContext = AssociatedObject.BindingContext;
+        }
+    }
 }

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -20,7 +15,7 @@ namespace Kouch.App.Views.Components
                                                                                             propertyChanged: IsLoadingPropertyChanged,
                                                                                             defaultValue: null);
 
-        static void IsLoadingPropertyChanged(BindableObject bindable, object oldValue, object newValue)
+        private static void IsLoadingPropertyChanged(BindableObject bindable, object oldValue, object newValue)
         {
             InputComponent instance = bindable as InputComponent;
             if (instance != null)
@@ -29,7 +24,7 @@ namespace Kouch.App.Views.Components
                 if (instance.IsLoading)
                 {
                     instance.LoadingIndicator.IsVisible = true;
-                    instance.LoadingIndicator.IsRunning  = true;
+                    instance.LoadingIndicator.IsRunning = true;
                     instance.BodyContent.IsVisible = false;
                 }
                 else
@@ -42,8 +37,8 @@ namespace Kouch.App.Views.Components
         }
         public bool IsLoading
         {
-            get { return (bool)GetValue(IsLoadingProperty); }
-            set { SetValue(IsLoadingProperty, value); }
+            get => (bool)GetValue(IsLoadingProperty);
+            set => SetValue(IsLoadingProperty, value);
         }
 
         public static BindableProperty IsErrorProperty = BindableProperty.Create(nameof(IsError),
@@ -53,7 +48,7 @@ namespace Kouch.App.Views.Components
                                                                                             propertyChanged: IsErrorPropertyChanged,
                                                                                             defaultValue: null);
 
-        static void IsErrorPropertyChanged(BindableObject bindable, object oldValue, object newValue)
+        private static void IsErrorPropertyChanged(BindableObject bindable, object oldValue, object newValue)
         {
             InputComponent instance = bindable as InputComponent;
             if (instance != null)
@@ -64,8 +59,8 @@ namespace Kouch.App.Views.Components
         }
         public bool IsError
         {
-            get { return (bool)GetValue(IsErrorProperty); }
-            set { SetValue(IsErrorProperty, value); }
+            get => (bool)GetValue(IsErrorProperty);
+            set => SetValue(IsErrorProperty, value);
         }
 
         public static BindableProperty ErrorProperty = BindableProperty.Create(nameof(Error),
@@ -75,7 +70,7 @@ namespace Kouch.App.Views.Components
                                                                                             propertyChanged: ErrorPropertyChanged,
                                                                                             defaultValue: null);
 
-        static void ErrorPropertyChanged(BindableObject bindable, object oldValue, object newValue)
+        private static void ErrorPropertyChanged(BindableObject bindable, object oldValue, object newValue)
         {
             InputComponent instance = bindable as InputComponent;
             if (instance != null)
@@ -86,8 +81,8 @@ namespace Kouch.App.Views.Components
         }
         public string Error
         {
-            get { return (string)GetValue(ErrorProperty); }
-            set { SetValue(ErrorProperty, value); }
+            get => (string)GetValue(ErrorProperty);
+            set => SetValue(ErrorProperty, value);
         }
 
 
@@ -98,7 +93,7 @@ namespace Kouch.App.Views.Components
                                                                                     propertyChanged: HelpTextChanged,
                                                                                     defaultValue: null);
 
-        static void HelpTextChanged(BindableObject bindable, object oldValue, object newValue)
+        private static void HelpTextChanged(BindableObject bindable, object oldValue, object newValue)
         {
             InputComponent instance = bindable as InputComponent;
             if (instance != null)
@@ -109,8 +104,8 @@ namespace Kouch.App.Views.Components
         }
         public string HelpText
         {
-            get { return (string)GetValue(HelpTextProperty); }
-            set { SetValue(HelpTextProperty, value); }
+            get => (string)GetValue(HelpTextProperty);
+            set => SetValue(HelpTextProperty, value);
         }
 
         public static BindableProperty TitleTextProperty = BindableProperty.Create(nameof(TitleText),
@@ -120,7 +115,7 @@ namespace Kouch.App.Views.Components
                                                                             propertyChanged: TitleTextChanged,
                                                                             defaultValue: null);
 
-        static void TitleTextChanged(BindableObject bindable, object oldValue, object newValue)
+        private static void TitleTextChanged(BindableObject bindable, object oldValue, object newValue)
         {
             InputComponent instance = bindable as InputComponent;
             if (instance != null)
@@ -139,8 +134,8 @@ namespace Kouch.App.Views.Components
         }
         public string TitleText
         {
-            get { return (string)GetValue(HelpTextProperty); }
-            set { SetValue(HelpTextProperty, value); }
+            get => (string)GetValue(HelpTextProperty);
+            set => SetValue(HelpTextProperty, value);
         }
         public View Body
         {

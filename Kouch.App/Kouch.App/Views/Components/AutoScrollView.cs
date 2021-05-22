@@ -7,18 +7,18 @@ namespace Kouch.App.Views.Components
     {
         public AutoScrollView()
         {
-            
+
         }
 
         protected override async void OnPropertyChanged([CallerMemberName] string propertyName = null)
         {
             if (propertyName == "ContentSize")
             {
-                    await ScrollToAsync(10000,0,false);
+                await ScrollToAsync(10000, 0, false);
             }
             base.OnPropertyChanged(propertyName);
         }
     }
 
-    
+
 }

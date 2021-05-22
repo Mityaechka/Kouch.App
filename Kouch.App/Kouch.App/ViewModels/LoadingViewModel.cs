@@ -2,16 +2,7 @@
 using Kouch.App.Models;
 using Kouch.App.Services;
 using Kouch.App.Views.Pages;
-using Plugin.Toast;
-using Plugin.Toast.Abstractions;
-
-using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Input;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 
@@ -41,7 +32,7 @@ namespace Kouch.App.ViewModels
             }
             isInternetAvailable = true;
 
-            while(!await CheckServerAvailable())
+            while (!await CheckServerAvailable())
             {
                 if (firstCheck)
                 {
@@ -58,7 +49,7 @@ namespace Kouch.App.ViewModels
             }
             else
             {
-                var userResponse = await ApiUserService.Instance.GetMe();
+                ApiResnonse<User> userResponse = await ApiUserService.Instance.GetMe();
                 if (userResponse.IsSuccsess)
                 {
                     UserStorageService.Instance.User = userResponse.Result;
@@ -76,7 +67,7 @@ namespace Kouch.App.ViewModels
         }
         private async Task<bool> CheckServerAvailable()
         {
-            var resonse = await ApiAuthService.Instance.CheckConnection();
+            ApiResnonse resonse = await ApiAuthService.Instance.CheckConnection();
             return resonse.IsSuccsess;
         }
     }

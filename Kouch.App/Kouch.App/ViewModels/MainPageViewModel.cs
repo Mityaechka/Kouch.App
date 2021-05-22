@@ -1,13 +1,7 @@
-﻿using Kouch.App.Entities;
-using Kouch.App.Models;
-using Kouch.App.Services;
+﻿using Kouch.App.Models;
 using Kouch.App.Views.Modals;
 using Kouch.App.Views.Pages;
-using Plugin.DeviceInfo;
 using Rg.Plugins.Popup.Extensions;
-using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -29,24 +23,12 @@ namespace Kouch.App.ViewModels
                 }
             }
         }
-        
-        public ICommand LogoutCommand
-        {
-            get
-            {
-                return new Command(async () => await Logout());
-            }
-        }
-        public ICommand OpenMyProfileCommand
-        {
-            get
-            {
-                return new Command(async() =>await OpenMyProfile());
-            }
-        }
+
+        public ICommand LogoutCommand => new Command(async () => await Logout());
+        public ICommand OpenMyProfileCommand => new Command(async () => await OpenMyProfile());
         public MainPageViewModel(INavigation navigation) : base(navigation)
         {
-            User =  new UserViewModel(UserStorageService.Instance.User);
+            User = new UserViewModel(UserStorageService.Instance.User);
 
             UserStorageService.Instance.OnUserChahged += (user) =>
             {
@@ -62,14 +44,14 @@ namespace Kouch.App.ViewModels
         private async Task Logout()
         {
             await Navigation.PushPopupAsync(new LoadingModal());
-            var token = await TokenStorageService.Instance.GetToken();
+            Entities.TokenModel token = await TokenStorageService.Instance.GetToken();
             TokenStorageService.Instance.ClearAuthData();
             TokenStorageService.Instance.ClearToken();
 
             //if (token == null)
             //{
-                await Navigation.PopPopupAsync();
-                App.Current.MainPage = new AuthPage();
+            await Navigation.PopPopupAsync();
+            App.Current.MainPage = new AuthPage();
             //}
             //else
             //{
@@ -93,7 +75,7 @@ namespace Kouch.App.ViewModels
                 await Task.Delay(500);
                 (App.Current.MainPage as MasterDetailPage).IsPresented = false;
             }
-            
+
         }
     }
 }

@@ -1,18 +1,9 @@
 ﻿using Kouch.App.Views.Pages;
 using System;
-using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
-using System.Reflection;
-using System.Diagnostics;
-using System.IO;
-using System.Collections.Generic;
-using Newtonsoft.Json;
-using System.Linq;
-using Xamarin.Essentials;
 using System.Threading;
 using System.Threading.Tasks;
-using Kouch.App.Models;
-using Kouch.App.Entities;
+using Xamarin.Essentials;
+using Xamarin.Forms;
 
 namespace Kouch.App
 {
@@ -29,7 +20,7 @@ namespace Kouch.App
             Connectivity.ConnectivityChanged += ConnectivityChanged;
 
             MainPage = new LoadingPage();
-            
+
             Init();
         }
         private async void Init()
@@ -38,7 +29,7 @@ namespace Kouch.App
             {
                 await Task.Delay(1000000, CancelToken);
             }
-            catch (Exception e)
+            catch (Exception)
             {
 
             }

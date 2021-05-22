@@ -6,7 +6,7 @@ namespace Kouch.App.Validations
     {
         private readonly Func<bool> expression;
 
-        public ExpressionRule(Func<bool> expression,string validationMessage) : base(validationMessage)
+        public ExpressionRule(Func<bool> expression, string validationMessage) : base(validationMessage)
         {
             this.expression = expression;
         }

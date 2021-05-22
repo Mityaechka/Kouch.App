@@ -64,7 +64,7 @@ namespace Kouch.App.Models
             }
             else
             {
-                var tokenData = JsonConvert.DeserializeObject<TokenModel>(rawToken);
+                TokenModel tokenData = JsonConvert.DeserializeObject<TokenModel>(rawToken);
                 if (TokenReceiveTime.AddSeconds(3) > DateTime.Now)
                 {
                     return tokenData;

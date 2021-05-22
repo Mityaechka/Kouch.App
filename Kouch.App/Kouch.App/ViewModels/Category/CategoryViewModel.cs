@@ -2,8 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -79,7 +77,7 @@ namespace Kouch.App.ViewModels
             {
                 List<Category> categories = await LoadCategory();
                 CategoryViewModel viewModel = CategoryViewModel.GenerateViewModel(categories);
-                ParentCategory= viewModel;
+                ParentCategory = viewModel;
                 if (SelectedCategory == null)
                 {
                     SelectedCategory = viewModel;
@@ -254,9 +252,9 @@ namespace Kouch.App.ViewModels
             {
                 return this;
             }
-            foreach (var item in Children)
+            foreach (CategoryViewModel item in Children)
             {
-                var search = item.FindById(id);
+                CategoryViewModel search = item.FindById(id);
                 if (search != null)
                 {
                     return search;
@@ -275,14 +273,14 @@ namespace Kouch.App.ViewModels
                     Children = new ObservableCollection<CategoryViewModel>(),
                     IsRoot = true
                 };
-                foreach (var category in categories)
+                foreach (Category category in categories)
                 {
                     root.Children.Add(GenerateViewModel(category, root));
                 }
 
                 return root;
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return null;
             }
@@ -298,7 +296,7 @@ namespace Kouch.App.ViewModels
             };
             if (category.Children != null && category.Children.Count != 0)
             {
-                foreach (var item in category.Children)
+                foreach (Category item in category.Children)
                 {
                     categoryViewModel.Children.Add(GenerateViewModel(item, categoryViewModel));
                 }

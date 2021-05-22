@@ -3,12 +3,12 @@ using System;
 
 namespace Kouch.App.ImageCropper
 {
-    class CroppingRectangle
+    internal class CroppingRectangle
     {
-        const float MINIMUM = 100;   // pixels width or height
+        private const float MINIMUM = 100;   // pixels width or height
 
-        SKRect maxRect;             // generally the size of the bitmap
-        float? aspectRatio;
+        private SKRect maxRect;             // generally the size of the bitmap
+        private readonly float? aspectRatio;
 
         public CroppingRectangle(SKRect maxRect, float? aspectRatio = null)
         {
@@ -46,19 +46,13 @@ namespace Kouch.App.ImageCropper
 
         public SKRect Rect { set; get; }
 
-        public SKPoint[] Corners
-        {
-            get
-            {
-                return new SKPoint[]
+        public SKPoint[] Corners => new SKPoint[]
                 {
                     new SKPoint(Rect.Left, Rect.Top),
                     new SKPoint(Rect.Right, Rect.Top),
                     new SKPoint(Rect.Right, Rect.Bottom),
                     new SKPoint(Rect.Left, Rect.Bottom)
                 };
-            }
-        }
 
         public int HitTest(SKPoint point, float radius)
         {

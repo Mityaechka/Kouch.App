@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace Kouch.App.Views.Components
 {
@@ -17,12 +14,14 @@ namespace Kouch.App.Views.Components
 
         private static void OnIsVisibleChanged(BindableObject bindable, object oldvalue, object newvalue)
         {
-            var item = bindable as VisibleToolbarItem;
+            VisibleToolbarItem item = bindable as VisibleToolbarItem;
 
             if (item == null || item.Parent == null)
+            {
                 return;
+            }
 
-            var toolbarItems = ((ContentPage)item.Parent).ToolbarItems;
+            System.Collections.Generic.IList<ToolbarItem> toolbarItems = ((ContentPage)item.Parent).ToolbarItems;
 
             if ((bool)newvalue && !toolbarItems.Contains(item))
             {

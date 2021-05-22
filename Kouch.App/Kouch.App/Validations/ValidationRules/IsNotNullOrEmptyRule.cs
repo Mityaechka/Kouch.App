@@ -2,7 +2,7 @@
 {
     public class IsNotNullOrEmptyRule : ValidationRule
     {
-        public IsNotNullOrEmptyRule(string validationMessage):base(validationMessage)
+        public IsNotNullOrEmptyRule(string validationMessage) : base(validationMessage)
         {
         }
 
@@ -14,7 +14,7 @@
                 return false;
             }
 
-            var str = value as string;
+            string str = value as string;
 
             return !string.IsNullOrWhiteSpace(str);
         }
@@ -34,7 +34,7 @@
             {
                 return false;
             }
-           if(typeof(string)!= value.GetType())
+            if (typeof(string) != value.GetType())
             {
                 return false;
             }

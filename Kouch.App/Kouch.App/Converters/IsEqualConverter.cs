@@ -9,7 +9,7 @@ namespace Kouch.App.Converters
         public object Value { get; set; }
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            return value.ToString()==Value.ToString();
+            return value.ToString() == Value.ToString();
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

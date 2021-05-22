@@ -5,7 +5,7 @@ using Xamarin.Forms;
 
 namespace Kouch.App.Converters
 {
-    public class ValueConverterGroup : List<IValueConverter>,IValueConverter
+    public class ValueConverterGroup : List<IValueConverter>, IValueConverter
     {
         public object Convert(object value, Type targetType, object parameter, System.Globalization.CultureInfo culture)
         {

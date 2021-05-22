@@ -2,7 +2,6 @@ C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\bin\Release\netstandar
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\bin\Release\netstandard2.1\Kouch.App.dll
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\bin\Release\netstandard2.1\ref\Kouch.App.dll
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\bin\Release\netstandard2.1\Kouch.App.pdb
-C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\obj\Release\netstandard2.1\Kouch.App.csprojAssemblyReference.cache
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\obj\Release\netstandard2.1\App.xaml.g.cs
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\obj\Release\netstandard2.1\Views\Components\CategorySelectorComponent.xaml.g.cs
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App\obj\Release\netstandard2.1\Views\Components\CommentElement.xaml.g.cs

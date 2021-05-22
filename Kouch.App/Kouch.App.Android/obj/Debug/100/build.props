@@ -1,11 +1,11 @@
 bundleassemblies=false
-aotassemblies=true
+aotassemblies=false
 androidaddkeepalives=
-androidaotmode=normal
+androidaotmode=none
 androidembedprofilers=
-androidenableprofiledaot=true
+androidenableprofiledaot=false
 androiddextool=d8
-androidlinktool=
+androidlinktool=r8
 androidpackageformat=apk
 embedassembliesintoapk=false
 androidlinkmode=none

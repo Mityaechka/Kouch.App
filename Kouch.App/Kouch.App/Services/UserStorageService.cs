@@ -2,7 +2,7 @@
 
 namespace Kouch.App.Models
 {
-    
+
     public class UserStorageService
     {
         public delegate void UserChangeEvent(User u);

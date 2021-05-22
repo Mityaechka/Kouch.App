@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Kouch.App.Entities
+﻿namespace Kouch.App.Entities
 {
     public class LoginRequestModel
     {
-        public string Email{ get; set; }
+        public string Email { get; set; }
         public string Password { get; set; }
     }
     public class LoginResponseModel

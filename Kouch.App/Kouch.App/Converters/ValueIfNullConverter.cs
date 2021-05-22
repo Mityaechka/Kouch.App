@@ -9,7 +9,7 @@ namespace Kouch.App.Converters
         public object Value { get; set; }
         public object Convert(object value, Type targetType, object parameter, CultureInfo culture)
         {
-            return value??Value;
+            return value ?? Value;
         }
 
         public object ConvertBack(object value, Type targetType, object parameter, CultureInfo culture)

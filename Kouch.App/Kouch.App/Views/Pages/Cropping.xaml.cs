@@ -3,9 +3,6 @@ using SkiaSharp;
 using SkiaSharp.Views.Forms;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Xamarin.Essentials;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -15,40 +12,40 @@ namespace Kouch.App.Views.Pages
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Cropping : ContentPage
     {
-        PhotoCropperCanvasView photoCropper;
-        SKBitmap croppedBitmap;
+        private PhotoCropperCanvasView photoCropper;
+        private SKBitmap croppedBitmap;
 
         public Cropping()
         {
             InitializeComponent();
             Init();
-           
+
         }
         public async void Init()
         {
             try
             {
-                var customFileType =
+                FilePickerFileType customFileType =
                 new FilePickerFileType(new Dictionary<DevicePlatform, IEnumerable<string>>
                 {
                     { DevicePlatform.Android, new[] { "*/*" } }
                 });
-                var options = new PickOptions
+                PickOptions options = new PickOptions
                 {
                     PickerTitle = "Please select a comic file",
                     FileTypes = customFileType,
                 };
 
-                var result = await FilePicker.PickAsync(options);
+                FileResult result = await FilePicker.PickAsync(options);
                 if (result != null)
                 {
-                    var Text = $"File Name: {result.FileName}";
+                    string Text = $"File Name: {result.FileName}";
                     if (result.FileName.EndsWith("jpg", StringComparison.OrdinalIgnoreCase) ||
                         result.FileName.EndsWith("png", StringComparison.OrdinalIgnoreCase))
                     {
 
-                        var stream = await result.OpenReadAsync();
-                        var Image = ImageSource.FromStream(() => stream);
+                        System.IO.Stream stream = await result.OpenReadAsync();
+                        ImageSource Image = ImageSource.FromStream(() => stream);
 
                         SKBitmap bitmap = SKBitmap.Decode(stream);
 
@@ -58,12 +55,13 @@ namespace Kouch.App.Views.Pages
                 }
 
             }
-            catch (Exception ex)
+            catch (Exception)
             {
 
             }
         }
-        void OnDoneButtonClicked(object sender, EventArgs args)
+
+        private void OnDoneButtonClicked(object sender, EventArgs args)
         {
             croppedBitmap = photoCropper.CroppedBitmap;
 
@@ -72,7 +70,7 @@ namespace Kouch.App.Views.Pages
             Content = canvasView;
         }
 
-        void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
+        private void OnCanvasViewPaintSurface(object sender, SKPaintSurfaceEventArgs args)
         {
             SKImageInfo info = args.Info;
             SKSurface surface = args.Surface;

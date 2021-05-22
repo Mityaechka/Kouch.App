@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Kouch.App.Entities
+﻿namespace Kouch.App.Entities
 {
     public class Service
     {
@@ -13,11 +9,17 @@ namespace Kouch.App.Entities
     }
     public class ServiceDescription
     {
-        public string Name { get; 
-            set; }
+        public string Name
+        {
+            get;
+            set;
+        }
         public string Description { get; set; }
-        public Language Language { get; 
-            set; }
+        public Language Language
+        {
+            get;
+            set;
+        }
     }
     public class Language
     {
@@ -26,7 +28,7 @@ namespace Kouch.App.Entities
     }
     public enum ServiceType
     {
-        Service=1,
+        Service = 1,
         Item = 2
     }
     public class ServiceTypeDisplay

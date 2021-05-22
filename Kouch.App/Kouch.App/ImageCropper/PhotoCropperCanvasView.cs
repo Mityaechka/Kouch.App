@@ -5,34 +5,34 @@ using System.Collections.Generic;
 
 namespace Kouch.App.ImageCropper
 {
-    class PhotoCropperCanvasView : SKCanvasView
+    internal class PhotoCropperCanvasView : SKCanvasView
     {
-        const int CORNER = 50;      // pixel length of cropper corner
-        const int RADIUS = 100;     // pixel radius of touch hit-test
+        private const int CORNER = 50;      // pixel length of cropper corner
+        private const int RADIUS = 100;     // pixel radius of touch hit-test
 
-        SKBitmap bitmap;
-        CroppingRectangle croppingRect;
-        SKMatrix inverseBitmapMatrix;
+        private readonly SKBitmap bitmap;
+        private readonly CroppingRectangle croppingRect;
+        private SKMatrix inverseBitmapMatrix;
 
         // Touch tracking 
-        TouchEffect touchEffect = new TouchEffect();
-        struct TouchPoint
+        private readonly TouchEffect touchEffect = new TouchEffect();
+
+        private struct TouchPoint
         {
             public int CornerIndex { set; get; }
             public SKPoint Offset { set; get; }
         }
 
-        Dictionary<long, TouchPoint> touchPoints = new Dictionary<long, TouchPoint>();
+        private readonly Dictionary<long, TouchPoint> touchPoints = new Dictionary<long, TouchPoint>();
 
         // Drawing objects
-        SKPaint cornerStroke = new SKPaint
+        private readonly SKPaint cornerStroke = new SKPaint
         {
             Style = SKPaintStyle.Stroke,
             Color = SKColors.White,
             StrokeWidth = 10
         };
-
-        SKPaint edgeStroke = new SKPaint
+        private readonly SKPaint edgeStroke = new SKPaint
         {
             Style = SKPaintStyle.Stroke,
             Color = SKColors.White,
@@ -46,7 +46,7 @@ namespace Kouch.App.ImageCropper
             SKRect bitmapRect = new SKRect(0, 0, bitmap.Width, bitmap.Height);
             croppingRect = new CroppingRectangle(bitmapRect, aspectRatio);
 
-            touchEffect.TouchAction +=(s,e)=> OnTouchEffectTouchAction(s,e);
+            touchEffect.TouchAction += (s, e) => OnTouchEffectTouchAction(s, e);
         }
 
         public SKBitmap CroppedBitmap
@@ -127,6 +127,7 @@ namespace Kouch.App.ImageCropper
             // Invert the transform for touch tracking
             bitmapScaleMatrix.TryInvert(out inverseBitmapMatrix);
         }
+
         //public class TouchActionEventArgs : EventArgs
         //{
         //    public TouchActionEventArgs(long id, TouchActionType type, Point location, bool isInContact)
@@ -145,7 +146,7 @@ namespace Kouch.App.ImageCropper
 
         //    public bool IsInContact { private set; get; }
         //}
-        void OnTouchEffectTouchAction(object sender, TouchActionEventArgs args)
+        private void OnTouchEffectTouchAction(object sender, TouchActionEventArgs args)
         {
             SKPoint pixelLocation = ConvertToPixel(args.Location);
             SKPoint bitmapLocation = inverseBitmapMatrix.MapPoint(pixelLocation);
@@ -191,7 +192,7 @@ namespace Kouch.App.ImageCropper
             }
         }
 
-        SKPoint ConvertToPixel(Xamarin.Forms.Point pt)
+        private SKPoint ConvertToPixel(Xamarin.Forms.Point pt)
         {
             return new SKPoint((float)(CanvasSize.Width * pt.X / Width),
                                 (float)(CanvasSize.Height * pt.Y / Height));

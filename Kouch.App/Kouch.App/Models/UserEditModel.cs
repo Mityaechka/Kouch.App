@@ -1,14 +1,11 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace Kouch.App.Models
 {
     public class UserEditModel
     {
         [JsonProperty("first_name", NullValueHandling = NullValueHandling.Ignore)]
-        public string  FirstName { get; set; }
+        public string FirstName { get; set; }
         [JsonProperty("last_name", NullValueHandling = NullValueHandling.Ignore)]
         public string LastName { get; set; }
         [JsonProperty("country", NullValueHandling = NullValueHandling.Ignore)]

@@ -14,22 +14,22 @@
         <ScrollView>
             <StackLayout>
                 <StackLayout VerticalOptions="StartAndExpand">
-                    <StackLayout Padding="10">
-                        <Frame CornerRadius="100"
-                               HorizontalOptions="Center">
-                            <Image HeightRequest="100"
-                                   WidthRequest="100"
-                                   Source="{Binding User.Avatar,Converter={StaticResource emptyAvatar}}">
-                                <Image.GestureRecognizers>
-                                    <TapGestureRecognizer
-                                            Command="{Binding ChangeAvatarImageCommand}"
-                                                          NumberOfTapsRequired="1" />
-                                </Image.GestureRecognizers>
-                            </Image>
-                        </Frame>
-                        <Label Text="{Binding User.FirstName,Converter={StaticResource newUserFirstName}}"
-                               HorizontalTextAlignment="Center" />
-                    </StackLayout>
+                    <Frame CornerRadius="50"
+                           HeightRequest="100"
+                           WidthRequest="100"
+                           HorizontalOptions="Center"
+                           Padding="0"
+                           IsClippedToBounds="True">
+                        <Image Source="{Binding User.Avatar,Converter={StaticResource emptyAvatar}}"
+                               HorizontalOptions="Center"
+                               VerticalOptions="Center">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer
+                                        Command="{Binding ChangeAvatarImageCommand}"
+                                                      NumberOfTapsRequired="1" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Frame>
                     <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />
@@ -47,6 +47,36 @@
                                 Grid.Column="1"
                                 Grid.Row="0" />
                     </Grid>
+                    <!--<xct:TabView TabStripPlacement="Bottom"
+                                 TabStripBackgroundColor="Blue"
+                                 TabStripHeight="60"
+                                 TabIndicatorColor="Yellow"
+                                 TabContentBackgroundColor="Yellow">
+                        <xct:TabViewItem Icon="triangle.png"
+                                         Text="Tab 1"
+                                         TextColor="White"
+                                         TextColorSelected="Yellow"
+                                         FontSize="12">
+                            <Grid BackgroundColor="Gray">
+                                <Label
+                                        HorizontalOptions="Center"
+                                       VerticalOptions="Center"
+                                       Text="TabContent1" />
+                            </Grid>
+                        </xct:TabViewItem>
+                        <xct:TabViewItem Icon="circle.png"
+                                         Text="Tab 2"
+                                         TextColor="White"
+                                         TextColorSelected="Yellow"
+                                         FontSize="12">
+                            <Grid>
+                                <Label
+                                        HorizontalOptions="Center"
+                                       VerticalOptions="Center"
+                                       Text="TabContent2" />
+                            </Grid>
+                        </xct:TabViewItem>
+                    </xct:TabView>-->
                     <Label Text="Персональные данные"
                            HorizontalTextAlignment="Center"
                            FontSize="Title" />

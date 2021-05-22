@@ -12,7 +12,7 @@ namespace Kouch.App.Services
     {
         private JObject _secrets;
 
-        private string currentLocalization;
+        private readonly string currentLocalization;
         private static LocalizationService _instance;
 
         private const string Namespace = "Kouch.App";
@@ -33,7 +33,7 @@ namespace Kouch.App.Services
         }
         private LocalizationService()
         {
-            
+
             currentLocalization = CrossSettings.Current.GetValueOrDefault("Locale", "ru");
             LoadTranslation();
         }
@@ -41,18 +41,18 @@ namespace Kouch.App.Services
         {
             try
             {
-                var t = System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceNames();
-                var assembly = IntrospectionExtensions.GetTypeInfo(typeof(AppSettingsService)).Assembly;
-                var path = $"{Namespace}.Localization.localization-{currentLocalization}.json";
-                var stream = assembly.GetManifestResourceStream(path);
+                string[] t = System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceNames();
+                Assembly assembly = IntrospectionExtensions.GetTypeInfo(typeof(AppSettingsService)).Assembly;
+                string path = $"{Namespace}.Localization.localization-{currentLocalization}.json";
+                Stream stream = assembly.GetManifestResourceStream(path);
 
-                using (var reader = new StreamReader(stream))
+                using (StreamReader reader = new StreamReader(stream))
                 {
-                    var json = reader.ReadToEnd();
+                    string json = reader.ReadToEnd();
                     _secrets = JObject.Parse(json);
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 Debug.WriteLine("Unable to load secrets file");
             }
@@ -68,7 +68,7 @@ namespace Kouch.App.Services
                     {
                         return "Translate Error";
                     }
-                    var path = name.Split('_');
+                    string[] path = name.Split('_');
 
                     JToken node = _secrets[path[0]];
                     for (int index = 1; index < path.Length; index++)

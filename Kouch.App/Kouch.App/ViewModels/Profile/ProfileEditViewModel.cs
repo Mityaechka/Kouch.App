@@ -5,11 +5,8 @@ using Kouch.App.Services;
 using Kouch.App.Validations;
 using Kouch.App.Views.Modals;
 using Rg.Plugins.Popup.Extensions;
-using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using Xamarin.Forms;
@@ -43,7 +40,7 @@ namespace Kouch.App.ViewModels
 
         public ValidationCollection Validities
         {
-            get { return validities; }
+            get => validities;
             set
             {
                 validities = value;
@@ -156,10 +153,14 @@ namespace Kouch.App.ViewModels
             };
 
             Vk = new ValidatableObject<string>(this) {
-            new IsNullOrRule(new IsUrl("Укажите ссылку на Вашу страницу"))
+                new IsNullOrRule(new IsUrl("Укажите ссылку на Вашу страницу"))
             };
-            Facebook = new ValidatableObject<string>(this);
-            Instagram = new ValidatableObject<string>(this);
+            Facebook = new ValidatableObject<string>(this) {
+                new IsNullOrRule(new IsUrl("Укажите ссылку на Вашу страницу")) 
+            };
+            Instagram = new ValidatableObject<string>(this){
+                 new IsNullOrRule(new IsUrl("Укажите ссылку на Вашу страницу")) 
+            };
 
             Validities = new ValidationCollection(nameof(Validities), this)
             {
@@ -180,20 +181,21 @@ namespace Kouch.App.ViewModels
             Instagram.Value = user.Instagram;
             Facebook.Value = user.Facebook;
             Validities.UpdateAll();
+
             Init();
+
             this.user = user;
         }
         private async void Init()
         {
-            //await Navigation.PushPopupAsync(new LoadingModal());
             IsCountriesLoading = true;
             ApiResnonse<PaginationModel<Country>> countriesResponse = await ApLocationService.Instance.GetCountries();
             IsCountriesLoading = false;
-            //await Navigation.PopPopupAsync();
+
             if (countriesResponse.IsSuccsess)
             {
                 Countries.Clear();
-                foreach (var item in countriesResponse.Result.Data)
+                foreach (Country item in countriesResponse.Result.Data)
                 {
                     Countries.Add(item);
                 }
@@ -231,7 +233,7 @@ namespace Kouch.App.ViewModels
         private async Task EditProfile()
         {
             await Navigation.PushPopupAsync(new LoadingModal());
-            var editResponse = await ApiUserService.Instance.EditProfile(new UserEditModel
+            ApiResnonse editResponse = await ApiUserService.Instance.EditProfile(new UserEditModel
             {
                 FirstName = FirstName.Value,
                 LastName = SecondName.Value,

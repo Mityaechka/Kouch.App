@@ -13,10 +13,12 @@ namespace Kouch.App.Converters
             if (value == null)
             {
                 return true;
-            }else if (value.GetType() != typeof(IEnumerable<object>))
+            }
+            else if (value.GetType() != typeof(IEnumerable<object>))
             {
                 return true;
-            }else
+            }
+            else
             {
                 IEnumerable<object> list = (IEnumerable<object>)value;
                 if (list.Count() == 0)

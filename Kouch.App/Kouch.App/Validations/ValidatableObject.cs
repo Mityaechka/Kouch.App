@@ -3,7 +3,6 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 
 namespace Kouch.App.Validations
 {
@@ -20,10 +19,7 @@ namespace Kouch.App.Validations
 
         public List<string> Errors
         {
-            get
-            {
-                return _errors;
-            }
+            get => _errors;
             set
             {
                 _errors = value;
@@ -34,13 +30,10 @@ namespace Kouch.App.Validations
         public string FirstError => Errors?.FirstOrDefault();
         public T Value
         {
-            get
-            {
-                return _value;
-            }
+            get => _value;
             set
             {
-                if (!IsTouch&&value!=null)
+                if (!IsTouch && value != null)
                 {
                     IsTouch = true;
                 }
@@ -63,10 +56,7 @@ namespace Kouch.App.Validations
 
         public bool IsValid
         {
-            get
-            {
-                return _isValid;
-            }
+            get => _isValid;
             set
             {
                 _isValid = value;
@@ -110,7 +100,7 @@ namespace Kouch.App.Validations
 
             ValidationCollection?.Notify();
 
-            return this.IsValid;
+            return IsValid;
         }
 
         public IEnumerator<ValidationRule> GetEnumerator()
@@ -152,7 +142,7 @@ namespace Kouch.App.Validations
         public void UpdateAll()
         {
             validatableObjects.ForEach(x => x?.Validate());
-            
+
         }
         public void Add(IValidity validity)
         {

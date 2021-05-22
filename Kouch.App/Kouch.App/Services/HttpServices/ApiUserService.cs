@@ -1,9 +1,7 @@
-﻿using System.Collections.Generic;
-using System.IO;
+﻿using Kouch.App.Entities;
+using Kouch.App.Models;
 using System.Net.Http;
 using System.Threading.Tasks;
-using Kouch.App.Entities;
-using Kouch.App.Models;
 
 namespace Kouch.App.Services
 {
@@ -40,8 +38,10 @@ namespace Kouch.App.Services
         }
         public async Task<ApiResnonse> EditAvatar(byte[] avatar)
         {
-            MultipartFormDataContent dataContent = new MultipartFormDataContent();
-            dataContent.Add(new ByteArrayContent(avatar), "image", "avatar.png");
+            MultipartFormDataContent dataContent = new MultipartFormDataContent
+            {
+                { new ByteArrayContent(avatar), "image", "avatar.png" }
+            };
             return await HttpBaseService.Instance.SendContent(HttpMethod.Post, "users/me/edit/upload-profile-avatar/", dataContent);
         }
         public async Task<ApiResnonse> EditProfile(UserEditModel userEditModel)

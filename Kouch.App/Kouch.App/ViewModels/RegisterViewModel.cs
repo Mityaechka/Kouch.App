@@ -7,10 +7,7 @@ using Kouch.App.Views.Modals;
 using Kouch.App.Views.Pages;
 using Plugin.Toast;
 using Rg.Plugins.Popup.Extensions;
-using System;
-using System.Collections.Generic;
 using System.Collections.ObjectModel;
-using System.Text;
 using System.Threading.Tasks;
 using System.Timers;
 using System.Windows.Input;
@@ -20,7 +17,7 @@ namespace Kouch.App.ViewModels
 {
     public partial class RegisterViewModel : AsyncBaseViewModel
     {
-        private ApiAuthService apiAuthServicev = ApiAuthService.Instance;
+        private readonly ApiAuthService apiAuthServicev = ApiAuthService.Instance;
         private Timer timer;
         private int sendCodeSeconds;
 
@@ -181,7 +178,7 @@ namespace Kouch.App.ViewModels
             CurrentState = States[0];
             SendSmsCodeCommand = new Command(async () => await SendSmsCode(), () => EmailValidationCollection.IsValid);
             ReturnEmailInputCommand = new Command(async () => await ReturnEmailInput());
-            VerifyAccountCommand = new Command(async () => await VerifyAccount(),()=>CodeValidationCollection.IsValid);
+            VerifyAccountCommand = new Command(async () => await VerifyAccount(), () => CodeValidationCollection.IsValid);
             ResendVerificationCodeCommand = new Command(async () => await ResendSmsCode());
 
             EmailValidationCollection.UpdateAll();
@@ -190,7 +187,7 @@ namespace Kouch.App.ViewModels
         private async Task SendSmsCode()
         {
             await Navigation.PushPopupAsync(new LoadingModal());
-            var registerResponse = await apiAuthServicev.Register(new RegisterEmailModel
+            ApiResnonse registerResponse = await apiAuthServicev.Register(new RegisterEmailModel
             {
                 Email = Email.Value,
                 Password = Password.Value,
@@ -214,7 +211,7 @@ namespace Kouch.App.ViewModels
         private async Task ResendSmsCode()
         {
             await Navigation.PushPopupAsync(new LoadingModal());
-            var registerResponse = await apiAuthServicev.ResendVerificationCode(Email.Value);
+            ApiResnonse registerResponse = await apiAuthServicev.ResendVerificationCode(Email.Value);
             await Navigation.PopPopupAsync();
 
             if (registerResponse.IsSuccsess)
@@ -230,19 +227,19 @@ namespace Kouch.App.ViewModels
         private async Task VerifyAccount()
         {
             await Navigation.PushPopupAsync(new LoadingModal());
-            var verifyResponse = await apiAuthServicev.VerifyAccount(new RegisterCodeModel
+            ApiResnonse verifyResponse = await apiAuthServicev.VerifyAccount(new RegisterCodeModel
             {
                 Code = code.Value,
                 Email = email.Value
             });
             if (verifyResponse.IsSuccsess)
             {
-                var loginResponse = await apiAuthServicev.Login(new LoginRequestModel
+                ApiResnonse<LoginResponseModel> loginResponse = await apiAuthServicev.Login(new LoginRequestModel
                 {
                     Email = Email.Value,
                     Password = Password.Value
                 });
-                
+
                 if (loginResponse.IsSuccsess)
                 {
                     TokenStorageService.Instance.SaveToken(loginResponse.Result.Tokens);
@@ -251,13 +248,13 @@ namespace Kouch.App.ViewModels
                         Email = Email.Value,
                         Password = Password.Value
                     });
-                    var userResponse = await ApiUserService.Instance.GetMe();
+                    ApiResnonse<User> userResponse = await ApiUserService.Instance.GetMe();
                     if (userResponse.IsSuccsess)
                     {
                         UserStorageService.Instance.User = userResponse.Result;
                     }
                     await Navigation.PopPopupAsync();
-                    App.Current.MainPage =new MainPage();
+                    App.Current.MainPage = new MainPage();
                 }
                 else
                 {
