@@ -363,3 +363,5 @@ MigrationBackup/
 FodyWeavers.xsd
 
 /Kouch.App/Kouch.App.Android/bin/*
+Kouch.App/Kouch.App.Android/bin/*
+/Kouch.App/Kouch.App.Android/bin/
