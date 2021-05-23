@@ -2,6 +2,15 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.1": {
+      "CarouselView.FormsPlugin/5.2.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/CarouselView.FormsPlugin.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/CarouselView.FormsPlugin.Abstractions.dll": {}
+        }
+      },
       "Com.Airbnb.Xamarin.Forms.Lottie/4.0.9": {
         "type": "package",
         "dependencies": {
@@ -206,6 +215,19 @@
           "lib/netstandard2.0/Plugin.Media.dll": {}
         }
       },
+      "Xam.Plugin.TabView/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "CarouselView.FormsPlugin": "5.2.0",
+          "Xamarin.Forms": "3.1.0.583944"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xam.Plugin.TabView.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xam.Plugin.TabView.dll": {}
+        }
+      },
       "Xam.Plugins.Settings/3.1.1": {
         "type": "package",
         "dependencies": {
@@ -294,6 +316,28 @@
     }
   },
   "libraries": {
+    "CarouselView.FormsPlugin/5.2.0": {
+      "sha512": "h849lqz0wvmpyiXqCrN7EW+cCGqK5chcefCfS55CkoGMMQx238QWNknUTOl/CvIdZ4bgs0Oztb7kamYXDlQ5mQ==",
+      "type": "package",
+      "path": "carouselview.formsplugin/5.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "carouselview.formsplugin.5.2.0.nupkg.sha512",
+        "carouselview.formsplugin.nuspec",
+        "lib/MonoAndroid/CarouselView.FormsPlugin.Abstractions.dll",
+        "lib/MonoAndroid/CarouselView.FormsPlugin.Android.dll",
+        "lib/UAP10/CarouselView.FormsPlugin.Abstractions.dll",
+        "lib/UAP10/CarouselView.FormsPlugin.UWP.dll",
+        "lib/UAP10/CarouselView.FormsPlugin.UWP.pri",
+        "lib/UAP10/CarouselView.FormsPlugin.UWP/CarouselView.FormsPlugin.UWP.xr.xml",
+        "lib/UAP10/FlipViewControl.xbf",
+        "lib/Xamarin.iOS10/CarouselView.FormsPlugin.Abstractions.dll",
+        "lib/Xamarin.iOS10/CarouselView.FormsPlugin.iOS.dll",
+        "lib/netstandard2.0/CarouselView.FormsPlugin.Abstractions.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+Xamarin.iOS10/CarouselView.FormsPlugin.Abstractions.dll"
+      ]
+    },
     "Com.Airbnb.Xamarin.Forms.Lottie/4.0.9": {
       "sha512": "aMWf7ej3usaCljPig8Hq2pFzleKOlqL+Dm1Hl0rCc32CMFapnunOC/970AUkx2YaplN+IQcXdsD9y0ngQW+w3A==",
       "type": "package",
@@ -1054,6 +1098,18 @@
         "xam.plugin.media.nuspec"
       ]
     },
+    "Xam.Plugin.TabView/1.1.1": {
+      "sha512": "8NEOCOWm8DHFjQIf6F0lgQuK7BDaB7hzFOJOYzrrEIoKDo0F4aSUQ6RnKHn13kIQR9HtB9871XeQWXW+S2iv4Q==",
+      "type": "package",
+      "path": "xam.plugin.tabview/1.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Xam.Plugin.TabView.dll",
+        "xam.plugin.tabview.1.1.1.nupkg.sha512",
+        "xam.plugin.tabview.nuspec"
+      ]
+    },
     "Xam.Plugins.Settings/3.1.1": {
       "sha512": "EQEYQJ64ZLqui5GWkLMavgqitHxwUHZHryTzUD1021UBuz1XwDSjPL45W0K4pPXjz9oKbg7YpRXKPR1luPr/5Q==",
       "type": "package",
@@ -1511,6 +1567,7 @@
       "XF.Material >= 1.7.8",
       "Xam.Plugin.DeviceInfo >= 4.1.1",
       "Xam.Plugin.Media >= 5.0.1",
+      "Xam.Plugin.TabView >= 1.1.1",
       "Xam.Plugins.Settings >= 3.1.1",
       "Xamarin.CommunityToolkit >= 1.1.0",
       "Xamarin.Essentials >= 1.6.1",
@@ -1601,6 +1658,10 @@
           "Xam.Plugin.Media": {
             "target": "Package",
             "version": "[5.0.1, )"
+          },
+          "Xam.Plugin.TabView": {
+            "target": "Package",
+            "version": "[1.1.1, )"
           },
           "Xam.Plugins.Settings": {
             "target": "Package",

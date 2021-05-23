@@ -8,6 +8,8 @@ using Android.Widget;
 using Android.OS;
 using Xamarin.Forms;
 using Plugin.Toast;
+using CarouselView.FormsPlugin.Android;
+
 namespace Kouch.App.Droid
 {
     [Activity(Label = "Kouch.App", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize )]
@@ -24,6 +26,7 @@ namespace Kouch.App.Droid
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             XF.Material.Droid.Material.Init(this, savedInstanceState);
             //Stormlion.ImageCropper.Droid.Platform.Init();
+            CarouselViewRenderer.Init();
             global::Xamarin.Forms.FormsMaterial.Init(this,savedInstanceState);
             Rg.Plugins.Popup.Popup.Init(this);
             LoadApplication(new App());

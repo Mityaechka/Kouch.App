@@ -4,6 +4,7 @@
              xmlns:viewmodels="clr-namespace:Kouch.App.ViewModels"
              xmlns:material="clr-namespace:XF.Material.Forms.UI;assembly=XF.Material"
              xmlns:xct="http://xamarin.com/schemas/2020/toolkit"
+             xmlns:tabview="clr-namespace:Xam.Plugin.TabView;assembly=Xam.Plugin.TabView"
              x:DataType="viewmodels:ProfileViewViewModel"
              x:Class="Kouch.App.Views.Pages.ProfileViewPage"
              Title="Мой профиль">
@@ -13,7 +14,7 @@
                  BackgroundColor="White">
         <ScrollView>
             <StackLayout>
-                <StackLayout VerticalOptions="StartAndExpand">
+                <StackLayout VerticalOptions="Start">
                     <Frame CornerRadius="50"
                            HeightRequest="100"
                            WidthRequest="100"
@@ -30,7 +31,7 @@
                             </Image.GestureRecognizers>
                         </Image>
                     </Frame>
-                    <Grid>
+                    <!--<Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />
                             <ColumnDefinition Width="*" />
@@ -46,62 +47,49 @@
                                 Style="{StaticResource PrimaryButton}"
                                 Grid.Column="1"
                                 Grid.Row="0" />
-                    </Grid>
-                    <!--<xct:TabView TabStripPlacement="Bottom"
-                                 TabStripBackgroundColor="Blue"
-                                 TabStripHeight="60"
-                                 TabIndicatorColor="Yellow"
-                                 TabContentBackgroundColor="Yellow">
-                        <xct:TabViewItem Icon="triangle.png"
-                                         Text="Tab 1"
-                                         TextColor="White"
-                                         TextColorSelected="Yellow"
-                                         FontSize="12">
-                            <Grid BackgroundColor="Gray">
-                                <Label
-                                        HorizontalOptions="Center"
-                                       VerticalOptions="Center"
-                                       Text="TabContent1" />
-                            </Grid>
-                        </xct:TabViewItem>
-                        <xct:TabViewItem Icon="circle.png"
-                                         Text="Tab 2"
-                                         TextColor="White"
-                                         TextColorSelected="Yellow"
-                                         FontSize="12">
-                            <Grid>
-                                <Label
-                                        HorizontalOptions="Center"
-                                       VerticalOptions="Center"
-                                       Text="TabContent2" />
-                            </Grid>
-                        </xct:TabViewItem>
-                    </xct:TabView>-->
-                    <Label Text="Персональные данные"
-                           HorizontalTextAlignment="Center"
-                           FontSize="Title" />
-                    <Label  Text="{Binding User.Email,StringFormat='Почта: {0}'}"
-                            FontSize="Body" />
-                    <Label FontSize="Body"
-                           Text="{Binding User.FullName,StringFormat='Имя: {0}'}" />
-                    <Label Text="{Binding User.FullAddress,StringFormat='Адрес: {0}'}"
-                           FontSize="Body" />
-                    <Label Text="Соц. сети"
-                           HorizontalTextAlignment="Center"
-                           FontSize="Title" />
-                    <Label Text="{Binding User.Vk,StringFormat='VK: {0}'}"
-                           IsVisible="{Binding User.Vk,Converter={StaticResource isNotNullOrEmpty}}" />
-                    <Label Text="{Binding User.Instagram,StringFormat='Instagram: {0}'}"
-                           IsVisible="{Binding User.Instagram,Converter={StaticResource isNotNullOrEmpty}}" />
-                    <Label Text="{Binding User.Facebook,StringFormat='Facebook: {0}'}"
-                           IsVisible="{Binding User.Facebook,Converter={StaticResource isNotNullOrEmpty}}" />
+                    </Grid>-->
+                    
                 </StackLayout>
-                
-
+                <StackLayout VerticalOptions="FillAndExpand"
+                             BackgroundColor="Black">
+                    <xct:TabView TabStripPlacement="Top"
+                                 VerticalOptions="FillAndExpand"
+                                 TabStripBackgroundColor="{StaticResource primaryLigth}"
+                                 TabStripHeight="60"
+                                 TabIndicatorColor="{StaticResource primaryDark}"
+                                 TabContentBackgroundColor="White" BackgroundColor="BurlyWood">
+                        <xct:TabViewItem Text="Персональные данные"
+                                         IsSelected="True"
+                                         TextColor="{StaticResource white}">
+                            <xct:TabViewItem.Content>
+                            <StackLayout>
+                                <Label  Text="{Binding User.Email,StringFormat='Почта: {0}'}"
+                                        FontSize="Body" />
+                                <Label FontSize="Body"
+                                       Text="{Binding User.FullName,StringFormat='Имя: {0}'}" />
+                                <Label Text="{Binding User.FullAddress,StringFormat='Адрес: {0}'}"
+                                       FontSize="Body" />
+                            </StackLayout>
+                            </xct:TabViewItem.Content>
+                        </xct:TabViewItem>
+                        <xct:TabViewItem Text="Контакты"
+                                         TextColor="{StaticResource white}">
+                            <StackLayout>
+                                <Label Text="{Binding User.Vk,StringFormat='VK: {0}'}"
+                                       IsVisible="{Binding User.Vk,Converter={StaticResource isNotNullOrEmpty}}" />
+                                <Label Text="{Binding User.Instagram,StringFormat='Instagram: {0}'}"
+                                       IsVisible="{Binding User.Instagram,Converter={StaticResource isNotNullOrEmpty}}" />
+                                <Label Text="{Binding User.Facebook,StringFormat='Facebook: {0}'}"
+                                       IsVisible="{Binding User.Facebook,Converter={StaticResource isNotNullOrEmpty}}" />
+                            </StackLayout>
+                        </xct:TabViewItem>
+                    </xct:TabView>
+                </StackLayout>
                 <Button Text="Редактировать"
                         Style="{StaticResource PrimaryButton}"
                         Command="{Binding EditProfileCommand}" />
             </StackLayout>
         </ScrollView>
     </RefreshView>
+    
 </ContentPage>

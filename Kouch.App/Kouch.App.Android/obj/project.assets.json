@@ -2,6 +2,23 @@
   "version": 3,
   "targets": {
     "MonoAndroid,Version=v10.0": {
+      "CarouselView.FormsPlugin/5.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.CirclePageIndicator": "1.0.2",
+          "Xamarin.Android.Support.v4": "25.4.0.2",
+          "Xamarin.Android.VerticalViewPager": "1.0.1",
+          "Xamarin.Forms": "2.5.0.121934"
+        },
+        "compile": {
+          "lib/MonoAndroid/CarouselView.FormsPlugin.Abstractions.dll": {},
+          "lib/MonoAndroid/CarouselView.FormsPlugin.Android.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid/CarouselView.FormsPlugin.Abstractions.dll": {},
+          "lib/MonoAndroid/CarouselView.FormsPlugin.Android.dll": {}
+        }
+      },
       "Com.Airbnb.Android.Lottie/3.6.1": {
         "type": "package",
         "dependencies": {
@@ -223,6 +240,19 @@
           "lib/monoandroid10.0/Plugin.Media.dll": {}
         }
       },
+      "Xam.Plugin.TabView/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "CarouselView.FormsPlugin": "5.2.0",
+          "Xamarin.Forms": "3.1.0.583944"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xam.Plugin.TabView.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xam.Plugin.TabView.dll": {}
+        }
+      },
       "Xam.Plugins.Settings/3.1.1": {
         "type": "package",
         "compile": {
@@ -232,6 +262,136 @@
         "runtime": {
           "lib/MonoAndroid10/Plugin.Settings.Abstractions.dll": {},
           "lib/MonoAndroid10/Plugin.Settings.dll": {}
+        }
+      },
+      "Xamarin.Android.CirclePageIndicator/1.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.v4": "23.3.0"
+        },
+        "compile": {
+          "lib/MonoAndroid/Com.ViewPagerIndicator.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid/Com.ViewPagerIndicator.dll": {}
+        }
+      },
+      "Xamarin.Android.Support.Annotations/25.4.0.2": {
+        "type": "package",
+        "compile": {
+          "lib/MonoAndroid70/Xamarin.Android.Support.Annotations.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid70/Xamarin.Android.Support.Annotations.dll": {}
+        }
+      },
+      "Xamarin.Android.Support.Compat/25.4.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Annotations": "[25.4.0.2]"
+        },
+        "compile": {
+          "lib/MonoAndroid70/Xamarin.Android.Support.Compat.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid70/Xamarin.Android.Support.Compat.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid70/_._": {}
+        }
+      },
+      "Xamarin.Android.Support.Core.UI/25.4.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Compat": "[25.4.0.2]"
+        },
+        "compile": {
+          "lib/MonoAndroid70/Xamarin.Android.Support.Core.UI.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid70/Xamarin.Android.Support.Core.UI.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid70/_._": {}
+        }
+      },
+      "Xamarin.Android.Support.Core.Utils/25.4.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Compat": "[25.4.0.2]"
+        },
+        "compile": {
+          "lib/MonoAndroid70/Xamarin.Android.Support.Core.Utils.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid70/Xamarin.Android.Support.Core.Utils.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid70/_._": {}
+        }
+      },
+      "Xamarin.Android.Support.Fragment/25.4.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Compat": "[25.4.0.2]",
+          "Xamarin.Android.Support.Core.UI": "[25.4.0.2]",
+          "Xamarin.Android.Support.Core.Utils": "[25.4.0.2]",
+          "Xamarin.Android.Support.Media.Compat": "[25.4.0.2]"
+        },
+        "compile": {
+          "lib/MonoAndroid70/Xamarin.Android.Support.Fragment.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid70/Xamarin.Android.Support.Fragment.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid70/_._": {}
+        }
+      },
+      "Xamarin.Android.Support.Media.Compat/25.4.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Compat": "[25.4.0.2]"
+        },
+        "compile": {
+          "lib/MonoAndroid70/Xamarin.Android.Support.Media.Compat.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid70/Xamarin.Android.Support.Media.Compat.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid70/_._": {}
+        }
+      },
+      "Xamarin.Android.Support.v4/25.4.0.2": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.Compat": "[25.4.0.2]",
+          "Xamarin.Android.Support.Core.UI": "[25.4.0.2]",
+          "Xamarin.Android.Support.Core.Utils": "[25.4.0.2]",
+          "Xamarin.Android.Support.Fragment": "[25.4.0.2]",
+          "Xamarin.Android.Support.Media.Compat": "[25.4.0.2]"
+        },
+        "compile": {
+          "lib/MonoAndroid70/Xamarin.Android.Support.v4.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid70/Xamarin.Android.Support.v4.dll": {}
+        },
+        "build": {
+          "build/MonoAndroid70/_._": {}
+        }
+      },
+      "Xamarin.Android.VerticalViewPager/1.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Android.Support.v4": "23.3.0"
+        },
+        "compile": {
+          "lib/MonoAndroid/Com.Android.DeskClock.dll": {}
+        },
+        "runtime": {
+          "lib/MonoAndroid/Com.Android.DeskClock.dll": {}
         }
       },
       "Xamarin.AndroidX.Activity/1.1.0.5": {
@@ -1260,6 +1420,7 @@
           "XF.Material": "1.7.8",
           "Xam.Plugin.DeviceInfo": "4.1.1",
           "Xam.Plugin.Media": "5.0.1",
+          "Xam.Plugin.TabView": "1.1.1",
           "Xam.Plugins.Settings": "3.1.1",
           "Xamarin.CommunityToolkit": "1.1.0",
           "Xamarin.Essentials": "1.6.1",
@@ -1276,6 +1437,28 @@
     }
   },
   "libraries": {
+    "CarouselView.FormsPlugin/5.2.0": {
+      "sha512": "h849lqz0wvmpyiXqCrN7EW+cCGqK5chcefCfS55CkoGMMQx238QWNknUTOl/CvIdZ4bgs0Oztb7kamYXDlQ5mQ==",
+      "type": "package",
+      "path": "carouselview.formsplugin/5.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "carouselview.formsplugin.5.2.0.nupkg.sha512",
+        "carouselview.formsplugin.nuspec",
+        "lib/MonoAndroid/CarouselView.FormsPlugin.Abstractions.dll",
+        "lib/MonoAndroid/CarouselView.FormsPlugin.Android.dll",
+        "lib/UAP10/CarouselView.FormsPlugin.Abstractions.dll",
+        "lib/UAP10/CarouselView.FormsPlugin.UWP.dll",
+        "lib/UAP10/CarouselView.FormsPlugin.UWP.pri",
+        "lib/UAP10/CarouselView.FormsPlugin.UWP/CarouselView.FormsPlugin.UWP.xr.xml",
+        "lib/UAP10/FlipViewControl.xbf",
+        "lib/Xamarin.iOS10/CarouselView.FormsPlugin.Abstractions.dll",
+        "lib/Xamarin.iOS10/CarouselView.FormsPlugin.iOS.dll",
+        "lib/netstandard2.0/CarouselView.FormsPlugin.Abstractions.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+Xamarin.iOS10/CarouselView.FormsPlugin.Abstractions.dll"
+      ]
+    },
     "Com.Airbnb.Android.Lottie/3.6.1": {
       "sha512": "rumzk30n7QQyoEWuOs/cYwODG2VhnyNvV81xLGlgyaFUF+6FJg+IMfZ2ce5UXPOysYx3FrZD6HZ7n3QsLiKDeg==",
       "type": "package",
@@ -1895,6 +2078,18 @@
         "xam.plugin.media.nuspec"
       ]
     },
+    "Xam.Plugin.TabView/1.1.1": {
+      "sha512": "8NEOCOWm8DHFjQIf6F0lgQuK7BDaB7hzFOJOYzrrEIoKDo0F4aSUQ6RnKHn13kIQR9HtB9871XeQWXW+S2iv4Q==",
+      "type": "package",
+      "path": "xam.plugin.tabview/1.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Xam.Plugin.TabView.dll",
+        "xam.plugin.tabview.1.1.1.nupkg.sha512",
+        "xam.plugin.tabview.nuspec"
+      ]
+    },
     "Xam.Plugins.Settings/3.1.1": {
       "sha512": "EQEYQJ64ZLqui5GWkLMavgqitHxwUHZHryTzUD1021UBuz1XwDSjPL45W0K4pPXjz9oKbg7YpRXKPR1luPr/5Q==",
       "type": "package",
@@ -1964,6 +2159,128 @@
         "readme.txt",
         "xam.plugins.settings.3.1.1.nupkg.sha512",
         "xam.plugins.settings.nuspec"
+      ]
+    },
+    "Xamarin.Android.CirclePageIndicator/1.0.2": {
+      "sha512": "KTebv8cI75vLIAAQcZWcMUc81L+0c/xAXVm45+FdLVgVihH6GlXkA049IN0A2OF7vMQ9ud/WxV7xBDkluuLUjg==",
+      "type": "package",
+      "path": "xamarin.android.circlepageindicator/1.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid/Com.ViewPagerIndicator.dll",
+        "xamarin.android.circlepageindicator.1.0.2.nupkg.sha512",
+        "xamarin.android.circlepageindicator.nuspec"
+      ]
+    },
+    "Xamarin.Android.Support.Annotations/25.4.0.2": {
+      "sha512": "4Gkj6OCOJO7jn4drGZxeCCaEVHOjUu0RzsEzZaAZJzrLNqEHqoYrKwIlbsecfEpjbAcyT77Sb8wkZnZNFPdlaA==",
+      "type": "package",
+      "path": "xamarin.android.support.annotations/25.4.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "lib/MonoAndroid70/Xamarin.Android.Support.Annotations.dll",
+        "xamarin.android.support.annotations.25.4.0.2.nupkg.sha512",
+        "xamarin.android.support.annotations.nuspec"
+      ]
+    },
+    "Xamarin.Android.Support.Compat/25.4.0.2": {
+      "sha512": "k+bZ2ArXV7x1U5xomEiCVRoWHAWr6VKhF6Ziqd1DdK4ZZ4W+J0Dsi5oR2QcQHhIodb7j7cfuDcBAEs0KYvOmuQ==",
+      "type": "package",
+      "path": "xamarin.android.support.compat/25.4.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/MonoAndroid70/Xamarin.Android.Support.Compat.targets",
+        "lib/MonoAndroid70/Xamarin.Android.Support.Compat.dll",
+        "xamarin.android.support.compat.25.4.0.2.nupkg.sha512",
+        "xamarin.android.support.compat.nuspec"
+      ]
+    },
+    "Xamarin.Android.Support.Core.UI/25.4.0.2": {
+      "sha512": "RKU0D2joAnk9bawGoS1/AGg+2CurKd4uK+ToYyueNN0iJTs3K/ZvnUGck8FGl6Iy8Hfy6NySv51ubMlFSXATuA==",
+      "type": "package",
+      "path": "xamarin.android.support.core.ui/25.4.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/MonoAndroid70/Xamarin.Android.Support.Core.UI.targets",
+        "lib/MonoAndroid70/Xamarin.Android.Support.Core.UI.dll",
+        "proguard/proguard.txt",
+        "xamarin.android.support.core.ui.25.4.0.2.nupkg.sha512",
+        "xamarin.android.support.core.ui.nuspec"
+      ]
+    },
+    "Xamarin.Android.Support.Core.Utils/25.4.0.2": {
+      "sha512": "ZF+yk8b1WVRfgmf3MNeUOVdd9Bq3EoIYsXjCW2sAouwbNsnPKyjwL91mYyVcoT5f8Sf0SL866GnBtRi14wQesQ==",
+      "type": "package",
+      "path": "xamarin.android.support.core.utils/25.4.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/MonoAndroid70/Xamarin.Android.Support.Core.Utils.targets",
+        "lib/MonoAndroid70/Xamarin.Android.Support.Core.Utils.dll",
+        "xamarin.android.support.core.utils.25.4.0.2.nupkg.sha512",
+        "xamarin.android.support.core.utils.nuspec"
+      ]
+    },
+    "Xamarin.Android.Support.Fragment/25.4.0.2": {
+      "sha512": "XBllQS9m18CvYj8Uzqr78p/9x2rUNOBMh/2PALayzXwhArCvXdE+pybzSi/+4jtcZc8w/06kWhqdXq/phrhBCw==",
+      "type": "package",
+      "path": "xamarin.android.support.fragment/25.4.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/MonoAndroid70/Xamarin.Android.Support.Fragment.targets",
+        "lib/MonoAndroid70/Xamarin.Android.Support.Fragment.dll",
+        "xamarin.android.support.fragment.25.4.0.2.nupkg.sha512",
+        "xamarin.android.support.fragment.nuspec"
+      ]
+    },
+    "Xamarin.Android.Support.Media.Compat/25.4.0.2": {
+      "sha512": "cnjIL1GoLUifD1TA3QigOn9R3yKoidzahlS5GQHVYhO3AoZ5mknqWiZ7IbU9lVFVlMbVvI65ecSiG5j4T2ufCg==",
+      "type": "package",
+      "path": "xamarin.android.support.media.compat/25.4.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/MonoAndroid70/Xamarin.Android.Support.Media.Compat.targets",
+        "lib/MonoAndroid70/Xamarin.Android.Support.Media.Compat.dll",
+        "xamarin.android.support.media.compat.25.4.0.2.nupkg.sha512",
+        "xamarin.android.support.media.compat.nuspec"
+      ]
+    },
+    "Xamarin.Android.Support.v4/25.4.0.2": {
+      "sha512": "Ui29//+zltXe4Z+OmzdwjLWRGdcmCAm4sklF/As/dEwALxur8vff7/C4rIm/khJNo1ZbeKYnVseaaia/TsZeTA==",
+      "type": "package",
+      "path": "xamarin.android.support.v4/25.4.0.2",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "THIRD-PARTY-NOTICES.txt",
+        "build/MonoAndroid70/Xamarin.Android.Support.v4.targets",
+        "lib/MonoAndroid70/Xamarin.Android.Support.v4.dll",
+        "xamarin.android.support.v4.25.4.0.2.nupkg.sha512",
+        "xamarin.android.support.v4.nuspec"
+      ]
+    },
+    "Xamarin.Android.VerticalViewPager/1.0.1": {
+      "sha512": "90gy22k7dMBxkNw21W1Z4lm+a6TyUVSU/QxTNXxAXHp9DEKKG/G4tKQadKQs/BZmHvhSuTxX5LjVBJUUVCiNoQ==",
+      "type": "package",
+      "path": "xamarin.android.verticalviewpager/1.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid/Com.Android.DeskClock.dll",
+        "xamarin.android.verticalviewpager.1.0.1.nupkg.sha512",
+        "xamarin.android.verticalviewpager.nuspec"
       ]
     },
     "Xamarin.AndroidX.Activity/1.1.0.5": {
@@ -3183,6 +3500,7 @@
       "Syncfusion.Xamarin.Core >= 19.1.0.64",
       "XF.Material >= 1.7.8",
       "Xam.Plugin.Media >= 5.0.1",
+      "Xam.Plugin.TabView >= 1.1.1",
       "Xamarin.CommunityToolkit >= 1.1.0",
       "Xamarin.Essentials >= 1.6.1",
       "Xamarin.Forms >= 5.0.0.2012",
@@ -3254,6 +3572,10 @@
           "Xam.Plugin.Media": {
             "target": "Package",
             "version": "[5.0.1, )"
+          },
+          "Xam.Plugin.TabView": {
+            "target": "Package",
+            "version": "[1.1.1, )"
           },
           "Xamarin.CommunityToolkit": {
             "target": "Package",

@@ -19,6 +19,7 @@
           "XF.Material": "1.7.8",
           "Xam.Plugin.DeviceInfo": "4.1.1",
           "Xam.Plugin.Media": "5.0.1",
+          "Xam.Plugin.TabView": "1.1.1",
           "Xam.Plugins.Settings": "3.1.1",
           "Xamarin.CommunityToolkit": "1.1.0",
           "Xamarin.Essentials": "1.6.1",
@@ -27,6 +28,14 @@
         },
         "runtime": {
           "Kouch.App.dll": {}
+        }
+      },
+      "CarouselView.FormsPlugin/5.2.0": {
+        "runtime": {
+          "lib/netstandard2.0/CarouselView.FormsPlugin.Abstractions.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
         }
       },
       "Com.Airbnb.Xamarin.Forms.Lottie/4.0.9": {
@@ -181,6 +190,18 @@
           }
         }
       },
+      "Xam.Plugin.TabView/1.1.1": {
+        "dependencies": {
+          "CarouselView.FormsPlugin": "5.2.0",
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xam.Plugin.TabView.dll": {
+            "assemblyVersion": "1.1.1.0",
+            "fileVersion": "1.1.1.0"
+          }
+        }
+      },
       "Xam.Plugins.Settings/3.1.1": {
         "dependencies": {
           "NETStandard.Library": "2.0.0"
@@ -260,6 +281,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "CarouselView.FormsPlugin/5.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-h849lqz0wvmpyiXqCrN7EW+cCGqK5chcefCfS55CkoGMMQx238QWNknUTOl/CvIdZ4bgs0Oztb7kamYXDlQ5mQ==",
+      "path": "carouselview.formsplugin/5.2.0",
+      "hashPath": "carouselview.formsplugin.5.2.0.nupkg.sha512"
     },
     "Com.Airbnb.Xamarin.Forms.Lottie/4.0.9": {
       "type": "package",
@@ -379,6 +407,13 @@
       "sha512": "sha512-UUR31EEnhDVa4IXgVfQIAL3u9v6YAyppsb5UlO9MNJ4quGGkfcWX++JexjB1nMGqvCzsjAT2t32drKDIXoW4SQ==",
       "path": "xam.plugin.media/5.0.1",
       "hashPath": "xam.plugin.media.5.0.1.nupkg.sha512"
+    },
+    "Xam.Plugin.TabView/1.1.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8NEOCOWm8DHFjQIf6F0lgQuK7BDaB7hzFOJOYzrrEIoKDo0F4aSUQ6RnKHn13kIQR9HtB9871XeQWXW+S2iv4Q==",
+      "path": "xam.plugin.tabview/1.1.1",
+      "hashPath": "xam.plugin.tabview.1.1.1.nupkg.sha512"
     },
     "Xam.Plugins.Settings/3.1.1": {
       "type": "package",

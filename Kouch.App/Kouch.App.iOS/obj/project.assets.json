@@ -2,6 +2,20 @@
   "version": 3,
   "targets": {
     "Xamarin.iOS,Version=v1.0": {
+      "CarouselView.FormsPlugin/5.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.121934"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/CarouselView.FormsPlugin.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/CarouselView.FormsPlugin.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/CarouselView.FormsPlugin.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/CarouselView.FormsPlugin.iOS.dll": {}
+        }
+      },
       "Com.Airbnb.iOS.Lottie/2.5.13": {
         "type": "package",
         "compile": {
@@ -181,6 +195,19 @@
           "lib/xamarinios10/Plugin.Media.dll": {}
         }
       },
+      "Xam.Plugin.TabView/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "CarouselView.FormsPlugin": "5.2.0",
+          "Xamarin.Forms": "3.1.0.583944"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xam.Plugin.TabView.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xam.Plugin.TabView.dll": {}
+        }
+      },
       "Xam.Plugins.Settings/3.1.1": {
         "type": "package",
         "compile": {
@@ -400,6 +427,7 @@
           "XF.Material": "1.7.8",
           "Xam.Plugin.DeviceInfo": "4.1.1",
           "Xam.Plugin.Media": "5.0.1",
+          "Xam.Plugin.TabView": "1.1.1",
           "Xam.Plugins.Settings": "3.1.1",
           "Xamarin.CommunityToolkit": "1.1.0",
           "Xamarin.Essentials": "1.6.1",
@@ -415,6 +443,20 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win": {
+      "CarouselView.FormsPlugin/5.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.121934"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/CarouselView.FormsPlugin.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/CarouselView.FormsPlugin.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/CarouselView.FormsPlugin.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/CarouselView.FormsPlugin.iOS.dll": {}
+        }
+      },
       "Com.Airbnb.iOS.Lottie/2.5.13": {
         "type": "package",
         "compile": {
@@ -576,6 +618,19 @@
           "lib/xamarinios10/Plugin.Media.dll": {}
         }
       },
+      "Xam.Plugin.TabView/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "CarouselView.FormsPlugin": "5.2.0",
+          "Xamarin.Forms": "3.1.0.583944"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xam.Plugin.TabView.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xam.Plugin.TabView.dll": {}
+        }
+      },
       "Xam.Plugins.Settings/3.1.1": {
         "type": "package",
         "compile": {
@@ -795,6 +850,7 @@
           "XF.Material": "1.7.8",
           "Xam.Plugin.DeviceInfo": "4.1.1",
           "Xam.Plugin.Media": "5.0.1",
+          "Xam.Plugin.TabView": "1.1.1",
           "Xam.Plugins.Settings": "3.1.1",
           "Xamarin.CommunityToolkit": "1.1.0",
           "Xamarin.Essentials": "1.6.1",
@@ -810,6 +866,20 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x64": {
+      "CarouselView.FormsPlugin/5.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.121934"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/CarouselView.FormsPlugin.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/CarouselView.FormsPlugin.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/CarouselView.FormsPlugin.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/CarouselView.FormsPlugin.iOS.dll": {}
+        }
+      },
       "Com.Airbnb.iOS.Lottie/2.5.13": {
         "type": "package",
         "compile": {
@@ -974,6 +1044,19 @@
           "lib/xamarinios10/Plugin.Media.dll": {}
         }
       },
+      "Xam.Plugin.TabView/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "CarouselView.FormsPlugin": "5.2.0",
+          "Xamarin.Forms": "3.1.0.583944"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xam.Plugin.TabView.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xam.Plugin.TabView.dll": {}
+        }
+      },
       "Xam.Plugins.Settings/3.1.1": {
         "type": "package",
         "compile": {
@@ -1193,6 +1276,7 @@
           "XF.Material": "1.7.8",
           "Xam.Plugin.DeviceInfo": "4.1.1",
           "Xam.Plugin.Media": "5.0.1",
+          "Xam.Plugin.TabView": "1.1.1",
           "Xam.Plugins.Settings": "3.1.1",
           "Xamarin.CommunityToolkit": "1.1.0",
           "Xamarin.Essentials": "1.6.1",
@@ -1208,6 +1292,20 @@
       }
     },
     "Xamarin.iOS,Version=v1.0/win-x86": {
+      "CarouselView.FormsPlugin/5.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.5.0.121934"
+        },
+        "compile": {
+          "lib/Xamarin.iOS10/CarouselView.FormsPlugin.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/CarouselView.FormsPlugin.iOS.dll": {}
+        },
+        "runtime": {
+          "lib/Xamarin.iOS10/CarouselView.FormsPlugin.Abstractions.dll": {},
+          "lib/Xamarin.iOS10/CarouselView.FormsPlugin.iOS.dll": {}
+        }
+      },
       "Com.Airbnb.iOS.Lottie/2.5.13": {
         "type": "package",
         "compile": {
@@ -1372,6 +1470,19 @@
           "lib/xamarinios10/Plugin.Media.dll": {}
         }
       },
+      "Xam.Plugin.TabView/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "CarouselView.FormsPlugin": "5.2.0",
+          "Xamarin.Forms": "3.1.0.583944"
+        },
+        "compile": {
+          "lib/netstandard2.0/Xam.Plugin.TabView.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Xam.Plugin.TabView.dll": {}
+        }
+      },
       "Xam.Plugins.Settings/3.1.1": {
         "type": "package",
         "compile": {
@@ -1591,6 +1702,7 @@
           "XF.Material": "1.7.8",
           "Xam.Plugin.DeviceInfo": "4.1.1",
           "Xam.Plugin.Media": "5.0.1",
+          "Xam.Plugin.TabView": "1.1.1",
           "Xam.Plugins.Settings": "3.1.1",
           "Xamarin.CommunityToolkit": "1.1.0",
           "Xamarin.Essentials": "1.6.1",
@@ -1607,6 +1719,28 @@
     }
   },
   "libraries": {
+    "CarouselView.FormsPlugin/5.2.0": {
+      "sha512": "h849lqz0wvmpyiXqCrN7EW+cCGqK5chcefCfS55CkoGMMQx238QWNknUTOl/CvIdZ4bgs0Oztb7kamYXDlQ5mQ==",
+      "type": "package",
+      "path": "carouselview.formsplugin/5.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "carouselview.formsplugin.5.2.0.nupkg.sha512",
+        "carouselview.formsplugin.nuspec",
+        "lib/MonoAndroid/CarouselView.FormsPlugin.Abstractions.dll",
+        "lib/MonoAndroid/CarouselView.FormsPlugin.Android.dll",
+        "lib/UAP10/CarouselView.FormsPlugin.Abstractions.dll",
+        "lib/UAP10/CarouselView.FormsPlugin.UWP.dll",
+        "lib/UAP10/CarouselView.FormsPlugin.UWP.pri",
+        "lib/UAP10/CarouselView.FormsPlugin.UWP/CarouselView.FormsPlugin.UWP.xr.xml",
+        "lib/UAP10/FlipViewControl.xbf",
+        "lib/Xamarin.iOS10/CarouselView.FormsPlugin.Abstractions.dll",
+        "lib/Xamarin.iOS10/CarouselView.FormsPlugin.iOS.dll",
+        "lib/netstandard2.0/CarouselView.FormsPlugin.Abstractions.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+Xamarin.iOS10/CarouselView.FormsPlugin.Abstractions.dll"
+      ]
+    },
     "Com.Airbnb.iOS.Lottie/2.5.13": {
       "sha512": "OnQraPaIQGPSFzWXWRGULTmyvTiEljtx2tLV4BJNm6f0E1OGqlLc6CnPUKbckoJQ4cceZc7RbqG4EtY4JG6raw==",
       "type": "package",
@@ -2206,6 +2340,18 @@
         "xam.plugin.media.nuspec"
       ]
     },
+    "Xam.Plugin.TabView/1.1.1": {
+      "sha512": "8NEOCOWm8DHFjQIf6F0lgQuK7BDaB7hzFOJOYzrrEIoKDo0F4aSUQ6RnKHn13kIQR9HtB9871XeQWXW+S2iv4Q==",
+      "type": "package",
+      "path": "xam.plugin.tabview/1.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Xam.Plugin.TabView.dll",
+        "xam.plugin.tabview.1.1.1.nupkg.sha512",
+        "xam.plugin.tabview.nuspec"
+      ]
+    },
     "Xam.Plugins.Settings/3.1.1": {
       "sha512": "EQEYQJ64ZLqui5GWkLMavgqitHxwUHZHryTzUD1021UBuz1XwDSjPL45W0K4pPXjz9oKbg7YpRXKPR1luPr/5Q==",
       "type": "package",
@@ -2681,6 +2827,7 @@
       "Syncfusion.Xamarin.Core >= 19.1.0.64",
       "XF.Material >= 1.7.8",
       "Xam.Plugin.Media >= 5.0.1",
+      "Xam.Plugin.TabView >= 1.1.1",
       "Xamarin.CommunityToolkit >= 1.1.0",
       "Xamarin.Essentials >= 1.6.1",
       "Xamarin.Forms >= 5.0.0.2012",
@@ -2752,6 +2899,10 @@
           "Xam.Plugin.Media": {
             "target": "Package",
             "version": "[5.0.1, )"
+          },
+          "Xam.Plugin.TabView": {
+            "target": "Package",
+            "version": "[1.1.1, )"
           },
           "Xamarin.CommunityToolkit": {
             "target": "Package",

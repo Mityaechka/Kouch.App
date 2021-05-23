@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "wyLZ3J1jrQYMNaOmqkzD5pALsTFCKZpIYfX0Z4Yq3mb3Ccwvqc/UK01gA+TVI8+MTRH0/wOKLNDzzAR9qjQ80g==",
+  "dgSpecHash": "rMw7Iwlkg4kP7f2VvSHu7aYm3I/lQCXDus2vWN7yKto0xMGFRV0G4slKgrA6lfI+AW4XNktAuqF33HLqTG8uXg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Mitya\\source\\repos\\Kouch.App\\Kouch.App\\Kouch.App\\Kouch.App.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Mitya\\.nuget\\packages\\carouselview.formsplugin\\5.2.0\\carouselview.formsplugin.5.2.0.nupkg.sha512",
     "C:\\Users\\Mitya\\.nuget\\packages\\com.airbnb.xamarin.forms.lottie\\4.0.9\\com.airbnb.xamarin.forms.lottie.4.0.9.nupkg.sha512",
     "C:\\Users\\Mitya\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Mitya\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
@@ -21,6 +22,7 @@
     "C:\\Users\\Mitya\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.2\\system.runtime.compilerservices.unsafe.4.5.2.nupkg.sha512",
     "C:\\Users\\Mitya\\.nuget\\packages\\xam.plugin.deviceinfo\\4.1.1\\xam.plugin.deviceinfo.4.1.1.nupkg.sha512",
     "C:\\Users\\Mitya\\.nuget\\packages\\xam.plugin.media\\5.0.1\\xam.plugin.media.5.0.1.nupkg.sha512",
+    "C:\\Users\\Mitya\\.nuget\\packages\\xam.plugin.tabview\\1.1.1\\xam.plugin.tabview.1.1.1.nupkg.sha512",
     "C:\\Users\\Mitya\\.nuget\\packages\\xam.plugins.settings\\3.1.1\\xam.plugins.settings.3.1.1.nupkg.sha512",
     "C:\\Users\\Mitya\\.nuget\\packages\\xamarin.communitytoolkit\\1.1.0\\xamarin.communitytoolkit.1.1.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
