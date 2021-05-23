@@ -606,7 +606,6 @@ C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.Android\obj\Debug\100\
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.Android\obj\Debug\100\android\src\crc647c4c06b10f3352ff\MaterialSliderRenderer.java
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.Android\obj\Debug\100\android\src\crc647c4c06b10f3352ff\MaterialStepperRenderer.java
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.Android\obj\Debug\100\android\src\crc647c4c06b10f3352ff\MaterialTimePickerRenderer.java
-C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.Android\obj\Debug\100\aapt_rules.txt
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.Android\obj\Debug\100\android\assets\netstandard.dll
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.Android\obj\Debug\100\android\assets\System.Collections.dll
 C:\Users\Mitya\source\repos\Kouch.App\Kouch.App\Kouch.App.Android\obj\Debug\100\android\assets\System.ComponentModel.Annotations.dll
