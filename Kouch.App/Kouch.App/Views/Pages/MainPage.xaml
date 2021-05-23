@@ -27,6 +27,9 @@
                     <Button Text="Мой профиль"
                                              Style="{StaticResource PrimaryButton}"
                                              Command="{Binding OpenMyProfileCommand}" />
+                    <Button Text="Мои контакты"
+                            Style="{StaticResource PrimaryButton}"
+                            Command="{Binding OpenMyContactsCommand}" />
                 </StackLayout>
                 <StackLayout VerticalOptions="End">
                     <Button Text="Выход" Style="{StaticResource PrimaryButton}"

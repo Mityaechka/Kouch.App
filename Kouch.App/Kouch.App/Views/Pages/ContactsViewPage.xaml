@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Kouch.App.Views.Pages.ContactsViewPage" Title="Мои контакты">
+
+    <ContentPage Title="Номера">
+        <AbsoluteLayout>
+            <ImageButton Source="add.png"
+                         WidthRequest="25"
+BackgroundColor="AliceBlue"
+                         AbsoluteLayout.LayoutFlags="PositionProportional"
+                         AbsoluteLayout.LayoutBounds=".95,.95,80,80"
+                         />
+        </AbsoluteLayout>
+    </ContentPage>
+    <ContentPage Title="Соц. сети">
+        <Label Text="Test" />
+    </ContentPage>
+</TabbedPage>

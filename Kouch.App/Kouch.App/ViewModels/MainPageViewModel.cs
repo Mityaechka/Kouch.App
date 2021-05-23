@@ -26,6 +26,7 @@ namespace Kouch.App.ViewModels
 
         public ICommand LogoutCommand => new Command(async () => await Logout());
         public ICommand OpenMyProfileCommand => new Command(async () => await OpenMyProfile());
+        public ICommand OpenMyContactsCommand => new Command(async () => await OpenMyContacts());
         public MainPageViewModel(INavigation navigation) : base(navigation)
         {
             User = new UserViewModel(UserStorageService.Instance.User);
@@ -72,6 +73,16 @@ namespace Kouch.App.ViewModels
             if (typeof(MainPage) == App.Current.MainPage.GetType())
             {
                 (App.Current.MainPage as MasterDetailPage).Detail = new NavigationPage(new ProfileViewPage());
+                await Task.Delay(500);
+                (App.Current.MainPage as MasterDetailPage).IsPresented = false;
+            }
+
+        }
+        private async Task OpenMyContacts()
+        {
+            if (typeof(MainPage) == App.Current.MainPage.GetType())
+            {
+                (App.Current.MainPage as MasterDetailPage).Detail = new NavigationPage(new ContactsViewPage());
                 await Task.Delay(500);
                 (App.Current.MainPage as MasterDetailPage).IsPresented = false;
             }

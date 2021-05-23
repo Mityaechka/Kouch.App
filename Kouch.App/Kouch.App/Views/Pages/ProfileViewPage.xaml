@@ -31,7 +31,7 @@
                             </Image.GestureRecognizers>
                         </Image>
                     </Frame>
-                    <!--<Grid>
+                    <Grid>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />
                             <ColumnDefinition Width="*" />
@@ -47,49 +47,20 @@
                                 Style="{StaticResource PrimaryButton}"
                                 Grid.Column="1"
                                 Grid.Row="0" />
-                    </Grid>-->
-                    
+                    </Grid>
+                    <Label  Text="{Binding User.Email,StringFormat='Почта: {0}'}"
+                            FontSize="Body" />
+                    <Label FontSize="Body"
+                           Text="{Binding User.FullName,StringFormat='Имя: {0}'}" />
+                    <Label Text="{Binding User.FullAddress,StringFormat='Адрес: {0}'}"
+                           FontSize="Body" />
                 </StackLayout>
-                <StackLayout VerticalOptions="FillAndExpand"
-                             BackgroundColor="Black">
-                    <xct:TabView TabStripPlacement="Top"
-                                 VerticalOptions="FillAndExpand"
-                                 TabStripBackgroundColor="{StaticResource primaryLigth}"
-                                 TabStripHeight="60"
-                                 TabIndicatorColor="{StaticResource primaryDark}"
-                                 TabContentBackgroundColor="White" BackgroundColor="BurlyWood">
-                        <xct:TabViewItem Text="Персональные данные"
-                                         IsSelected="True"
-                                         TextColor="{StaticResource white}">
-                            <xct:TabViewItem.Content>
-                            <StackLayout>
-                                <Label  Text="{Binding User.Email,StringFormat='Почта: {0}'}"
-                                        FontSize="Body" />
-                                <Label FontSize="Body"
-                                       Text="{Binding User.FullName,StringFormat='Имя: {0}'}" />
-                                <Label Text="{Binding User.FullAddress,StringFormat='Адрес: {0}'}"
-                                       FontSize="Body" />
-                            </StackLayout>
-                            </xct:TabViewItem.Content>
-                        </xct:TabViewItem>
-                        <xct:TabViewItem Text="Контакты"
-                                         TextColor="{StaticResource white}">
-                            <StackLayout>
-                                <Label Text="{Binding User.Vk,StringFormat='VK: {0}'}"
-                                       IsVisible="{Binding User.Vk,Converter={StaticResource isNotNullOrEmpty}}" />
-                                <Label Text="{Binding User.Instagram,StringFormat='Instagram: {0}'}"
-                                       IsVisible="{Binding User.Instagram,Converter={StaticResource isNotNullOrEmpty}}" />
-                                <Label Text="{Binding User.Facebook,StringFormat='Facebook: {0}'}"
-                                       IsVisible="{Binding User.Facebook,Converter={StaticResource isNotNullOrEmpty}}" />
-                            </StackLayout>
-                        </xct:TabViewItem>
-                    </xct:TabView>
+                <StackLayout VerticalOptions="EndAndExpand">
+                    <Button Text="Редактировать"
+                            Style="{StaticResource PrimaryButton}"
+                            Command="{Binding EditProfileCommand}" />
                 </StackLayout>
-                <Button Text="Редактировать"
-                        Style="{StaticResource PrimaryButton}"
-                        Command="{Binding EditProfileCommand}" />
             </StackLayout>
         </ScrollView>
     </RefreshView>
-    
 </ContentPage>
