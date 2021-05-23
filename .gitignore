@@ -362,4 +362,4 @@ MigrationBackup/
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
 
-/Kouch.App/Kouch.App.Android/bin/
+Kouch.App/Kouch.App.Android/bin/*
