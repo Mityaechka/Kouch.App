@@ -102,3 +102,6 @@ androidx.asynclayoutinflater.asynclayoutinflater.aar
 androidx.legacy.legacy-support-core-ui.aar
 androidx.legacy.legacy-support-v4.aar
 androidx.browser.browser.aar
+CarouselView.FormsPlugin.Android.dll
+Com.Android.DeskClock.dll
+Com.ViewPagerIndicator.dll
